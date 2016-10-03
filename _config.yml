@@ -19,3 +19,15 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+collections:
+  policies:
+    output: true
+    permalink: /policy/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: policies
+    values:
+      layout: page
