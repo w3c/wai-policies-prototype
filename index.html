@@ -15,8 +15,8 @@ layout: default
 
 <ul>
 {% for policy in site.policies %}
-  <li data-updated="{{policy.updated}}">
-    <h2>{{policy.title}} {%if policy.native_title%}({{policy.native_title}}){%endif%}</h2>
+  <li id="x{{policy.title | slugify }}" data-updated="{{policy.updated}}">
+    <h2><a href="{{policy.url | prepend: site.baseurl}}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</h2>
     <p>Last Updated: {{policy.updated | date: "%-d %B %Y" }}{%if policy.updatemsg%} – {{policy.updatemsg}}{%endif%}
     <p>Related page: Australian states (not implemented yet)</p>
     {% for p in policy.policies %}

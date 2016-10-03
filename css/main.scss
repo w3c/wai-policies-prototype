@@ -51,3 +51,10 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.home {
+  display: flex;
+  .side {
+    width: 10em;
+  }
+}
