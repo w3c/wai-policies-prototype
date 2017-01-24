@@ -37,7 +37,7 @@ policies:
     ministries:
       - title: Minister of Finance
     scope: ICT
-    standard: EN301549 # URL, sdditional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
       - title: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
         url: http://example.com
