@@ -5,10 +5,19 @@ layout: default
 <div class="home" id="top">
 
 <div class="side">
+  <h1>Contents</h1>
   <ul>
-  {% for policy in site.policies %}
-    <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
-  {% endfor %}
+    {% for help in site.help %}
+      <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
+    {% endfor %}
+    <li><a href="#xtable">Law &amp; Policy Overview Table</a></li>
+    <li><a href="#xlist">Laws &amp; Policies by Country</a>
+      <ul>
+      {% for policy in site.policies %}
+        <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
+      {% endfor %}
+      </ul>
+    </li>
   </ul>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 </div>
@@ -18,44 +27,45 @@ layout: default
   <h1>Web Accessibility Laws &amp; Policies</h1>
 
   {% for help in site.help %}
-    <h2>{{help.title}}</h2>
+    <h2 id="x{{help.title | slugify }}">{{help.title}}</h2>
     {{help.content}}
   {% endfor %}
 
 <details open>
-  <summary><h2 style="display:inline-block;">Law &amp; Policy Overview Table</h2></summary>
+  <summary><h2 id="xtable" style="display:inline-block;">Law &amp; Policy Overview Table</h2></summary>
+  <div>
+    <style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
 
-<style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
+    <table class="sortable">
+      <tr>
+        <th>New/Updated</th>
+        <th>Country</th>
+        <th>Law/Legislation Name</th>
+        <th>Type</th>
+        <th>Web Only</th>
+        <th>WCAG Version Used</th>
+        <th>Status</th>
+      </tr>
+      {% for policy in site.policies %}
+      {% for p in policy.policies %}
+      <tr data-updated="{{policy.updated}}">
+        <td>{{p.updated}}</td>
+        <td><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
+        <th><a href="{{p.url}}">{{p.title}}</a></th>
+        <td>{{p.type}}</td>
+        <td>{{p.scope}}</td>
+        <td>{{p.wcagver}}</td>
+        <td>{{p.status}}</td>
+      </tr>
+      {% endfor %}
+    {% endfor %}
+    </table>
 
-<table class="sortable">
-  <tr>
-    <th>New/Updated</th>
-    <th>Country</th>
-    <th>Law/Legislation Name</th>
-    <th>Type</th>
-    <th>Web Only</th>
-    <th>WCAG Version Used</th>
-    <th>Status</th>
-  </tr>
-  {% for policy in site.policies %}
-  {% for p in policy.policies %}
-  <tr data-updated="{{policy.updated}}">
-    <td>{{p.updated}}</td>
-    <td><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
-    <th><a href="{{p.url}}">{{p.title}}</a></th>
-    <td>{{p.type}}</td>
-    <td>{{p.scope}}</td>
-    <td>{{p.wcagver}}</td>
-    <td>{{p.status}}</td>
-  </tr>
-  {% endfor %}
-{% endfor %}
-</table>
-
-<a href="#top">Back to top</a>
+    <a href="#top">Back to top</a>
+  </div>
 </details>
 
-<h2>Laws &amp; Policies by Country</h2>
+<h2 id="xlist">Laws &amp; Policies by Country</h2>
 
 <ul>
 {% for policy in site.policies %}
