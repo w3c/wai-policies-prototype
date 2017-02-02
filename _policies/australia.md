@@ -1,6 +1,6 @@
 ---
 title: Australia
-# title_native: # Country name in the countrie’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
+# title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2016-08-30
 updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
 # Related page: Australian states – Not sure yet how to model this, I tend to not have this
@@ -37,7 +37,7 @@ policies:
     ministries:
       - title: Minister of Finance
     scope: ICT
-    standard: EN301549 # URL, sdditional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
       - title: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
         url: http://example.com
