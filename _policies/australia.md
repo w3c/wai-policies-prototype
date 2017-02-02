@@ -16,7 +16,8 @@ policies:
         url: https://www.ag.gov.au/Pages/default.aspx
       - title: Australian Human Rights Commission
         url: http://www.humanrights.gov.au/
-    scope: general # other values: web
+    webonly: no # other values: yes
+    scope: public, private # keys that allows us to use any combination
     standard: false
     documents:
       - title: About Disability Rights
@@ -36,7 +37,8 @@ policies:
     type: Procurement Policy
     ministries:
       - title: Minister of Finance
-    scope: ICT
+    scope: gov
+    webonly: yes # other values: yes
     standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
       - title: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
