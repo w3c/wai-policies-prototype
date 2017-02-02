@@ -55,6 +55,9 @@ $on-laptop:        800px;
 .home {
   display: flex;
   .side {
-    width: 10em;
+    flex:  0 1 15%;
+  }
+  .content {
+    flex: 1 1 85%;
   }
 }

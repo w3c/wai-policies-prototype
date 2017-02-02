@@ -24,6 +24,8 @@ collections:
   policies:
     output: true
     permalink: /policy/:path/
+  help:
+    output: false
 
 defaults:
   - scope:

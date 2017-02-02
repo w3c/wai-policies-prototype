@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home" id="top">
 
 <div class="side">
   <ul>
@@ -15,7 +15,17 @@ layout: default
 
 <div class="content">
 
-<style>table{margin-bottom:3em;} table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
+  <h1>Web Accessibility Laws &amp; Policies</h1>
+
+  {% for help in site.help %}
+    <h2>{{help.title}}</h2>
+    {{help.content}}
+  {% endfor %}
+
+<details open>
+  <summary><h2 style="display:inline-block;">Law &amp; Policy Overview Table</h2></summary>
+
+<style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
 
 <table class="sortable">
   <tr>
@@ -41,6 +51,11 @@ layout: default
   {% endfor %}
 {% endfor %}
 </table>
+
+<a href="#top">Back to top</a>
+</details>
+
+<h2>Laws &amp; Policies by Country</h2>
 
 <ul>
 {% for policy in site.policies %}
