@@ -7,7 +7,7 @@ updatemsg: Adding China to prototype from proposal document.
 policies:
   - title: Voluntary Web Standard
     url: http://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html
-    updated: ?
+    updated: "?"
     wcagver: WCAG 2.0 derivative
     status: in effect
     type: Recommendation # other values: law/policy/procurement
