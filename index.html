@@ -27,8 +27,15 @@ layout: default
   <h1>Web Accessibility Laws &amp; Policies</h1>
 
   {% for help in site.help %}
+    {% if help.title == "Disclaimer" %}
+    <details>
+    <h2 id="x{{help.title | slugify }}">{{help.title}}: This is <em>not legal advice</em>. (click to open)</h2>
+    {{help.content}}
+    </details>
+    {% else %}
     <h2 id="x{{help.title | slugify }}">{{help.title}}</h2>
     {{help.content}}
+    {% endif %}
   {% endfor %}
 
 <details open>
