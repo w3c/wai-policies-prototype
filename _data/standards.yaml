@@ -2,3 +2,11 @@ EN301549:
   title: EN 301 549
   desc: Includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.
   url: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
+Original508:
+  title: Section 508 Standards for Electronic and Information Technology
+  desc: Published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation.
+  url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+Revised508:
+  title: Information and Communication Technology (ICT) Standards and Guidelines
+  desc: Revised Section 508 standards published in the U.S. Federal Register 21 Jan. 2017. Incorporates WCAG 2.0 by reference without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.
+  url: https://www.federalregister.gov/documents/2017/01/18/2017-00395/information-and-communication-technology-ict-standards-and-guidelines

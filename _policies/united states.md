@@ -20,8 +20,9 @@ policies:
         url: https://www.justice.gov/
     webonly: no # other values: yes
     scope: gov # keys that allows us to use any combination
-    standard: Section 508 Standards for Electronic and Information Technology
-    url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+    standard: 
+      - title: Section 508 Standards for Electronic and Information Technology
+        url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
     documents:
       - title: Information and Communication Technology (ICT) Standards and Guidelines
         url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
