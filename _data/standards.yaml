@@ -29,3 +29,7 @@ ChinaWeb:
 CanadaWeb:
   title: Standard on Web Accessibility
   url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601
+FranceWeb:
+  title: Référentiel Général d’Accessibilité des Administrations (RGAA) Version 3 2016
+  desc: French Web accessibility guidelines.
+  url: http://references.modernisation.gouv.fr/referentiel/
