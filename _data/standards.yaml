@@ -22,3 +22,10 @@ WCAG20AA:
   title: WCAG 2.0 Level AA
   desc: W3C Web Content Accessibility Guidelines Level AA.
   url: https://www.w3.org/TR/WCAG20/
+ChinaWeb:
+  title: China Web Accessibility Standard YD1761-2008
+  desc: Web standards based on early (non-Recommendation) version of WCAG 2.0 published in 2008.
+  url: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjJmqDUqb7RAhUK8YMKHboFAl0QFggpMAI&url=http%3A%2F%2Fwww.chinesestandard.net%2FPDF-English-Translation%2FYDT1761-2008.html&usg=AFQjCNF5MTc5NhMZzSi81kLs9MoA3Yak
+CanadaWeb:
+  title: Standard on Web Accessibility
+  url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601

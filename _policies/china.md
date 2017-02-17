@@ -16,5 +16,5 @@ policies:
         url: http://english.caict.ac/
     webonly: yes # other values: no
     scope: gov # keys that allows us to use any combination
-    standard: China Web Accessibility Standard YD1761-2008
+    standard: ChinaWeb
 ---
