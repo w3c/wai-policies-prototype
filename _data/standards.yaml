@@ -2,3 +2,23 @@ EN301549:
   title: EN 301 549
   desc: Includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.
   url: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
+Original508:
+  title: Section 508 Standards for Electronic and Information Technology
+  desc: Published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Updated standard now available but not enforced yet, see Revised section 508 standards below.
+  url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+Revised508:
+  title: Information and Communication Technology (ICT) Standards and Guidelines
+  desc: Revised Section 508 standards published in the U.S. Federal Register 21 Jan. 2017. Incorporates WCAG 2.0 by reference without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.
+  url: https://www.federalregister.gov/documents/2017/01/18/2017-00395/information-and-communication-technology-ict-standards-and-guidelines
+DeptofEd504:
+  title: Requirements for Accessible Electronic and Information Technology Design
+  desc: Department of Education's standards used for section 504 and 508 which are the same technical requirements as Section 508 for Web, software, and telecommunications products.
+  url: https://www2.ed.gov/fund/contract/apply/clibrary/software.html
+Section255:
+  title: Telecommunications Act Section 255 Guidelines
+  desc: FCC requirements for accessible telecommunications products.
+  url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/section-255-guidelines
+WCAG20AA:
+  title: WCAG 2.0 Level AA
+  desc: W3C Web Content Accessibility Guidelines Level AA.
+  url: https://www.w3.org/TR/WCAG20/
