@@ -25,13 +25,13 @@ policies:
     updated: 2016-10-01
     wcagver: WCAG 2.0 Level AA
     status: in effect
-    type: Procurement Policy
+    type: Policy
     ministries:
       - title: Treasury Board
         url: https://www.canada.ca/en/treasury-board-secretariat.html
     scope: gov
     webonly: no # other values: yes
-    standard: Standard on Web Accessibility # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: CanadaWeb
     documents:
       - title: Guidance on implementing the standard on web accessibility
         url: https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/ws-nw/wa-aw-guid-eng.asp

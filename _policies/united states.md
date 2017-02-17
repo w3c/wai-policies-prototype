@@ -93,8 +93,6 @@ policies:
         url: https://www.fcc.gov/consumers/guides/telecommunications-access-people-disabilities
       - title: Guidance on the Telecommunications Act Section 255 Guidlines
         url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/guidance-on-the-telecommunications-act-%C2%A7255-guidelines
-      - title:
-        url: 
       - title: Information and Communication Technology (ICT) Standards and Guidelines
         url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
         desc: Revised Section Section 255 Guidelines, 18 Jan. 2017. Not yet enforced by an FCC rule.
