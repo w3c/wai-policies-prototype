@@ -20,13 +20,11 @@ policies:
         url: https://www.justice.gov/
     webonly: no # other values: yes
     scope: gov # keys that allows us to use any combination
-    standard: 
-      - title: Section 508 Standards for Electronic and Information Technology
-        url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+    standard: Original508
     documents:
       - title: Information and Communication Technology (ICT) Standards and Guidelines
         url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
-        desc: Revised Section 508 Standards, 18 Jan. 2017
+        desc: Revised Section 508 Standards, 18 Jan. 2017. Enforced on U.S. Agencies as of 18 Jan. 2018. 
       - title: GSA Section 508 website
         url: https://www.section508.gov/
         desc:
@@ -56,10 +54,66 @@ policies:
       - title: U.S. Access Board
         url: http://www.access-board.gov/
     webonly: no # other values: yes
-    scope: Public & private # keys that allows us to use any combination
+    scope: public, private # keys that allows us to use any combination
     standard: false
     documents:
       - title: DOL Laws & Regulations
         url: https://www.dol.gov/general/topic/disability/laws
         desc: Overview of the Americans with Disabilities Act of 1990
+  - title: Section 504 of the U.S. Rehabilitation Act of 1973, as amended
+    url: https://www.dol.gov/oasam/regs/statutes/sec504.htm
+    updated: 2017-02-16
+    wcagver: WCAG 1.0 derivative
+    status: in effect
+    type: Non-discrimination Law # other values: law/policy/procurement/recommendation
+    ministries:
+      - title: Department of Education
+        url: https://www.ed.gov/
+      - title: Department of Justice (DoJ)
+        url: http://www.usdoj.gov/
+    webonly: no # other values: yes
+    scope: public # keys that allows us to use any combination
+    standard: DeptofEd504
+  - title: Section 255 of the Telecommunications Act of 1996
+    url: https://www.access-board.gov/the-board/laws/telecommunications-act
+    updated: 2017-02-16
+    wcagver: None
+    status: in effect
+    type: Accessibility Law # other values: law/policy/procurement/recommendation
+    ministries:
+      - title: Federal Comunications Commission (FCC)
+        url: https://www.fcc.gov/
+      - title: U.S. Access Board
+        url: https://www.access-board.gov/
+    webonly: no # other values: yes
+    scope: public, private # keys that allows us to use any combination
+    standard: Section255
+    documents: 
+      - title: Telecommunications Access for People with Disabilities
+        url: https://www.fcc.gov/consumers/guides/telecommunications-access-people-disabilities
+      - title: Guidance on the Telecommunications Act Section 255 Guidlines
+        url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/guidance-on-the-telecommunications-act-%C2%A7255-guidelines
+      - title:
+        url: 
+      - title: Information and Communication Technology (ICT) Standards and Guidelines
+        url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
+        desc: Revised Section Section 255 Guidelines, 18 Jan. 2017. Not yet enforced by an FCC rule.
+  - title: Air Carrier Access Act of 1986
+    url: http://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title14/14cfr382_main_02.tpl
+    updated: 2017-02-16
+    wcagver: WCAG 2.0
+    status: in effect
+    type: Nondiscrimination Law # other values: law/policy/procurement/recommendation
+    ministries:
+      - title: Department of Transportation (DoT)
+        url: http://www.dot.gov/
+    webonly: no # other values: yes
+    scope: private # keys that allows us to use any combination
+    standard: WCAG20AA
+    documents: 
+      - title: Nondiscrimination on the Basis of Disability in Air Travel - Accessibility of Web Sites and Automated Kiosks at U.S. Airports
+        url: https://www.transportation.gov/sites/dot.gov/files/docs/Kiosk-website-FR-final%20rule.pdf
+        desc: Final rule for website and kiosk accessibility published in the U.S. Federal Register on 12 Nov. 2013
+      - title: Fact Sheet on Airline Web Site and Kiosk Accessibility (.pdf)
+        url: https://www.transportation.gov/sites/dot.gov/files/docs/11-04-13%20Accessible%20Kiosks%20Fact%20Sheet_0_0.pdf
 ---
