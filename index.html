@@ -10,8 +10,8 @@ layout: default
     {% for help in site.help %}
       <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
     {% endfor %}
-    <li><a href="#xtable">Law &amp; Policy Overview Table</a></li>
-    <li><a href="#xlist">Laws &amp; Policies by Country</a>
+    <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
+    <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
       <ul>
       {% for policy in site.policies %}
         <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
