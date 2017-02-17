@@ -52,20 +52,16 @@ layout: default
         <th>Law/Legislation Name</th>
         <th>Type (Policy, law, legislation, etc.)</th>
         <th>Scope</th>
-        <th>Web Only</th>
-        <th>WCAG Version Used</th>
         <th>Status</th>
       </tr>
       {% for policy in site.policies %}
       {% for p in policy.policies %}
       <tr data-updated="{{policy.updated}}">
         <td>{{p.updated}}</td>
-        <td><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
+        <td>{{policy.title}} {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
         <th><a href="{{p.url}}">{{p.title}}</a></th>
         <td>{{p.type}}</td>
         <td>{{p.scope}}</td>
-        <td>{{p.webonly}}</td>
-        <td>{{p.wcagver}}</td>
         <td>{{p.status}}</td>
       </tr>
       {% endfor %}
