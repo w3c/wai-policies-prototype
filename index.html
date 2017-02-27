@@ -28,8 +28,8 @@ layout: default
 
   {% for help in site.help %}
     {% if help.title == "Disclaimer" %}
-    <details>
-      <summary><h2 id="x{{help.title | slugify }}">{{help.title}}: This is <em>not legal advice</em>. (click to open)</h2></summary>
+    <details open>
+      <summary><h2 id="x{{help.title | slugify }}">{{help.title}}: This is <em>not legal advice</em>.</h2></summary>
       <div>
         {{help.content}}
       </div>
