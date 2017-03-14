@@ -76,7 +76,7 @@ layout: default
         <th>Scope</th>
         <th>Web Only</th>
         <th>WCAG Version Used</th>
-        <th>Status</th>
+        <th>Date enacted</th>
       </tr>
       {% for policy in site.policies %}
       {% for p in policy.policies %}
@@ -87,7 +87,7 @@ layout: default
         <td>{{p.scope}}</td>
         <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
         <td>{{p.wcagver}}</td>
-        <td>{{p.status}}</td>
+        <td>{{p.status}}</td> <!-- need to change status to enactdate here and in yaml/md files for countries -->
       </tr>
       {% endfor %}
     {% endfor %}
