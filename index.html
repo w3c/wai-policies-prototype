@@ -48,9 +48,11 @@ layout: default
     <form>
       <ul style="list-style-type: none;">
         <li><strong>Standard:</strong></li>
+        <li><input id="wcag10" type="checkbox"></input><label for="wcag10">WCAG 1.0</label></li>
+        <li><input id="wcag10d" type="checkbox"></input><label for="wcag10d">WCAG 1.0 derivative</label></li>
         <li><input id="wcag20" type="checkbox"></input><label for="wcag20">WCAG 2.0</label></li>
-        <li><label><input type="checkbox">WCAG 2.0 and additional</label></li>
-        <li><label><input type="checkbox">WCAG 3.5 ¯\_(ツ)_/¯</label></li>
+        <li><input id="wca210d" type="checkbox">WCAG 2.0 derivative</input><label for="wcag20d"></label></li>
+        <li><input id="none" type="checkbox">None</input><label for="none"></label></li>
         <li><strong>Status</strong></li>
         <li><label><input type="checkbox">Proposed/in development</label></li>
         <li><label><input type="checkbox">In effect</label></li>
@@ -68,26 +70,24 @@ layout: default
 
     <table class="sortable">
       <tr>
-        <th>New/Updated</th>
         <th>Country</th>
         <th>Law/Legislation Name</th>
         <th>Type (Policy, law, legislation, etc.)</th>
         <th>Scope</th>
         <th>Web Only</th>
         <th>WCAG Version Used</th>
-        <th>Status</th>
+        <th>Date enacted</th>
       </tr>
       {% for policy in site.policies %}
       {% for p in policy.policies %}
       <tr data-updated="{{policy.updated}}">
-        <td>{{p.updated}}</td>
         <td><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
         <th><a href="{{p.url}}">{{p.title}}</a></th>
         <td>{{p.type}}</td>
         <td>{{p.scope}}</td>
         <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
         <td>{{p.wcagver}}</td>
-        <td>{{p.status}}</td>
+        <td>{{p.status}}</td> <!-- need to change status to enactdate here and in yaml/md files for countries -->
       </tr>
       {% endfor %}
     {% endfor %}
@@ -114,6 +114,7 @@ layout: default
           <li>Type: {{p.type}}</li>
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
+          <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
             <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> – {{standard.desc}}</li>
           {% endif %}

@@ -33,7 +33,7 @@ policies:
     url: https://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-10-01
     wcagver: WCAG 2.1
-    status: in development
+    status: draft
     type: Procurement Policy
     ministries:
       - title: Minister of Finance
