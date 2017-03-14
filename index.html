@@ -50,7 +50,6 @@ layout: default
         <li><strong>Standard:</strong></li>
         <li><input id="wcag20" type="checkbox"></input><label for="wcag20">WCAG 2.0</label></li>
         <li><label><input type="checkbox">WCAG 2.0 and additional</label></li>
-        <li><label><input type="checkbox">WCAG 3.5 ¯\_(ツ)_/¯</label></li>
         <li><strong>Status</strong></li>
         <li><label><input type="checkbox">Proposed/in development</label></li>
         <li><label><input type="checkbox">In effect</label></li>
@@ -114,6 +113,7 @@ layout: default
           <li>Type: {{p.type}}</li>
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
+          <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
             <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> – {{standard.desc}}</li>
           {% endif %}
