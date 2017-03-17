@@ -9,7 +9,7 @@ policies:
     url: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.327.01.0001.01.ENG&toc=OJ:L:2016:327:TOC
     updated: 2016-10-26
     wcagver: WCAG 2.0
-    status: in effect
+    enactdate: 2016
     type: Law # other values: law/policy/procurement
     ministries:
       - title: European Commission
@@ -24,7 +24,7 @@ policies:
     url: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM:2015:0615:FIN
     updated: 2015-12-02
     wcagver: WCAG 2.0 derivative
-    status: draft
+    enactdate: draft
     type: Proposed Law
     ministries:
       - title: European Commission
