@@ -9,7 +9,7 @@ policies:
     url: http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000809647&dateTexte=
     updated: 2016-02-17
     wcagver: None
-    status: in effect
+    enactdate: 2005
     type: Accessibility law # other values: law/policy/procurement
     ministries:
       - title: Ministry of Social Affairs
@@ -22,7 +22,7 @@ policies:
     url: https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000030540064&dateTexte=&categorieLien=id
     updated: 2017-02-16
     wcagver: WCAG 2.0 derivative
-    status: in effect
+    enactdate: 2015
     type: Policy
     ministries:
       - title: Ministry of Social Affairs

@@ -9,7 +9,7 @@ policies:
     url: https://www.section508.gov/section-508-of-the-rehabilitation-act
     updated: 2017-02-16
     wcagver: WCAG 1.0 derivative
-    status: in effect
+    enactdate: 1998
     type: Procurement # other values: recommendation/law/policy
     ministries:
       - title: General Services Administration (GSA)
@@ -38,7 +38,7 @@ policies:
     url: https://www.ada.gov/pubs/adastatute08.htm
     updated: 2017-02-16
     wcagver: "?"
-    status: in effect
+    enactdate: 2009
     type: Non-discrimination Law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Labor (DOL)
@@ -64,7 +64,7 @@ policies:
     url: https://www.dol.gov/oasam/regs/statutes/sec504.htm
     updated: 2017-02-16
     wcagver: WCAG 1.0 derivative
-    status: in effect
+    enactdate: 1990
     type: Non-discrimination Law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Education
@@ -78,7 +78,7 @@ policies:
     url: https://www.access-board.gov/the-board/laws/telecommunications-act
     updated: 2017-02-16
     wcagver: None
-    status: in effect
+    enactdate: 1996
     type: Accessibility Law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Federal Comunications Commission (FCC)
@@ -100,7 +100,7 @@ policies:
     url: http://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title14/14cfr382_main_02.tpl
     updated: 2017-02-16
     wcagver: WCAG 2.0
-    status: in effect
+    enactdate: 2013
     type: Nondiscrimination Law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Transportation (DoT)

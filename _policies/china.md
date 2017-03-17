@@ -6,10 +6,10 @@ updatemsg: Adding China to prototype from proposal document.
 # Related page: 
 policies:
   - title: Voluntary Web Standard
-    url: http://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html
+    url: http://www.chinesestandard.net/default.aspx?PDF-English-ID=YD/T%201761-2008
     updated: "?"
     wcagver: WCAG 2.0 derivative
-    status: in effect
+    enactdate: 2008
     type: Recommendation # other values: law/policy/procurement
     ministries:
       - title: China Academy of Telecommunication Research (CATR)
