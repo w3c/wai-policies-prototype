@@ -5,6 +5,7 @@ updated: 2017-03-17
 updatemsg: Updated to latest information on German policy and fixed broken links
 # Related page: German states – Not sure yet how to model this, I tend to not have this
 policies:
+
   - title: Act on Equal Opportunities for Disabled Persons of 2002
     url: 
     updated: 2017-03-17
@@ -18,6 +19,7 @@ policies:
     scope: public, private # keys that allows us to use any combination
     standard: None
     documents:
+
       - title: 
         url: 
         desc: 

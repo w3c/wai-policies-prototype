@@ -9,7 +9,7 @@ policies:
     url: http://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html
     updated: 2014-11-01
     wcagver: None
-    status: in effect
+    enactdate: 1985
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
       - title: Ministry of Justice
@@ -24,7 +24,7 @@ policies:
     url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
     updated: 2016-10-01
     wcagver: WCAG 2.0 Level AA
-    status: in effect
+    enactdate: 2016
     type: Policy
     ministries:
       - title: Treasury Board
