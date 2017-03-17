@@ -28,7 +28,7 @@ policies:
     updated: 2017-03-17
     wcagver: WCAG 2.0 derivative
     enactdate: 2002
-    type: #Procurement policy, Non-discrimination law, Accessibility law, Proposed Law, Recommendation, Accessibility policy
+    type: Accessibility law #Procurement policy, Non-discrimination law, Accessibility law, Proposed Law, Recommendation, Accessibility policy
     ministries:
       - title: Federal Ministry of the Interior
         url:
