@@ -25,7 +25,7 @@ policies:
     updated: 2015-12-02
     wcagver: WCAG 2.0 derivative
     enactdate: draft
-    type: Proposed law
+    type: Proposed Law
     ministries:
       - title: European Commission
         url: ttp://ec.europa.eu/index_en.htm
