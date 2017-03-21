@@ -23,7 +23,7 @@ policies:
   - title: Policy on Communications and Federal Identity
     url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
     updated: 2016-10-01
-    wcagver: WCAG 2.0 Level AA
+    wcagver: WCAG 2.0
     enactdate: 2016
     type: Policy
     ministries:

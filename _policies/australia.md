@@ -33,8 +33,8 @@ policies:
     url: https://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-10-01
     wcagver: WCAG 2.0
-    enactdate: draft
-    type: Procurement Policy
+    enactdate: 2016
+    type: Procurement recommendation
     ministries:
       - title: Minister of Finance
     scope: gov
