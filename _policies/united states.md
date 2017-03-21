@@ -10,7 +10,7 @@ policies:
     updated: 2017-02-16
     wcagver: WCAG 1.0 derivative
     enactdate: 1998
-    type: Procurement # other values: recommendation/law/policy
+    type: Procurement law # other values: recommendation/law/policy
     ministries:
       - title: General Services Administration (GSA)
         url: https://www.gsa.gov/
@@ -37,9 +37,9 @@ policies:
   - title: Americans with Disabilities Act of 1990 (ADA), as amended
     url: https://www.ada.gov/pubs/adastatute08.htm
     updated: 2017-02-16
-    wcagver: "?"
+    wcagver: None
     enactdate: 2009
-    type: Non-discrimination Law # other values: law/policy/procurement/recommendation
+    type: Non-discrimination law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Labor (DOL)
         url: https://www.dol.gov/
@@ -55,7 +55,7 @@ policies:
         url: http://www.access-board.gov/
     webonly: no # other values: yes
     scope: public, private # keys that allows us to use any combination
-    standard: false
+    standard: None
     documents:
       - title: DOL Laws & Regulations
         url: https://www.dol.gov/general/topic/disability/laws
@@ -65,7 +65,7 @@ policies:
     updated: 2017-02-16
     wcagver: WCAG 1.0 derivative
     enactdate: 1990
-    type: Non-discrimination Law # other values: law/policy/procurement/recommendation
+    type: Non-discrimination law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Education
         url: https://www.ed.gov/
@@ -79,7 +79,7 @@ policies:
     updated: 2017-02-16
     wcagver: None
     enactdate: 1996
-    type: Accessibility Law # other values: law/policy/procurement/recommendation
+    type: Accessibility law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Federal Comunications Commission (FCC)
         url: https://www.fcc.gov/
@@ -101,7 +101,7 @@ policies:
     updated: 2017-02-16
     wcagver: WCAG 2.0
     enactdate: 2013
-    type: Nondiscrimination Law # other values: law/policy/procurement/recommendation
+    type: Non-discrimination law # other values: law/policy/procurement/recommendation
     ministries:
       - title: Department of Transportation (DoT)
         url: http://www.dot.gov/
@@ -114,4 +114,20 @@ policies:
         desc: Final rule for website and kiosk accessibility published in the U.S. Federal Register on 12 Nov. 2013
       - title: Fact Sheet on Airline Web Site and Kiosk Accessibility (.pdf)
         url: https://www.transportation.gov/sites/dot.gov/files/docs/11-04-13%20Accessible%20Kiosks%20Fact%20Sheet_0_0.pdf
+  - title: 21st Century Communications and Video Accessibility of 2010 
+    url: http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-303939A1.doc
+    updated: 2017-03-20
+    wcagver: WCAG 2.0
+    enactdate: 2010
+    type: Accessibility law # other values: law/policy/procurement/recommendation
+    ministries:
+      - title: Federal Communications Commission (FCC)
+        url: https://www.fcc.gov/
+    webonly: no # other values: yes
+    scope: private # keys that allows us to use any combination
+    standard: False
+    documents: 
+      - title: FCC page on the 21st Century Communications and Video Accesibility Act
+        url: https://www.fcc.gov/general/twenty-first-century-communications-and-video-accessibility-act-0
+        desc: Provides an overall view of the Act with links to pages that contain the technical requirements for the various technologies covered by the Act.
 ---
