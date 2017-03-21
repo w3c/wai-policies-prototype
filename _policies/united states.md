@@ -114,7 +114,7 @@ policies:
         desc: Final rule for website and kiosk accessibility published in the U.S. Federal Register on 12 Nov. 2013
       - title: Fact Sheet on Airline Web Site and Kiosk Accessibility (.pdf)
         url: https://www.transportation.gov/sites/dot.gov/files/docs/11-04-13%20Accessible%20Kiosks%20Fact%20Sheet_0_0.pdf
-  - title: 21st Century Communications and Video Accessibility of 2010 
+  - title: 21st Century Communications and Video Accessibility Act of 2010 (CVAA)
     url: http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-303939A1.doc
     updated: 2017-03-20
     wcagver: WCAG 2.0
