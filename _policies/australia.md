@@ -32,7 +32,7 @@ policies:
   - title: Procurement Standard Guidance
     url: https://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-10-01
-    wcagver: WCAG 2.1
+    wcagver: WCAG 2.0
     enactdate: draft
     type: Procurement Policy
     ministries:
