@@ -117,7 +117,7 @@ policies:
   - title: 21st Century Communications and Video Accessibility Act of 2010 (CVAA)
     url: http://hraunfoss.fcc.gov/edocs_public/attachmatch/DOC-303939A1.doc
     updated: 2017-03-20
-    wcagver: WCAG 2.0
+    wcagver: None
     enactdate: 2010
     type: Accessibility law # other values: law/policy/procurement/recommendation
     ministries:
