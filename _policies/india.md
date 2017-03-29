@@ -18,4 +18,17 @@ policies:
     scope: public, private # keys that allows us to use any combination
     standard: False
     documents:
+  - title: Guidelines for Indian Government Websites
+    url: http://web.guidelines.gov.in 
+    updated: 2017-03-25
+    wcagver: WCAG 2.0 Level A
+    enactdate: 2009
+    type: Mandatory policy # other values: law/policy/procurement
+    ministries:
+      - title: Department of Administrative Reforms and Public Grievances 
+        url: http://darpg.nic.in/
+    webonly: no # other values: yes
+    scope: gov # keys that allows us to use any combination
+    standard: WCAG20
+    documents: 
 ---
