@@ -98,7 +98,7 @@ layout: default
     <p>Related page: Australian states (not implemented yet)</p>
     {% for p in policy.policies %}
     <details>
-      <summary>{{p.title}} (<a href="{{p.url}}">Link</a>)</summary>
+      <summary>{{p.title}} (<a href="{{p.url}}">Link<span class="no-display"> to {{p.title}}</span></a>)</summary>
       <div>
         <ul>
           <li>Enacted Date: {{p.enactdate}}</li>
