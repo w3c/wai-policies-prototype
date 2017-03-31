@@ -19,15 +19,15 @@ policies:
     scope: public, private # keys that allows us to use any combination
     standard: None
     documents:
+
       - title: 
         url: 
         desc: 
-  - title: "Federal Ordinance on Barrier-Free Information Technology"
-      - de: "Verordnung zur Schaffung barrierefreier Informationstechnik nach dem Behindertengleichstellungsgesetz (Barrierefreie-Informationstechnik-Verordnung - BITV 2.0)"
-    url: https://www.gesetze-im-internet.de/bitv_2_0/BJNR184300011.html
-    updated: 2011-09-12
+  - title: Federal Ordinance on Barrier-Free Information Technology
+    url: https://www.einfach-fuer-alle.de/artikel/bitv_english/
+    updated: 2017-03-17
     wcagver: WCAG 2.0 derivative
-    enactdate: 2012
+    enactdate: 2002
     type: Accessibility law #Procurement policy, Non-discrimination law, Accessibility law, Proposed Law, Recommendation, Accessibility policy
     ministries:
       - title: Federal Ministry of the Interior
