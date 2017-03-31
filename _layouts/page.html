@@ -18,6 +18,7 @@ layout: default
           <li>Type: {{p.type}}</li>
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {{p.webonly}}</li>
+          <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
             <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> – {{standard.desc}}</li>
           {% endif %}
