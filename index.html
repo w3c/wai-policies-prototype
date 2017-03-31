@@ -8,7 +8,7 @@ layout: default
   <h1>Contents</h1>
   <ul>
     {% for help in site.help %}
-      <li><a href="#x{{help.title | slugify }}" style="display:inline-block;">{{help.title}}</a></li>
+      <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
@@ -27,17 +27,8 @@ layout: default
   <h1>Web Accessibility Laws &amp; Policies</h1>
 
   {% for help in site.help %}
-    {% if help.title == "Disclaimer" %}
-    <details open>
-      <summary><h2 id="x{{help.title | slugify }}">{{help.title}}: This is <em>not legal advice</em>.</h2></summary>
-      <div>
-        {{help.content}}
-      </div>
-    </details>
-    {% else %}
     <h2 id="x{{help.title | slugify }}">{{help.title}}</h2>
     {{help.content}}
-    {% endif %}
   {% endfor %}
 
 <details open>
