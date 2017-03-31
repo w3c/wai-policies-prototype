@@ -8,7 +8,7 @@ layout: default
   <h1>Contents</h1>
   <ul>
     {% for help in site.help %}
-      <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
+      <li><a href="#x{{help.title | slugify }}" style="display:inline-block;">{{help.title}}</a></li>
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
