@@ -102,19 +102,21 @@ layout: default
       <div>
         <ul>
           <li>Enacted Date: {{p.enactdate}}</li>
-          <li>Responsible {%if p.ministries.size == 1%}Ministry{%else%}Ministries{%endif%}: {% for m in p.ministries %} <a href="{{m.url}}">{{m.title}}</a>{%if forloop.last == false%}; {%endif%}{%endfor%}</li>
+          <li>Responsible {%if p.ministries.size == 1%}Entity (Agency, Ministry, etc.){%else%}Entities (Agencies, Ministries, etc.){%endif%}: {% for m in p.ministries %} <a href="{{m.url}}">{{m.title}}</a>{%if forloop.last == false%}; {%endif%}{%endfor%}</li>
           <li>Type: {{p.type}}</li>
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
           <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
-            <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> – {{standard.desc}}</li>
-          {% endif %}
-          <li>Relevant Documents:
-            <ul>
-              {% for d in p.documents %}<li><a href="{{d.url}}">{{d.title}}</a>{%if d.desc %} – {{d.desc}}{%endif%}</li>{%endfor%}
-            </ul>
-          </li>
+            <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> {%if standard.desc %} – {{standard.desc}}{%endif%}</li>
+          {%endif%}
+          {%if p.documents %}
+            <li>Relevant Documents:
+             <ul>
+               {% for d in p.documents %}<li><a href="{{d.url}}">{{d.title}}</a>{%if d.desc %} – {{d.desc}}{%endif%}</li>{%endfor%}
+              </ul>
+           </li>
+          {%endif%}
         </ul>
       </div>
     </details>
