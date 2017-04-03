@@ -1,11 +1,12 @@
 ---
-title: Ireland
-# title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
+country:
+  en: Ireland
 updated: 2017-03-29
 updatemsg: Moved Ireland info into the policy prototype and updated with current info and links.
 # Related page: Australian states – Not sure yet how to model this, I tend to not have this
 policies:
-  - title: The Disability Act, 2005
+  - title:
+      en: The Disability Act, 2005
     url: http://www.oireachtas.ie/documents/bills28/acts/2005/a1405.pdf
     updated: 2017-04-01
     wcagver: None
@@ -23,7 +24,8 @@ policies:
       - title: About Disability Rights
         url: http://www.humanrights.gov.au/our-work/disability-rights/about-disability-rights
         desc: Overview and guide for the Disability Discrimination Act
-  - title: Equal Status Acts 2000 to 2004
+  - title:
+      en: Equal Status Acts 2000 to 2004
     url: http://www.irishstatutebook.ie/eli/2000/act/8/enacted/en/html
     updated: 2017-04-01
     wcagver: WCAG 2.0
@@ -39,7 +41,8 @@ policies:
       - title: Equality Act 2004
         url: http://www.irishstatutebook.ie/eli/2004/act/24/enacted/en/html
         desc: Amendment to several laws including the Equal Status Act 2000
-  - title: Employment Equality Acts 1998 and 2004
+  - title:
+      en: Employment Equality Acts 1998 and 2004
     url: http://www.irishstatutebook.ie/eli/1998/act/21/enacted/en/html
     updated: 2017-04-01
     wcagver: None

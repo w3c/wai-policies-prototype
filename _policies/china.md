@@ -1,11 +1,14 @@
 ---
-title: China
+country:  
+  en: "China"
+  zh: 中国
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-02-09
 updatemsg: Adding China to prototype from proposal document.
-# Related page: 
+# Related page:
 policies:
-  - title: Voluntary Web Standard
+  - title:  
+      en: Voluntary Web Standard
     url: http://www.chinesestandard.net/default.aspx?PDF-English-ID=YD/T%201761-2008
     updated: "?"
     wcagver: WCAG 2.0 derivative

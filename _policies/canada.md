@@ -1,11 +1,12 @@
 ---
-title: Canada
-# title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
+country:  
+  en: Canada
 updated: 2017-02-09
 updatemsg: Adding Canada to prototype from proposal document.
 # Related page: CA Provinces (https://w3c.github.io/WAI/Policy/CA-Provinces.html)
 policies:
-  - title: Canadian Human Rights Act
+  - title:  
+      en: Canadian Human Rights Act
     url: http://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html
     updated: 2014-11-01
     wcagver: None
@@ -19,8 +20,9 @@ policies:
     webonly: no # other values: yes
     scope: public, private # keys that allows us to use any combination
     standard: false
-    documents: 
-  - title: Policy on Communications and Federal Identity
+    documents:
+  - title:  
+      en: Policy on Communications and Federal Identity
     url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
     updated: 2016-10-01
     wcagver: WCAG 2.0
