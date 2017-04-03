@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 ---
 
 <div class="home" id="top">
@@ -92,13 +92,18 @@ layout: default
 
 <ul>
 {% for policy in site.policies %}
-  <li style="margin-bottom: 2em" id="x{{policy.title | slugify }}" data-updated="{{policy.updated}}">
-    <h2><a href="{{policy.url | prepend: site.baseurl}}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</h2>
+  <li style="margin-bottom: 2em" id="x{{policy.country.en | slugify }}" data-updated="{{policy.updated}}">
+    <h2>
+      {% assign titleurl = policy.url |  prepend: site.baseurl %}
+      {% include multilang-title.html title=policy.country url=titleurl %}
+    </h2>
     <p>Last Updated: {{policy.updated | date: "%-d %B %Y" }}{%if policy.updatemsg%} – {{policy.updatemsg}}{%endif%}
     <p>Related page: Australian states (not implemented yet)</p>
     {% for p in policy.policies %}
     <details>
-      <summary>{{p.title}} (<a href="{{p.url}}">Link<span class="no-display"> to {{p.title}}</span></a>)</summary>
+      <summary>
+        {% include multilang-title.html title=p.title url=p.url %}
+      </summary>
       <div>
         <ul>
           <li>Enacted Date: {{p.enactdate}}</li>
@@ -133,7 +138,7 @@ layout: default
   <li><strong>Public sector</strong> – Includes government and government-run or owned entities, and entities that receive government funding.</li>
   <li><strong>Private sector</strong> – Businesses and organizations that are not part of the public sector, including non-profit organizations.</li>
   <li><strong>WCAG derivative</strong> - Used when a standard is based on a version of WCAG, but some requirements were excluded or modified or additional non-WCAG requirements were added.</li>
-</ul>  
+</ul>
 
 </div>
 
