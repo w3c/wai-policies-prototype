@@ -1,11 +1,13 @@
 ---
-title: Australia
+country:
+  en: Australia
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2016-08-30
 updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
 # Related page: Australian states – Not sure yet how to model this, I tend to not have this
 policies:
-  - title: Disability Discrimination Act 1992 (DDA)
+  - title:
+      en: Disability Discrimination Act 1992 (DDA)
     url: https://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-08-30
     wcagver: WCAG 2.0
@@ -29,7 +31,8 @@ policies:
       - title: Digital Service Standard accessibility requirement
         url: https://www.dto.gov.au/standard/9-make-it-accessible/
         desc: Guide to the standard used by Australian Government agencies for digital services.
-  - title: Procurement Standard Guidance
+  - title:  
+      en: Procurement Standard Guidance
     url: https://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-10-01
     wcagver: WCAG 2.0
