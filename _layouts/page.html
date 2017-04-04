@@ -4,14 +4,14 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }} {%if page.native_title%}({{page.native_title}}){%endif%}</h1>
+    <h1 class="post-title">{% include multilang-title.html title=page.country url=p.url %}</h1>
   </header>
 
   <div class="post-content">
     <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}
     <p>Related page: Australian states (not implemented yet)</p>
     {% for p in page.policies %}
-      <h2><a href="{{p.url}}">{{p.title}}</a></h2>
+      <h2 style="line-height: 1.5;">{% include multilang-title.html title=p.title url=p.url %}</h2>
       <div>
         <ul>
           <li>Date enacted: {{p.enactdate}}</li>
