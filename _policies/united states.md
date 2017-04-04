@@ -131,7 +131,7 @@ policies:
         url: https://www.fcc.gov/
     webonly: no # other values: yes
     scope: private # keys that allows us to use any combination
-    standard: False
+    standard: WCAG20AA;Revised508
     documents:
       - title: FCC page on the 21st Century Communications and Video Accesibility Act
         url: https://www.fcc.gov/general/twenty-first-century-communications-and-video-accessibility-act-0

@@ -113,7 +113,10 @@ layout: default
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
           <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
-            <li>Standard: {% assign standard = site.data.standards[p.standard]%} <a href="{{standard.url}}">{{standard.title}}</a> {%if standard.desc %} – {{standard.desc}}{%endif%}</li>
+            {% assign standards = p.standard | split: ";" %}
+            {% for s in standards %}
+            <li>Standard: {% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %} – {{stndrd.desc}}{%endif%}</li>
+            {%endfor%}
           {%endif%}
           {%if p.documents %}
             <li>Relevant Documents:
