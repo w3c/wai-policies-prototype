@@ -1,7 +1,7 @@
 ---
 country:
   en: Japan
-  jp: 日本国
+  ja: 日本国
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-04-04
 updatemsg: Placeholder for Japan information in prototype.

@@ -1,7 +1,7 @@
 ---
 country:
   en: Denmark
-  dk: Danmark
+  da: Danmark
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-04-04
 updatemsg: Placeholder for Denmark information in prototype.
