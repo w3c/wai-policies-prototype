@@ -1,0 +1,503 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>List a Web Accessibility Evaluation Tool</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="css/wai-act.min.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="js/modernizr.min.js" type="text/javascript"></script>
+  <style>
+    fieldset {border:none; padding:0 0 0 .5em; border-left: .25em solid #ccc; margin-bottom: 2em;}
+    fieldset legend {font-size: 1.5em; font-weight: bold;}
+    fieldset > fieldset legend {font-size: 1.25em;}
+    fieldset > fieldset > fieldset legend {font-size: 1em;}
+  </style>
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="img/w3c.png"></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="img/wai.png"></a>
+    </div>
+  </header>
+  <main class="with-side-menu" role="main">
+    <h1 class="page-title">
+      <a href="../">Web Accessibility Evaluation Tools List</a>
+    </h1>
+    <p><a href="../">Back to the Evaluation Tools List</a></p>
+        <h2>List a Web Accessibility Evaluation Tool</h2>
+    <p>This form allows you to provide information about web accessibility evaluation tools. Tool vendors can use this form to add and update information about their tools. You can also use this form to let us know about tools, for example if you are a tool user, and we will try to contact the corresponding tool vendor.</p>
+    <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published. A notification email is sent to you after submitting this form. This email is also copied to a publicly archived <a href="http://lists.w3.org/Archives/Public/public-wai-ert-tools/">mailing list</a>.</p>
+
+    <p>Contact <a href="mailto:shadi@w3.org">Shadi Abou-Zahra (shadi@w3.org)</a> if you have questions or comments.</p>
+
+    <aside class="editbox">
+    	<h3>Edit an entry</h3>
+			<p>You can load the information of an existing entry, if you want to edit it. Use the following button to load the data file that was sent to you in the notification email from your previous form submission:</p>
+			<button class="btn" id="uploadbutton">Load tool information</button>
+    	<input type="file" id="file" name="file">
+    	<output id="list" aria-live="assertive"></output>
+    </aside>
+    
+
+  <div id="hForm">
+  <form name="submission" id="submission" method="post" action="submission.php">
+  <fieldset>
+    <legend><span>Information about you</span></legend>
+    <h2 class="visuallyhidden">Information about you</h2>
+    <div class="form-block-mini">
+      <div class="form-row required"><label for="name">Your Name</label><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
+      <div class="form-row required"><label for="email">Your E-Mail</label><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
+    </div>
+    <fieldset class="border-less"><legend><span>Your Role</span></legend>
+      <ul class="form-block-mini">
+        <li class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></li>
+        <li class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span><label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></li>
+      </ul>
+    </fieldset>
+  </fieldset>
+
+    <fieldset>
+      <legend><span>Tool identification</span></legend>
+      <h3 class="visuallyhidden">Tool identification</h3>
+      <ul class="form-block-mini">
+        <li class="form-row required"><label for="title">Tool name</label><span><input name="title" id="title" type="text"  value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="creator">Vendor name</label><span><input name="creator" id="creator" type="text" value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="description">Tool Description (max.: 300 chars)</label><span><textarea name="description" id="description" cols="60" rows="10" maxlength="300" required aria-required="true" aria-describedby="descdesc"></textarea><br><span id="descdesc">Please enter only plain text (no HTML). URIs are not linked.</span></span></li>
+        <li class="form-row required"><label for="location">Web Address (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="location" id="location" type="url" value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="release">Release date (format: YYYY-MM-DD)</label><span><input name="release" id="release" type="date" value="" required aria-required="true" aria-describedby="releasedesc"><br><span id="releasedesc">You can enter the current date if you are not a tool vendor.</span></span></li>
+        <li class="form-row"><label for="version">Version Number</label><span><input name="version" id="version" type="text"></span></li>
+      </ul><br>
+      <ul class="form-block-mini">
+      	<li class="form-row"><label for="location_a11yinfo">Web address to information about the accessibility of the tool (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="location_a11yinfo" id="location_a11yinfo" type="url" value=""></span></li>
+      </ul>
+      <div style="display:none" aria-hidden="true">
+        <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
+      </div>
+    </fieldset>
+
+    <fieldset id="fs-language"><legend>Tool languages:</legend><h3 class="visuallyhidden" id="language">Tool languages:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="language_pt-br" id="language_9b83291b43a4ed6fe42fc9467c48c883" name="language[]" value="pt-br" type="checkbox"> </span><label for="language_9b83291b43a4ed6fe42fc9467c48c883">Brazilian Portuguese (<span lang="pt-br">Português Brasileiro</span>)</label></li><li class="form-row"><span><input data-id="language_bg" id="language_517534bf66a4a97cd920b5cb7ffead50" name="language[]" value="bg" type="checkbox"> </span><label for="language_517534bf66a4a97cd920b5cb7ffead50">Bulgarian (<span lang="bg">Български</span>)</label></li><li class="form-row"><span><input data-id="language_zh-hans" id="language_2a09effc8267a9b8cb61e9f660cc2625" name="language[]" value="zh-hans" type="checkbox"> </span><label for="language_2a09effc8267a9b8cb61e9f660cc2625">Chinese, Simplified (<span lang="zh-hans">简体中文</span>)</label></li><li class="form-row"><span><input data-id="language_zh-hant" id="language_bdad206e3bb18040f871005989697dae" name="language[]" value="zh-hant" type="checkbox"> </span><label for="language_bdad206e3bb18040f871005989697dae">Chinese, Traditional (<span lang="zh-hant">繁體中文</span>)</label></li><li class="form-row"><span><input data-id="language_cs" id="language_c29c79e169812c2ae11618e9d2be9820" name="language[]" value="cs" type="checkbox"> </span><label for="language_c29c79e169812c2ae11618e9d2be9820">Czech (<span lang="cs">Česky</span>)</label></li><li class="form-row"><span><input data-id="language_da" id="language_e286f0fec70c0266ffbfe3f973489067" name="language[]" value="da" type="checkbox"> </span><label for="language_e286f0fec70c0266ffbfe3f973489067">Danish (<span lang="da">Dansk</span>)</label></li><li class="form-row"><span><input data-id="language_nl" id="language_b7d2f560535e19b1e1808e9863e1cd24" name="language[]" value="nl" type="checkbox"> </span><label for="language_b7d2f560535e19b1e1808e9863e1cd24">Dutch (<span lang="nl">Nederlands</span>)</label></li><li class="form-row"><span><input data-id="language_en" id="language_78463a384a5aa4fad5fa73e2f506ecfc" name="language[]" value="en" type="checkbox"> </span><label for="language_78463a384a5aa4fad5fa73e2f506ecfc">English</label></li><li class="form-row"><span><input data-id="language_fi" id="language_ff1a5ac941e30876e7520cb665920e7d" name="language[]" value="fi" type="checkbox"> </span><label for="language_ff1a5ac941e30876e7520cb665920e7d">Finnish (<span lang="fi">Suomi</span>)</label></li><li class="form-row"><span><input data-id="language_fr" id="language_4274c0ce2f397782a30d86e41710c999" name="language[]" value="fr" type="checkbox"> </span><label for="language_4274c0ce2f397782a30d86e41710c999">French (<span lang="fr">Français</span>)</label></li><li class="form-row"><span><input data-id="language_gl" id="language_c2b18b0f7efed39dcf94ce58526f04f6" name="language[]" value="gl" type="checkbox"> </span><label for="language_c2b18b0f7efed39dcf94ce58526f04f6">Galician (<span lang="gl">Galego</span>)</label></li><li class="form-row"><span><input data-id="language_de" id="language_89c4b92edf6ef4be238d33d5772e1f13" name="language[]" value="de" type="checkbox"> </span><label for="language_89c4b92edf6ef4be238d33d5772e1f13">German (<span lang="de">Deutsch</span>)</label></li><li class="form-row"><span><input data-id="language_it" id="language_9da4b051b25cb09811268a3fdd30b0f6" name="language[]" value="it" type="checkbox"> </span><label for="language_9da4b051b25cb09811268a3fdd30b0f6">Italian (<span lang="it">Italiano</span>)</label></li><li class="form-row"><span><input data-id="language_ja" id="language_a64a5fa3c94428d7f581beba032ee802" name="language[]" value="ja" type="checkbox"> </span><label for="language_a64a5fa3c94428d7f581beba032ee802">Japanese (<span lang="ja">日本語</span>)</label></li><li class="form-row"><span><input data-id="language_ko" id="language_90c09b2366dd55cd447164f977d30034" name="language[]" value="ko" type="checkbox"> </span><label for="language_90c09b2366dd55cd447164f977d30034">Korean (<span lang="ko">한국어</span>)</label></li><li class="form-row"><span><input data-id="language_pl" id="language_48478615c49a0be5f02c3ddca8c5f206" name="language[]" value="pl" type="checkbox"> </span><label for="language_48478615c49a0be5f02c3ddca8c5f206">Polish (<span lang="pl">Polski</span>)</label></li><li class="form-row"><span><input data-id="language_pt" id="language_b0d19e1304807e1d9aa093ee0c20748a" name="language[]" value="pt" type="checkbox"> </span><label for="language_b0d19e1304807e1d9aa093ee0c20748a">Portuguese (<span lang="pt">Português</span>)</label></li><li class="form-row"><span><input data-id="language_ro" id="language_5a7b19decf66e479987aa03e5750a874" name="language[]" value="ro" type="checkbox"> </span><label for="language_5a7b19decf66e479987aa03e5750a874">Romanian (<span lang="ro">Română</span>)</label></li><li class="form-row"><span><input data-id="language_sr" id="language_7267e74b2326187f3e655a8fab394842" name="language[]" value="sr" type="checkbox"> </span><label for="language_7267e74b2326187f3e655a8fab394842">Serbian (<span lang="sr">Српски</span>)</label></li><li class="form-row"><span><input data-id="language_es" id="language_8a929d4bdd739ea9651dd49d7910c8c4" name="language[]" value="es" type="checkbox"> </span><label for="language_8a929d4bdd739ea9651dd49d7910c8c4">Spanish (<span lang="es">Castellano</span>)</label></li><li class="form-row"><span></span><label for="language_other">Other: <input id="language_other" name="language[other]" type="text"></label></li></ul></fieldset>
+    <fieldset id="fs-guideline"><legend>Select Guidelines that can be checked using this tool:</legend><h3 class="visuallyhidden" id="guideline">Select Guidelines that can be checked using this tool:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="guideline_wcag20" id="guideline_bb3f5259a15dd59563ea80b92ab690fc" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_bb3f5259a15dd59563ea80b92ab690fc"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></li><li class="form-row"><span><input data-id="guideline_wcag10" id="guideline_87d3c617d646caca775a590c4d695a51" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_87d3c617d646caca775a590c4d695a51"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></li><li class="form-row"><span><input data-id="guideline_section508" id="guideline_5af652dea9b51f8abbadbe4fdfad296b" name="guideline[]" value="section508" type="checkbox"> </span><label for="guideline_5af652dea9b51f8abbadbe4fdfad296b">Section 508, <abbr title="United States">US</abbr> federal procurement standard</label></li><li class="form-row"><span><input data-id="guideline_jis" id="guideline_ad63c8a35c27ba85e6cc27df484cb285" name="guideline[]" value="jis" type="checkbox"> </span><label for="guideline_ad63c8a35c27ba85e6cc27df484cb285"><abbr title="Japanese Industry Standard">JIS</abbr>, Japanese industry standard</label></li><li class="form-row"><span><input data-id="guideline_stanca" id="guideline_b96dd323caae4f81b84861440b0c1c66" name="guideline[]" value="stanca" type="checkbox"> </span><label for="guideline_b96dd323caae4f81b84861440b0c1c66">Stanca Act, Italian accessibility legislation</label></li><li class="form-row"><span><input data-id="guideline_bitv20" id="guideline_44dd748aa8df0d0e9505fd1e7d009cb3" name="guideline[]" value="bitv20" type="checkbox"> </span><label for="guideline_44dd748aa8df0d0e9505fd1e7d009cb3"><abbr lang="de" title="Barrierefreie Informationstechnik-Verordnung 2.0">BITV 2.0</abbr>, German government standard</label></li><li class="form-row"><span><input data-id="guideline_bitv10" id="guideline_77f64fb7f839d95bd2ade5e34dc53ff0" name="guideline[]" value="bitv10" type="checkbox"> </span><label for="guideline_77f64fb7f839d95bd2ade5e34dc53ff0"><abbr lang="de" title="Barrierefreie Informationstechnik-Verordnung">BITV</abbr>, German government standard</label></li><li class="form-row"><span><input data-id="guideline_rgaa" id="guideline_743c7c204bae664bc1218307df78e7fd" name="guideline[]" value="rgaa" type="checkbox"> </span><label for="guideline_743c7c204bae664bc1218307df78e7fd"><abbr lang="fr" title="Référentiel Général d’Accessibilité pour les Administrations">RGAA</abbr>, French government standard</label></li><li class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></li></ul></fieldset>
+    <fieldset id="fs-assists"><legend>Assists evaluations by:</legend><h3 class="visuallyhidden" id="assists">Assists evaluations by:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="assists_report" id="assists_f8476f39bde8f6d8a4c59f9d89438cd0" name="assists[]" value="report" type="checkbox"> </span><label for="assists_f8476f39bde8f6d8a4c59f9d89438cd0">Generating reports of evaluation results <a href="http://www.w3.org/WAI/eval/selectingtools.html#reports" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_wizard" id="assists_027cce12ddc77e63acd5ee20f10cb6c6" name="assists[]" value="wizard" type="checkbox"> </span><label for="assists_027cce12ddc77e63acd5ee20f10cb6c6">Providing step-by-step evaluation guidance <a href="http://www.w3.org/WAI/eval/selectingtools.html#wizards" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_inpage" id="assists_13c8fcbda4edc03d8317fe6b8e514c3c" name="assists[]" value="inpage" type="checkbox"> </span><label for="assists_13c8fcbda4edc03d8317fe6b8e514c3c">Displaying information within web pages <a href="http://www.w3.org/WAI/eval/selectingtools.html#in-page" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_transformation" id="assists_8a460eea8495905bc71e9c49f805a07b" name="assists[]" value="transformation" type="checkbox"> </span><label for="assists_8a460eea8495905bc71e9c49f805a07b">Modifying the presentation of web pages <a href="http://www.w3.org/WAI/eval/selectingtools.html#transformation" title="opens new window" class="btn" target="selectingtools">Info</a></label></li></ul></fieldset>
+    <fieldset id="fs-automated"><legend>Supports automated checking of:</legend><h3 class="visuallyhidden" id="automated">Supports automated checking of:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="automated_automated" id="automated_656e46637a072a158808851a58758b46" name="automated[]" value="automated" type="checkbox"> </span><label for="automated_656e46637a072a158808851a58758b46">Single web pages</label></li><li class="form-row"><span><input data-id="automated_crawl" id="automated_4bb82fd0cb3adeda11265ec58426889e" name="automated[]" value="crawl" type="checkbox"> </span><label for="automated_4bb82fd0cb3adeda11265ec58426889e">Groups of web pages or web sites</label></li><li class="form-row"><span><input data-id="automated_authenticated" id="automated_2575192d3c2cd6888ed231821742f589" name="automated[]" value="authenticated" type="checkbox"> </span><label for="automated_2575192d3c2cd6888ed231821742f589">Restricted or password protected pages</label></li></ul></fieldset>
+    
+    <fieldset id="fs-technology"><legend>Checks the accessibility of:</legend><h3 class="visuallyhidden" id="technology">Checks the accessibility of:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="technology_css" id="technology_6d659fccc7b9f919c0fe2bdb2406bda2" name="technology[]" value="css" type="checkbox"> </span><label for="technology_6d659fccc7b9f919c0fe2bdb2406bda2"><abbr title="Cascading Style Sheets">CSS</abbr></label></li><li class="form-row"><span><input data-id="technology_html" id="technology_0fdcd781f8d98fc3558996ad1f611756" name="technology[]" value="html" type="checkbox"> </span><label for="technology_0fdcd781f8d98fc3558996ad1f611756"><abbr title="Hypertext Markup Language">HTML</abbr></label></li><li class="form-row"><span><input data-id="technology_xhtml" id="technology_9b1d9d78fa40c67de32e63edb86db1d2" name="technology[]" value="xhtml" type="checkbox"> </span><label for="technology_9b1d9d78fa40c67de32e63edb86db1d2"><abbr title="Extensible Hypertext Markup Language">XHTML</abbr></label></li><li class="form-row"><span><input data-id="technology_svg" id="technology_07e510af253b01c8763865271af599bc" name="technology[]" value="svg" type="checkbox"> </span><label for="technology_07e510af253b01c8763865271af599bc"><abbr title="Scalabale Vector Grpahics">SVG</abbr></label></li><li class="form-row"><span><input data-id="technology_pdf" id="technology_814cde75b0531f8edb4eec2cce20bc34" name="technology[]" value="pdf" type="checkbox"> </span><label for="technology_814cde75b0531f8edb4eec2cce20bc34"><abbr title="Portable Document Format">PDF</abbr> documents</label></li><li class="form-row"><span><input data-id="technology_images" id="technology_fff0d600f8a0b5e19e88bfb821dd1157" name="technology[]" value="images" type="checkbox"> </span><label for="technology_fff0d600f8a0b5e19e88bfb821dd1157">Images</label></li><li class="form-row"><span><input data-id="technology_smil" id="technology_5dba93eed3eb8b492bfb46eeaec7753e" name="technology[]" value="smil" type="checkbox"> </span><label for="technology_5dba93eed3eb8b492bfb46eeaec7753e"><abbr title="Synchronized Multimedia Integration Language">SMIL</abbr></label></li><li class="form-row"><span><input data-id="technology_office" id="technology_3cdd53cd32962900a5a37a2a87aaa24a" name="technology[]" value="office" type="checkbox"> </span><label for="technology_3cdd53cd32962900a5a37a2a87aaa24a">Microsoft Office documents</label></li><li class="form-row"><span></span><label for="technology_other">Other: <input id="technology_other" name="technology[other]" type="text"></label></li></ul></fieldset>
+		<div class="group">
+
+	    <fieldset id="fs-tooltype"><legend>Type of tool:</legend><h3 class="visuallyhidden" id="tooltype">Type of tool:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="tooltype_desktop" id="tooltype_f0a38c4ddc6779c93630465b6602c772" name="tooltype[]" value="desktop" type="checkbox"> </span><label for="tooltype_f0a38c4ddc6779c93630465b6602c772">Desktop application</label></li><li class="form-row"><span><input data-id="tooltype_mobile" id="tooltype_105f5528024108b6303154f6217ca574" name="tooltype[]" value="mobile" type="checkbox"> </span><label for="tooltype_105f5528024108b6303154f6217ca574">Mobile application</label></li><li class="form-row"><span><input data-id="tooltype_cli" id="tooltype_84ec55fb97cd9b52353af090bd08152d" name="tooltype[]" value="cli" type="checkbox"> </span><label for="tooltype_84ec55fb97cd9b52353af090bd08152d">Command line tool</label></li><li class="form-row"><span><input data-id="tooltype_browserplugin" id="tooltype_cb03fd7eb97ec3740c88e978dc6a7fc4" name="tooltype[]" value="browserplugin" type="checkbox"> </span><label for="tooltype_cb03fd7eb97ec3740c88e978dc6a7fc4">Browser plugin</label></li><li class="form-row"><span><input data-id="tooltype_atplugin" id="tooltype_4359d00e2c36a79608d45c07ddbcfe63" name="tooltype[]" value="atplugin" type="checkbox"> </span><label for="tooltype_4359d00e2c36a79608d45c07ddbcfe63">Authoring tool plugin</label></li><li class="form-row"><span><input data-id="tooltype_online" id="tooltype_22a38208e9836857d3caea380e8b9ef8" name="tooltype[]" value="online" type="checkbox"> </span><label for="tooltype_22a38208e9836857d3caea380e8b9ef8">Online tool</label></li></ul></fieldset>
+	    <fieldset id="fs-desktop"><legend>Desktop application for:</legend><h3 class="visuallyhidden" id="desktop">Desktop application for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="desktop_windows" id="desktop_bb79f96acbff544ded541446c9c7c894" name="desktop[]" value="windows" type="checkbox"> </span><label for="desktop_bb79f96acbff544ded541446c9c7c894">Microsoft Windows</label></li><li class="form-row"><span><input data-id="desktop_osx" id="desktop_64f704062ae5be467afae9b71004bc41" name="desktop[]" value="osx" type="checkbox"> </span><label for="desktop_64f704062ae5be467afae9b71004bc41">Apple (Mac) OS X</label></li><li class="form-row"><span><input data-id="desktop_linux" id="desktop_edc9f0a5a5d57797bf68e37364743831" name="desktop[]" value="linux" type="checkbox"> </span><label for="desktop_edc9f0a5a5d57797bf68e37364743831">Linux</label></li><li class="form-row"><span><input data-id="desktop_solaris" id="desktop_eaf36c98b91893b7f79bd5184a23d377" name="desktop[]" value="solaris" type="checkbox"> </span><label for="desktop_eaf36c98b91893b7f79bd5184a23d377">Solaris</label></li><li class="form-row"><span><input data-id="desktop_bsd" id="desktop_80abf60954f46497bc501d80e52cc8ff" name="desktop[]" value="bsd" type="checkbox"> </span><label for="desktop_80abf60954f46497bc501d80e52cc8ff"><abbr title="Berkley Shell Distribution">BSD</abbr> Unix</label></li><li class="form-row"><span></span><label for="desktop_other">Other: <input id="desktop_other" name="desktop[other]" type="text"></label></li></ul></fieldset>
+	    <fieldset id="fs-mobile"><legend>Mobile application for:</legend><h3 class="visuallyhidden" id="mobile">Mobile application for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="mobile_ios" id="mobile_4d8baea05f8b9545074a9d8b51fb9c4b" name="mobile[]" value="ios" type="checkbox"> </span><label for="mobile_4d8baea05f8b9545074a9d8b51fb9c4b">Apple iOS</label></li><li class="form-row"><span><input data-id="mobile_android" id="mobile_e84e30b9390cdb64db6db2c9ab87846d" name="mobile[]" value="android" type="checkbox"> </span><label for="mobile_e84e30b9390cdb64db6db2c9ab87846d">Android</label></li><li class="form-row"><span><input data-id="mobile_windows" id="mobile_2a737b8cd5c9eb78ed3c1f6dd0e27395" name="mobile[]" value="windows" type="checkbox"> </span><label for="mobile_2a737b8cd5c9eb78ed3c1f6dd0e27395">Microsoft Windows Phone</label></li><li class="form-row"><span><input data-id="mobile_blackberry" id="mobile_30a48b302eec7672574a69719c5309f8" name="mobile[]" value="blackberry" type="checkbox"> </span><label for="mobile_30a48b302eec7672574a69719c5309f8">Blackberry</label></li><li class="form-row"><span><input data-id="mobile_firefox" id="mobile_68feb8c2376488e866692847c9819951" name="mobile[]" value="firefox" type="checkbox"> </span><label for="mobile_68feb8c2376488e866692847c9819951">Firefox OS</label></li><li class="form-row"><span></span><label for="mobile_other">Other: <input id="mobile_other" name="mobile[other]" type="text"></label></li></ul></fieldset>
+			<fieldset id="fs-browsers"><legend>Browser plugin for:</legend><h3 class="visuallyhidden" id="browsers">Browser plugin for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="browsers_chrome" id="browsers_986c37480b1f1c2e443504b38b6361b4" name="browsers[]" value="chrome" type="checkbox"> </span><label for="browsers_986c37480b1f1c2e443504b38b6361b4">Chrome</label></li><li class="form-row"><span><input data-id="browsers_firefox" id="browsers_763f7f1aec350cd1a46238d1d5c3c229" name="browsers[]" value="firefox" type="checkbox"> </span><label for="browsers_763f7f1aec350cd1a46238d1d5c3c229">Firefox</label></li><li class="form-row"><span><input data-id="browsers_oldie" id="browsers_4f14ca55f878b9b754ef0d35184e756c" name="browsers[]" value="oldie" type="checkbox"> </span><label for="browsers_4f14ca55f878b9b754ef0d35184e756c">Internet Explorer &le; 8</label></li><li class="form-row"><span><input data-id="browsers_ie" id="browsers_ed255a4cbb73f876d58daf6f90491b56" name="browsers[]" value="ie" type="checkbox"> </span><label for="browsers_ed255a4cbb73f876d58daf6f90491b56">Internet Explorer &ge; 9</label></li><li class="form-row"><span><input data-id="browsers_oldopera" id="browsers_850fd15610c1a55a3f33e3a8191bde82" name="browsers[]" value="oldopera" type="checkbox"> </span><label for="browsers_850fd15610c1a55a3f33e3a8191bde82">Opera &le; 12</label></li><li class="form-row"><span><input data-id="browsers_opera" id="browsers_fb7221df99a12de3a8c7929605458c57" name="browsers[]" value="opera" type="checkbox"> </span><label for="browsers_fb7221df99a12de3a8c7929605458c57">Opera &ge; 15</label></li><li class="form-row"><span><input data-id="browsers_safari" id="browsers_50de9bc68c93dc32d8c7c90593471760" name="browsers[]" value="safari" type="checkbox"> </span><label for="browsers_50de9bc68c93dc32d8c7c90593471760">Safari</label></li><li class="form-row"><span></span><label for="browsers_other">Other: <input id="browsers_other" name="browsers[other]" type="text"></label></li></ul></fieldset>
+	    <fieldset id="fs-authoringtools"><legend>Authoring tool plugin for:</legend><h3 class="visuallyhidden" id="authoringtools">Authoring tool plugin for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="authoringtools_dreamweaver" id="authoringtools_6b8d8ff8265cbf47c11ebbc94e4d3e71" name="authoringtools[]" value="dreamweaver" type="checkbox"> </span><label for="authoringtools_6b8d8ff8265cbf47c11ebbc94e4d3e71">Adobe Dreamweaver</label></li><li class="form-row"><span><input data-id="authoringtools_flash" id="authoringtools_df38f18e5934d27ba785cf698f4795e9" name="authoringtools[]" value="flash" type="checkbox"> </span><label for="authoringtools_df38f18e5934d27ba785cf698f4795e9">Adobe Flash</label></li><li class="form-row"><span><input data-id="authoringtools_photoshop" id="authoringtools_f544f262e964e2067e7fb53aa23c6379" name="authoringtools[]" value="photoshop" type="checkbox"> </span><label for="authoringtools_f544f262e964e2067e7fb53aa23c6379">Adobe Photoshop</label></li><li class="form-row"><span><input data-id="authoringtools_edge" id="authoringtools_c47b4540809af4ba0426ee0a58c35ab4" name="authoringtools[]" value="edge" type="checkbox"> </span><label for="authoringtools_c47b4540809af4ba0426ee0a58c35ab4">Adobe Edge</label></li><li class="form-row"><span><input data-id="authoringtools_eclipse" id="authoringtools_32f7222026696f30787889194dee83e5" name="authoringtools[]" value="eclipse" type="checkbox"> </span><label for="authoringtools_32f7222026696f30787889194dee83e5">Eclipse</label></li><li class="form-row"><span><input data-id="authoringtools_expressionweb" id="authoringtools_f23609b07ae1026219d943970af1da69" name="authoringtools[]" value="expressionweb" type="checkbox"> </span><label for="authoringtools_f23609b07ae1026219d943970af1da69">Microsoft Expression Web</label></li><li class="form-row"><span><input data-id="authoringtools_visualstudio" id="authoringtools_4d2668b972e7148f97f8b2119e107e11" name="authoringtools[]" value="visualstudio" type="checkbox"> </span><label for="authoringtools_4d2668b972e7148f97f8b2119e107e11">Microsoft Visual Studio</label></li><li class="form-row"><span><input data-id="authoringtools_sublimetext" id="authoringtools_3946f53970d4d77624f2832c29f8baee" name="authoringtools[]" value="sublimetext" type="checkbox"> </span><label for="authoringtools_3946f53970d4d77624f2832c29f8baee">Sublime Text</label></li><li class="form-row"><span></span><label for="authoringtools_other">Other: <input id="authoringtools_other" name="authoringtools[other]" type="text"></label></li></ul></fieldset>
+	    <fieldset id="fs-onlineservice"><legend>Online service:</legend><h3 class="visuallyhidden" id="onlineservice">Online service:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="onlineservice_online" id="onlineservice_118236c4f48b24ba1544a20bdba8ce40" name="onlineservice[]" value="online" type="checkbox"> </span><label for="onlineservice_118236c4f48b24ba1544a20bdba8ce40">Online checker</label></li><li class="form-row"><span><input data-id="onlineservice_hosted" id="onlineservice_0d69e2f6ac37a7b70f7ed135db71cc2d" name="onlineservice[]" value="hosted" type="checkbox"> </span><label for="onlineservice_0d69e2f6ac37a7b70f7ed135db71cc2d">Hosted service</label></li><li class="form-row"><span><input data-id="onlineservice_server" id="onlineservice_44b4819c27348e08ee8cba79cea30801" name="onlineservice[]" value="server" type="checkbox"> </span><label for="onlineservice_44b4819c27348e08ee8cba79cea30801">Server installation</label></li></ul></fieldset>
+    </div>
+
+    <fieldset id="fs-license"><legend>License type:</legend><h3 class="visuallyhidden" id="license">License type:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="license_free" id="license_fa582cbfbd4bff6d25fcbaece0765c71" name="license[]" value="free" type="checkbox"> </span><label for="license_fa582cbfbd4bff6d25fcbaece0765c71">Free Software</label></li><li class="form-row"><span><input data-id="license_open" id="license_81f4074bd6383b7398ffe2525180cbae" name="license[]" value="open" type="checkbox"> </span><label for="license_81f4074bd6383b7398ffe2525180cbae">Open Source</label></li><li class="form-row"><span><input data-id="license_trial" id="license_0f3da73c6ddbaa4c2296e93b1b0ab94c" name="license[]" value="trial" type="checkbox"> </span><label for="license_0f3da73c6ddbaa4c2296e93b1b0ab94c">Trial or Demo</label></li><li class="form-row"><span><input data-id="license_commercial" id="license_b2788e1ab6be65f1c38bf7d23cd081f1" name="license[]" value="commercial" type="checkbox"> </span><label for="license_b2788e1ab6be65f1c38bf7d23cd081f1">Commercial</label></li><li class="form-row"><span><input data-id="license_enterprise" id="license_a0f27638260642afb474516cc918407e" name="license[]" value="enterprise" type="checkbox"> </span><label for="license_a0f27638260642afb474516cc918407e">Enterprise</label></li></ul></fieldset>
+		<ul class="form-block-mini">
+			<li class="form-row"><label for="cmnt">Comment:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" required="" aria-required="true" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">This comment will be included in email but not published on the tools list.</span></span></li>
+		</ul>
+
+  <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
+
+    </form>
+  </div>
+</main>
+<footer role="contentinfo">
+  <h2 class="visuallyhidden">Document Information</h2>
+  <p><strong>Status:</strong> Draft, approved by <a href="/WAI/EO/">EOWG</a>, October 2014</p>
+  <p>Developers/Editors: <a href="http://www.w3.org/People/yatil/">Eric Eggert</a> and <a href="/People/shadi/">Shadi Abou-Zahra</a>. User Interface developed with the Education and Outreach Working Group (<a href="/WAI/EO/"><abbr title="Education and Outreach Working Group">EOWG</abbr></a>). Database maintained by the Evaluation and Repair Tools Working Group (<a href="/WAI/ER/"><abbr title="Evaluation and Repair Tools">ERT</abbr> <abbr title="Working Group">WG</abbr></a>). <a href="acknowledgements">Acknowledgements</a> lists contributors and previous editors. Developed with support from the <a href="/WAI/TIES/">WAI-TIES Project</a> in 2006, and updated with support from the <a href="/WAI/ACT/">WAI-ACT Project</a> in 2014.</p>
+  <p>See <a href="#disclaimer">Important Disclaimer above</a>.</p>
+  <div class="footer-nav">
+		<p>[<a href="http://www.w3.org/WAI/sitemap.html">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php">Search</a>] [<a href="/WAI/contacts">Contacting WAI</a>]<br /><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+	</div> <!-- end footer-nav -->
+  <div class="copyright">
+		<p>Copyright &#xA9; 2014 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+	</div><!-- end copyright -->
+</footer>
+<script src="js/main.js"></script>
+<script>
+
+/*
+ * jQuery MD5 Plugin 1.2.1
+ * https://github.com/blueimp/jQuery-MD5
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://creativecommons.org/licenses/MIT/
+ *
+ * Based on
+ * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
+ * Digest Algorithm, as defined in RFC 1321.
+ * Version 2.2 Copyright (C) Paul Johnston 1999 - 2009
+ * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
+ * Distributed under the BSD License
+ * See http://pajhome.org.uk/crypt/md5 for more info.
+ */
+
+/*jslint bitwise: true */
+/*global unescape, jQuery */
+
+(function ($) {
+    'use strict';
+
+    /*
+    * Add integers, wrapping at 2^32. This uses 16-bit operations internally
+    * to work around bugs in some JS interpreters.
+    */
+    function safe_add(x, y) {
+        var lsw = (x & 0xFFFF) + (y & 0xFFFF),
+            msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+        return (msw << 16) | (lsw & 0xFFFF);
+    }
+
+    /*
+    * Bitwise rotate a 32-bit number to the left.
+    */
+    function bit_rol(num, cnt) {
+        return (num << cnt) | (num >>> (32 - cnt));
+    }
+
+    /*
+    * These functions implement the four basic operations the algorithm uses.
+    */
+    function md5_cmn(q, a, b, x, s, t) {
+        return safe_add(bit_rol(safe_add(safe_add(a, q), safe_add(x, t)), s), b);
+    }
+    function md5_ff(a, b, c, d, x, s, t) {
+        return md5_cmn((b & c) | ((~b) & d), a, b, x, s, t);
+    }
+    function md5_gg(a, b, c, d, x, s, t) {
+        return md5_cmn((b & d) | (c & (~d)), a, b, x, s, t);
+    }
+    function md5_hh(a, b, c, d, x, s, t) {
+        return md5_cmn(b ^ c ^ d, a, b, x, s, t);
+    }
+    function md5_ii(a, b, c, d, x, s, t) {
+        return md5_cmn(c ^ (b | (~d)), a, b, x, s, t);
+    }
+
+    /*
+    * Calculate the MD5 of an array of little-endian words, and a bit length.
+    */
+    function binl_md5(x, len) {
+        /* append padding */
+        x[len >> 5] |= 0x80 << ((len) % 32);
+        x[(((len + 64) >>> 9) << 4) + 14] = len;
+
+        var i, olda, oldb, oldc, oldd,
+            a =  1732584193,
+            b = -271733879,
+            c = -1732584194,
+            d =  271733878;
+
+        for (i = 0; i < x.length; i += 16) {
+            olda = a;
+            oldb = b;
+            oldc = c;
+            oldd = d;
+
+            a = md5_ff(a, b, c, d, x[i],       7, -680876936);
+            d = md5_ff(d, a, b, c, x[i +  1], 12, -389564586);
+            c = md5_ff(c, d, a, b, x[i +  2], 17,  606105819);
+            b = md5_ff(b, c, d, a, x[i +  3], 22, -1044525330);
+            a = md5_ff(a, b, c, d, x[i +  4],  7, -176418897);
+            d = md5_ff(d, a, b, c, x[i +  5], 12,  1200080426);
+            c = md5_ff(c, d, a, b, x[i +  6], 17, -1473231341);
+            b = md5_ff(b, c, d, a, x[i +  7], 22, -45705983);
+            a = md5_ff(a, b, c, d, x[i +  8],  7,  1770035416);
+            d = md5_ff(d, a, b, c, x[i +  9], 12, -1958414417);
+            c = md5_ff(c, d, a, b, x[i + 10], 17, -42063);
+            b = md5_ff(b, c, d, a, x[i + 11], 22, -1990404162);
+            a = md5_ff(a, b, c, d, x[i + 12],  7,  1804603682);
+            d = md5_ff(d, a, b, c, x[i + 13], 12, -40341101);
+            c = md5_ff(c, d, a, b, x[i + 14], 17, -1502002290);
+            b = md5_ff(b, c, d, a, x[i + 15], 22,  1236535329);
+
+            a = md5_gg(a, b, c, d, x[i +  1],  5, -165796510);
+            d = md5_gg(d, a, b, c, x[i +  6],  9, -1069501632);
+            c = md5_gg(c, d, a, b, x[i + 11], 14,  643717713);
+            b = md5_gg(b, c, d, a, x[i],      20, -373897302);
+            a = md5_gg(a, b, c, d, x[i +  5],  5, -701558691);
+            d = md5_gg(d, a, b, c, x[i + 10],  9,  38016083);
+            c = md5_gg(c, d, a, b, x[i + 15], 14, -660478335);
+            b = md5_gg(b, c, d, a, x[i +  4], 20, -405537848);
+            a = md5_gg(a, b, c, d, x[i +  9],  5,  568446438);
+            d = md5_gg(d, a, b, c, x[i + 14],  9, -1019803690);
+            c = md5_gg(c, d, a, b, x[i +  3], 14, -187363961);
+            b = md5_gg(b, c, d, a, x[i +  8], 20,  1163531501);
+            a = md5_gg(a, b, c, d, x[i + 13],  5, -1444681467);
+            d = md5_gg(d, a, b, c, x[i +  2],  9, -51403784);
+            c = md5_gg(c, d, a, b, x[i +  7], 14,  1735328473);
+            b = md5_gg(b, c, d, a, x[i + 12], 20, -1926607734);
+
+            a = md5_hh(a, b, c, d, x[i +  5],  4, -378558);
+            d = md5_hh(d, a, b, c, x[i +  8], 11, -2022574463);
+            c = md5_hh(c, d, a, b, x[i + 11], 16,  1839030562);
+            b = md5_hh(b, c, d, a, x[i + 14], 23, -35309556);
+            a = md5_hh(a, b, c, d, x[i +  1],  4, -1530992060);
+            d = md5_hh(d, a, b, c, x[i +  4], 11,  1272893353);
+            c = md5_hh(c, d, a, b, x[i +  7], 16, -155497632);
+            b = md5_hh(b, c, d, a, x[i + 10], 23, -1094730640);
+            a = md5_hh(a, b, c, d, x[i + 13],  4,  681279174);
+            d = md5_hh(d, a, b, c, x[i],      11, -358537222);
+            c = md5_hh(c, d, a, b, x[i +  3], 16, -722521979);
+            b = md5_hh(b, c, d, a, x[i +  6], 23,  76029189);
+            a = md5_hh(a, b, c, d, x[i +  9],  4, -640364487);
+            d = md5_hh(d, a, b, c, x[i + 12], 11, -421815835);
+            c = md5_hh(c, d, a, b, x[i + 15], 16,  530742520);
+            b = md5_hh(b, c, d, a, x[i +  2], 23, -995338651);
+
+            a = md5_ii(a, b, c, d, x[i],       6, -198630844);
+            d = md5_ii(d, a, b, c, x[i +  7], 10,  1126891415);
+            c = md5_ii(c, d, a, b, x[i + 14], 15, -1416354905);
+            b = md5_ii(b, c, d, a, x[i +  5], 21, -57434055);
+            a = md5_ii(a, b, c, d, x[i + 12],  6,  1700485571);
+            d = md5_ii(d, a, b, c, x[i +  3], 10, -1894986606);
+            c = md5_ii(c, d, a, b, x[i + 10], 15, -1051523);
+            b = md5_ii(b, c, d, a, x[i +  1], 21, -2054922799);
+            a = md5_ii(a, b, c, d, x[i +  8],  6,  1873313359);
+            d = md5_ii(d, a, b, c, x[i + 15], 10, -30611744);
+            c = md5_ii(c, d, a, b, x[i +  6], 15, -1560198380);
+            b = md5_ii(b, c, d, a, x[i + 13], 21,  1309151649);
+            a = md5_ii(a, b, c, d, x[i +  4],  6, -145523070);
+            d = md5_ii(d, a, b, c, x[i + 11], 10, -1120210379);
+            c = md5_ii(c, d, a, b, x[i +  2], 15,  718787259);
+            b = md5_ii(b, c, d, a, x[i +  9], 21, -343485551);
+
+            a = safe_add(a, olda);
+            b = safe_add(b, oldb);
+            c = safe_add(c, oldc);
+            d = safe_add(d, oldd);
+        }
+        return [a, b, c, d];
+    }
+
+    /*
+    * Convert an array of little-endian words to a string
+    */
+    function binl2rstr(input) {
+        var i,
+            output = '';
+        for (i = 0; i < input.length * 32; i += 8) {
+            output += String.fromCharCode((input[i >> 5] >>> (i % 32)) & 0xFF);
+        }
+        return output;
+    }
+
+    /*
+    * Convert a raw string to an array of little-endian words
+    * Characters >255 have their high-byte silently ignored.
+    */
+    function rstr2binl(input) {
+        var i,
+            output = [];
+        output[(input.length >> 2) - 1] = undefined;
+        for (i = 0; i < output.length; i += 1) {
+            output[i] = 0;
+        }
+        for (i = 0; i < input.length * 8; i += 8) {
+            output[i >> 5] |= (input.charCodeAt(i / 8) & 0xFF) << (i % 32);
+        }
+        return output;
+    }
+
+    /*
+    * Calculate the MD5 of a raw string
+    */
+    function rstr_md5(s) {
+        return binl2rstr(binl_md5(rstr2binl(s), s.length * 8));
+    }
+
+    /*
+    * Calculate the HMAC-MD5, of a key and some data (raw strings)
+    */
+    function rstr_hmac_md5(key, data) {
+        var i,
+            bkey = rstr2binl(key),
+            ipad = [],
+            opad = [],
+            hash;
+        ipad[15] = opad[15] = undefined;
+        if (bkey.length > 16) {
+            bkey = binl_md5(bkey, key.length * 8);
+        }
+        for (i = 0; i < 16; i += 1) {
+            ipad[i] = bkey[i] ^ 0x36363636;
+            opad[i] = bkey[i] ^ 0x5C5C5C5C;
+        }
+        hash = binl_md5(ipad.concat(rstr2binl(data)), 512 + data.length * 8);
+        return binl2rstr(binl_md5(opad.concat(hash), 512 + 128));
+    }
+
+    /*
+    * Convert a raw string to a hex string
+    */
+    function rstr2hex(input) {
+        var hex_tab = '0123456789abcdef',
+            output = '',
+            x,
+            i;
+        for (i = 0; i < input.length; i += 1) {
+            x = input.charCodeAt(i);
+            output += hex_tab.charAt((x >>> 4) & 0x0F) +
+                hex_tab.charAt(x & 0x0F);
+        }
+        return output;
+    }
+
+    /*
+    * Encode a string as utf-8
+    */
+    function str2rstr_utf8(input) {
+        return unescape(encodeURIComponent(input));
+    }
+
+    /*
+    * Take string arguments and return either raw or hex encoded strings
+    */
+    function raw_md5(s) {
+        return rstr_md5(str2rstr_utf8(s));
+    }
+    function hex_md5(s) {
+        return rstr2hex(raw_md5(s));
+    }
+    function raw_hmac_md5(k, d) {
+        return rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d));
+    }
+    function hex_hmac_md5(k, d) {
+        return rstr2hex(raw_hmac_md5(k, d));
+    }
+
+    $.md5 = function (string, key, raw) {
+        if (!key) {
+            if (!raw) {
+                return hex_md5(string);
+            } else {
+                return raw_md5(string);
+            }
+        }
+        if (!raw) {
+            return hex_hmac_md5(key, string);
+        } else {
+            return raw_hmac_md5(key, string);
+        }
+    };
+
+}(typeof jQuery === 'function' ? jQuery : this));
+
+$(document).ready(function(){
+	$('#fs-tooltype input[type="checkbox"]').on('change', function(e) {
+		var theid = $(this).attr('data-id').replace(/tooltype_/,'');
+		switch (theid) {
+			case 'cli':
+			break;
+			case 'browserplugin':
+				$('#fs-browsers').toggle();
+			break;
+			case 'atplugin':
+				$('#fs-authoringtools').toggle();
+			break;
+			case 'online':
+				$('#fs-onlineservice').toggle();
+			break;
+			default:
+				$('#fs-' + theid).toggle();
+			break;
+		}
+	});
+
+	$('#fs-desktop,#fs-mobile,#fs-authoringtools,#fs-browsers,#fs-onlineservice').hide();
+
+	if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+		function clearAll() {
+			$('input, textarea').each(function(){
+				var el = $(this);
+				if ((el.attr('type') == 'checkbox' ) || (el.attr('type') == 'radio' )) {
+					el.removeAttr('checked');
+				} else {
+					el.val('');
+				}
+			});
+		}
+
+		function handleFileSelect(evt) {
+
+			var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+
+    var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+        clearAll();
+        // Render thumbnail.
+        JsonObj = JSON.parse(e.target.result);
+        var textfields = ['creator', 'description', 'location', 'release', 'title', 'version', 'a11yloc'];
+
+
+        for (var key in JsonObj) {
+        	if ($.inArray(key, textfields) > -1) {
+        		if (key=="a11yloc") {
+        			$('#location_a11yinfo').val(JsonObj[key]);
+        		} else {
+							$('#' + key).val(JsonObj[key]);
+						}
+        	} else {
+
+        		if(key=="type") {var repkey = 'tooltype';}
+
+						var oel = $('#' + key + '_other');
+						var oval = oel.val();
+						if (Array.isArray(JsonObj[key])) {
+							for (var i = JsonObj[key].length - 1; i >= 0; i--) {
+								var elem = $('#' + ((repkey) ? repkey : key) + '_' + $.md5(JsonObj[key][i]));
+
+								if(elem.length==0) {
+									if (oval=="") {
+										oval = JsonObj[key][i];
+										oel.val(oval);
+									} else {
+										oval = oval + ', ' + JsonObj[key][i];
+										oel.val(oval);
+									}
+								} else {
+									elem.attr('checked', 'checked').change();
+								}
+							}
+						} else {
+							$('#' + key + '_' + $.md5(JsonObj[key])).attr('checked', 'checked').change();
+						}
+					}
+				}
+         return false;
+        };
+      })(f);
+
+     reader.readAsText(files[0]);
+
+      output = 'Data from file <strong>' + escape(f.name) + '</strong> was successfully loaded.';
+    }
+    document.getElementById('list').innerHTML = output;
+  }
+
+  document.getElementById('file').addEventListener('change', handleFileSelect, false);
+
+  $('#uploadbutton').on('click', function(){
+  	$('#file').click();
+  });
+
+	} else {
+	  alert('The File APIs are not fully supported in this browser.');
+	}
+
+});
+</script>
+</body>
+</html>
