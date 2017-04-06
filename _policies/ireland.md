@@ -1,6 +1,7 @@
 ---
 country:
   en: Ireland
+  ga: Éireann
 updated: 2017-03-29
 updatemsg: Moved Ireland info into the policy prototype and updated with current info and links.
 # Related page: Australian states – Not sure yet how to model this, I tend to not have this

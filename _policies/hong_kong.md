@@ -1,7 +1,7 @@
 ---
 country:
   en: Hong Kong
-  hk: 香港
+  zh: 香港
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-04-04
 updatemsg: Placeholder for Hong Kong information in prototype.
