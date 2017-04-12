@@ -14,7 +14,7 @@ layout: default
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
       <ul class="countries">
       {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
+        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
       {% endfor %}
       </ul>
     </li>
