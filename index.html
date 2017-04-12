@@ -12,13 +12,18 @@ layout: default
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
-      <ul>
+      <ul class="countries">
       {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
+        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
       {% endfor %}
       </ul>
     </li>
   </ul>
+
+  <h2 style="position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
+  <p>If you know of new or changed legislation, laws, or policies that are not listed here or if any corrections are needed, please let us know.</p>
+  <p><a href="submission.htm" class="btn">Start an Update</a></p>
+
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 </div>
 
@@ -72,8 +77,8 @@ layout: default
       {% for policy in site.policies %}
       {% for p in policy.policies %}
       <tr data-updated="{{policy.updated}}">
-        <td style="padding: 5px; vertical-align: top;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
-        <th style="padding: 5px; text-align: left; vertical-align: top;"><a href="{{p.url}}">{{p.title.en}}</a></th>
+        <td style="padding: 5px; vertical-align: top; text-transform: capitalize;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
+        <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="{{p.url}}">{{p.title.en}}</a></td>
         <td style="padding: 5px; vertical-align: top;">{{p.enactdate}}</td>
         <td style="padding: 5px; vertical-align: top;">{{p.type}}</td>
         <td style="padding: 5px; vertical-align: top;">{{p.scope}}</td>
