@@ -12,7 +12,7 @@ layout: default
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
-      <ul>
+      <ul class="countries">
       {% for policy in site.policies %}
         <li data-updated="{{policy.updated}}"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
       {% endfor %}
