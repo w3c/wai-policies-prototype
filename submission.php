@@ -243,7 +243,7 @@ $message = str_replace('[title]', $data->title, $message);
 $endmessage = <<<EOV
 
 
-This email is also copied to a publicly archived mailing list: http://lists.w3.org/Archives/Public/public-wai-ert-tools/
+This email is also copied to a publicly archived mailing list: http://lists.w3.org/Archives/Public/public-wai-policies/
 
 Regards,
   Shadi
