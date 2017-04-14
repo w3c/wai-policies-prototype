@@ -14,7 +14,8 @@ layout: default
     <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
       <ul class="countries">
       {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a></li>
+        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">{% assign curl = policy.country.en | slugify | prepend: '#x' %}
+        {% include multilang-title.html title=policy.country url=curl %}</li>
       {% endfor %}
       </ul>
     </li>
@@ -77,7 +78,9 @@ layout: default
       {% for policy in site.policies %}
       {% for p in policy.policies %}
       <tr data-updated="{{policy.updated}}">
-        <td style="padding: 5px; vertical-align: top; text-transform: capitalize;"><a href="#x{{policy.title | slugify }}">{{policy.title}}</a> {%if policy.native_title%}({{policy.native_title}}){%endif%}</td>
+        <td style="padding: 5px; vertical-align: top;">
+          {% assign curl = policy.country.en | slugify | prepend: '#x' %}
+          {% include multilang-title.html title=policy.country url=curl %}</td>
         <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="{{p.url}}">{{p.title.en}}</a></td>
         <td style="padding: 5px; vertical-align: top;">{{p.enactdate}}</td>
         <td style="padding: 5px; vertical-align: top;">{{p.type}}</td>
