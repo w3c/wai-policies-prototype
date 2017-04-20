@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>Submit a new or updated Web Accessibility Policy</title>
   <meta name="viewport" content="width=device-width">
-  <link href="css/wai-act.min.css" media="screen" rel="stylesheet" type="text/css">
-  <script src="js/modernizr.min.js" type="text/javascript"></script>
+  <link href="wai-tools/wai-act.min.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="wai-tools/modernizr.min.js" type="text/javascript"></script>
   <style>
     fieldset {border:none; padding:0 0 0 .5em; border-left: .25em solid #ccc; margin-bottom: 2em;}
     fieldset legend {font-size: 1.5em; font-weight: bold;}
@@ -16,13 +16,13 @@
 <body class="texts">
   <header role="banner">
     <div class="w3c-wai-header">
-      <a href="http://w3.org/"><img alt="W3C" width="90" src="img/w3c.png"></a>
-      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="img/wai.png"></a>
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="wai-tools/w3c.png"></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="wai-tools/wai.png"></a>
     </div>
   </header>
   <main class="with-side-menu" role="main">
     <h1 class="page-title">
-      <a href="/">WAI Policies PROTOTYPE</a>
+      <a href="/">WAI Policies PROTOTYPE: Add or update a policy</a>
     </h1>
     <p><a href="/">Back to the WAI Policies PROTOTYPE</a></p>
         <h2>Submit a new or updated Web Accessibility Policy</h2>
@@ -62,57 +62,89 @@
   </fieldset>
 
     <fieldset>
-      <legend><span>Add/Update Accessibility Policy</span></legend>
-      <h3 class="visuallyhidden">Add/Update Accessibility Policy</h3>
+      <legend><span>Add new or update existing policy?</span></legend>
+      <h3 class="visuallyhidden">Add new or update existing policy?</h3>
+      <ul class="form-block-mini radio">
+        <li class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">I want to add a new policy.</label></li>
+        <li class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">I want to update an existing policy.</label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend><span>Policy to Add or Update</span></legend>
+      <h3 class="visuallyhidden">Policy to Add or Update</h3>
       <ul class="form-block-mini">
-        <li class="form-row radio"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">Add new polcy</label></li>
-        <li class="form-row radio"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing polcy</label></li>
         <li class="form-row required"><label for="country">Country of policy</label><span><input id="country" name="country"></span></li>
         <li class="form-row required"><label for="policyname">Policy name</label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></li>
-        <li class="form-row required"><label for="policyurl">Web Address (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
-        
+        <li class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
         <li class="form-row required"><label for="enactdate">Enacted date (format: YYYY)</label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">You may enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></li>
-      </ul><br>
-      
+      </ul>
       <div style="display:none" aria-hidden="true">
         <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
       </div>
+    </fieldset>
 
+    <fieldset><legend><span>Type of policy</span></legend>
+      <h3 class="visuallyhidden">Type of policy</h3>
+      <ul class="form-block-mini radio">
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></li>
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></li>
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></li>
+        <li class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></li>
+      </ul>
     </fieldset>
 
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
       <h3 class="visuallyhidden" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
       <ul class="form-block-mini radio">
-        <li class="form-row"><span><input data-id="guideline_wcag20" id="guideline_bb3f5259a15dd59563ea80b92ab690fc" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_bb3f5259a15dd59563ea80b92ab690fc"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></li>
-        <li class="form-row"><span><input data-id="guideline_wcag10" id="guideline_87d3c617d646caca775a590c4d695a51" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_87d3c617d646caca775a590c4d695a51"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></li>
-        <li class="form-row"><span><input data-id="guideline_section508" id="guideline_5af652dea9b51f8abbadbe4fdfad296b" name="guideline[]" value="section508" type="checkbox"> </span><label for="guideline_5af652dea9b51f8abbadbe4fdfad296b">Section 508, <abbr title="United States">US</abbr> federal procurement standard</label></li>
-        <li class="form-row"><span><input data-id="guideline_jis" id="guideline_ad63c8a35c27ba85e6cc27df484cb285" name="guideline[]" value="jis" type="checkbox"> </span><label for="guideline_ad63c8a35c27ba85e6cc27df484cb285"><abbr title="Japanese Industry Standard">JIS</abbr>, Japanese industry standard</label></li>
-        <li class="form-row"><span><input data-id="guideline_stanca" id="guideline_b96dd323caae4f81b84861440b0c1c66" name="guideline[]" value="stanca" type="checkbox"> </span><label for="guideline_b96dd323caae4f81b84861440b0c1c66">Stanca Act, Italian accessibility legislation</label></li>
-        <li class="form-row"><span><input data-id="guideline_bitv20" id="guideline_44dd748aa8df0d0e9505fd1e7d009cb3" name="guideline[]" value="bitv20" type="checkbox"> </span><label for="guideline_44dd748aa8df0d0e9505fd1e7d009cb3"><abbr lang="de" title="Barrierefreie Informationstechnik-Verordnung 2.0">BITV 2.0</abbr>, German government standard</label></li>
-        <li class="form-row"><span><input data-id="guideline_bitv10" id="guideline_77f64fb7f839d95bd2ade5e34dc53ff0" name="guideline[]" value="bitv10" type="checkbox"> </span><label for="guideline_77f64fb7f839d95bd2ade5e34dc53ff0"><abbr lang="de" title="Barrierefreie Informationstechnik-Verordnung">BITV</abbr>, German government standard</label></li>
-        <li class="form-row"><span><input data-id="guideline_rgaa" id="guideline_743c7c204bae664bc1218307df78e7fd" name="guideline[]" value="rgaa" type="checkbox"> </span><label for="guideline_743c7c204bae664bc1218307df78e7fd"><abbr lang="fr" title="Référentiel Général d’Accessibilité pour les Administrations">RGAA</abbr>, French government standard</label></li>
+        <li class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></li>
+        <li class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></li>
+        <li class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></li>
         <li class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></li>
       </ul>
     </fieldset>
 
-    <fieldset id="fs-assists"><legend>Assists evaluations by:</legend><h3 class="visuallyhidden" id="assists">Assists evaluations by:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="assists_report" id="assists_f8476f39bde8f6d8a4c59f9d89438cd0" name="assists[]" value="report" type="checkbox"> </span><label for="assists_f8476f39bde8f6d8a4c59f9d89438cd0">Generating reports of evaluation results <a href="http://www.w3.org/WAI/eval/selectingtools.html#reports" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_wizard" id="assists_027cce12ddc77e63acd5ee20f10cb6c6" name="assists[]" value="wizard" type="checkbox"> </span><label for="assists_027cce12ddc77e63acd5ee20f10cb6c6">Providing step-by-step evaluation guidance <a href="http://www.w3.org/WAI/eval/selectingtools.html#wizards" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_inpage" id="assists_13c8fcbda4edc03d8317fe6b8e514c3c" name="assists[]" value="inpage" type="checkbox"> </span><label for="assists_13c8fcbda4edc03d8317fe6b8e514c3c">Displaying information within web pages <a href="http://www.w3.org/WAI/eval/selectingtools.html#in-page" title="opens new window" class="btn" target="selectingtools">Info</a></label></li><li class="form-row"><span><input data-id="assists_transformation" id="assists_8a460eea8495905bc71e9c49f805a07b" name="assists[]" value="transformation" type="checkbox"> </span><label for="assists_8a460eea8495905bc71e9c49f805a07b">Modifying the presentation of web pages <a href="http://www.w3.org/WAI/eval/selectingtools.html#transformation" title="opens new window" class="btn" target="selectingtools">Info</a></label></li></ul></fieldset>
-    <fieldset id="fs-automated"><legend>Supports automated checking of:</legend><h3 class="visuallyhidden" id="automated">Supports automated checking of:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="automated_automated" id="automated_656e46637a072a158808851a58758b46" name="automated[]" value="automated" type="checkbox"> </span><label for="automated_656e46637a072a158808851a58758b46">Single web pages</label></li><li class="form-row"><span><input data-id="automated_crawl" id="automated_4bb82fd0cb3adeda11265ec58426889e" name="automated[]" value="crawl" type="checkbox"> </span><label for="automated_4bb82fd0cb3adeda11265ec58426889e">Groups of web pages or web sites</label></li><li class="form-row"><span><input data-id="automated_authenticated" id="automated_2575192d3c2cd6888ed231821742f589" name="automated[]" value="authenticated" type="checkbox"> </span><label for="automated_2575192d3c2cd6888ed231821742f589">Restricted or password protected pages</label></li></ul></fieldset>
-    
-    <fieldset id="fs-technology"><legend>Checks the accessibility of:</legend><h3 class="visuallyhidden" id="technology">Checks the accessibility of:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="technology_css" id="technology_6d659fccc7b9f919c0fe2bdb2406bda2" name="technology[]" value="css" type="checkbox"> </span><label for="technology_6d659fccc7b9f919c0fe2bdb2406bda2"><abbr title="Cascading Style Sheets">CSS</abbr></label></li><li class="form-row"><span><input data-id="technology_html" id="technology_0fdcd781f8d98fc3558996ad1f611756" name="technology[]" value="html" type="checkbox"> </span><label for="technology_0fdcd781f8d98fc3558996ad1f611756"><abbr title="Hypertext Markup Language">HTML</abbr></label></li><li class="form-row"><span><input data-id="technology_xhtml" id="technology_9b1d9d78fa40c67de32e63edb86db1d2" name="technology[]" value="xhtml" type="checkbox"> </span><label for="technology_9b1d9d78fa40c67de32e63edb86db1d2"><abbr title="Extensible Hypertext Markup Language">XHTML</abbr></label></li><li class="form-row"><span><input data-id="technology_svg" id="technology_07e510af253b01c8763865271af599bc" name="technology[]" value="svg" type="checkbox"> </span><label for="technology_07e510af253b01c8763865271af599bc"><abbr title="Scalabale Vector Grpahics">SVG</abbr></label></li><li class="form-row"><span><input data-id="technology_pdf" id="technology_814cde75b0531f8edb4eec2cce20bc34" name="technology[]" value="pdf" type="checkbox"> </span><label for="technology_814cde75b0531f8edb4eec2cce20bc34"><abbr title="Portable Document Format">PDF</abbr> documents</label></li><li class="form-row"><span><input data-id="technology_images" id="technology_fff0d600f8a0b5e19e88bfb821dd1157" name="technology[]" value="images" type="checkbox"> </span><label for="technology_fff0d600f8a0b5e19e88bfb821dd1157">Images</label></li><li class="form-row"><span><input data-id="technology_smil" id="technology_5dba93eed3eb8b492bfb46eeaec7753e" name="technology[]" value="smil" type="checkbox"> </span><label for="technology_5dba93eed3eb8b492bfb46eeaec7753e"><abbr title="Synchronized Multimedia Integration Language">SMIL</abbr></label></li><li class="form-row"><span><input data-id="technology_office" id="technology_3cdd53cd32962900a5a37a2a87aaa24a" name="technology[]" value="office" type="checkbox"> </span><label for="technology_3cdd53cd32962900a5a37a2a87aaa24a">Microsoft Office documents</label></li><li class="form-row"><span></span><label for="technology_other">Other: <input id="technology_other" name="technology[other]" type="text"></label></li></ul></fieldset>
-		<div class="group">
+    <fieldset id="fs-ministries">
+      <legend>Responsible entities:</legend>
+      <h3 class="visuallyhidden" id="ministries">Responsible entities:</h3>
+      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
+      <ul class="form-block-mini">
+        <li class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></li>
+      </ul>
+		</fieldset>
 
-	    <fieldset id="fs-tooltype"><legend>Type of tool:</legend><h3 class="visuallyhidden" id="tooltype">Type of tool:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="tooltype_desktop" id="tooltype_f0a38c4ddc6779c93630465b6602c772" name="tooltype[]" value="desktop" type="checkbox"> </span><label for="tooltype_f0a38c4ddc6779c93630465b6602c772">Desktop application</label></li><li class="form-row"><span><input data-id="tooltype_mobile" id="tooltype_105f5528024108b6303154f6217ca574" name="tooltype[]" value="mobile" type="checkbox"> </span><label for="tooltype_105f5528024108b6303154f6217ca574">Mobile application</label></li><li class="form-row"><span><input data-id="tooltype_cli" id="tooltype_84ec55fb97cd9b52353af090bd08152d" name="tooltype[]" value="cli" type="checkbox"> </span><label for="tooltype_84ec55fb97cd9b52353af090bd08152d">Command line tool</label></li><li class="form-row"><span><input data-id="tooltype_browserplugin" id="tooltype_cb03fd7eb97ec3740c88e978dc6a7fc4" name="tooltype[]" value="browserplugin" type="checkbox"> </span><label for="tooltype_cb03fd7eb97ec3740c88e978dc6a7fc4">Browser plugin</label></li><li class="form-row"><span><input data-id="tooltype_atplugin" id="tooltype_4359d00e2c36a79608d45c07ddbcfe63" name="tooltype[]" value="atplugin" type="checkbox"> </span><label for="tooltype_4359d00e2c36a79608d45c07ddbcfe63">Authoring tool plugin</label></li><li class="form-row"><span><input data-id="tooltype_online" id="tooltype_22a38208e9836857d3caea380e8b9ef8" name="tooltype[]" value="online" type="checkbox"> </span><label for="tooltype_22a38208e9836857d3caea380e8b9ef8">Online tool</label></li></ul></fieldset>
-	    <fieldset id="fs-desktop"><legend>Desktop application for:</legend><h3 class="visuallyhidden" id="desktop">Desktop application for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="desktop_windows" id="desktop_bb79f96acbff544ded541446c9c7c894" name="desktop[]" value="windows" type="checkbox"> </span><label for="desktop_bb79f96acbff544ded541446c9c7c894">Microsoft Windows</label></li><li class="form-row"><span><input data-id="desktop_osx" id="desktop_64f704062ae5be467afae9b71004bc41" name="desktop[]" value="osx" type="checkbox"> </span><label for="desktop_64f704062ae5be467afae9b71004bc41">Apple (Mac) OS X</label></li><li class="form-row"><span><input data-id="desktop_linux" id="desktop_edc9f0a5a5d57797bf68e37364743831" name="desktop[]" value="linux" type="checkbox"> </span><label for="desktop_edc9f0a5a5d57797bf68e37364743831">Linux</label></li><li class="form-row"><span><input data-id="desktop_solaris" id="desktop_eaf36c98b91893b7f79bd5184a23d377" name="desktop[]" value="solaris" type="checkbox"> </span><label for="desktop_eaf36c98b91893b7f79bd5184a23d377">Solaris</label></li><li class="form-row"><span><input data-id="desktop_bsd" id="desktop_80abf60954f46497bc501d80e52cc8ff" name="desktop[]" value="bsd" type="checkbox"> </span><label for="desktop_80abf60954f46497bc501d80e52cc8ff"><abbr title="Berkley Shell Distribution">BSD</abbr> Unix</label></li><li class="form-row"><span></span><label for="desktop_other">Other: <input id="desktop_other" name="desktop[other]" type="text"></label></li></ul></fieldset>
-	    <fieldset id="fs-mobile"><legend>Mobile application for:</legend><h3 class="visuallyhidden" id="mobile">Mobile application for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="mobile_ios" id="mobile_4d8baea05f8b9545074a9d8b51fb9c4b" name="mobile[]" value="ios" type="checkbox"> </span><label for="mobile_4d8baea05f8b9545074a9d8b51fb9c4b">Apple iOS</label></li><li class="form-row"><span><input data-id="mobile_android" id="mobile_e84e30b9390cdb64db6db2c9ab87846d" name="mobile[]" value="android" type="checkbox"> </span><label for="mobile_e84e30b9390cdb64db6db2c9ab87846d">Android</label></li><li class="form-row"><span><input data-id="mobile_windows" id="mobile_2a737b8cd5c9eb78ed3c1f6dd0e27395" name="mobile[]" value="windows" type="checkbox"> </span><label for="mobile_2a737b8cd5c9eb78ed3c1f6dd0e27395">Microsoft Windows Phone</label></li><li class="form-row"><span><input data-id="mobile_blackberry" id="mobile_30a48b302eec7672574a69719c5309f8" name="mobile[]" value="blackberry" type="checkbox"> </span><label for="mobile_30a48b302eec7672574a69719c5309f8">Blackberry</label></li><li class="form-row"><span><input data-id="mobile_firefox" id="mobile_68feb8c2376488e866692847c9819951" name="mobile[]" value="firefox" type="checkbox"> </span><label for="mobile_68feb8c2376488e866692847c9819951">Firefox OS</label></li><li class="form-row"><span></span><label for="mobile_other">Other: <input id="mobile_other" name="mobile[other]" type="text"></label></li></ul></fieldset>
-			<fieldset id="fs-browsers"><legend>Browser plugin for:</legend><h3 class="visuallyhidden" id="browsers">Browser plugin for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="browsers_chrome" id="browsers_986c37480b1f1c2e443504b38b6361b4" name="browsers[]" value="chrome" type="checkbox"> </span><label for="browsers_986c37480b1f1c2e443504b38b6361b4">Chrome</label></li><li class="form-row"><span><input data-id="browsers_firefox" id="browsers_763f7f1aec350cd1a46238d1d5c3c229" name="browsers[]" value="firefox" type="checkbox"> </span><label for="browsers_763f7f1aec350cd1a46238d1d5c3c229">Firefox</label></li><li class="form-row"><span><input data-id="browsers_oldie" id="browsers_4f14ca55f878b9b754ef0d35184e756c" name="browsers[]" value="oldie" type="checkbox"> </span><label for="browsers_4f14ca55f878b9b754ef0d35184e756c">Internet Explorer &le; 8</label></li><li class="form-row"><span><input data-id="browsers_ie" id="browsers_ed255a4cbb73f876d58daf6f90491b56" name="browsers[]" value="ie" type="checkbox"> </span><label for="browsers_ed255a4cbb73f876d58daf6f90491b56">Internet Explorer &ge; 9</label></li><li class="form-row"><span><input data-id="browsers_oldopera" id="browsers_850fd15610c1a55a3f33e3a8191bde82" name="browsers[]" value="oldopera" type="checkbox"> </span><label for="browsers_850fd15610c1a55a3f33e3a8191bde82">Opera &le; 12</label></li><li class="form-row"><span><input data-id="browsers_opera" id="browsers_fb7221df99a12de3a8c7929605458c57" name="browsers[]" value="opera" type="checkbox"> </span><label for="browsers_fb7221df99a12de3a8c7929605458c57">Opera &ge; 15</label></li><li class="form-row"><span><input data-id="browsers_safari" id="browsers_50de9bc68c93dc32d8c7c90593471760" name="browsers[]" value="safari" type="checkbox"> </span><label for="browsers_50de9bc68c93dc32d8c7c90593471760">Safari</label></li><li class="form-row"><span></span><label for="browsers_other">Other: <input id="browsers_other" name="browsers[other]" type="text"></label></li></ul></fieldset>
-	    <fieldset id="fs-authoringtools"><legend>Authoring tool plugin for:</legend><h3 class="visuallyhidden" id="authoringtools">Authoring tool plugin for:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="authoringtools_dreamweaver" id="authoringtools_6b8d8ff8265cbf47c11ebbc94e4d3e71" name="authoringtools[]" value="dreamweaver" type="checkbox"> </span><label for="authoringtools_6b8d8ff8265cbf47c11ebbc94e4d3e71">Adobe Dreamweaver</label></li><li class="form-row"><span><input data-id="authoringtools_flash" id="authoringtools_df38f18e5934d27ba785cf698f4795e9" name="authoringtools[]" value="flash" type="checkbox"> </span><label for="authoringtools_df38f18e5934d27ba785cf698f4795e9">Adobe Flash</label></li><li class="form-row"><span><input data-id="authoringtools_photoshop" id="authoringtools_f544f262e964e2067e7fb53aa23c6379" name="authoringtools[]" value="photoshop" type="checkbox"> </span><label for="authoringtools_f544f262e964e2067e7fb53aa23c6379">Adobe Photoshop</label></li><li class="form-row"><span><input data-id="authoringtools_edge" id="authoringtools_c47b4540809af4ba0426ee0a58c35ab4" name="authoringtools[]" value="edge" type="checkbox"> </span><label for="authoringtools_c47b4540809af4ba0426ee0a58c35ab4">Adobe Edge</label></li><li class="form-row"><span><input data-id="authoringtools_eclipse" id="authoringtools_32f7222026696f30787889194dee83e5" name="authoringtools[]" value="eclipse" type="checkbox"> </span><label for="authoringtools_32f7222026696f30787889194dee83e5">Eclipse</label></li><li class="form-row"><span><input data-id="authoringtools_expressionweb" id="authoringtools_f23609b07ae1026219d943970af1da69" name="authoringtools[]" value="expressionweb" type="checkbox"> </span><label for="authoringtools_f23609b07ae1026219d943970af1da69">Microsoft Expression Web</label></li><li class="form-row"><span><input data-id="authoringtools_visualstudio" id="authoringtools_4d2668b972e7148f97f8b2119e107e11" name="authoringtools[]" value="visualstudio" type="checkbox"> </span><label for="authoringtools_4d2668b972e7148f97f8b2119e107e11">Microsoft Visual Studio</label></li><li class="form-row"><span><input data-id="authoringtools_sublimetext" id="authoringtools_3946f53970d4d77624f2832c29f8baee" name="authoringtools[]" value="sublimetext" type="checkbox"> </span><label for="authoringtools_3946f53970d4d77624f2832c29f8baee">Sublime Text</label></li><li class="form-row"><span></span><label for="authoringtools_other">Other: <input id="authoringtools_other" name="authoringtools[other]" type="text"></label></li></ul></fieldset>
-	    <fieldset id="fs-onlineservice"><legend>Online service:</legend><h3 class="visuallyhidden" id="onlineservice">Online service:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="onlineservice_online" id="onlineservice_118236c4f48b24ba1544a20bdba8ce40" name="onlineservice[]" value="online" type="checkbox"> </span><label for="onlineservice_118236c4f48b24ba1544a20bdba8ce40">Online checker</label></li><li class="form-row"><span><input data-id="onlineservice_hosted" id="onlineservice_0d69e2f6ac37a7b70f7ed135db71cc2d" name="onlineservice[]" value="hosted" type="checkbox"> </span><label for="onlineservice_0d69e2f6ac37a7b70f7ed135db71cc2d">Hosted service</label></li><li class="form-row"><span><input data-id="onlineservice_server" id="onlineservice_44b4819c27348e08ee8cba79cea30801" name="onlineservice[]" value="server" type="checkbox"> </span><label for="onlineservice_44b4819c27348e08ee8cba79cea30801">Server installation</label></li></ul></fieldset>
-    </div>
+    <fieldset id="fs-scope-standards">
+      <legend>Scope and standards of policy:</legend>
+      <h3 class="visuallyhidden" id="scope-standards">Scope and standards of policy:</h3>
+      <fieldset>
+        <legend>Scope of policy</legend> 
+        <h4 class="visuallyhidden">Scope of policy</h4> 
+          <ul class="form-block-mini radio">
+            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public</label></li>
+            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private</label></li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Is policy Web only?</legend> 
+        <h4 class="visuallyhidden">Is policy Web only?</h4> 
+          <ul class="form-block-mini radio">
+            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Yes (Web only)</label></li>
+            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">No (not Web only)</label></li>
+          </ul>
+      </fieldset>
+    </fieldset>
 
-    <fieldset id="fs-license"><legend>License type:</legend><h3 class="visuallyhidden" id="license">License type:</h3><ul class="form-block-mini radio"><li class="form-row"><span><input data-id="license_free" id="license_fa582cbfbd4bff6d25fcbaece0765c71" name="license[]" value="free" type="checkbox"> </span><label for="license_fa582cbfbd4bff6d25fcbaece0765c71">Free Software</label></li><li class="form-row"><span><input data-id="license_open" id="license_81f4074bd6383b7398ffe2525180cbae" name="license[]" value="open" type="checkbox"> </span><label for="license_81f4074bd6383b7398ffe2525180cbae">Open Source</label></li><li class="form-row"><span><input data-id="license_trial" id="license_0f3da73c6ddbaa4c2296e93b1b0ab94c" name="license[]" value="trial" type="checkbox"> </span><label for="license_0f3da73c6ddbaa4c2296e93b1b0ab94c">Trial or Demo</label></li><li class="form-row"><span><input data-id="license_commercial" id="license_b2788e1ab6be65f1c38bf7d23cd081f1" name="license[]" value="commercial" type="checkbox"> </span><label for="license_b2788e1ab6be65f1c38bf7d23cd081f1">Commercial</label></li><li class="form-row"><span><input data-id="license_enterprise" id="license_a0f27638260642afb474516cc918407e" name="license[]" value="enterprise" type="checkbox"> </span><label for="license_a0f27638260642afb474516cc918407e">Enterprise</label></li></ul></fieldset>
+    <fieldset id="fs-documents">
+      <legend>Relevant documents:</legend>
+      <h3 class="visuallyhidden">Relevant documents:</h3>
+      <ul class="form-block-mini">
+        <li class="form-row"><label for="relevant-documents">Documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></li>
+      </ul>
+    </fieldset>
+
 		<ul class="form-block-mini">
-			<li class="form-row"><label for="cmnt">Comment:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" required="" aria-required="true" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">This comment will be included in email but not published on the tools list.</span></span></li>
+			<li class="form-row"><label for="cmnt">Notes or comments:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></li>
 		</ul>
 
   <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
@@ -132,7 +164,7 @@
 		<p>Copyright &#xA9; 2014 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
 	</div><!-- end copyright -->
 </footer>
-<script src="js/main.js"></script>
+<script src="wai-tools/main.js"></script>
 <script>
 
 /*
