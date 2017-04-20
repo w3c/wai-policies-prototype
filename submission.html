@@ -1,0 +1,553 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Submit a new or updated Web Accessibility Policy</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="wai-tools/wai-act.min.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="wai-tools/modernizr.min.js" type="text/javascript"></script>
+  <style>
+    fieldset {border:none; padding:0 0 0 .5em; border-left: .25em solid #ccc; margin-bottom: 2em;}
+    fieldset legend {font-size: 1.5em; font-weight: bold;}
+    fieldset > fieldset legend {font-size: 1.25em;}
+    fieldset > fieldset > fieldset legend {font-size: 1em;}
+  </style>
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="wai-tools/w3c.png"></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="wai-tools/wai.png"></a>
+    </div>
+  </header>
+  <main class="with-side-menu" role="main">
+    <h1 class="page-title">
+      <a href="/">WAI Policies PROTOTYPE: Add or update a policy</a>
+    </h1>
+    <p><a href="/">Back to the WAI Policies PROTOTYPE</a></p>
+        <h2>Submit a new or updated Web Accessibility Policy</h2>
+    <p>This form allows you to provide information about new or updated web accessibility policies enacted by governments worldwide. We welcome any additions or corrections to the policies list and detail pages.</p>
+    <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published. A notification email is sent to you after submitting this form. This email is also copied to a publicly archived <a href="http://lists.w3.org/Archives/Public/public-wai-policies/">mailing list</a>.</p>
+
+    <p>Contact <a href="mailto:shadi@w3.org">Shadi Abou-Zahra (shadi@w3.org)</a> if you have questions or comments.</p>
+
+    <!-- commenting out this aside for editing using existing data for now 
+    <aside class="editbox">
+    	<h3>Edit an entry</h3>
+			<p>You can load the information of an existing entry, if you want to edit it. Use the following button to load the data file that was sent to you in the notification email from your previous form submission:</p>
+			<button class="btn" id="uploadbutton">Load tool information</button>
+    	<input type="file" id="file" name="file">
+    	<output id="list" aria-live="assertive"></output>
+    </aside>
+    -->
+    
+
+  <div id="hForm">
+  <form name="submission" id="submission" method="post" action="submission.php">
+  <fieldset>
+    <legend><span>Information about you</span></legend>
+    <h2 class="visuallyhidden">Information about you</h2>
+    <div class="form-block-mini">
+      <div class="form-row required"><label for="name">Your Name</label><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
+      <div class="form-row required"><label for="email">Your E-Mail</label><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
+    </div>
+    <!-- commenting out for policies prototype 
+    <fieldset class="border-less"><legend><span>Your Role</span></legend>
+      <ul class="form-block-mini">
+        <li class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></li>
+        <li class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span><label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></li>
+      </ul>
+    </fieldset>
+    -->
+  </fieldset>
+
+    <fieldset>
+      <legend><span>Add new or update existing policy?</span></legend>
+      <h3 class="visuallyhidden">Add new or update existing policy?</h3>
+      <ul class="form-block-mini radio">
+        <li class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">I want to add a new policy.</label></li>
+        <li class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">I want to update an existing policy.</label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend><span>Policy to Add or Update</span></legend>
+      <h3 class="visuallyhidden">Policy to Add or Update</h3>
+      <ul class="form-block-mini">
+        <li class="form-row required"><label for="country">Country of policy</label><span><input id="country" name="country"></span></li>
+        <li class="form-row required"><label for="policyname">Policy name</label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="enactdate">Enacted date (format: YYYY)</label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">You may enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></li>
+      </ul>
+      <div style="display:none" aria-hidden="true">
+        <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
+      </div>
+    </fieldset>
+
+    <fieldset><legend><span>Type of policy</span></legend>
+      <h3 class="visuallyhidden">Type of policy</h3>
+      <ul class="form-block-mini radio">
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></li>
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></li>
+        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></li>
+        <li class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset id="fs-guideline">
+      <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
+      <h3 class="visuallyhidden" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
+      <ul class="form-block-mini radio">
+        <li class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></li>
+        <li class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></li>
+        <li class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></li>
+        <li class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></li>
+      </ul>
+    </fieldset>
+
+    <fieldset id="fs-ministries">
+      <legend>Responsible entities:</legend>
+      <h3 class="visuallyhidden" id="ministries">Responsible entities:</h3>
+      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
+      <ul class="form-block-mini">
+        <li class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></li>
+      </ul>
+		</fieldset>
+
+    <fieldset id="fs-scope-standards">
+      <legend>Scope and standards of policy:</legend>
+      <h3 class="visuallyhidden" id="scope-standards">Scope and standards of policy:</h3>
+      <fieldset>
+        <legend>Scope of policy</legend> 
+        <h4 class="visuallyhidden">Scope of policy</h4> 
+          <ul class="form-block-mini radio">
+            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public</label></li>
+            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private</label></li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Is policy Web only?</legend> 
+        <h4 class="visuallyhidden">Is policy Web only?</h4> 
+          <ul class="form-block-mini radio">
+            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Yes (Web only)</label></li>
+            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">No (not Web only)</label></li>
+          </ul>
+      </fieldset>
+    </fieldset>
+
+    <fieldset id="fs-documents">
+      <legend>Relevant documents:</legend>
+      <h3 class="visuallyhidden">Relevant documents:</h3>
+      <ul class="form-block-mini">
+        <li class="form-row"><label for="relevant-documents">Documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></li>
+      </ul>
+    </fieldset>
+
+		<ul class="form-block-mini">
+			<li class="form-row"><label for="cmnt">Notes or comments:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></li>
+		</ul>
+
+  <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
+
+    </form>
+  </div>
+</main>
+<footer role="contentinfo">
+  <h2 class="visuallyhidden">Document Information</h2>
+  <p><strong>Status:</strong> Draft, approved by <a href="/WAI/EO/">EOWG</a>, October 2014</p>
+  <p>Developers/Editors: <a href="http://www.w3.org/People/yatil/">Eric Eggert</a> and <a href="/People/shadi/">Shadi Abou-Zahra</a>. User Interface developed with the Education and Outreach Working Group (<a href="/WAI/EO/"><abbr title="Education and Outreach Working Group">EOWG</abbr></a>). Database maintained by the Evaluation and Repair Tools Working Group (<a href="/WAI/ER/"><abbr title="Evaluation and Repair Tools">ERT</abbr> <abbr title="Working Group">WG</abbr></a>). <a href="acknowledgements">Acknowledgements</a> lists contributors and previous editors. Developed with support from the <a href="/WAI/TIES/">WAI-TIES Project</a> in 2006, and updated with support from the <a href="/WAI/ACT/">WAI-ACT Project</a> in 2014.</p>
+  <p>See <a href="#disclaimer">Important Disclaimer above</a>.</p>
+  <div class="footer-nav">
+		<p>[<a href="http://www.w3.org/WAI/sitemap.html">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php">Search</a>] [<a href="/WAI/contacts">Contacting WAI</a>]<br /><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+	</div> <!-- end footer-nav -->
+  <div class="copyright">
+		<p>Copyright &#xA9; 2014 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+	</div><!-- end copyright -->
+</footer>
+<script src="wai-tools/main.js"></script>
+<script>
+
+/*
+ * jQuery MD5 Plugin 1.2.1
+ * https://github.com/blueimp/jQuery-MD5
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://creativecommons.org/licenses/MIT/
+ *
+ * Based on
+ * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
+ * Digest Algorithm, as defined in RFC 1321.
+ * Version 2.2 Copyright (C) Paul Johnston 1999 - 2009
+ * Other contributors: Greg Holt, Andrew Kepert, Ydnar, Lostinet
+ * Distributed under the BSD License
+ * See http://pajhome.org.uk/crypt/md5 for more info.
+ */
+
+/*jslint bitwise: true */
+/*global unescape, jQuery */
+
+(function ($) {
+    'use strict';
+
+    /*
+    * Add integers, wrapping at 2^32. This uses 16-bit operations internally
+    * to work around bugs in some JS interpreters.
+    */
+    function safe_add(x, y) {
+        var lsw = (x & 0xFFFF) + (y & 0xFFFF),
+            msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+        return (msw << 16) | (lsw & 0xFFFF);
+    }
+
+    /*
+    * Bitwise rotate a 32-bit number to the left.
+    */
+    function bit_rol(num, cnt) {
+        return (num << cnt) | (num >>> (32 - cnt));
+    }
+
+    /*
+    * These functions implement the four basic operations the algorithm uses.
+    */
+    function md5_cmn(q, a, b, x, s, t) {
+        return safe_add(bit_rol(safe_add(safe_add(a, q), safe_add(x, t)), s), b);
+    }
+    function md5_ff(a, b, c, d, x, s, t) {
+        return md5_cmn((b & c) | ((~b) & d), a, b, x, s, t);
+    }
+    function md5_gg(a, b, c, d, x, s, t) {
+        return md5_cmn((b & d) | (c & (~d)), a, b, x, s, t);
+    }
+    function md5_hh(a, b, c, d, x, s, t) {
+        return md5_cmn(b ^ c ^ d, a, b, x, s, t);
+    }
+    function md5_ii(a, b, c, d, x, s, t) {
+        return md5_cmn(c ^ (b | (~d)), a, b, x, s, t);
+    }
+
+    /*
+    * Calculate the MD5 of an array of little-endian words, and a bit length.
+    */
+    function binl_md5(x, len) {
+        /* append padding */
+        x[len >> 5] |= 0x80 << ((len) % 32);
+        x[(((len + 64) >>> 9) << 4) + 14] = len;
+
+        var i, olda, oldb, oldc, oldd,
+            a =  1732584193,
+            b = -271733879,
+            c = -1732584194,
+            d =  271733878;
+
+        for (i = 0; i < x.length; i += 16) {
+            olda = a;
+            oldb = b;
+            oldc = c;
+            oldd = d;
+
+            a = md5_ff(a, b, c, d, x[i],       7, -680876936);
+            d = md5_ff(d, a, b, c, x[i +  1], 12, -389564586);
+            c = md5_ff(c, d, a, b, x[i +  2], 17,  606105819);
+            b = md5_ff(b, c, d, a, x[i +  3], 22, -1044525330);
+            a = md5_ff(a, b, c, d, x[i +  4],  7, -176418897);
+            d = md5_ff(d, a, b, c, x[i +  5], 12,  1200080426);
+            c = md5_ff(c, d, a, b, x[i +  6], 17, -1473231341);
+            b = md5_ff(b, c, d, a, x[i +  7], 22, -45705983);
+            a = md5_ff(a, b, c, d, x[i +  8],  7,  1770035416);
+            d = md5_ff(d, a, b, c, x[i +  9], 12, -1958414417);
+            c = md5_ff(c, d, a, b, x[i + 10], 17, -42063);
+            b = md5_ff(b, c, d, a, x[i + 11], 22, -1990404162);
+            a = md5_ff(a, b, c, d, x[i + 12],  7,  1804603682);
+            d = md5_ff(d, a, b, c, x[i + 13], 12, -40341101);
+            c = md5_ff(c, d, a, b, x[i + 14], 17, -1502002290);
+            b = md5_ff(b, c, d, a, x[i + 15], 22,  1236535329);
+
+            a = md5_gg(a, b, c, d, x[i +  1],  5, -165796510);
+            d = md5_gg(d, a, b, c, x[i +  6],  9, -1069501632);
+            c = md5_gg(c, d, a, b, x[i + 11], 14,  643717713);
+            b = md5_gg(b, c, d, a, x[i],      20, -373897302);
+            a = md5_gg(a, b, c, d, x[i +  5],  5, -701558691);
+            d = md5_gg(d, a, b, c, x[i + 10],  9,  38016083);
+            c = md5_gg(c, d, a, b, x[i + 15], 14, -660478335);
+            b = md5_gg(b, c, d, a, x[i +  4], 20, -405537848);
+            a = md5_gg(a, b, c, d, x[i +  9],  5,  568446438);
+            d = md5_gg(d, a, b, c, x[i + 14],  9, -1019803690);
+            c = md5_gg(c, d, a, b, x[i +  3], 14, -187363961);
+            b = md5_gg(b, c, d, a, x[i +  8], 20,  1163531501);
+            a = md5_gg(a, b, c, d, x[i + 13],  5, -1444681467);
+            d = md5_gg(d, a, b, c, x[i +  2],  9, -51403784);
+            c = md5_gg(c, d, a, b, x[i +  7], 14,  1735328473);
+            b = md5_gg(b, c, d, a, x[i + 12], 20, -1926607734);
+
+            a = md5_hh(a, b, c, d, x[i +  5],  4, -378558);
+            d = md5_hh(d, a, b, c, x[i +  8], 11, -2022574463);
+            c = md5_hh(c, d, a, b, x[i + 11], 16,  1839030562);
+            b = md5_hh(b, c, d, a, x[i + 14], 23, -35309556);
+            a = md5_hh(a, b, c, d, x[i +  1],  4, -1530992060);
+            d = md5_hh(d, a, b, c, x[i +  4], 11,  1272893353);
+            c = md5_hh(c, d, a, b, x[i +  7], 16, -155497632);
+            b = md5_hh(b, c, d, a, x[i + 10], 23, -1094730640);
+            a = md5_hh(a, b, c, d, x[i + 13],  4,  681279174);
+            d = md5_hh(d, a, b, c, x[i],      11, -358537222);
+            c = md5_hh(c, d, a, b, x[i +  3], 16, -722521979);
+            b = md5_hh(b, c, d, a, x[i +  6], 23,  76029189);
+            a = md5_hh(a, b, c, d, x[i +  9],  4, -640364487);
+            d = md5_hh(d, a, b, c, x[i + 12], 11, -421815835);
+            c = md5_hh(c, d, a, b, x[i + 15], 16,  530742520);
+            b = md5_hh(b, c, d, a, x[i +  2], 23, -995338651);
+
+            a = md5_ii(a, b, c, d, x[i],       6, -198630844);
+            d = md5_ii(d, a, b, c, x[i +  7], 10,  1126891415);
+            c = md5_ii(c, d, a, b, x[i + 14], 15, -1416354905);
+            b = md5_ii(b, c, d, a, x[i +  5], 21, -57434055);
+            a = md5_ii(a, b, c, d, x[i + 12],  6,  1700485571);
+            d = md5_ii(d, a, b, c, x[i +  3], 10, -1894986606);
+            c = md5_ii(c, d, a, b, x[i + 10], 15, -1051523);
+            b = md5_ii(b, c, d, a, x[i +  1], 21, -2054922799);
+            a = md5_ii(a, b, c, d, x[i +  8],  6,  1873313359);
+            d = md5_ii(d, a, b, c, x[i + 15], 10, -30611744);
+            c = md5_ii(c, d, a, b, x[i +  6], 15, -1560198380);
+            b = md5_ii(b, c, d, a, x[i + 13], 21,  1309151649);
+            a = md5_ii(a, b, c, d, x[i +  4],  6, -145523070);
+            d = md5_ii(d, a, b, c, x[i + 11], 10, -1120210379);
+            c = md5_ii(c, d, a, b, x[i +  2], 15,  718787259);
+            b = md5_ii(b, c, d, a, x[i +  9], 21, -343485551);
+
+            a = safe_add(a, olda);
+            b = safe_add(b, oldb);
+            c = safe_add(c, oldc);
+            d = safe_add(d, oldd);
+        }
+        return [a, b, c, d];
+    }
+
+    /*
+    * Convert an array of little-endian words to a string
+    */
+    function binl2rstr(input) {
+        var i,
+            output = '';
+        for (i = 0; i < input.length * 32; i += 8) {
+            output += String.fromCharCode((input[i >> 5] >>> (i % 32)) & 0xFF);
+        }
+        return output;
+    }
+
+    /*
+    * Convert a raw string to an array of little-endian words
+    * Characters >255 have their high-byte silently ignored.
+    */
+    function rstr2binl(input) {
+        var i,
+            output = [];
+        output[(input.length >> 2) - 1] = undefined;
+        for (i = 0; i < output.length; i += 1) {
+            output[i] = 0;
+        }
+        for (i = 0; i < input.length * 8; i += 8) {
+            output[i >> 5] |= (input.charCodeAt(i / 8) & 0xFF) << (i % 32);
+        }
+        return output;
+    }
+
+    /*
+    * Calculate the MD5 of a raw string
+    */
+    function rstr_md5(s) {
+        return binl2rstr(binl_md5(rstr2binl(s), s.length * 8));
+    }
+
+    /*
+    * Calculate the HMAC-MD5, of a key and some data (raw strings)
+    */
+    function rstr_hmac_md5(key, data) {
+        var i,
+            bkey = rstr2binl(key),
+            ipad = [],
+            opad = [],
+            hash;
+        ipad[15] = opad[15] = undefined;
+        if (bkey.length > 16) {
+            bkey = binl_md5(bkey, key.length * 8);
+        }
+        for (i = 0; i < 16; i += 1) {
+            ipad[i] = bkey[i] ^ 0x36363636;
+            opad[i] = bkey[i] ^ 0x5C5C5C5C;
+        }
+        hash = binl_md5(ipad.concat(rstr2binl(data)), 512 + data.length * 8);
+        return binl2rstr(binl_md5(opad.concat(hash), 512 + 128));
+    }
+
+    /*
+    * Convert a raw string to a hex string
+    */
+    function rstr2hex(input) {
+        var hex_tab = '0123456789abcdef',
+            output = '',
+            x,
+            i;
+        for (i = 0; i < input.length; i += 1) {
+            x = input.charCodeAt(i);
+            output += hex_tab.charAt((x >>> 4) & 0x0F) +
+                hex_tab.charAt(x & 0x0F);
+        }
+        return output;
+    }
+
+    /*
+    * Encode a string as utf-8
+    */
+    function str2rstr_utf8(input) {
+        return unescape(encodeURIComponent(input));
+    }
+
+    /*
+    * Take string arguments and return either raw or hex encoded strings
+    */
+    function raw_md5(s) {
+        return rstr_md5(str2rstr_utf8(s));
+    }
+    function hex_md5(s) {
+        return rstr2hex(raw_md5(s));
+    }
+    function raw_hmac_md5(k, d) {
+        return rstr_hmac_md5(str2rstr_utf8(k), str2rstr_utf8(d));
+    }
+    function hex_hmac_md5(k, d) {
+        return rstr2hex(raw_hmac_md5(k, d));
+    }
+
+    $.md5 = function (string, key, raw) {
+        if (!key) {
+            if (!raw) {
+                return hex_md5(string);
+            } else {
+                return raw_md5(string);
+            }
+        }
+        if (!raw) {
+            return hex_hmac_md5(key, string);
+        } else {
+            return raw_hmac_md5(key, string);
+        }
+    };
+
+}(typeof jQuery === 'function' ? jQuery : this));
+
+$(document).ready(function(){
+	$('#fs-tooltype input[type="checkbox"]').on('change', function(e) {
+		var theid = $(this).attr('data-id').replace(/tooltype_/,'');
+		switch (theid) {
+			case 'cli':
+			break;
+			case 'browserplugin':
+				$('#fs-browsers').toggle();
+			break;
+			case 'atplugin':
+				$('#fs-authoringtools').toggle();
+			break;
+			case 'online':
+				$('#fs-onlineservice').toggle();
+			break;
+			default:
+				$('#fs-' + theid).toggle();
+			break;
+		}
+	});
+
+	$('#fs-desktop,#fs-mobile,#fs-authoringtools,#fs-browsers,#fs-onlineservice').hide();
+
+	if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+		function clearAll() {
+			$('input, textarea').each(function(){
+				var el = $(this);
+				if ((el.attr('type') == 'checkbox' ) || (el.attr('type') == 'radio' )) {
+					el.removeAttr('checked');
+				} else {
+					el.val('');
+				}
+			});
+		}
+
+		function handleFileSelect(evt) {
+
+			var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+
+    var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+        clearAll();
+        // Render thumbnail.
+        JsonObj = JSON.parse(e.target.result);
+        var textfields = ['creator', 'description', 'location', 'release', 'title', 'version', 'a11yloc'];
+
+
+        for (var key in JsonObj) {
+        	if ($.inArray(key, textfields) > -1) {
+        		if (key=="a11yloc") {
+        			$('#location_a11yinfo').val(JsonObj[key]);
+        		} else {
+							$('#' + key).val(JsonObj[key]);
+						}
+        	} else {
+
+        		if(key=="type") {var repkey = 'tooltype';}
+
+						var oel = $('#' + key + '_other');
+						var oval = oel.val();
+						if (Array.isArray(JsonObj[key])) {
+							for (var i = JsonObj[key].length - 1; i >= 0; i--) {
+								var elem = $('#' + ((repkey) ? repkey : key) + '_' + $.md5(JsonObj[key][i]));
+
+								if(elem.length==0) {
+									if (oval=="") {
+										oval = JsonObj[key][i];
+										oel.val(oval);
+									} else {
+										oval = oval + ', ' + JsonObj[key][i];
+										oel.val(oval);
+									}
+								} else {
+									elem.attr('checked', 'checked').change();
+								}
+							}
+						} else {
+							$('#' + key + '_' + $.md5(JsonObj[key])).attr('checked', 'checked').change();
+						}
+					}
+				}
+         return false;
+        };
+      })(f);
+
+     reader.readAsText(files[0]);
+
+      output = 'Data from file <strong>' + escape(f.name) + '</strong> was successfully loaded.';
+    }
+    document.getElementById('list').innerHTML = output;
+  }
+
+  document.getElementById('file').addEventListener('change', handleFileSelect, false);
+
+  $('#uploadbutton').on('click', function(){
+  	$('#file').click();
+  });
+
+	} else {
+	  alert('The File APIs are not fully supported in this browser.');
+	}
+
+});
+</script>
+</body>
+</html>
