@@ -103,10 +103,10 @@ layout: default
 <ul>
 {% for policy in site.policies %}
   <li style="margin-bottom: 2em" id="x{{policy.country.en | slugify }}" data-updated="{{policy.updated}}">
-    <h2>
+    <h3>
       {% assign titleurl = policy.url |  prepend: site.baseurl %}
       {% include multilang-title.html title=policy.country url=titleurl %}
-    </h2>
+    </h3>
     <p>Last Updated: {{policy.updated | date: "%-d %B %Y" }}{%if policy.updatemsg%} – {{policy.updatemsg}}{%endif%}
     <!--p>Related page: Australian states (not implemented yet)</p-->
     {% for p in policy.policies %}
