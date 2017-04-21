@@ -60,8 +60,8 @@ layout: default
     <legend><span>Information about you</span></legend>
     <h2 class="visuallyhidden">Information about you</h2>
     <div class="form-block-mini">
-      <div class="form-row required"><label for="name">Your Name</label><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
-      <div class="form-row required"><label for="email">Your E-Mail</label><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="name">Your Name: </label><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
+      <div class="form-row required"><label for="email">Your E-Mail: </label><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
     </div>
     <!-- commenting out for policies prototype 
     <fieldset class="border-less"><legend><span>Your Role</span></legend>
@@ -74,22 +74,24 @@ layout: default
   </fieldset>
 
     <fieldset>
-      <legend><span>Add new or update existing policy?</span></legend>
+      <legend><span>Add new or update existing Web accessibility policy?</span></legend>
       <h3 class="visuallyhidden">Add new or update existing policy?</h3>
-      <ul class="form-block-mini radio">
-        <li class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">I want to add a new policy.</label></li>
-        <li class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">I want to update an existing policy.</label></li>
-      </ul>
+      <div class="form-block-mini">
+        <div class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">Add new policy</label></div>
+        <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing policy</label></div>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend><span>Policy to Add or Update</span></legend>
       <h3 class="visuallyhidden">Policy to Add or Update</h3>
       <ul class="form-block-mini">
-        <li class="form-row required"><label for="country">Country of policy</label><span><input id="country" name="country"></span></li>
-        <li class="form-row required"><label for="policyname">Policy name</label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></li>
-        <li class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>)</label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
-        <li class="form-row required"><label for="enactdate">Enacted date (format: YYYY)</label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">You may enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></li>
+        <li class="form-row required"><label for="country">Country of policy (in English): </label><span><input id="country" name="country"></span></li>
+        <li class="form-row"><label for="native-country">Country of policy (in native language): </label><span><input id="native-country" name="native-country"></span></li>
+        <p>If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</p>
+        <li class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
+        <li class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></li>
       </ul>
       <div style="display:none" aria-hidden="true">
         <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
