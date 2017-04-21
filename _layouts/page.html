@@ -26,12 +26,16 @@ layout: default
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
           <li>WCAG Version Used: {{p.wcagver}}</li>
-          {%if p.standard%}
-            {% assign standards = p.standard | split: ";" %}
+          {% unless p.standard == "None" or p.standard == "none" or p.standard == false %}
+          {% assign standards = p.standard | split: ";" %}
+          <li>{%if standards.size > 1 %}Standards:{%else%}Standard:{%endif%}
+            <ul>
             {% for s in standards %}
-            <li>Standard: {% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %} – {{stndrd.desc}}{%endif%}</li>
+              <li>{% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %} – {{stndrd.desc}}{%endif%}</li>
             {%endfor%}
-          {%endif%}
+            </ul>
+          </li>
+          {%endunless%}
           {% if p.documents %}
             <li>Relevant Documents:
               <ul>
