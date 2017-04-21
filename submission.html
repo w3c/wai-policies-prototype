@@ -65,10 +65,10 @@ layout: default
     </div>
     <!-- commenting out for policies prototype 
     <fieldset class="border-less"><legend><span>Your Role</span></legend>
-      <ul class="form-block-mini">
-        <li class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></li>
-        <li class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span><label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></li>
-      </ul>
+      <div class="form-block-mini">
+        <div class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></div>
+        <div class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span><label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></div>
+      </div>
     </fieldset>
     -->
   </fieldset>
@@ -85,13 +85,13 @@ layout: default
     <fieldset>
       <legend><span>Policy to Add or Update</span></legend>
       <h3 class="visuallyhidden">Policy to Add or Update</h3>
-      <ul class="form-block-mini">
-        <li class="form-row required"><label for="country">Country of policy (in English): </label><span><input id="country" name="country"></span></li>
-        <li class="form-row"><label for="native-country">Country of policy (in native language): </label><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></li>
-        <li class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></li>
-        <li class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></li>
-        <li class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></li>
-      </ul>
+      <div class="form-block-mini">
+        <div class="form-row required"><label for="country">Country of policy (in English): </label><span><input id="country" name="country"></span></div>
+        <div class="form-row"><label for="native-country">Country of policy (in native language): </label><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
+        <div class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></div>
+        <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+        <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "draft" if the policy is not yet finalized or enacted.</span></span></div>
+      </div>
       <div style="display:none" aria-hidden="true">
         <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
       </div>
@@ -99,32 +99,32 @@ layout: default
 
     <fieldset><legend><span>Type of policy</span></legend>
       <h3 class="visuallyhidden">Type of policy</h3>
-      <ul class="form-block-mini radio">
-        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></li>
-        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></li>
-        <li class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></li>
-        <li class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></li>
-      </ul>
+      <div class="form-block-mini radio">
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></div>
+        <div class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></div>
+      </div>
     </fieldset>
 
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
       <h3 class="visuallyhidden" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
-      <ul class="form-block-mini radio">
-        <li class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></li>
-        <li class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></li>
-        <li class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></li>
-        <li class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></li>
-      </ul>
+      <div class="form-block-mini radio">
+        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
+        <div class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></div>
+      </div>
     </fieldset>
 
     <fieldset id="fs-ministries">
       <legend>Responsible entities:</legend>
       <h3 class="visuallyhidden" id="ministries">Responsible entities:</h3>
       <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
-      <ul class="form-block-mini">
-        <li class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></li>
-      </ul>
+      <div class="form-block-mini">
+        <div class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
+      </div>
 		</fieldset>
 
     <fieldset id="fs-scope-standards">
@@ -133,32 +133,32 @@ layout: default
       <fieldset>
         <legend>Scope of policy</legend> 
         <h4 class="visuallyhidden">Scope of policy</h4> 
-          <ul class="form-block-mini radio">
-            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public</label></li>
-            <li class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private</label></li>
-          </ul>
+          <div class="form-block-mini radio">
+            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public</label></div>
+            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private</label></div>
+          </div>
       </fieldset>
       <fieldset>
         <legend>Is policy Web only?</legend> 
         <h4 class="visuallyhidden">Is policy Web only?</h4> 
-          <ul class="form-block-mini radio">
-            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Yes (Web only)</label></li>
-            <li class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">No (not Web only)</label></li>
-          </ul>
+          <div class="form-block-mini radio">
+            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Yes (Web only)</label></div>
+            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">No (not Web only)</label></div>
+          </div>
       </fieldset>
     </fieldset>
 
     <fieldset id="fs-documents">
       <legend>Relevant documents:</legend>
       <h3 class="visuallyhidden">Relevant documents:</h3>
-      <ul class="form-block-mini">
-        <li class="form-row"><label for="relevant-documents">Documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></li>
-      </ul>
+      <div class="form-block-mini">
+        <div class="form-row"><label for="relevant-documents">Documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+      </div>
     </fieldset>
 
-		<ul class="form-block-mini">
-			<li class="form-row"><label for="cmnt">Notes or comments:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></li>
-		</ul>
+		<div class="form-block-mini">
+			<div class="form-row"><label for="cmnt">Notes or comments:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></div>
+		</div>
 
   <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
 
