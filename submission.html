@@ -58,7 +58,7 @@ layout: default
   <form name="submission" id="submission" method="post" action="submission.php">
   <fieldset>
     <legend><span>Information about you</span></legend>
-    <h2 class="visuallyhidden">Information about you</h2>
+    <h2 class="no-display">Information about you</h2>
     <div class="form-block-mini">
       <div class="form-row required"><label for="name">Your Name: </label><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
       <div class="form-row required"><label for="email">Your E-Mail: </label><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
@@ -75,7 +75,7 @@ layout: default
 
     <fieldset>
       <legend><span>Add new or update existing Web accessibility policy?</span></legend>
-      <h3 class="visuallyhidden">Add new or update existing policy?</h3>
+      <h3 class="no-display">Add new or update existing policy?</h3>
       <div class="form-block-mini">
         <div class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">Add new policy</label></div>
         <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing policy</label></div>
@@ -84,7 +84,7 @@ layout: default
 
     <h3>Country information</h3>
     <fieldset>
-      <h3 class="visuallyhidden">Country to add or update</h3>
+      <h3 class="no-display">Country to add or update</h3>
       <div class="form-block-mini">
         <div class="form-row required"><label for="country">Country of policy (in English): </label><span><input id="country" name="country"></span></div>
         <div class="form-row"><label for="native-country">Country of policy (in native language): </label><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
@@ -104,7 +104,7 @@ layout: default
       </div>
         <fieldset id="fs-ministries">
          <legend>Responsible entities:</legend>
-         <h3 class="visuallyhidden" id="ministries">Responsible entities:</h3>
+         <h3 class="no-display" id="ministries">Responsible entities:</h3>
          <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
           <div class="form-block-mini">
            <div class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
@@ -139,7 +139,7 @@ layout: default
     <h3>Standards used</h3>
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
-      <h3 class="visuallyhidden" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
+      <h3 class="no-display" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
       <div class="form-block-mini radio">
         <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></div>
         <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></div>
@@ -150,7 +150,7 @@ layout: default
 
     <fieldset id="fs-documents">
       <legend>Relevant documents:</legend>
-      <h3 class="visuallyhidden">Relevant documents:</h3>
+      <h3 class="no-display">Relevant documents:</h3>
       <div class="form-block-mini">
         <div class="form-row"><label for="relevant-documents">Documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
       </div>
