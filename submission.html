@@ -95,9 +95,9 @@ layout: default
     <h3>Policy information</h3>
 
     <div class="form-block-mini">
-      <div class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></div>
-      <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
-      <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
+      <div class="form-row required"><label for="policyname">Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
     </div>
     <div style="display:none" aria-hidden="true">
       <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
@@ -105,8 +105,9 @@ layout: default
 
     <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
     <div class="form-block-mini">
-      <div class="form-row"><label for="responsible-entities">Responsible entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
+      <div class="form-row"><label for="responsible-entities">Responsible entities:</label><br><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
     </div>
+    <br>
 
     <fieldset><legend><span>Type of policy</span></legend>
       <div class="form-block-mini radio">
