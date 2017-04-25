@@ -61,7 +61,6 @@ layout: default
     <h2 class="no-display">Information about you</h2>
     <div class="form-block-mini">
       <div class="form-row required"><label for="name">Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
-      <br>
       <div class="form-row required"><label for="email">Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
     </div>
     <!-- commenting out for policies prototype 
@@ -86,9 +85,7 @@ layout: default
     <h3>Country information</h3>
       <div class="form-block-mini">
         <div class="form-row required"><label for="country">Country of policy (in English): </label><br><span><input id="country" name="country"></span></div>
-        <br>
         <div class="form-row"><label for="native-country">Country of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
-        <br>
         <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div> 
       </div>
 
@@ -102,11 +99,8 @@ layout: default
     </div> 
     <div class="form-block-mini">
       <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
-    </div>
-    <div style="display:none" aria-hidden="true">
-      <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
     </div>  
-
+    <br>
     <div class="form-block-mini">
       <div class="form-row"><label for="responsible-entities">Responsible entities:</label><br><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line). Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
     </div>
@@ -119,7 +113,7 @@ layout: default
         <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></div>
         <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-procrecomm" value="law"></span><label for="policy-procrecomm">Procurement recommendation</label></div>
         <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-mandpolicy" value="law"></span><label for="policy-mandpolicy">Mandatory policy</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommended policy</label></div>
         <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-dontknow" value="law"></span><label for="policy-dontknow">I don't know</label></div>
         <div class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></div>
       </div>
@@ -143,12 +137,12 @@ layout: default
     </fieldset>
 
     <div class="form-block-mini">
-      <div class="form-row"><label for="relevant-documents">Relevant documents:</label><br><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+      <div class="form-row"><label for="relevant-documents">Relevant documents:</label><br><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy by providing the title, web address, and optional description (one document per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
     </div>
 
     <h3>Standards used</h3>
     <fieldset id="fs-guideline">
-      <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
+      <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
       <h3 class="no-display" id="guideline">What standards and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version are referenced or required by the policy?</h3>
       <div class="form-block-mini radio">
         <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
@@ -160,7 +154,7 @@ layout: default
     </fieldset>
 
     <div class="form-block-mini">
-      <div class="form-row"><label for="standards-used">Standards used by policy:</label><br><span><textarea name="standards-used" id="standards-used" cols="60" rows="10" aria-describedby="standardsused"></textarea><br><span id="standardsused">List any standards used to provide the technical requirements for meeting the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Final Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+      <div class="form-row"><label for="standards-used">Standards used by policy:</label><br><span><textarea name="standards-used" id="standards-used" cols="60" rows="10" aria-describedby="standardsused"></textarea><br><span id="standardsused">For each standard used to provide the technical requirements for meeting the policy, provide the name, web address, and optional brief description (one standard per line). Example: GSA Section 508 website (https://www.section508.gov/) - General Services Administration guidance on Section 508</span></span></div>
     </div>
     <br>
 
