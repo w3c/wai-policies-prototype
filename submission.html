@@ -93,53 +93,50 @@ layout: default
     </fieldset>
 
     <h3>Policy information</h3>
-    <fieldset>
-      <legend><span>Policy to Add or Update</span></legend>
-      <div class="form-block-mini">
-        <div class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></div>
-        <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
-        <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
-      </div>
-      <div style="display:none" aria-hidden="true">
-        <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
-      </div>
-        
-      <br>
-      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
-      <div class="form-block-mini">
-        <div class="form-row"><label for="responsible-entities">Entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
-      </div>
 
-      <fieldset><legend><span>Type of policy</span></legend>
-        <div class="form-block-mini radio">
-          <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></div>
-          <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></div>
-          <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></div>
-          <div class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></div>
-       </div>
-      </fieldset>
+    <div class="form-block-mini">
+      <div class="form-row required"><label for="policyname">Policy name: </label><span><input name="policyname" id="policyname" type="text"  value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
+    </div>
+    <div style="display:none" aria-hidden="true">
+      <label for="comment">Comment (Don’t fill out this field)</label><span><textarea name="comment" id="comment" cols="60" rows="10" maxlength="300"></textarea></span>
+    </div>  
 
-      <fieldset>
-        <legend>Scope of policy (select all that apply)</legend> 
-          <div class="form-block-mini radio">
-            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-gov" value="Gov"></span><label for="scope-public">Government</label></div>
-            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public sector</label></div>
-            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private sector</label></div>
-          </div>
-      </fieldset>
+    <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line).</p>
+    <div class="form-block-mini">
+      <div class="form-row"><label for="responsible-entities">Responsible entities:</label><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
+    </div>
 
-      <fieldset>
-        <legend>Technologies the policy applies to</legend> 
-          <div class="form-block-mini radio">
-            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Web only</label></div>
-            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">Web plus other technologies (e.g. mobile, software, hardware, etc.)</label></div>
-          </div>
-      </fieldset>
-
-      <div class="form-block-mini">
-        <div class="form-row"><label for="relevant-documents">Relevant documents:</label><br><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+    <fieldset><legend><span>Type of policy</span></legend>
+      <div class="form-block-mini radio">
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-ndlaw" value="law"></span><label for="policy-ndlaw">Non-discrimination law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-proclaw" value="law"></span><label for="policy-proclaw">Procurement law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype" id="policy-recommendation" value="law"></span><label for="policy-recommendation">Recommendation</label></div>
+        <div class="form-row"><span></span><label for="policytype_other">Other: <input id="policytype_other" name="policytype[other]" type="text"></label></div>
       </div>
     </fieldset>
+
+    <fieldset>
+      <legend>Scope of policy (select all that apply)</legend> 
+        <div class="form-block-mini radio">
+          <div class="form-row"><span><input type="checkbox" name="scope" id="scope-gov" value="Gov"></span><label for="scope-public">Government</label></div>
+          <div class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public sector</label></div>
+          <div class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private sector</label></div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Technologies the policy applies to</legend> 
+        <div class="form-block-mini radio">
+          <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Web only</label></div>
+          <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">Web plus other technologies (e.g. mobile, software, hardware, etc.)</label></div>
+        </div>
+    </fieldset>
+
+    <div class="form-block-mini">
+      <div class="form-row"><label for="relevant-documents">Relevant documents:</label><br><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+    </div>
 
     <h3>Standards used</h3>
     <fieldset id="fs-guideline">
