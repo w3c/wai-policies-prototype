@@ -88,6 +88,7 @@ layout: default
       <div class="form-block-mini">
         <div class="form-row required"><label for="country">Country of policy (in English): </label><span><input id="country" name="country"></span></div>
         <div class="form-row"><label for="native-country">Country of policy (in native language): </label><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
+        <div class="form-row required"><label for="state-province">State or province (in English): </label><span><input id="state-province" name="state-province"></span></div> 
       </div>
     </fieldset>
 
@@ -119,20 +120,22 @@ layout: default
       </fieldset>
 
       <fieldset>
-        <legend>Scope of policy</legend> 
+        <legend>Scope of policy (select all that apply)</legend> 
           <div class="form-block-mini radio">
+            <div class="form-row"><span><input type="checkbox" name="scope" id="scope-gov" value="Gov"></span><label for="scope-public">Government</label></div>
             <div class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public</label></div>
             <div class="form-row"><span><input type="checkbox" name="scope" id="scope-private" value="Private"></span><label for="scope-private">Private</label></div>
           </div>
       </fieldset>
+
       <fieldset>
-        <legend>Is policy Web only?</legend> 
+        <legend>Does the policy apply only to Web content or does it apply more broadly, e.g. to Mobile, software, hardware, and so on? </legend> 
           <div class="form-block-mini radio">
-            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Yes (Web only)</label></div>
-            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">No (not Web only)</label></div>
+            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Web only</label></div>
+            <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">Broader than Web technologies</label></div>
           </div>
       </fieldset>
-      <h3 class="visuallyhidden">Relevant documents:</h3>
+
       <div class="form-block-mini">
         <div class="form-row"><label for="relevant-documents">Relevant documents:</label><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
       </div>
@@ -141,18 +144,19 @@ layout: default
     <h3>Standards used</h3>
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</legend>
-      <h3 class="no-display" id="guideline">Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> or other guidelines that this policy is based upon:</h3>
+      <h3 class="no-display" id="guideline">What standards and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version are referenced or required by the policy?</h3>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><strong><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</strong></label></div>
-        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0 derivative</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
         <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span><label for="guideline_none">None</label></div>
         <div class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></div>
       </div>
-      <div class="form-block-mini">
-        <div class="form-row"><label for="standards-used">Standards used by policy:</label><span><textarea name="standards-used" id="standards-used" cols="60" rows="10" aria-describedby="standardsused"></textarea><br><span id="standardsused">List any standards used to provide the technical requirements on how to meet the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Final Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
-      </div>
-
     </fieldset>
+
+      <div class="form-block-mini">
+        <div class="form-row"><label for="standards-used">Standards used by policy:</label><span><textarea name="standards-used" id="standards-used" cols="60" rows="10" aria-describedby="standardsused"></textarea><br><span id="standardsused">List any standards used to provide the technical requirements for how to meet the policy and their web addresses (one per line). Example: Information and Communication Technology (ICT) Final Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
+      </div>
 
 		<div class="form-block-mini">
 			<div class="form-row"><label for="cmnt">Notes or comments:</label><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></div>
