@@ -35,13 +35,14 @@ layout: default
 <div id="main" class="content">
     <h1 class="page-title">WAI Policies PROTOTYPE: Add or update a policy</h1>
     <p><a href="index.html">Back to the WAI Policies PROTOTYPE</a></p>
-        <h2>Submit a new or updated Web Accessibility Policy</h2>
+
+    <h2>Submit a new or updated Web Accessibility Policy</h2>
     <p>This form allows you to provide information about new or updated web accessibility policies enacted by governments worldwide. We welcome any additions or corrections to the policies list and detail pages.</p>
     <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published. A notification email is sent to you after submitting this form. This email is also copied to a publicly archived <a href="http://lists.w3.org/Archives/Public/public-wai-policies/">mailing list</a>.</p>
 
     <p>Contact <a href="mailto:xxx@example.org">Xxxxx Xxxxxxx (xxx@example.org)</a> if you have questions or comments.</p>
 
-    <!-- commenting out this aside for editing using existing data for now 
+    <!-- commenting out this aside for editing using existing data for now
     <aside class="editbox">
     	<h3>Edit an entry</h3>
 			<p>You can load the information of an existing entry, if you want to edit it. Use the following button to load the data file that was sent to you in the notification email from your previous form submission:</p>
@@ -50,18 +51,17 @@ layout: default
     	<output id="list" aria-live="assertive"></output>
     </aside>
     -->
-    
+
 
   <div id="hForm">
   <form name="submission" id="submission" method="post" action="submission.php">
   <fieldset>
-    <legend><span>Information about you</span></legend>
-    <h2 class="no-display">Information about you</h2>
+    <legend><h3>Information about you</h3></legend>
     <div class="form-block-mini">
       <div class="form-row required"><label for="name">Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
       <div class="form-row required"><label for="email">Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
     </div>
-    <!-- commenting out for policies prototype 
+    <!-- commenting out for policies prototype
     <fieldset class="border-less"><legend><span>Your Role</span></legend>
       <div class="form-block-mini">
         <div class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></div>
@@ -72,37 +72,46 @@ layout: default
   </fieldset>
 
     <fieldset>
-      <legend><span>Add new or update existing Web accessibility policy?</span></legend>
-      <h3 class="no-display">Add new or update existing policy?</h3>
+      <legend><h3>Add new or update existing Web accessibility policy?</h3></legend>
       <div class="form-block-mini">
         <div class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">Add new policy</label></div>
         <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing policy</label></div>
       </div>
     </fieldset>
 
-    <h3>Country information</h3>
+    <fieldset>
+      <legend><h3>Country information</h3></legend>
       <div class="form-block-mini">
         <div class="form-row required"><label for="country">Country of policy (in English): </label><br><span><input id="country" name="country"></span></div>
         <div class="form-row"><label for="native-country">Country of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
-        <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div> 
+        <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div>
       </div>
+    </fieldset>
 
-    <h3>Policy information</h3>
+    <fieldset>
+      <legend><h3>Policy information</h3></legend>
 
     <div class="form-block-mini">
       <div class="form-row required"><label for="policyname">Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
-    </div> 
+    </div>
     <div class="form-block-mini">
       <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
-    </div> 
+    </div>
     <div class="form-block-mini">
       <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
-    </div>  
-    <br>
-    <div class="form-block-mini">
-      <div class="form-row"><label for="responsible-entities">Responsible entities:</label><br><span><textarea name="responsible-entities" id="responsible-entities" cols="60" rows="10" required="" aria-required="true" aria-describedby="entitiesdesc"></textarea><br><span  id="entitiesdesc">List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line). Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</span></span></div>
     </div>
     <br>
+    <fieldset>
+      <legend>Responsible Entities</legend>
+      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line). Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</p>
+      <ul class="multiple" id="entities-multiple">
+        <li class="template">
+          <label>Name: <input type="text" name="entity_name[]"></label><br>
+          <label>URL: <input type="url" name="entity_url[]"></label>
+        </li>
+      </ul>
+      <button type="button" class="multiple" data-for="entities-multiple">➕ Add Entity</button>
+    </fieldset>
 
     <fieldset><legend><span>Type of policy</span></legend>
       <div class="form-block-mini radio">
@@ -118,7 +127,7 @@ layout: default
     </fieldset>
 
     <fieldset>
-      <legend>Scope of policy (select all that apply)</legend> 
+      <legend>Scope of policy (select all that apply)</legend>
         <div class="form-block-mini radio">
           <div class="form-row"><span><input type="checkbox" name="scope" id="scope-gov" value="Gov"></span><label for="scope-public">Government</label></div>
           <div class="form-row"><span><input type="checkbox" name="scope" id="scope-public" value="Public"></span><label for="scope-public">Public sector</label></div>
@@ -127,16 +136,25 @@ layout: default
     </fieldset>
 
     <fieldset>
-      <legend>Technologies the policy applies to</legend> 
+      <legend>Technologies the policy applies to</legend>
         <div class="form-block-mini radio">
           <div class="form-row"><span><input type="radio" name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Web only</label></div>
           <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">Web plus other technologies (e.g. mobile, software, hardware, etc.)</label></div>
         </div>
     </fieldset>
 
-    <div class="form-block-mini">
-      <div class="form-row"><label for="relevant-documents">Relevant documents:</label><br><span><textarea name="relevant-documents" id="relevant-documents" cols="60" rows="10" aria-describedby="documentssdesc"></textarea><br><span id="documentsdesc">List any documents relevant to the policy by providing the title, web address, and optional description (one document per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</span></span></div>
-    </div>
+    <fieldset>
+      <legend>Relevant documents:</legend>
+      <p>List any documents relevant to the policy by providing the title, web address, and optional description (one document per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</p>
+      <ul class="multiple" id="documents-multiple">
+        <li class="template">
+          <label>Name: <input type="text" name="document_name[]"></label><br>
+          <label>URL: <input type="url" name="document_url[]"></label><br>
+          <label>Description: <input type="text" name="document_desc[]"></label>
+        </li>
+      </ul>
+      <button type="button" class="multiple" data-for="documents-multiple">➕ Add Entity</button>
+    </fieldset>
 
     <h3>Standards information</h3>
     <fieldset id="fs-guideline">
@@ -151,10 +169,20 @@ layout: default
       </div>
     </fieldset>
 
-    <div class="form-block-mini">
-      <div class="form-row"><label for="standards-used">Standards used by policy:</label><br><span><textarea name="standards-used" id="standards-used" cols="60" rows="10" aria-describedby="standardsused"></textarea><br><span id="standardsused">For each standard used to provide the technical requirements for meeting the policy, provide the name, web address, and optional brief description (one standard per line). Example: GSA Section 508 website (https://www.section508.gov/) - General Services Administration guidance on Section 508</span></span></div>
-    </div>
-    <br>
+    <fieldset>
+      <legend>Standards used by policy:</legend>
+      <p>For each standard used to provide the technical requirements for meeting the policy, provide the name, web address, and optional brief description (one standard per line). Example: GSA Section 508 website (https://www.section508.gov/) - General Services Administration guidance on Section 508</p>
+      <ul class="multiple" id="standards-multiple">
+        <li class="template">
+          <label>Name: <input type="text" name="standard_name[]"></label><br>
+          <label>URL: <input type="url" name="standard_url[]"></label><br>
+          <label>Description: <input type="text" name="standard_desc[]"></label>
+        </li>
+      </ul>
+      <button type="button" class="multiple" data-for="standards-multiple">➕ Add Entity</button>
+    </fieldset>
+
+  </fieldset>
 
 		<div class="form-block-mini">
 			<div class="form-row"><label for="cmnt">Notes or comments:</label><br><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></div>
@@ -163,5 +191,18 @@ layout: default
     <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
 
     </form>
+    <script>
+      function each(elem, func) {
+        Array.prototype.forEach.call(elem, func);
+      }
+      each(document.querySelectorAll('button.multiple'), function(element) {
+        element.addEventListener('click', function(e) {
+          var targetMultiple = document.getElementById(e.target.getAttribute('data-for'));
+          var template = targetMultiple.querySelector('.template').outerHTML;
+          targetMultiple.insertAdjacentHTML('beforeend', template);
+
+        });
+      });
+    </script>
   </div>
 </div>
