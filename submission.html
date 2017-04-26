@@ -54,7 +54,7 @@ layout: default
 
 
   <div id="hForm">
-  <form name="submission" id="submission" method="post" action="submission.php">
+  <form name="submission" id="submission" method="post" action="http://localhost:8080/submission.php">
   <fieldset>
     <legend><h3>Information about you</h3></legend>
     <div class="form-block-mini">
@@ -83,7 +83,7 @@ layout: default
       <legend><h3>Country information</h3></legend>
       <div class="form-block-mini">
         <div class="form-row required"><label for="country">Country of policy (in English): </label><br><span><input id="country" name="country"></span></div>
-        <div class="form-row"><label for="native-country">Country of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schwiz;Suisse</span></span></div>
+        <div class="form-row"><label for="native-country">Country of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schweiz;Suisse</span></span></div>
         <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div>
       </div>
     </fieldset>
@@ -161,9 +161,9 @@ layout: default
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
       <h3 class="no-display" id="guideline">What standards and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version are referenced or required by the policy?</h3>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="wcag20" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
-        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="wcag20derivative" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
-        <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="wcag10" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="WCAG 1.0" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
         <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span><label for="guideline_none">None</label></div>
         <div class="form-row"><span></span><label for="guideline_other">Other: <input id="guideline_other" name="guideline[other]" type="text"></label></div>
       </div>
