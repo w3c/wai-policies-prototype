@@ -55,11 +55,13 @@ layout: default
 
   <div id="hForm">
   <form name="submission" id="submission" method="post" action="http://localhost:8080/submission.php">
+  <p>* Indicates required field</p>
   <fieldset>
     <legend><h3>Information about you</h3></legend>
     <div class="form-block-mini">
-      <div class="form-row required"><label for="name">Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
-      <div class="form-row required"><label for="email">Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
+      <p>Your contact information will be used to confirm your submission and to contact you in case we have questions regarding the submission.</p>
+      <div class="form-row required"><label for="name">* Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
+      <div class="form-row required"><label for="email">* Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
     </div>
     <!-- commenting out for policies prototype
     <fieldset class="border-less"><legend><span>Your Role</span></legend>
@@ -72,7 +74,7 @@ layout: default
   </fieldset>
 
     <fieldset>
-      <legend><h3>Add new or update existing Web accessibility policy?</h3></legend>
+      <legend><h3>Add new or update existing Web accessibility policy</h3></legend>
       <div class="form-block-mini">
         <div class="form-row"><span><input type="radio" name="submission" id="new" value="new policy"></span><label for="new">Add new policy</label></div>
         <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing policy</label></div>
@@ -82,7 +84,7 @@ layout: default
     <fieldset>
       <legend><h3>Country information</h3></legend>
       <div class="form-block-mini">
-        <div class="form-row required"><label for="country">Country of policy (in English): </label><br><span><input id="country" name="country"></span></div>
+        <div class="form-row required"><label for="country">* Country of policy (in English): </label><br><span><input id="country" name="country" type="text" value="" required aria-required="true" ></span></div>
         <div class="form-row"><label for="native-country">Country of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schweiz;Suisse</span></span></div>
         <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div>
       </div>
@@ -92,18 +94,18 @@ layout: default
       <legend><h3>Policy information</h3></legend>
 
     <div class="form-block-mini">
-      <div class="form-row required"><label for="policyname">Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="policyname">* Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
     </div>
     <div class="form-block-mini">
-      <div class="form-row required"><label for="policyurl">Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="policyurl">* Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
     </div>
     <div class="form-block-mini">
-      <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
+      <div class="form-row required"><label for="enactdate">* Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
     </div>
     <br>
     <fieldset>
       <legend>Responsible Entities</legend>
-      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy and their web addresses (one entity per line). Example: Ministry of Social Justice and Empowerment (http://www.disabilityaffairs.gov.in/content/)</p>
+      <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy.</p>
       <ul class="multiple" id="entities-multiple">
         <li class="template">
           <label>Name: <input type="text" name="entity_name[]"></label><br>
@@ -143,23 +145,8 @@ layout: default
         </div>
     </fieldset>
 
-    <fieldset>
-      <legend>Relevant documents:</legend>
-      <p>List any documents relevant to the policy by providing the title, web address, and optional description (one document per line). Example: Information and Communication Technology (ICT) Standards and Guidelines (https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule)</p>
-      <ul class="multiple" id="documents-multiple">
-        <li class="template">
-          <label>Name: <input type="text" name="document_name[]"></label><br>
-          <label>URL: <input type="url" name="document_url[]"></label><br>
-          <label>Description: <input type="text" name="document_desc[]"></label>
-        </li>
-      </ul>
-      <button type="button" class="multiple" data-for="documents-multiple">➕ Add Entity</button>
-    </fieldset>
-
-    <h3>Standards information</h3>
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
-      <h3 class="no-display" id="guideline">What standards and <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version are referenced or required by the policy?</h3>
       <div class="form-block-mini radio">
         <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
         <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
@@ -179,9 +166,21 @@ layout: default
           <label>Description: <input type="text" name="standard_desc[]"></label>
         </li>
       </ul>
-      <button type="button" class="multiple" data-for="standards-multiple">➕ Add Entity</button>
+      <button type="button" class="multiple" data-for="standards-multiple">➕ Add Standard</button>
     </fieldset>
 
+    <fieldset>
+      <legend>Relevant documents:</legend>
+      <p>List any documents relevant to the policy.</p>
+      <ul class="multiple" id="documents-multiple">
+        <li class="template">
+          <label>Name: <input type="text" name="document_name[]"></label><br>
+          <label>URL: <input type="url" name="document_url[]"></label><br>
+          <label>Description: <input type="text" name="document_desc[]"></label>
+        </li>
+      </ul>
+      <button type="button" class="multiple" data-for="documents-multiple">➕ Add Document</button>
+    </fieldset>
   </fieldset>
 
 		<div class="form-block-mini">
