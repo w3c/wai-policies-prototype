@@ -196,16 +196,42 @@ layout: default
 
     </form>
     <script>
+      //helper function to iterate through elements – it’s just shorter :-D
       function each(elem, func) {
         Array.prototype.forEach.call(elem, func);
       }
+
+      // Each button with class multiple:
       each(document.querySelectorAll('button.multiple'), function(element) {
+
+        // Add event listener
         element.addEventListener('click', function(e) {
+
+          // When clicked, find the list this button refers to…
           var targetMultiple = document.getElementById(e.target.getAttribute('data-for'));
-          var template = targetMultiple.querySelector('.template').outerHTML;
-          targetMultiple.insertAdjacentHTML('beforeend', template);
+
+          // Find the template for the list. Clone it.
+          var template = targetMultiple.querySelector('.template').cloneNode(true);
+
+          // Remove Template from the item (not strictly necessary)
+          template.classList.remove("template");
+
+          // Find the first input element in the copied template, add focusHere class
+          template.querySelector('input').classList.add("focusHere");
+
+          // Insert the copied template before the end of the list.
+          targetMultiple.insertAdjacentHTML('beforeend', template.outerHTML);
+
+          // Focus the first input in the inserted list item.
+          document.querySelector('.focusHere').focus();
+
+          // Remove focusHere class from all elements that have one. (should always be only one, but better save than sorry before accidentally focussing the wrong element)
+          each(document.querySelectorAll('.focusHere'), function(e) {
+            e.classList.remove('focusHere');
+          });
 
         });
+
       });
     </script>
   </div>
