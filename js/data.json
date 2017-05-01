@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-[{% for policy in site.policies %}{% for p in policy.policies %}
+[{% for policy in site.policies %}{% if forloop.last == true %}{% assign outerlast = true %}{% endif %}{% for p in policy.policies %}
 {
     "country": "{{policy.country.en}}",
     "title": "{{p.title.en}}",
@@ -11,15 +11,5 @@ layout: null
     "scope": "{{p.scope}}",
     "webonly": "{%if p.webonly == true %}yes{% else %}no{%endif%}",
     "wcagver": "{{p.wcagver}}"
-  },{% endfor %}{% endfor %}
-{
-	"country": "Xanadu",
-    "title": "Xa11y",
-    "url": "",
-    "enactdate": "1971",
-    "type": "Accessibility law",
-    "scope": "private",
-    "webonly": "no",
-    "wcagver": "None"
-}
+  }{% unless outerlast == true and forloop.last == true %},{% endunless %}{% endfor %}{% endfor %}
 ]
