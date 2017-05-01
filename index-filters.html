@@ -69,7 +69,8 @@ layout: default
     </div>
     <style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
 
-    <table class="sortable" style="border-collapse: collapse;">
+    <div id="results-OLD">
+    <table class="sortable" style="border-collapse: collapse;" id="results">
       <tr>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Country</th>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Law/Legislation Name</th>
@@ -95,6 +96,7 @@ layout: default
       {% endfor %}
     {% endfor %}
     </table>
+    </div>
 
     <a href="#top">Back to top</a>
   </div>
@@ -710,6 +712,179 @@ resetbutton.addEventListener('click', function(e) {
 });
 </script>
 
+<script type="text/template" id="results-template">
+  <tr>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.country %></td>
+    <td style="padding: 5px; text-align: left; vertical-align: top;"><%= obj.title %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.enactdate %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.type %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.scope %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.webonly %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.wcagver %></td>
+  </tr>
+</script>
+
+
+<script type="text/template" id="results-template-OLD">
+      <li class="tool-item" tabindex="0" id="<%= _(obj.title).to_slug() %>">
+        <div>
+          <h3><a href="<%= obj.location %>"><%= obj.title %></a> <i>by <%= obj.creator %></i></h3>
+          <span class="future_permalink"></span>
+        </div>
+        <div class="desc">
+          <p><%= obj.description.replace( /\n/g, "<br/>" ) %></p>
+          <p class="link"><a href="<%= obj.location %>"><%= obj.location %></a>, <% if (obj.version.length) { %>Version: <%= obj.version %>, <% } %>Released: <%= _(obj.release).parsedate() %></span></p>
+        </div>
+        <details>
+          <summary><strong>Detailed Information</strong> about “<%= obj.title %>”</summary>
+          <ul>
+          <% if (obj.guideline && obj.guideline.length) { %>
+            <li>
+            <% if (obj.guideline instanceof Array && obj.guideline.length > 1) { %>
+              <strong>Guidelines:</strong> <%= obj.guideline.join(', ') %>
+            <% } else { %>
+              <strong>Guidelines:</strong> <%= obj.guideline %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.assists && obj.assists.length) { %>
+            <li>
+            <% if (obj.assists instanceof Array && obj.assists.length > 1) { %>
+              <strong>Assists by:</strong> <%= obj.assists.join(', ') %>
+            <% } else { %>
+              <strong>Assists by:</strong> <%= obj.assists %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.authoringtools && obj.authoringtools.length) { %>
+            <li>
+            <% if (obj.authoringtools instanceof Array && obj.authoringtools.length > 1) { %>
+              <strong>Authoring tools:</strong> <%= obj.authoringtools.join(', ') %>
+            <% } else { %>
+              <strong>Authoring tool:</strong> <%= obj.authoringtools %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.automated && obj.automated.length) { %>
+            <li>
+            <% if (obj.automated instanceof Array && obj.automated.length > 1) { %>
+              <strong>Automatically checks:</strong> <%= obj.automated.join(', ') %>
+            <% } else { %>
+              <strong>Automatically checks:</strong> <%= obj.automated %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.desktopapp && obj.desktopapp.length) { %>
+            <li>
+            <% if (obj.desktopapp instanceof Array && obj.desktopapp.length > 1) { %>
+              <strong>Operating System:</strong> <%= obj.desktopapp.join(', ') %>
+            <% } else { %>
+              <strong>Operating System:</strong> <%= obj.desktopapp %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.language && obj.language.length) { %>
+            <li>
+            <% if (obj.language instanceof Array && obj.language.length > 1) { %>
+              <strong>Languages:</strong> <%= obj.language.join(', ') %>
+            <% } else { %>
+              <strong>Language:</strong> <%= obj.language %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.browsers && obj.browsers.length) { %>
+            <li>
+            <% if (obj.browsers instanceof Array && obj.browsers.length > 1) { %>
+              <strong>Browser plugins:</strong> <%= obj.browsers.join(', ') %>
+            <% } else { %>
+              <strong>Browser plugin:</strong> <%= obj.browsers %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.apis && obj.apis.length) { %>
+            <li>
+            <% if (obj.apis instanceof Array && obj.apis.length > 1) { %>
+              <strong>APIs:</strong> <%= obj.apis.join(', ') %>
+            <% } else { %>
+              <strong>API:</strong> <%= obj.apis %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.technology && obj.technology.length) { %>
+            <li>
+            <% if (obj.technology instanceof Array && obj.technology.length > 1) { %>
+              <strong>Supported formats:</strong> <%= obj.technology.join(', ') %>
+            <% } else { %>
+              <strong>Supported format:</strong> <%= obj.technology %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.repairs && obj.repairs.length) { %>
+            <li>
+            <% if (obj.repairs instanceof Array && obj.repairs.length > 1) { %>
+              <strong>Repairs:</strong> <%= obj.repairs.join(', ') %>
+            <% } else { %>
+              <strong>Repairs:</strong> <%= obj.repairs %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.onlineservice && obj.onlineservice.length) { %>
+            <li>
+            <% if (obj.onlineservice instanceof Array && obj.onlineservice.length > 1) { %>
+              <strong>Online Service:</strong> <%= obj.onlineservice.join(', ') %>
+            <% } else { %>
+              <strong>Online Service:</strong> <%= obj.onlineservice %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.repairs && obj.repairs.length) { %>
+            <li>
+            <% if (obj.repairs instanceof Array && obj.repairs.length > 1) { %>
+              <strong>Repairs:</strong> <%= obj.repairs.join(', ') %>
+            <% } else { %>
+              <strong>Repairs:</strong> <%= obj.repairs %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.reports && obj.reports.length) { %>
+            <li>
+            <% if (obj.reports instanceof Array && obj.reports.length > 1) { %>
+              <strong>Report formats:</strong> <%= obj.reports.join(', ') %>
+            <% } else { %>
+              <strong>Report format:</strong> <%= obj.reports %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.license && obj.license.length) { %>
+            <li>
+            <% if (obj.license instanceof Array && obj.license.length > 1) { %>
+              <strong>License:</strong> <%= obj.license.join(', ') %>
+            <% } else { %>
+              <strong>License:</strong> <%= obj.license %>
+            <% } %>
+            </li>
+          <% }; %>
+          <% if (obj.a11yloc) { %>
+            <li>
+              <strong><a href="<%= obj.a11yloc %>">Accessibility information</a></strong>
+            </li>
+          <% }; %>
+          <% if (!obj.a11yloc) { %>
+            <li>
+              <strong>Accessibility information:</strong> (none provided)
+            </li>
+          <% }; %>
+          <% if (obj.update) { %>
+            <li>
+              <strong>Information updated:</strong> <%= _(obj.update).parsedate() %>
+            </li>
+          <% }; %>
+        </ul>
+        </details>
+      </li>
+</script>
 <script src="js/jquery.js"></script>
 <script src="js/underscore.js"></script>
+<script src="js/uri.js"></script>
 <script src="js/facetedsearch.js"></script>
+<script src="js/script.js"></script>

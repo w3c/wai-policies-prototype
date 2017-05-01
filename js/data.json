@@ -1,0 +1,25 @@
+---
+layout: null
+---
+[{% for policy in site.policies %}{% for p in policy.policies %}
+{
+    "country": "{{policy.country.en}}",
+    "title": "{{p.title.en}}",
+    "url": "{{p.url}}",
+    "enactdate": "{{p.enactdate}}",
+    "type": "{{p.type}}",
+    "scope": "{{p.scope}}",
+    "webonly": "{%if p.webonly == true %}yes{% else %}no{%endif%}",
+    "wcagver": "{{p.wcagver}}"
+  },{% endfor %}{% endfor %}
+{
+	"country": "Xanadu",
+    "title": "Xa11y",
+    "url": "",
+    "enactdate": "1971",
+    "type": "Accessibility law",
+    "scope": "private",
+    "webonly": "no",
+    "wcagver": "None"
+}
+]
