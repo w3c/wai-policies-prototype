@@ -4,7 +4,7 @@ country:
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2016-08-30
 updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
-# Related page: Australian states – Not sure yet how to model this, I tend to not have this
+relatedpages:
 policies:
   - title:
       en: Disability Discrimination Act 1992 (DDA)

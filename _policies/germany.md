@@ -4,7 +4,7 @@ country:
   de: Deutschland
 updated: 2017-03-17
 updatemsg: Updated to latest information on German policy and fixed broken links
-# Related page: German states – Not sure yet how to model this, I tend to not have this
+relatedpages:
 policies:
   - title:
       en: Act on Equal Opportunities for Disabled Persons of 2002

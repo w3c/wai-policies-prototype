@@ -3,7 +3,9 @@ country:
   en: Canada
 updated: 2017-02-09
 updatemsg: Adding Canada to prototype from proposal document.
-# Related page: CA Provinces (https://w3c.github.io/WAI/Policy/CA-Provinces.html)
+relatedpages:
+  - title: Provincial Policies Relating to Web Accessibility
+    url: https://w3c.github.io/WAI/Policy/CA-Provinces.html
 policies:
   - title:  
       en: Canadian Human Rights Act
