@@ -70,7 +70,7 @@ layout: default
     <style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
 
     <div id="results-OLD">
-    <table class="sortable" style="border-collapse: collapse;">
+    <table class="sortable" style="border-collapse: collapse;" id="results">
       <tr>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Country</th>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Law/Legislation Name</th>
@@ -80,8 +80,6 @@ layout: default
         <th style="padding: 5px; text-align: left; vertical-align: top;">Web Only</th>
         <th style="padding: 5px; text-align: left; vertical-align: top;">WCAG Version Used</th>
       </tr>
-      <div id="results">
-      </div>
       {% for policy in site.policies %}
       {% for p in policy.policies %}
       <tr data-updated="{{policy.updated}}">
