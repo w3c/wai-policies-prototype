@@ -5,7 +5,7 @@ country:
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-04-04
 updatemsg: Placeholder for Denmark information in prototype.
-# Related page: Australian states – Not sure yet how to model this, I tend to not have this
+relatedpages:
 policies:
   - title:
       en: First Denmark A11y Law

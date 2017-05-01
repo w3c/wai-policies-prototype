@@ -3,7 +3,7 @@ country:
   en: European Union
 updated: 2017-02-09
 updatemsg: Adding EU to prototype from proposal document.
-# Related page:
+relatedpages:
 policies:
   - title:  
       en: Web and Mobile Accessibility Directive

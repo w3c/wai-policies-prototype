@@ -4,7 +4,7 @@ country:
   fr: La France
 updated: 2016-2-17
 updatemsg: Add France to prototype.
-# Related page: Australian states – Not sure yet how to model this, I tend to not have this
+relatedpages:
 policies:
   - title:  
       en: Law N° 2005-102 Article 47
