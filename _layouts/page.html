@@ -41,7 +41,7 @@ layout: default
 
   <div class="post-content">
     <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
-    <p>Related page: Australian states (not implemented yet)</p>
+    {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
     {% for p in page.policies %}
       <h2 style="line-height: 1.5;">{% include multilang-title.html title=p.title url=p.url %}</h2>
       <div>

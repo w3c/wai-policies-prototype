@@ -70,7 +70,8 @@ layout: default
     <style> table tr > * {border:1px solid grey; border-collapse: collapse;}</style>
 
     <div id="results-OLD">
-    <table class="sortable" style="border-collapse: collapse;" id="results">
+    <table class="sortable" style="border-collapse: collapse;">
+      <thead>
       <tr>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Country</th>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Law/Legislation Name</th>
@@ -80,21 +81,24 @@ layout: default
         <th style="padding: 5px; text-align: left; vertical-align: top;">Web Only</th>
         <th style="padding: 5px; text-align: left; vertical-align: top;">WCAG Version Used</th>
       </tr>
-      {% for policy in site.policies %}
-      {% for p in policy.policies %}
-      <tr data-updated="{{policy.updated}}">
-        <td style="padding: 5px; vertical-align: top;">
-          {% assign curl = policy.country.en | slugify | prepend: '#x' %}
-          {% include multilang-title.html title=policy.country url=curl %}</td>
-        <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="{{p.url}}">{{p.title.en}} <img src="//www.w3.org/Icons/tr.png" alt="External"></a></td>
-        <td style="padding: 5px; vertical-align: top;">{{p.enactdate}}</td>
-        <td style="padding: 5px; vertical-align: top;">{{p.type}}</td>
-        <td style="padding: 5px; vertical-align: top;">{{p.scope}}</td>
-        <td style="padding: 5px; vertical-align: top;">{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
-        <td style="padding: 5px; vertical-align: top;">{{p.wcagver}}</td>
-      </tr>
-      {% endfor %}
-    {% endfor %}
+      </thead>
+      <tbody id="results">
+        {% for policy in site.policies %}
+        {% for p in policy.policies %}
+        <tr data-updated="{{policy.updated}}">
+          <td style="padding: 5px; vertical-align: top;">
+            {% assign curl = policy.country.en | slugify | prepend: '#x' %}
+            {% include multilang-title.html title=policy.country url=curl %}</td>
+          <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="{{p.url}}">{{p.title.en}} <img src="//www.w3.org/Icons/tr.png" alt="External"></a></td>
+          <td style="padding: 5px; vertical-align: top;">{{p.enactdate}}</td>
+          <td style="padding: 5px; vertical-align: top;">{{p.type}}</td>
+          <td style="padding: 5px; vertical-align: top;">{{p.scope}}</td>
+          <td style="padding: 5px; vertical-align: top;">{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
+          <td style="padding: 5px; vertical-align: top;">{{p.wcagver}}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </tbody>
     </table>
     </div>
 

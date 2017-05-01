@@ -3,7 +3,7 @@ country:
   en: India
 updated: 2017-3-24
 updatemsg: Updated information to include the new Rights of Persons with Disabilities Act passed in December 2016.
-# Related page: None
+relatedpages:
 policies:
   - title:
       en: Rights of Persons with Disabilities Act, 2016 (RPD)

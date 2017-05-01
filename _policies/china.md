@@ -5,7 +5,7 @@ country:
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-02-09
 updatemsg: Adding China to prototype from proposal document.
-# Related page:
+relatedpages:
 policies:
   - title:  
       en: Voluntary Web Standard

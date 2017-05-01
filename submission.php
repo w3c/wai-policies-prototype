@@ -6,7 +6,7 @@ if (!$_POST)  { die('<p>To submit a policy, <a href="https://w3c.github.io/wai-p
 if (trim($_POST['comment'])) { die("This may be spam."); } // If someone enters text into the honeypot, stop form submission
 
 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-var_dump($_POST);
+//var_dump($_POST);
 
 $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
@@ -90,7 +90,7 @@ policies:
 ---
 EOF;
 
-echo $template;
+// echo $template;
 
 if ($_POST['submission'] == 'new policy') {
 	$issue_title = 'New Entry for '.$country;
@@ -117,7 +117,7 @@ $template
 
 BODY;
 
-echo $issue_body;
+//echo $issue_body;
 
 $ch = curl_init();
 
@@ -127,11 +127,12 @@ curl_setopt($ch, CURLOPT_URL, 'https://api.github.com/repos/w3c/wai-policies-pro
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_USERAGENT, "W3C/POLICIES FORM");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 $return = json_decode(curl_exec($ch));
 
 ?>
 
-<p>Your suggestion was successfully submitted. You can track it in <a href="<?php echo $return['html_url'] ?>">issue number #<?php echo $return['number'] ?> on GitHub.</a></p>
+<p>Your suggestion was successfully submitted. You can track it in <a href="<?php echo $return->html_url ?>">issue number #<?php echo $return->number ?> on GitHub.</a></p>
 
 <p>If you want to submit another policy, <a href="http://w3c.github.io/wai-policies-prototype/submission.html">return to the submission form</a>.</p>
