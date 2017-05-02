@@ -248,18 +248,23 @@ layout: default
   display: flex;
   margin-bottom: .5em;
 }
-.form-block-mini:not(.radio) .form-row label,
-.form-block-mini:not(.radio) .form-row .l {
-  width: 15%;
-  font-style: normal;
-}
 .form-block-mini:not(.radio) .form-row span {
-  width: 85%;
   font-style: italic;
+  flex: 1;
 }
-.form-block-mini.half .form-row span {
-  width: 35%;
+.form-block-mini:not(.radio) .form-row label,
+.form-block-mini:not(.radio) .form-row span.l {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-style: normal;
+  margin-right: 1em;
 }
+.form-block-mini.half {
+  width: 70%;
+}
+/*.form-block-mini.half .form-row span input {
+  max-width: 7em;
+}*/
 .form-block-mini:not(.radio) .form-row span input,
 .form-block-mini:not(.radio) .form-row span textarea {
   width: 100%;
