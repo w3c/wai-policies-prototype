@@ -90,7 +90,7 @@ $(function(){
       selected = [selected.q];
     }
   }
-  console.log(selected.q);
+  //console.log(selected.q);
 
 	var item_template = $('#results-template').text();
 	var a11y_policies = $.getJSON( "./js/data.json", function() {

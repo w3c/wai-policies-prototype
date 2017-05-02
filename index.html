@@ -45,7 +45,7 @@ layout: default
 
     <p>Filter policies to show:</p>
     <div id="facets"></div>
-    <style> 
+    <style>
       table tr > * {border:1px solid grey; border-collapse: collapse;}
       #infos {margin: 1em;}
       #deselect {line-height: normal; font-family: "Trebuchet MS", sans-serif; margin: .4em;}
@@ -633,8 +633,8 @@ resetbutton.addEventListener('click', function(e) {
 
 <script type="text/template" id="results-template">
   <tr>
-    <td style="padding: 5px; vertical-align: top;"><%= obj.countryurl %></td>
-    <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="<%= obj.policyhref %>"><%= obj.title %></a></td>
+    <td style="padding: 5px; vertical-align: top;"><a href="<%= obj.countryhref %>"><%= obj.title %></a></td>
+    <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="<%= obj.policyhref %>"><%= obj.policyname %></a></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.enactdate %></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.type %></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.scope %></td>
