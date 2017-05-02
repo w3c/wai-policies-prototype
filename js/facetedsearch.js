@@ -382,7 +382,7 @@ var updateURL = function(){
 function updateResults() {
   $(settings.resultSelector).html(settings.currentResults.length === 0 ? settings.noResults : "");
   showMoreResults();
-  addSharebox();
+//  addSharebox();
 
   updateURL();
 }
