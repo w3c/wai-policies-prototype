@@ -29,7 +29,7 @@ policies:
         desc: Overview and guide for the Disability Discrimination Act
       - title: Web Accessibility National Transition Strategy
         url: http://www.finance.gov.au/publications/wcag-2-implementation/
-        desc: The Australian Government’s adoption and implementation of Web content Accessibility Guidelines version 2.0 (WCAG 2.0)
+        desc: The Australian Government’s adoption and implementation of Web content Accessibility Guidelines version 2.0 (WCAG 2.0) Level AA
       - title: Digital Service Standard accessibility requirement
         url: https://www.dto.gov.au/standard/9-make-it-accessible/
         desc: Guide to the standard used by Australian Government agencies for digital services.

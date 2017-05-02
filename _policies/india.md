@@ -23,7 +23,7 @@ policies:
       en: Guidelines for Indian Government Websites
     url: http://web.guidelines.gov.in
     updated: 2017-03-25
-    wcagver: WCAG 2.0 Level A
+    wcagver: WCAG 2.0
     enactdate: 2009
     type: Mandatory policy # other values: law/policy/procurement
     ministries:
@@ -31,6 +31,6 @@ policies:
         url: http://darpg.nic.in/
     webonly: no # other values: yes
     scope: gov # keys that allows us to use any combination
-    standard: WCAG20
+    standard: WCAG20A
     documents:
 ---
