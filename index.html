@@ -47,13 +47,41 @@ layout: default
     <div id="facets"></div>
     <style>
       table tr > * {border:1px solid grey; border-collapse: collapse;}
-      #infos {margin: 1em;}
+      table th {background-color: lightgrey;}
+      #infos {text-align: left;}
+      .facettotalcount {display:inline;}
       #deselect {line-height: normal; font-family: "Trebuchet MS", sans-serif; margin: .4em;}
-      ul.facetlist {list-style-type: none;}
+      ul.facetlist { list-style-type: none; padding-left: 0; margin-bottom: 0;}
+      #facets {
+        display: flex;
+      }
+      #facets > div {
+        flex: 2;
+        padding: .5em;
+        border-right: 1px solid;
+      }
+      #facets > div:first-child {
+        padding-left: 0;
+      }
+      #facets > div:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+      #facets > div h4 {
+        margin: 0;
+      }
+      #facets > div#type {
+        flex: 5;
+      }
+      #facets > div#type .facetlist{
+        columns: 2;
+      }
     </style>
 
-    <div id="infos"></div>
     <table class="sortable" style="border-collapse: collapse;">
+      <caption>
+        <div id="infos"></div>
+      </caption>
       <thead>
       <tr>
         <th style="padding: 5px; text-align: left; vertical-align: top;">Country</th>
