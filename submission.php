@@ -125,7 +125,7 @@ if ($_POST['cmnt'] == '') {
 $issue_body = <<<BODY
 $issue_title
 
-Submitted by [$name]($email):
+Submitted by [$name](mailto:$email):
 
 $comment
 
