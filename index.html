@@ -55,25 +55,26 @@ layout: default
       #facets {
         display: flex;
       }
-      #facets > div {
+      #facets > fieldset {
         flex: 2;
         padding: .5em;
+        border: none;
         border-right: 1px solid;
       }
-      #facets > div:first-child {
+      #facets > fieldset:first-child {
         padding-left: 0;
       }
-      #facets > div:last-child {
+      #facets > fieldset:last-child {
         padding-right: 0;
         border-right: none;
       }
-      #facets > div h4 {
+      #facets > fieldset h4 {
         margin: 0;
       }
-      #facets > div#type {
+      #facets > fieldset#type {
         flex: 5;
       }
-      #facets > div#type .facetlist{
+      #facets > fieldset#type .facetlist{
         columns: 2;
       }
     </style>

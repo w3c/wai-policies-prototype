@@ -32,7 +32,7 @@ ChinaWeb:
   url: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjJmqDUqb7RAhUK8YMKHboFAl0QFggpMAI&url=http%3A%2F%2Fwww.chinesestandard.net%2FPDF-English-Translation%2FYDT1761-2008.html&usg=AFQjCNF5MTc5NhMZzSi81kLs9MoA3Yak
 CanadaWeb:
   title: Standard on Web Accessibility
-  desc: Requires WCAG 2.0 Level AA and all conformance criteria. Exceptions: Text alternatives for complex maps under 1.1.1 Non-text content, 1.2.4 Captions (Live), and 1.2.5 Audio Description for pre-recorded video unrelated to health and safety.
+  desc: "Requires WCAG 2.0 Level AA and all conformance criteria. Exceptions: Text alternatives for complex maps under 1.1.1 Non-text content, 1.2.4 Captions (Live), and 1.2.5 Audio Description for pre-recorded video unrelated to health and safety."
   url: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601
 FranceWeb:
   title: Référentiel Général d’Accessibilité des Administrations (RGAA) Version 3 2016
