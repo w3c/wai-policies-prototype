@@ -43,7 +43,7 @@ layout: default
     <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
     {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
     {% for p in page.policies %}
-      <h2 style="line-height: 1.5;">{% include multilang-title.html title=p.title url=p.url %}</h2>
+      <h2 id="{{p.title.en | slugify}}" style="line-height: 1.5;">{% include multilang-title.html title=p.title url=p.url external="true" %}</h2>
       <div>
         <ul>
           <li>Date enacted: {{p.enactdate}}</li>
