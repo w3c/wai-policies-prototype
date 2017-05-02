@@ -119,8 +119,8 @@ $(function(){
 			facetTitleTemplate : '<% if (!obj.plain) { %><summary class="facettitle"><%= title %></summary><% } %>',
 			facetContainer     : '<% if (!obj.plain) { %><details <% if (obj.collapsed) { %><% } else { %>open="true"<% } %> class="facetsearch <% if (obj.collapsed) { %><% } else { %>open<% } %>" id="<%= id %>"></details><% } else { %><div class="plainitem"></div><% } %>',
 			showMoreTemplate   : '<button type="button" id="showmorebutton">Show more</button>',
-      deselectTemplate   : '<button type="button" id="deselect" class="btn"><svg aria-hidden="true" class="i-refresh"><use xlink:href="#i-refresh"></use></svg> Clear filters</button>',
-      shareviewTemplate  : '<div class="permalink_wrapper" id="sharethisview"><a href="#" class="btn"><svg aria-hidden="true" class="i-share"><use xlink:href="#i-share"></use></svg> Share this view</a><div class="sharebox"><p><label>Link to this view:<input type="url" value="" readonly=""> Shortcut to copy the link: <kbd>ctrl</kbd>+<kbd>C</kbd> <em>or</em> <kbd>⌘</kbd><kbd>C</kbd></label></p><p><a href="">E-mail a link to this section</a><button>Close</button></p></div></div>',
+      deselectTemplate   : '<button type="button" id="deselect" class="btn"><!-- svg aria-hidden="true" class="i-refresh"><use xlink:href="#i-refresh"></use></svg --> Clear filters</button>',
+      shareviewTemplate  : '<!-- <div class="permalink_wrapper" id="sharethisview"><a href="#" class="btn"><svg aria-hidden="true" class="i-share"><use xlink:href="#i-share"></use></svg> Share this view</a><div class="sharebox"><p><label>Link to this view:<input type="url" value="" readonly=""> Shortcut to copy the link: <kbd>ctrl</kbd>+<kbd>C</kbd> <em>or</em> <kbd>⌘</kbd><kbd>C</kbd></label></p><p><a href="">E-mail a link to this section</a><button>Close</button></p></div></div> -->',
       selected           : selected,
       state              : {
                          orderBy : false,
