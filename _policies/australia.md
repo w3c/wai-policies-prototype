@@ -5,6 +5,8 @@ country:
 updated: 2016-08-30
 updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
 relatedpages:
+  - title: Policies in Australian States
+    url: https://www.w3.org/WAI/Policy/AU-States.html
 policies:
   - title:
       en: Disability Discrimination Act 1992 (DDA)
@@ -41,7 +43,7 @@ policies:
     ministries:
       - title: Minister of Finance
     scope: gov
-    webonly: yes # other values: yes
+    webonly: no # other values: yes
     standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
       - title: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
