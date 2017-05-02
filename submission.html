@@ -66,8 +66,8 @@ layout: default
     <!-- commenting out for policies prototype
     <fieldset class="border-less"><legend><span>Your Role</span></legend>
       <div class="form-block-mini">
-        <div class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span><label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></div>
-        <div class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span><label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></div>
+        <div class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span> <label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></div>
+        <div class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span> <label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></div>
       </div>
     </fieldset>
     -->
@@ -76,8 +76,8 @@ layout: default
     <fieldset>
       <legend><h3>Add new or update existing Web accessibility policy</h3></legend>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input type="radio" checked name="submission" id="new" value="new policy"></span><label for="new">Add new policy</label></div>
-        <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span><label for="new">Update existing policy</label></div>
+        <div class="form-row"><span><input type="radio" checked name="submission" id="new" value="new policy"></span> <label for="new">Add new policy</label></div>
+        <div class="form-row"><span><input type="radio" name="submission" id="existing" value="existing policy"></span> <label for="new">Update existing policy</label></div>
       </div>
     </fieldset>
 
@@ -96,9 +96,10 @@ layout: default
     <div class="form-block-mini">
       <div class="form-row required"><label for="policyname">* Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
       <div class="form-row required"><label for="policyurl">* Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+    </div>
+    <div class="form-block-mini half">
       <div class="form-row required"><label for="enactdate">* Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" required aria-required="true" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
     </div>
-    <br>
     <fieldset>
       <legend>Responsible Entities</legend>
       <p>List the governmental ministries, agencies, or departments that oversee or are related to this policy.</p>
@@ -115,13 +116,13 @@ layout: default
 
     <fieldset><legend><span>Type of policy</span></legend>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-a11ylaw" value="law"></span><label for="policy-a11ylaw">Accessibility law</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-ndlaw" value="Non-discrimination law"></span><label for="policy-ndlaw">Non-discrimination law</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-proclaw" value="Procurement law"></span><label for="policy-proclaw">Procurement law</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-procrecomm" value="Procurement recommendation"></span><label for="policy-procrecomm">Procurement recommendation</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-mandpolicy" value="Mandatory policy"></span><label for="policy-mandpolicy">Mandatory policy</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-recommendation" value="Recommended policy"></span><label for="policy-recommendation">Recommended policy</label></div>
-        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-dontknow" value="Unsure"></span><label for="policy-dontknow">Unsure</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-a11ylaw" value="law"></span> <label for="policy-a11ylaw">Accessibility law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-ndlaw" value="Non-discrimination law"></span> <label for="policy-ndlaw">Non-discrimination law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-proclaw" value="Procurement law"></span> <label for="policy-proclaw">Procurement law</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-procrecomm" value="Procurement recommendation"></span> <label for="policy-procrecomm">Procurement recommendation</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-mandpolicy" value="Mandatory policy"></span> <label for="policy-mandpolicy">Mandatory policy</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-recommendation" value="Recommended policy"></span> <label for="policy-recommendation">Recommended policy</label></div>
+        <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-dontknow" value="Unsure"></span> <label for="policy-dontknow">Unsure</label></div>
       </div>
       <div class="form-block-mini half">
         <label for="policytype_other" class="form-row"><span class="l">Other:</span> <span><input id="policytype_other" name="policytype[other]" type="text"></span></label>
@@ -131,27 +132,27 @@ layout: default
     <fieldset>
       <legend>Scope of policy (select all that apply)</legend>
         <div class="form-block-mini radio">
-          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-gov" value="gov"></span><label for="scope-public">Government</label></div>
-          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-public" value="public"></span><label for="scope-public">Public sector</label></div>
-          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-private" value="private"></span><label for="scope-private">Private sector</label></div>
+          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-gov" value="gov"></span> <label for="scope-public">Government</label></div>
+          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-public" value="public"></span> <label for="scope-public">Public sector</label></div>
+          <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-private" value="private"></span> <label for="scope-private">Private sector</label></div>
         </div>
     </fieldset>
 
     <fieldset>
       <legend>Technologies the policy applies to</legend>
         <div class="form-block-mini radio">
-          <div class="form-row"><span><input type="radio" checked name="web-only" id="web-only-true" value="true"></span><label for="web-only-true">Web only</label></div>
-          <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span><label for="web-only-false">Web plus other technologies (e.g. mobile, software, hardware, etc.)</label></div>
+          <div class="form-row"><span><input type="radio" checked name="web-only" id="web-only-true" value="true"></span> <label for="web-only-true">Web only</label></div>
+          <div class="form-row"><span><input type="radio" name="web-only" id="web-only-false" value="false"></span> <label for="web-only-false">Web plus other technologies (e.g. mobile, software, hardware, etc.)</label></div>
         </div>
     </fieldset>
 
     <fieldset id="fs-guideline">
       <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span><label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
-        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span><label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
-        <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="WCAG 1.0" type="checkbox"> </span><label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
-        <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span><label for="guideline_none">None</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span> <label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span> <label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
+        <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="WCAG 1.0" type="checkbox"> </span> <label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
+        <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span> <label for="guideline_none">None</label></div>
       </div>
       <div class="form-block-mini half">
         <label for="guideline_other" class="form-row"><span class="l">Other:</span> <span><input id="guideline_other" name="guideline[other]" type="text"></span></label>
