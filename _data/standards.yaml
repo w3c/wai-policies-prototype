@@ -8,7 +8,7 @@ Original508:
   url: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
 Revised508:
   title: Information and Communication Technology (ICT) Standards and Guidelines
-  desc: Revised Section 508 standards published in the U.S. Federal Register 21 Jan. 2017. Incorporates WCAG 2.0 by reference without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.
+  desc: Revised Section 508 standards published in the U.S. Federal Register 21 Jan. 2017. Incorporates WCAG 2.0 Level AA by reference without modifications for Web content as well as WCAG 2.0 Level AA for non-Web documentation and software with the exception of 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification.
   url: https://www.federalregister.gov/documents/2017/01/18/2017-00395/information-and-communication-technology-ict-standards-and-guidelines
 DeptofEd504:
   title: Requirements for Accessible Electronic and Information Technology Design
