@@ -160,36 +160,22 @@ function resetFacetCount() {
  */
 function filter() {
   // first apply the filters to the items
-  if (Object.keys(settings.state.filters).length === 0) {
-    settings.currentResults = settings.items;
-  } else {
-    settings.currentResults = []; // Cleaning the array
-    var n = 0;
-    _.each(settings.items, function(item) {
-      var qualifiers = {};
-      _.each(settings.state.filters, function(filter, facet) {
-        var itemFacet = item[facet];
-        qualifiers[facet] = [];
-        var m = 0;
-        if (!$.isArray(itemFacet)) {
-          itemFacet = [itemFacet];
+  settings.currentResults = _.select(settings.items, function(item) {
+    var filtersApply = true;
+    _.each(settings.state.filters, function(filter, facet) {
+      if ($.isArray(item[facet])) {
+         var inters = _.intersect(item[facet], filter);
+         if (inters.length == 0) {
+           filtersApply = false;
+         }
+      } else {
+        if (filter.length && _.indexOf(filter, item[facet]) == -1) {
+          filtersApply = false;
         }
-        _.each(filter, function(f) {
-          if (!$.isArray(f)) {
-            f = [f];
-          }
-          if (_.isEqual(_.intersection(itemFacet, f), f)) {
-            qualifiers[facet][m] = f[0];
-            m++;
-          }
-        });
-        if (_.isEqual(qualifiers, settings.state.filters)) {
-          settings.currentResults[n] = item;
-          n++;
-        }
-      });
+      }
     });
-  }
+    return filtersApply;
+  });
   // Update the count for each facet and item:
   // intialize the count to be zero
   resetFacetCount();
@@ -208,13 +194,11 @@ function filter() {
     });
   });
   // remove confusing 0 from facets where a filter has been set
-  /*
   _.each(settings.state.filters, function(filters, facettitle) {
     _.each(settings.facetStore[facettitle], function(facet) {
       if (facet.count === 0 && settings.state.filters[facettitle].length) {facet.count = "+";}
     });
   });
-  */
   settings.state.shownResults = 0;
 }
 
@@ -276,10 +260,8 @@ function createFacetUI() {
       }
       facetlist.append(filteritem);
     });
-    if($(facetlist).children().length) {
       facetHtml.append(facetlist);
       $(settings.facetSelector).append(facetHtml);
-    }
   });
   // add the click event handler to each facet item:
   $('.facetitem').click(function(event){

@@ -113,7 +113,7 @@ $(function(){
 			facetSortOption  : {},
 			facetListContainer : '<ul class=facetlist></ul>',
 			listItemTemplate   : '<li><span><input type="checkbox" class="facetitem" aria-pressed="false" id="<%= id %>" data-name="<%= _(_(name).strip_html()).to_slug() %>"></span> <span><label for="<%= id %>"><%= name %> <span class="facetitemcount">(<%= count %>&nbsp;<% if (count==1) { %>policy<% } else {%>policies<% } %>)</span></label></span></li>',
-			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<%= count %> <% if (count==1) { %>policy<% } else {%>policies<% } %>)</span></span>',
+			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<% if (count=="+") { %>add<% } else { if (count==1) { %><%= count %>&nbsp;policy<% } else {%><%= count %>&nbsp;policies<% }} %>)</span></span>',
 			orderByTemplate    : '',
 			countTemplate      : '<div class="facettotalcount"><strong><span aria-live="true">Showing <%= count %> <% if (count==1) { %>policy<% } else {%>policies<% } %></span><% if (filters) { %>, matching the filters:</strong> <span class="filter"><%= filters.join("</span>, <span class=\'filter\'>") %></span><% } else { %></strong><% } %></div>',
 			facetTitleTemplate : '<% if (!obj.plain) { %><h4 class="facettitle"><%= title %></h4><% } %>',
