@@ -4,7 +4,9 @@ layout: null
 [{% for policy in site.policies %}{% if forloop.last == true %}{% assign outerlast = true %}{% endif %}{% for p in policy.policies %}
 {
     "country": "{{policy.country.en}}",
+    "countryurl": "{% assign titleurl = policy.url |  prepend: site.baseurl %}{% include multilang-title.html title=policy.country url=titleurl %}",
     "title": "{{p.title.en}}",
+    "policyhref": "{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}",
     "url": "{{p.url}}",
     "enactdate": "{{p.enactdate}}",
     "type": "{{p.type}}",

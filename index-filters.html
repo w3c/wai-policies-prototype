@@ -106,6 +106,7 @@ layout: default
   </div>
 </details>
 
+{%comment%}
 <h2 id="xlist">Laws &amp; Policies by Country</h2>
 
 <ul>
@@ -154,6 +155,7 @@ layout: default
   </li>
 {% endfor %}
 </ul>
+{%endcomment%}
 
 <h2 id="xterms"> Terms used on this page</h2>
 
@@ -718,8 +720,8 @@ resetbutton.addEventListener('click', function(e) {
 
 <script type="text/template" id="results-template">
   <tr>
-    <td style="padding: 5px; vertical-align: top;"><%= obj.country %></td>
-    <td style="padding: 5px; text-align: left; vertical-align: top;"><%= obj.title %></td>
+    <td style="padding: 5px; vertical-align: top;"><%= obj.countryurl %></td>
+    <td style="padding: 5px; text-align: left; vertical-align: top;"><a href="<%= obj.policyhref %>"><%= obj.title %></a></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.enactdate %></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.type %></td>
     <td style="padding: 5px; vertical-align: top;"><%= obj.scope %></td>
