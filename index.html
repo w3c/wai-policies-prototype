@@ -11,7 +11,7 @@ layout: default
       <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
-    <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
+    <li>Laws &amp; Policies by Country - detail
       <ul class="countries">
       {% for policy in site.policies %}
         <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
@@ -23,7 +23,7 @@ layout: default
     </li>
   </ul>
 
-  <h2 style="position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
+  <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
   <p>If you know of new or changed legislation, laws, or policies that are not listed here or if any corrections are needed, please let us know.</p>
   <p><a href="submission.html" class="btn">Start an Update</a></p>
 
@@ -114,16 +114,6 @@ layout: default
     <a href="#top">Back to top</a>
   </div>
 </details>
-
-<h2 id="xterms"> Terms used on this page</h2>
-
-<ul>
-  <li><strong>Law</strong> – A law has completed the legislation process, and is put into effect as the law of the land.</li>
-  <li><strong>Policy</strong> – Outlines the goals of a government ministry or agency as well as the methods and principles to achieve those goals. Policies are not laws, but can lead to the development of laws.</li>
-  <li><strong>Public sector</strong> – Includes government and government-run or owned entities, and entities that receive government funding.</li>
-  <li><strong>Private sector</strong> – Businesses and organizations that are not part of the public sector, including non-profit organizations.</li>
-  <li><strong>WCAG derivative</strong> - Used when a standard is based on a version of WCAG, but some requirements were excluded or modified or additional non-WCAG requirements were added.</li>
-</ul>
 
 </div>
 

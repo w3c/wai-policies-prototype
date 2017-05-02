@@ -11,7 +11,7 @@ policies:
     updated: 2016-10-26
     wcagver: WCAG 2.0
     enactdate: 2016
-    type: Law # other values: law/policy/procurement
+    type: Accessibility law # other values: law/policy/procurement
     ministries:
       - title: European Commission
         url: http://ec.europa.eu/index_en.htm
