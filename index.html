@@ -11,7 +11,7 @@ layout: default
       <li><a href="#x{{help.title | slugify }}">{{help.title}}</a></li>
     {% endfor %}
     <li><a href="#xtable">Law &amp; Policy by Country - table</a></li>
-    <li><a href="#xlist">Laws &amp; Policies by Country - detail</a>
+    <li>Laws &amp; Policies by Country - detail
       <ul class="countries">
       {% for policy in site.policies %}
         <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
