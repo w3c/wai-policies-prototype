@@ -29,7 +29,7 @@ policies:
     updated: 2016-10-01
     wcagver: WCAG 2.0
     enactdate: 2016
-    type: Policy
+    type: Mandatory Policy
     ministries:
       - title: Treasury Board
         url: https://www.canada.ca/en/treasury-board-secretariat.html

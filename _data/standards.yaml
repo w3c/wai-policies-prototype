@@ -38,3 +38,7 @@ FranceWeb:
   title: Référentiel Général d’Accessibilité des Administrations (RGAA) Version 3 2016
   desc: French Web accessibility guidelines.
   url: http://references.modernisation.gouv.fr/referentiel/
+NewZealandWeb10:
+  title: Web Accessibility Standard 1.0
+  desc: Requires WCAG 2.0 Level AA and all 5 conformance criteria with exceptions documented in the standard.
+  url: https://webtoolkit.govt.nz/standards/web-accessibility-standard-1-0/
