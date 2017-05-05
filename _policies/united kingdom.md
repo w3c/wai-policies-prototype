@@ -23,7 +23,7 @@ policies:
       - title: Equality Act guidance
         url: https://www.equalityhumanrights.com/en/advice-and-guidance/equality-act-guidance
         desc: 
-        - title: BSI 8878 Web Accessibility. Code of Practice
+        - title: BS 8878 Web Accessibility. Code of Practice
         url: http://shop.bsigroup.com/en/ProductDetail/?pid=000000000030180388&rdt=wmt
         desc: British standard that provides a framework for designing or procuring accessible web products. Does not contain technical requirements.
 ---
