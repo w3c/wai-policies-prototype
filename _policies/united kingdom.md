@@ -2,41 +2,28 @@
 country:
   en: United Kingdom
 # title_native: # Country name in the country’s language(s), comma separated. For United Kingdom: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-04-04
-updatemsg: Placeholder for United Kingdom information in prototype.
+updated: 2017-05-04
+updatemsg: Update United Kingdom accessibility laws and policies.
 relatedpages:
 policies:
-  - title:
-      en: First United Kingdom A11y Law
-    url: https://www.visitbritain.com/us/en
-    updated: 2016-08-30
+  - title: 
+      en: Equality Act 2010
+    url: http://www.legislation.gov.uk/ukpga/2010/15/contents
+    updated: 2017-05-04
     wcagver: WCAG 2.0
-    enactdate: 1992
+    enactdate: 2010
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
-      - title: Ministry of this
-        url: https://www.visitbritain.com/us/en
+      - title: Equality and Human Rights Commission
+        url: https://www.equalityhumanrights.com/en
     webonly: no # other values: yes
     scope: public, private # keys that allows us to use any combination
-    standard: false
+    standard: None
     documents:
-      - title: Document 1
-        url: https://www.visitbritain.com/us/en
-        desc: Guidance for law 1
-  - title:  
-      en: Second United Kingdom a11y law
-    url: https://www.visitbritain.com/us/en
-    updated: 2017-04-04
-    wcagver: WCAG 2.0
-    enactdate: 2016
-    type: Procurement recommendation
-    ministries:
-      - title: Ministry of that
-        url: https://www.visitbritain.com/us/en
-    scope: gov
-    webonly: yes # other values: yes
-    standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
-    documents:
-      - title: Paperclip document
-        url: https://www.visitbritain.com/us/en
+      - title: Equality Act guidance
+        url: https://www.equalityhumanrights.com/en/advice-and-guidance/equality-act-guidance
+        desc: 
+        - title: BSI 8878 Web Accessibility. Code of Practice
+        url: http://shop.bsigroup.com/en/ProductDetail/?pid=000000000030180388&rdt=wmt
+        desc: British standard that provides a framework for designing or procuring accessible web products. Does not contain technical requirements.
 ---
