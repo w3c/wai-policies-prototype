@@ -52,6 +52,7 @@ layout: default
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
           <li>WCAG Version Used: {{p.wcagver}}</li>
+          {% if p.standard %}
           {% unless p.standard == "None" or p.standard == "none" or p.standard == false %}
           {% assign standards = p.standard | split: ";" %}
           <li>{%if standards.size > 1 %}Standards:{%else%}Standard:{%endif%}
@@ -62,6 +63,7 @@ layout: default
             </ul>
           </li>
           {%endunless%}
+          {% endif %}
           {% if p.documents %}
             <li>Relevant Documents:
               <ul>
