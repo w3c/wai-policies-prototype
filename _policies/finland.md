@@ -11,7 +11,7 @@ policies:
       en: Act on Electronic Services and Communication in the Public Sector
       fi: Laki sähköisestä asioinnista viranomaistoiminnassa (13/2003)
     url: http://www.finlex.fi/en/laki/kaannokset/2003/en20030013.pdf
-    updated: 2016-08-30
+    updated: 2017-05-08
     wcagver: None
     enactdate: 2003
     type: Law # other values: law/policy/procurement
