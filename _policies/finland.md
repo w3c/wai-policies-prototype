@@ -3,41 +3,37 @@ country:
   en: Finland
   fi: Suomi
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-04-04
-updatemsg: Placeholder for Finland information in prototype.
+updated: 2017-05-08
+updatemsg: Update Finland's policies.
 relatedpages:
 policies:
-  - title:
-      en: First Finland A11y Law
-    url: https://finland.fi/
+  - title: 
+      en: Act on Electronic Services and Communication in the Public Sector
+      fi: Laki sähköisestä asioinnista viranomaistoiminnassa (13/2003)
+    url: http://www.finlex.fi/en/laki/kaannokset/2003/en20030013.pdf
     updated: 2016-08-30
-    wcagver: WCAG 2.0
-    enactdate: 1992
-    type: Non-discrimination law # other values: law/policy/procurement
+    wcagver: None
+    enactdate: 2003
+    type: Law # other values: law/policy/procurement
     ministries:
-      - title: Ministry of this
-        url: https://finland.fi/
+      - title: 
+          en: Ministry of the Interior
+          fi: Sisäasiainministeriö 
+        url: http://intermin.fi/etusivu
+      - title:
+          en: Ministry of Justice
+          fi: Oikeusministeriö
+        url: http://oikeusministerio.fi/fi/index/ministerio/tehtavat.html
+      - title: 
+          en: Public Administration Advisory Board for Information Management
+          fi: Julkisen Hallinnon Tietohallinnon Neuvottelukunta (JUHTA)
+        url: http://www.jhs-suositukset.fi/web/guest/jhs
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: gov # keys that allows us to use any combination
     standard: false
-    documents:
-      - title: Document 1
-        url: https://finland.fi/
-        desc: Guidance for law 1
-  - title:  
-      en: Second Finland a11y law
-    url: https://finland.fi/
-    updated: 2017-04-04
-    wcagver: WCAG 2.0
-    enactdate: 2016
-    type: Procurement recommendation
-    ministries:
-      - title: Ministry of that
-        url: https://finland.fi/
-    scope: gov
-    webonly: yes # other values: yes
-    standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
-    documents:
-      - title: Paperclip document
-        url: https://finland.fi/
+    documents: 
+      - title: JHS 190 public network design and development
+        url: http://docs.jhs-suositukset.fi/jhs-suositukset/JHS190/JHS190.html
+        fi: JHS 190 Julkisten verkkopalvelujen suunnittelu ja kehittäminen
+        desc: Guidance on public administration website design. Recommends WCAG 2.0 Level AA.
 ---
