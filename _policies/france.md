@@ -17,7 +17,7 @@ policies:
       - title: Ministry of Social Affairs
         url: http://social-sante.gouv.fr/
     webonly: no # other values: yes
-    scope: public # keys that allows us to use any combination
+    scope: Public sector # keys that allows us to use any combination
     standard: false
     documents:
   - title:  
@@ -30,7 +30,7 @@ policies:
     ministries:
       - title: Ministry of Social Affairs
         url: http://social-sante.gouv.fr/
-    scope: public
+    scope: Public sector
     webonly: yes # other values: yes
     standard: FranceWeb
     documents:

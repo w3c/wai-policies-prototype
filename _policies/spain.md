@@ -18,7 +18,7 @@ policies:
       - title: Ministry of this
         url: www.spain.info/en_US/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: false
     documents:
       - title: Document 1
@@ -34,7 +34,7 @@ policies:
     ministries:
       - title: Ministry of that
         url: www.spain.info/en_US/
-    scope: gov
+    scope: Government
     webonly: yes # other values: yes
     standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:

@@ -18,7 +18,7 @@ policies:
       - title: Ministry of Justice
         url:  http://www.bmjv.de/EN/Home/Home.html
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
   - title:
       en: Federal Ordinance on Barrier-Free Information Technology
       de: Verordnung zur Schaffung barrierefreier Informationstechnik nach dem Behindertengleichstellungsgesetz (Barrierefreie-Informationstechnik-Verordnung - BITV 2.0)
@@ -30,7 +30,7 @@ policies:
     ministries:
       - title: Federal Ministry of the Interior
         url:
-    scope: gov
+    scope: Government
     webonly: yes # other values: no
     documents:
       - title: BITV 2.0 in Kraft

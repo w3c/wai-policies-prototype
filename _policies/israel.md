@@ -20,7 +20,7 @@ policies:
       - title: Commission for Equal Rights of Persons with Disabilities
         url: http://www.justice.gov.il/En/UNITS/COMMISSIONEQUALRIGHTSPERSONSDISABILITIES/Pages/About-the-Commission-for-Equal-Rights-of-Persons-With-Disablities.aspx
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: WCAG 2.0
     documents:
       - title: Accessibility Legislation

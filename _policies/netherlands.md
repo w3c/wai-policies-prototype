@@ -20,7 +20,7 @@ policies:
       - title: Ministry of Employment and Social Affairs
         url: https://www.government.nl/ministries/ministry-of-social-affairs-and-employment
     webonly: no # other values: yes
-    scope: gov # keys that allows us to use any combination
+    scope: Government # keys that allows us to use any combination
     standard: EN301549
     documents:
       - title: Accessibility Policy in the Netherlands - Laws and regulations
@@ -36,7 +36,7 @@ policies:
     ministries:
       - title: Ministry of General Affairs
         url: https://www.government.nl/ministries/ministry-of-general-affairs
-    scope: gov, public
+    scope: Government, Public sector
     webonly: yes # other values: yes
     standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:

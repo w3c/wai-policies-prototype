@@ -16,7 +16,7 @@ policies:
       - title: Ministry of Social Justice and Empowerment
         url: http://www.disabilityaffairs.gov.in/content/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: False
     documents:
   - title:
@@ -30,7 +30,7 @@ policies:
       - title: Department of Administrative Reforms and Public Grievances
         url: http://darpg.nic.in/
     webonly: no # other values: yes
-    scope: gov # keys that allows us to use any combination
+    scope: Government # keys that allows us to use any combination
     standard: WCAG20A
     documents:
 ---

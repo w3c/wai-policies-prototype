@@ -20,7 +20,7 @@ policies:
       - title: Canadian Human Rights Commission
         url: http://www.chrc-ccdp.ca/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: false
     documents:
   - title:  
@@ -33,7 +33,7 @@ policies:
     ministries:
       - title: Treasury Board
         url: https://www.canada.ca/en/treasury-board-secretariat.html
-    scope: gov
+    scope: Government
     webonly: no # other values: yes
     standard: CanadaWeb
     documents:

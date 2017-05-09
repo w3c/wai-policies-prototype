@@ -19,7 +19,7 @@ policies:
       - title: Office of the Ombudsman
         url: https://www.ombudsman.gov.ie/en/
     webonly: no # other values: yes
-    scope: public # keys that allows us to use any combination
+    scope: Public sector # keys that allows us to use any combination
     standard: None
     documents:
       - title: About Disability Rights
@@ -35,7 +35,7 @@ policies:
     ministries:
       - title:  Irish Human Rights and Equality Commission
         url: https://www.ihrec.ie/
-    scope: public, private
+    scope: Public sector, Private sector
     webonly: no # other values: yes
     standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
@@ -52,7 +52,7 @@ policies:
     ministries:
       - title: Irish Human Rights and Equality Commission
         url: https://www.ihrec.ie/
-    scope: public, private
+    scope: Public sector, Private sector
     webonly: no # other values: yes
     standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:

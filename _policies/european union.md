@@ -16,7 +16,7 @@ policies:
       - title: European Commission
         url: http://ec.europa.eu/index_en.htm
     webonly: no # other values: no
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: EN301549
     documents:
       - title: The adoption of a directive on the accessibility of the sector bodies’ websites and mobile apps
@@ -31,7 +31,7 @@ policies:
     ministries:
       - title: European Commission
         url: ttp://ec.europa.eu/index_en.htm
-    scope: public, private
+    scope: Public sector, Private sector
     webonly: no # other values: yes
     standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:

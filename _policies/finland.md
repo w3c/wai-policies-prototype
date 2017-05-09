@@ -29,7 +29,7 @@ policies:
           fi: Julkisen Hallinnon Tietohallinnon Neuvottelukunta (JUHTA)
         url: http://www.jhs-suositukset.fi/web/guest/jhs
     webonly: no # other values: yes
-    scope: gov # keys that allows us to use any combination
+    scope: Government # keys that allows us to use any combination
     standard: false
     documents: 
       - title: JHS 190 public network design and development

@@ -18,6 +18,6 @@ policies:
       - title: China Academy of Telecommunication Research (CATR)
         url: http://english.caict.ac/
     webonly: yes # other values: no
-    scope: gov # keys that allows us to use any combination
+    scope: Government # keys that allows us to use any combination
     standard: ChinaWeb
 ---

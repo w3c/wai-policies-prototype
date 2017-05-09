@@ -21,7 +21,7 @@ policies:
           da: Finansministeriets 
         url: https://www.digst.dk/Servicemenu/Om-os
     webonly: yes # other values: yes
-    scope: public # keys that allows us to use any combination
+    scope: Public sector # keys that allows us to use any combination
     standard: WCAG20AA
     documents: 
       - title: 

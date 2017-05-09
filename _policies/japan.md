@@ -18,7 +18,7 @@ policies:
       - title: Ministry of Internal Affairs and Communications
         url: http://www.soumu.go.jp/english/index.html
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: None
     documents:
       - title: "JIS X 8341-3 (or also ISO/IEC 40500:2012) : 2016 Guidelines for older persons and persons with disabilities - Information and communications equipment, software and services - Part 3: Web content"

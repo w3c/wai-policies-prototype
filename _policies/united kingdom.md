@@ -17,7 +17,7 @@ policies:
       - title: Equality and Human Rights Commission
         url: https://www.equalityhumanrights.com/en
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: None
     documents:
       - title: Equality Act guidance

@@ -21,7 +21,7 @@ policies:
       - title: Australian Human Rights Commission
         url: http://www.humanrights.gov.au/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: false
     documents:
       - title: About Disability Rights
@@ -42,7 +42,7 @@ policies:
     type: Procurement recommendation
     ministries:
       - title: Minister of Finance
-    scope: gov
+    scope: Government
     webonly: no # other values: yes
     standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:

@@ -22,7 +22,7 @@ policies:
       - title: Department of Justice
         url: https://www.justice.gov/
     webonly: no # other values: yes
-    scope: gov # keys that allows us to use any combination
+    scope: Government # keys that allows us to use any combination
     standard: Original508
     documents:
       - title: Information and Communication Technology (ICT) Standards and Guidelines
@@ -58,7 +58,7 @@ policies:
       - title: U.S. Access Board
         url: http://www.access-board.gov/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: None
     documents:
       - title: DOL Laws & Regulations
@@ -77,7 +77,7 @@ policies:
       - title: Department of Justice (DoJ)
         url: http://www.usdoj.gov/
     webonly: no # other values: yes
-    scope: public # keys that allows us to use any combination
+    scope: Public sector # keys that allows us to use any combination
     standard: DeptofEd504
   - title:
       en: Section 255 of the Telecommunications Act of 1996
@@ -92,7 +92,7 @@ policies:
       - title: U.S. Access Board
         url: https://www.access-board.gov/
     webonly: no # other values: yes
-    scope: public, private # keys that allows us to use any combination
+    scope: Public sector, Private sector # keys that allows us to use any combination
     standard: Section255
     documents:
       - title: Telecommunications Access for People with Disabilities
@@ -113,7 +113,7 @@ policies:
       - title: Department of Transportation (DoT)
         url: http://www.dot.gov/
     webonly: no # other values: yes
-    scope: private # keys that allows us to use any combination
+    scope: Private sector # keys that allows us to use any combination
     standard: WCAG20AA
     documents:
       - title: Nondiscrimination on the Basis of Disability in Air Travel - Accessibility of Web Sites and Automated Kiosks at U.S. Airports
@@ -132,7 +132,7 @@ policies:
       - title: Federal Communications Commission (FCC)
         url: https://www.fcc.gov/
     webonly: no # other values: yes
-    scope: private # keys that allows us to use any combination
+    scope: Private sector # keys that allows us to use any combination
     standard: WCAG20AA;Revised508
     documents:
       - title: FCC page on the 21st Century Communications and Video Accesibility Act
