@@ -3,66 +3,71 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+.overviewtable {
+  &, * {
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+    border:1px solid grey;
+  }
+  th {background-color: lightgrey;}
 }
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
-
-.home {
+#infos {text-align: left;}
+.facettotalcount {display:inline;}
+#deselect {line-height: normal; font-family: "Trebuchet MS", sans-serif; margin: .4em;}
+ul.facetlist { list-style-type: none; padding-left: 0; margin-bottom: 0;}
+#facets {
   display: flex;
-  .side {
-    flex:  0 1 15%;
-    padding-right: 2%;
-  }
-  .content {
-    flex: 1 1 83%;
-  }
 }
+#facets > fieldset {
+  flex: 2;
+  padding: .5em;
+  border: none;
+  border-right: 1px solid;
+}
+#facets > fieldset:first-child {
+  padding-left: 0;
+}
+#facets > fieldset:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+#facets > fieldset h4 {
+  margin: 0;
+}
+#facets > fieldset#type {
+  flex: 5;
+}
+#facets > fieldset#type .facetlist{
+  columns: 2;
+}
+details, summary { display: block; }
+/* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
+/* These styles can be applied regardless of whether the fallback is needed */
+summary { cursor: pointer; }
+summary:hover, summary:focus { background: #ddd; }
 
-details {
-  margin-bottom: 2em;
-}
+/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+.no-details details > * { display: none; }
+/* This doesn’t work very well in Firefox 3.6.x */
+/* .no-details details[open] > * { display: block; } */
+/* The following doesn’t toggle correctly in WebKit:
+.no-details details > summary:before { content: '► '; }
+.no-details details[open] > summary:before { content: '▼ '; }
+*/
+/* And yes, it should really be ::before, but that doesn’t work in IE8 */
+.no-details details > summary > *:first-child:before { float: left; width: 20px; content: '► '; }
+.no-details details.open > summary > *:first-child:before { content: '▼ '; }
+/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+/* I really couldn’t be bothered though. */
+/*
+.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+.no-details details.open > summary { background-position: 0 -20px; }
+*/
+/* Make sure summary remains visible */
+.no-details details summary { display: block; }
