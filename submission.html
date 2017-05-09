@@ -6,27 +6,7 @@ layout: default
 
 <div class="home" id="top">
 
-<div id="nav" class="side">
-  <h1>Contents</h1>
-  <ul>
-    {% for help in site.help %}
-      <li><a href="{{site.baseurl}}/#x{{help.title | slugify }}">{{help.title}}</a></li>
-    {% endfor %}
-    <li><a href="{{site.baseurl}}/#xtable">Law &amp; Policy by Country - table</a></li>
-    <li>Laws &amp; Policies by Country - detail
-      <ul class="countries">
-      {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
-          {% assign titleurl = policy.url |  prepend: site.baseurl %}
-          {% include multilang-title.html title=policy.country url=titleurl %}
-        </li>
-      {% endfor %}
-      </ul>
-    </li>
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-</div>
+{% include sidebar.html %}
 
 <div id="main" class="content">
     <h1 class="page-title">WAI Policies PROTOTYPE: Add or update a policy</h1>
