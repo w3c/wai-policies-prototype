@@ -77,7 +77,11 @@ layout: default
     <td><a href="<%= obj.policyhref %>"><%= obj.policyname %></a></td>
     <td><%= obj.enactdate %></td>
     <td><%= obj.type %></td>
-    <td><%= obj.scope %></td>
+    <td><% if (obj.scope instanceof Array && obj.scope.length > 1) { %>
+      <%= obj.scope.join(', ') %>
+    <% } else { %>
+      <%= obj.scope %>
+    <% } %></td>
     <td><%= obj.webonly %></td>
     <td><%= obj.wcagver %></td>
   </tr>
