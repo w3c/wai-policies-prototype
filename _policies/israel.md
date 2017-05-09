@@ -26,7 +26,7 @@ policies:
       - title: Accessibility Legislation
         url: http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Accessibility/Accessibility_Legislation/Pages/Accessibility-Legislation-Default.aspx
         desc: Guidance from the Commission on meeting the law. WCAG 2.0 Level AA is required.
-      - title: Equal Rights for People with Disabilities (Service Accessibility Adjustments) Regulations 
-          url: http://www.justice.gov.il/Units/NetzivutShivyon/SiteDocs/1160_TakHanegishutLeSherut.doc
-          desc: Hebrew version of the law.
-  ---
+      - title: Equal Rights for People with Disabilities (Service Accessibility Adjustments) Regulations
+        url: http://www.justice.gov.il/Units/NetzivutShivyon/SiteDocs/1160_TakHanegishutLeSherut.doc
+        desc: Hebrew version of the law.
+---
