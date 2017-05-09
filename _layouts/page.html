@@ -27,8 +27,8 @@ layout: default
   </ul>
 
   <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
-  <p>If you know of new or changed legislation, laws, or policies that are not listed here or if any corrections are needed, please let us know.</p>
-  <p><a href="../../submission.html" class="btn">Start an Update</a></p>
+  <p>If you know of new or changed laws or policies that are not listed here or if any corrections are needed, please let us know.</p>
+  <p><a href="../../submission.html" class="btn">Submit an Update</a></p>
 
 </div>
 
@@ -52,6 +52,7 @@ layout: default
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
           <li>WCAG Version Used: {{p.wcagver}}</li>
+          {% if p.standard %}
           {% unless p.standard == "None" or p.standard == "none" or p.standard == false %}
           {% assign standards = p.standard | split: ";" %}
           <li>{%if standards.size > 1 %}Standards:{%else%}Standard:{%endif%}
@@ -62,6 +63,7 @@ layout: default
             </ul>
           </li>
           {%endunless%}
+          {% endif %}
           {% if p.documents %}
             <li>Relevant Documents:
               <ul>
