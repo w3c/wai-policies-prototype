@@ -1,0 +1,25 @@
+<div id="nav" class="side">
+  <h1>Contents</h1>
+  <ul>
+    {% for help in site.help %}
+      <li><strong><a href="{{'/' | prepend: site.baseurl }}#x{{help.title | slugify }}">{{help.title}}</a></strong></li>
+    {% endfor %}
+    <li><strong><a href="{{'/' | prepend: site.baseurl }}#xtable">Law &amp; Policy by Country — Overview Table</a></strong></li>
+    <li><strong>Laws &amp; Policies by Country — Detail</strong>
+      <ul class="countries">
+      {% for policy in site.policies %}
+        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
+          {% assign titleurl = policy.url | prepend: site.baseurl %}
+          {% include multilang-title-full.html title=policy.country url=titleurl %}
+        </li>
+      {% endfor %}
+      </ul>
+    </li>
+  </ul>
+
+  <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
+  <p>If you know of new or changed laws or policies that are not listed here or if any corrections are needed, please let us know.</p>
+  <p><a href="submission.html" class="btn">Submit an Update</a></p>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+</div>

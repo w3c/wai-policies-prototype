@@ -9,33 +9,12 @@ layout: default
   </p>
 </div>
 
-<div id="nav" class="side">
-  <h1>Contents</h1>
-  <ul>
-    <li><a href="../../">Web Accessibility Laws &amp; Policies - Overview</a></li>
-    <li><a href="../../#xtable">Law &amp; Policy by Country - table</a></li>
-    <li>Laws &amp; Policies by Country
-      <ul class="countries">
-      {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
-          {% assign titleurl = policy.url |  prepend: site.baseurl %}
-          {% include multilang-title.html title=policy.country url=titleurl %}
-        </li>
-      {% endfor %}
-      </ul>
-    </li>
-  </ul>
-
-  <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
-  <p>If you know of new or changed laws or policies that are not listed here or if any corrections are needed, please let us know.</p>
-  <p><a href="../../submission.html" class="btn">Submit an Update</a></p>
-
-</div>
+{% include sidebar.html %}
 
 <div id="main" class="content">
 
 <article class="post">
-  <header class="post-header">  
+  <header class="post-header">
     <h1 class="post-title">{% include multilang-title.html title=page.country url=p.url %}</h1>
   </header>
 
