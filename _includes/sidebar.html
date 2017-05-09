@@ -1,10 +1,14 @@
 <div id="nav" class="side">
   <h1>Contents</h1>
   <ol id="nav1">
+    <li><strong class="label">Overview</strong>
+      <ul>
     {% for help in site.help %}
-      <li><strong><a href="{{'/' | prepend: site.baseurl }}#x{{help.title | slugify }}">{{help.title}}</a></strong></li>
+      <li><a href="{{'/' | prepend: site.baseurl }}#x{{help.title | slugify }}">{{help.title}}</a></li>
     {% endfor %}
-    <li><strong><a href="{{'/' | prepend: site.baseurl }}#xtable">Law &amp; Policy by Country — Overview Table</a></strong></li>
+    <li><a href="{{'/' | prepend: site.baseurl }}#xtable">Law &amp; Policy by Country — Overview Table</a></li>
+    </ul>
+    </li>
     <li><strong class="label">Laws &amp; Policies by Country — Detail</strong>
       <ul class="countries">
       {% for policy in site.policies %}
