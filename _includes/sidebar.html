@@ -1,21 +1,26 @@
 <div id="nav" class="side">
   <h1>Contents</h1>
-  <ul>
+  <ol id="nav1">
     {% for help in site.help %}
       <li><strong><a href="{{'/' | prepend: site.baseurl }}#x{{help.title | slugify }}">{{help.title}}</a></strong></li>
     {% endfor %}
     <li><strong><a href="{{'/' | prepend: site.baseurl }}#xtable">Law &amp; Policy by Country — Overview Table</a></strong></li>
-    <li><strong>Laws &amp; Policies by Country — Detail</strong>
+    <li><strong class="label">Laws &amp; Policies by Country — Detail</strong>
       <ul class="countries">
       {% for policy in site.policies %}
-        <li data-updated="{{policy.updated}}" style="text-transform: capitalize;">
-          {% assign titleurl = policy.url | prepend: site.baseurl %}
-          {% include multilang-title-full.html title=policy.country url=titleurl %}
+        {% assign url = page.url|remove:'index.html' %}
+        <li data-updated="{{policy.updated}}" {% if url == policy.url %}id="current-node" class="current-nav"{% endif %}>
+          {% if url == policy.url %}
+            <span class="label"><span id="current-icon">»</span>{% include multilang-title-full.html title=policy.country %}</span>
+          {% else %}
+            {% assign titleurl = policy.url | prepend: site.baseurl %}
+            {% include multilang-title-full.html title=policy.country url=titleurl %}
+          {% endif %}
         </li>
       {% endfor %}
       </ul>
     </li>
-  </ul>
+  </ol>
 
   <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
   <p>If you know of new or changed laws or policies that are not listed here or if any corrections are needed, please let us know.</p>
