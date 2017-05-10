@@ -20,7 +20,7 @@ policies:
         url: https://www.ogcio.gov.hk/en/
     scope: Government
     webonly: no # other values: yes
-    standard: WCAG20 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: WCAG20AA # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
     documents:
       - title: Technical Notes on Website Development and Maintenance
         url: https://www.ogcio.gov.hk/en/community/web_accessibility/doc/technical_notes.pdf

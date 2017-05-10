@@ -16,17 +16,11 @@ policies:
     enactdate: 2003
     type: Law # other values: law/policy/procurement
     ministries:
-      - title: 
-          en: Ministry of the Interior
-          fi: Sisäasiainministeriö 
+      - title: Ministry of the Interior
         url: http://intermin.fi/etusivu
-      - title:
-          en: Ministry of Justice
-          fi: Oikeusministeriö
+      - title: Ministry of Justice
         url: http://oikeusministerio.fi/fi/index/ministerio/tehtavat.html
-      - title: 
-          en: Public Administration Advisory Board for Information Management
-          fi: Julkisen Hallinnon Tietohallinnon Neuvottelukunta (JUHTA)
+      - title: Public Administration Advisory Board for Information Management
         url: http://www.jhs-suositukset.fi/web/guest/jhs
     webonly: no # other values: yes
     scope: Government # keys that allows us to use any combination
