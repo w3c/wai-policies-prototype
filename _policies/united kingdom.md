@@ -6,24 +6,31 @@ updated: 2017-05-04
 updatemsg: Update United Kingdom accessibility laws and policies.
 relatedpages:
 policies:
-  - title: 
+  - title:
       en: Equality Act 2010
-    url: http://www.legislation.gov.uk/ukpga/2010/15/contents
+    url:
+      en: http://www.legislation.gov.uk/ukpga/2010/15/contents
     updated: 2017-05-04
     wcagver: WCAG 2.0
     enactdate: 2010
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
-      - title: Equality and Human Rights Commission
-        url: https://www.equalityhumanrights.com/en
+      - title:
+          en: Equality and Human Rights Commission
+        url:
+          en: https://www.equalityhumanrights.com/en
     webonly: no # other values: yes
     scope: Public sector, Private sector # keys that allows us to use any combination
     standard: None
     documents:
-      - title: Equality Act guidance
-        url: https://www.equalityhumanrights.com/en/advice-and-guidance/equality-act-guidance
-        desc: 
-        - title: BS 8878 Web Accessibility. Code of Practice
-        url: http://shop.bsigroup.com/en/ProductDetail/?pid=000000000030180388&rdt=wmt
+      - title:
+          en: Equality Act guidance
+        url:
+          en: https://www.equalityhumanrights.com/en/advice-and-guidance/equality-act-guidance
+        desc:
+      - title:
+          en: BS 8878 Web Accessibility. Code of Practice
+        url:
+          en: http://shop.bsigroup.com/en/ProductDetail/?pid=000000000030180388&rdt=wmt
         desc: British standard that provides a framework for designing or procuring accessible web products. Does not contain technical requirements.
 ---

@@ -7,28 +7,34 @@ relatedpages:
 policies:
   - title:
       en: Rights of Persons with Disabilities Act, 2016 (RPD)
-    url: http://www.disabilityaffairs.gov.in/upload/uploadfiles/files/RPWD%20ACT%202016.pdf
+    url:
+      en: http://www.disabilityaffairs.gov.in/upload/uploadfiles/files/RPWD%20ACT%202016.pdf
     updated: 2017-03-24
     wcagver: None
     enactdate: 2016
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
-      - title: Ministry of Social Justice and Empowerment
-        url: http://www.disabilityaffairs.gov.in/content/
+      - title:
+          en: Ministry of Social Justice and Empowerment
+        url:
+          en: http://www.disabilityaffairs.gov.in/content/
     webonly: no # other values: yes
     scope: Public sector, Private sector # keys that allows us to use any combination
     standard: False
     documents:
   - title:
       en: Guidelines for Indian Government Websites
-    url: http://web.guidelines.gov.in
+    url:
+      en: http://web.guidelines.gov.in
     updated: 2017-03-25
     wcagver: WCAG 2.0
     enactdate: 2009
     type: Mandatory policy # other values: law/policy/procurement
     ministries:
-      - title: Department of Administrative Reforms and Public Grievances
-        url: http://darpg.nic.in/
+      - title:
+          en: Department of Administrative Reforms and Public Grievances
+        url:
+          en: http://darpg.nic.in/
     webonly: no # other values: yes
     scope: Government # keys that allows us to use any combination
     standard: WCAG20A
