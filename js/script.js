@@ -253,8 +253,8 @@ $(function(){
 			items            : jsn,
 			facets           : {
 				'wcagver' : {'title': 'WCAG Version Used', 'collapsed': true},
-				'scope': {'title': 'Scope of Policy', 'collapsed': true},
-        'type'  : {'title': 'Type of Policy', 'collapsed': true}
+				'scope': {'title': 'Scope', 'collapsed': true},
+        'type'  : {'title': 'Type', 'collapsed': true}
 			},
 			resultSelector   : '#results',
 			facetSelector    : '#facets',
