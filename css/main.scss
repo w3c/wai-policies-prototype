@@ -36,6 +36,10 @@ ul.facetlist { list-style-type: none; padding-left: 0; margin-bottom: 0; margin-
   font-size: 1em;
 }
 
+fieldset#scope.facetsearch {
+  margin-top: 1em;
+}
+
 @supports (display: grid) {
   #facets {
     width: auto;
