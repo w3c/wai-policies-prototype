@@ -16,9 +16,7 @@ policies:
     enactdate: 2007
     type: Mandatory policy # other values: law/policy/procurement
     ministries:
-      - title: 
-          en: Ministry of Finance - Digitalization Agency
-          da: Finansministeriets 
+      - title: Ministry of Finance - Digitalization Agency
         url: https://www.digst.dk/Servicemenu/Om-os
     webonly: yes # other values: yes
     scope: public # keys that allows us to use any combination
