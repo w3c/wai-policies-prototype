@@ -22,13 +22,9 @@ policies:
     scope: public # keys that allows us to use any combination
     standard: WCAG20AA
     documents: 
-      - title: 
-        en: The seven sets of mandatory open standards
-        da: De syv sæt af obligatoriske åbne standarder
+      - title: The seven sets of mandatory open standards
         url: https://www.digst.dk/Arkitektur-og-data/Standardisering/Aabne-standarder--vejledning/De-syv-saet-af-obligatoriske-aabne-standarder
         desc: These standards are used for purchasing, development and operation of the websites of public authorities.
-      - title: 
-        en: Official Danish translation of WCAG 2.0
-        da: Retningslinjer for tilgængeligt webindhold (WCAG) 2.0
+      - title: Official Danish translation of WCAG 2.0
         url: http://www.w3.org/Translations/WCAG20-da/
 ---
