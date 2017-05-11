@@ -65,6 +65,11 @@ ul.facetlist li {
     padding: 0;
   }
 }
+
+.countries .label {
+  position: relative;
+}
+
 details, summary { display: block; }
 /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
 /* These styles can be applied regardless of whether the fallback is needed */
