@@ -3,6 +3,14 @@
 ---
 @charset "utf-8";
 
+h3#xterms {
+  margin: 0.5em 0.25em;
+}
+
+ul.terms {
+  margin: 0 0 2em 0;
+}
+
 .overviewtable {
   &, * {
     border-collapse: collapse;
