@@ -22,6 +22,13 @@
 .facettotalcount {display:inline;}
 #deselect {line-height: normal; font-family: "Trebuchet MS", sans-serif; margin: .4em;}
 ul.facetlist { list-style-type: none; padding-left: 0; margin-bottom: 0; margin-top: 0;}
+ul.facetlist li {
+  display:flex;
+  margin-bottom: 3px;
+  & :first-child {
+    margin-right: 5px
+  }
+}
 #facets {
   display: flex;
 }
