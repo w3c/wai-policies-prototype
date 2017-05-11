@@ -1,18 +1,16 @@
-<div id="nav" class="side">
-  <h1>Contents</h1>
+{% assign url = page.url|remove:'index.html' %}
+<nav id="nav" class="side" aria-label="contents">
   <ol id="nav1">
-    <li><strong class="label">Overview</strong>
-      <ul>
-    {% for help in site.help %}
-      <li><a href="{{'/' | prepend: site.baseurl }}#x{{help.title | slugify }}">{{help.title}}</a></li>
-    {% endfor %}
-    <li><a href="{{'/' | prepend: site.baseurl }}#xtable">Law &amp; Policy by Country — Overview Table</a></li>
-    </ul>
+    <li {% if url == "/" %}id="current-node" class="current-nav"{% endif %}>
+      {% if url == "/" %}
+        <span class="label"><span id="current-icon">»</span>Laws and Policies Overview</span>
+      {% else %}
+        <a href="{{'/' | prepend: site.baseurl }}">Laws and Policies Overview</a></li>
+      {% endif %}
     </li>
-    <li><strong class="label">Laws &amp; Policies by Country — Detail</strong>
+    <li><strong class="label">Laws and Policies by Country</strong>
       <ul class="countries">
       {% for policy in site.policies %}
-        {% assign url = page.url|remove:'index.html' %}
         <li data-updated="{{policy.updated}}" {% if url == policy.url %}id="current-node" class="current-nav"{% endif %}>
           {% if url == policy.url %}
             <span class="label"><span id="current-icon">»</span>{% include multilang-title-full.html title=policy.country %}</span>
@@ -26,9 +24,9 @@
     </li>
   </ol>
 
-  <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update policies</h2>
-  <p>If you know of new or changed laws or policies that are not listed here or if any corrections are needed, please let us know.</p>
+  <h2 style="max-width: 100%; position: relative; left: 0; width: initial; font-size: 1.2em; margin: 1.6em 0 0 0;">Add or update listings</h2>
+  <p>If you know of additional laws or policies that are not listed here, or have any corrections, please submit an update.</p>
   <p><a href="submission.html" class="btn">Submit an Update</a></p>
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-</div>
+</nav>

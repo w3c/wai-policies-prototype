@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<div style="float: none; margin: 0.8em 0 0;">
-  <h2 class="no-display">Breadcrumb Navigation</h2>
-  <p id="w3cnav" style="background-color: inherit;">
-    <a href="../../">Web Accessibility Laws &amp; Policies</a> &gt; {% include multilang-title.html title=page.country url=p.url %}
-  </p>
-</div>
-
 {% include sidebar.html %}
 
 <div id="main" class="content">
 
+  <div style="float: none; margin: 0.8em 0 0;">
+    <h2 class="no-display">Breadcrumb Navigation</h2>
+    <p id="w3cnav" style="background-color: inherit;">
+      <a href="../../">Web Accessibility Laws &amp; Policies</a> &gt; {% include multilang-title.html title=page.country url=p.url %}
+    </p>
+  </div>
+
 <article class="post">
   <header class="post-header">
-    <h1 class="post-title">{% include multilang-title.html title=page.country url=p.url %}</h1>
+    <h1 class="post-title">{% include multilang-title.html title=page.country %}</h1>
   </header>
 
   <div class="post-content">
@@ -26,7 +26,11 @@ layout: default
       <div>
         <ul>
           <li>Date enacted: {{p.enactdate}}</li>
-          <li>Responsible {%if p.ministries.size == 1%}Entity (Agency, Ministry, etc.){%else%}Entities (Agencies, Ministries, etc.){%endif%}: {% for m in p.ministries %} <a href="{{m.url}}">{{m.title}}</a>{%if forloop.last == false%}; {%endif%}{%endfor%}</li>
+          <li>Responsible {%if p.ministries.size == 1%}Entity (Agency, Ministry, etc.){%else%}Entities (Agencies, Ministries, etc.){%endif%}:
+            <ul>
+              {% for m in p.ministries %}<li>{% include multilang-title.html title=m.title url=m.url external="true" %}</li>{% endfor %}
+            </ul>
+          </li>
           <li>Type: {{p.type}}</li>
           <li>Scope: {{p.scope}}</li>
           <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
@@ -37,7 +41,7 @@ layout: default
           <li>{%if standards.size > 1 %}Standards:{%else%}Standard:{%endif%}
             <ul>
             {% for s in standards %}
-              <li>{% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %} – {{stndrd.desc}}{%endif%}</li>
+              <li>{% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %}<br>{{stndrd.desc}}{%endif%}</li>
             {%endfor%}
             </ul>
           </li>
@@ -46,7 +50,7 @@ layout: default
           {% if p.documents %}
             <li>Relevant Documents:
               <ul>
-                {% for d in p.documents %}<li><a href="{{d.url}}">{{d.title}}</a> {%if d.desc %} – {{d.desc}}{%endif%}</li>{%endfor%}
+                {% for d in p.documents %}<li>{% include multilang-title.html title=d.title url=d.url external="true" %}{%if d.desc %}<br>{{d.desc}}{%endif%}</li>{%endfor%}
               </ul>
             </li>
           {% endif %}

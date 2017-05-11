@@ -9,24 +9,33 @@ relatedpages:
 policies:
   - title:
       en: Equal Rights of Persons with Disabilities Act, as amended
-    url: http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Equal-Rights-For-Persons-With-Disabilities-Law/Pages/Equal-Rights-For-Persons-With-Disabilities-Law.aspx
+    url:
+      en: http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Equal-Rights-For-Persons-With-Disabilities-Law/Pages/Equal-Rights-For-Persons-With-Disabilities-Law.aspx
     updated: 2017-05-04
     wcagver: WCAG 2.0
     enactdate: 1998
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
-      - title: Ministry of Justice
-        url: http://www.justice.gov.il/En/Pages/default.aspx
-      - title: Commission for Equal Rights of Persons with Disabilities
-        url: http://www.justice.gov.il/En/UNITS/COMMISSIONEQUALRIGHTSPERSONSDISABILITIES/Pages/About-the-Commission-for-Equal-Rights-of-Persons-With-Disablities.aspx
+      - title:
+          en: Ministry of Justice
+        url:
+          en: http://www.justice.gov.il/En/Pages/default.aspx
+      - title:
+          en: Commission for Equal Rights of Persons with Disabilities
+        url:
+          en: http://www.justice.gov.il/En/UNITS/COMMISSIONEQUALRIGHTSPERSONSDISABILITIES/Pages/About-the-Commission-for-Equal-Rights-of-Persons-With-Disablities.aspx
     webonly: no # other values: yes
     scope: Public sector, Private sector # keys that allows us to use any combination
-    standard: WCAG 2.0
+    standard: WCAG20
     documents:
-      - title: Accessibility Legislation
-        url: http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Accessibility/Accessibility_Legislation/Pages/Accessibility-Legislation-Default.aspx
+      - title:
+          en: Accessibility Legislation
+        url:
+          en:  http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Accessibility/Accessibility_Legislation/Pages/Accessibility-Legislation-Default.aspx
         desc: Guidance from the Commission on meeting the law. WCAG 2.0 Level AA is required.
-      - title: Equal Rights for People with Disabilities (Service Accessibility Adjustments) Regulations
-        url: http://www.justice.gov.il/Units/NetzivutShivyon/SiteDocs/1160_TakHanegishutLeSherut.doc
+      - title:
+          en: Equal Rights for People with Disabilities (Service Accessibility Adjustments) Regulations
+        url:
+          en: http://www.justice.gov.il/Units/NetzivutShivyon/SiteDocs/1160_TakHanegishutLeSherut.doc
         desc: Hebrew version of the law.
 ---

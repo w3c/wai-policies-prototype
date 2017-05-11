@@ -253,8 +253,8 @@ $(function(){
 			items            : jsn,
 			facets           : {
 				'wcagver' : {'title': 'WCAG Version Used', 'collapsed': true},
-				'type'  : {'title': 'Type of Policy', 'collapsed': true},
-				'scope': {'title': 'Scope of Policy', 'collapsed': true}
+				'scope': {'title': 'Scope', 'collapsed': true},
+        'type'  : {'title': 'Type', 'collapsed': true}
 			},
 			resultSelector   : '#results',
 			facetSelector    : '#facets',
@@ -262,7 +262,7 @@ $(function(){
 			enablePagination : false,
 			paginationCount  : 10,
 			orderByOptions   : {'title': 'Title'},
-			facetSortOption  : {},
+			facetSortOption  : {'wcagver': ["WCAG 2.0", "WCAG 2.0 derivative", "WCAG 1.0 derivative", "None"]},
 			facetListContainer : '<ul class=facetlist></ul>',
 			listItemTemplate   : '<li><span><input type="checkbox" class="facetitem" aria-pressed="false" id="<%= id %>" data-name="<%= _(_(name).strip_html()).to_slug() %>"></span> <span><label for="<%= id %>"><%= name %> <span class="facetitemcount">(<%= count %>&nbsp;<% if (count==1) { %>policy<% } else {%>policies<% } %>)</span></label></span></li>',
 			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<% if (count=="+") { %>add<% } else { if (count==1) { %><%= count %>&nbsp;item<% } else {%><%= count %>&nbsp;items<% }} %>)</span></span>',

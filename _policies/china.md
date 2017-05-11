@@ -9,14 +9,17 @@ relatedpages:
 policies:
   - title:  
       en: Voluntary Web Standard
-    url: http://www.chinesestandard.net/default.aspx?PDF-English-ID=YD/T%201761-2008
+    url:
+      en: http://www.chinesestandard.net/default.aspx?PDF-English-ID=YD/T%201761-2008
     updated: "?"
     wcagver: WCAG 2.0 derivative
     enactdate: 2008
     type: Recommendation # other values: law/policy/procurement
     ministries:
-      - title: China Academy of Telecommunication Research (CATR)
-        url: http://english.caict.ac/
+      - title:
+          en: China Academy of Telecommunication Research (CATR)
+        url:
+          en: http://english.caict.ac/
     webonly: yes # other values: no
     scope: Government # keys that allows us to use any combination
     standard: ChinaWeb

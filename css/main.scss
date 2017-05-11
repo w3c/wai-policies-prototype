@@ -22,32 +22,54 @@
 .facettotalcount {display:inline;}
 #deselect {line-height: normal; font-family: "Trebuchet MS", sans-serif; margin: .4em;}
 ul.facetlist { list-style-type: none; padding-left: 0; margin-bottom: 0; margin-top: 0;}
+ul.facetlist li {
+  display:flex;
+  margin-bottom: 3px;
+  & :first-child {
+    margin-right: 5px
+  }
+}
 #facets {
   display: flex;
 }
 #facets > fieldset {
-  flex: 2;
-  padding: .5em;
+  flex: 1;
+  padding: 0 .5em .5em 0;
   border: none;
   border-right: 1px solid;
-}
-#facets > fieldset:first-child {
-  padding-left: 0;
-}
-#facets > fieldset:last-child {
-  padding-right: 0;
-  border-right: none;
 }
 #facets h4 {
   margin: 0;
   font-size: 1em;
 }
-#facets > fieldset#type {
-  flex: 5;
+
+@supports (display: grid) {
+  #facets {
+    width: auto;
+    float:left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1em;
+  }
+  #facets #type {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  #facets #type {
+    grid-column: 2/3;
+  }
+  #facets > fieldset {
+    border-right: none;
+    padding: 0;
+  }
 }
-#facets > fieldset#type .facetlist{
-  columns: 2;
+
+.countries .label {
+  position: relative;
 }
+
 details, summary { display: block; }
 /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
 /* These styles can be applied regardless of whether the fallback is needed */

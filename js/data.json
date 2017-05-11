@@ -8,7 +8,7 @@ layout: null
     "policyname": "{{p.title.en}}",
     "policyhref": "{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}",
     "title": "{{policy.country.en}}",
-    "url": "{{p.url}}",
+    "url": "{{p.url.en}}",
     "enactdate": "{{p.enactdate}}",
     "type": "{{p.type}}",
     "scope": [
