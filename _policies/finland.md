@@ -12,6 +12,7 @@ policies:
       fi: Laki sähköisestä asioinnista viranomaistoiminnassa (13/2003)
     url:
       en: http://www.finlex.fi/en/laki/kaannokset/2003/en20030013.pdf
+      fi: http://www.finlex.fi/fi/laki/ajantasa/2003/20030013
     updated: 2017-05-08
     wcagver: None
     enactdate: 2003
