@@ -38,10 +38,14 @@ policies:
           en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
         desc: Revised Section 508 Standards, 18 Jan. 2017. Enforced on U.S. Agencies as of 18 Jan. 2018.
       - title:
+          en: About the Update of the Section 508 Standards and Section 255 Guidelines for Information and Communication Technology
+          en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/overview-of-the-final-rule
+          desc: 
+      - title:
           en: GSA Section 508 website
         url:
           en: https://www.section508.gov/
-        desc:
+        desc: General Services Administration's website on Section 508
       - title:
           en: GSA Quick Reference Guide to Section 508 Requirements and Standards
         url:
