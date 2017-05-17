@@ -27,11 +27,6 @@ policies:
     scope: Public sector # keys that allows us to use any combination
     standard: None
     documents:
-      - title:
-          en: About Disability Rights
-        url:
-          en: http://www.humanrights.gov.au/our-work/disability-rights/about-disability-rights
-        desc: Overview and guide for the Disability Discrimination Act
   - title:
       en: Equal Status Acts 2000 to 2004
     url:
