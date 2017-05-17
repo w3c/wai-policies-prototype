@@ -3,6 +3,14 @@
 ---
 @charset "utf-8";
 
+.policy-heading {
+  line-height: 1.5;
+  & .subtitle {
+    display: block;
+    font-size: 87.5%;
+  }
+}
+
 h3#xterms {
   margin: 0.5em 0.25em;
 }
