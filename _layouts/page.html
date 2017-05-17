@@ -9,7 +9,7 @@ layout: default
   <div style="float: none; margin: 0.8em 0 0;">
     <h2 class="no-display">Breadcrumb Navigation</h2>
     <p id="w3cnav" style="background-color: inherit;">
-      <a href="../../">Web Accessibility Laws and Policies</a> &gt; {% include multilang-title.html title=page.country url=p.url %}
+      <a href="https://www.w3.org/">W3C Home</a> &gt; <a href="https://www.w3.org/WAI/">WAI Home</a> &gt; <a href="../../">Web Accessibility Laws and Policies</a> &gt; {% include multilang-title.html title=page.country %}
     </p>
   </div>
 
@@ -22,7 +22,7 @@ layout: default
     <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
     {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
     {% for p in page.policies %}
-      <h2 id="{{p.title.en | slugify}}" style="line-height: 1.5;">{% include multilang-title.html title=p.title url=p.url external="true" %}</h2>
+      <h2 id="{{p.title.en | slugify}}" class="policy-heading">{% include multilang-title.html title=p.title url=p.url external="true" %}</h2>
       <div>
         <ul>
           <li>Date enacted: {{p.enactdate}}</li>
