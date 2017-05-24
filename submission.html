@@ -9,10 +9,10 @@ layout: default
 {% include sidebar.html %}
 
 <div id="main" class="content">
-    <h1 class="page-title">WAI Policies PROTOTYPE: Add or update a policy</h1>
-    <p><a href="index.html">Back to the WAI Policies PROTOTYPE</a></p>
+    <h1 class="page-title">WAI Web Accessibility Laws and Policies: Add or update a policy</h1>
+    <p><a href="index.html">Back to the Web Accessibility Laws and Policies</a></p>
 
-    <h2>Submit a new or updated Web Accessibility Policy</h2>
+    <h2>Submit a new or updated Web accessibility policy</h2>
     <p>This form allows you to provide information about new or updated web accessibility policies enacted by governments worldwide. We welcome any additions or corrections to the policies list and detail pages.</p>
     <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published.</p>
 
@@ -71,7 +71,7 @@ layout: default
 
     <div class="form-block-mini">
       <div class="form-row required"><label for="policyname">* Policy name: </label><br><span><input name="policyname" id="policyname" type="text" value="" required aria-required="true"></span></div>
-      <div class="form-row required"><label for="policyurl">* Web address (<abbr title="Universal Resource Identifier">URI</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
+      <div class="form-row required"><label for="policyurl">* Web address (<abbr title="Universal Resource Identifier">URL</abbr>): </label><br><span><input name="policyurl" id="policyurl" type="text" value="" required aria-required="true"></span></div>
     </div>
     <div class="form-block-mini half">
       <div class="form-row required"><label for="enactdate">Enacted date (format: YYYY): </label><br><span><input name="enactdate" id="enactdate" type="text" value="" aria-describedby="enactdesc"><br><span id="enactdesc">Enter the year the policy was enacted or "Draft" if the policy is not yet finalized or enacted.</span></span></div>
@@ -174,7 +174,7 @@ layout: default
 		<div class="form-block-mini">
 			<div class="form-row"><label for="cmnt">Notes or comments:</label><br><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></div>
 		</div>
-
+    <p>Information submitted using this form will be reviewed before making any updates.</p>
     <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
 
     </form>
