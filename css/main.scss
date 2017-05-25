@@ -124,6 +124,10 @@ summary:hover, summary:focus { background: #ddd; }
 /* Make sure summary remains visible */
 .no-details details summary { display: block; }
 
+abbr.sortIcon {
+  font-family: "Apple Color Emoji";
+}
+
 // Fakeing Responsiveness
 
 @media (screen and max-width:767px) {

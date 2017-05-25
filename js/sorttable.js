@@ -60,12 +60,12 @@ SortableTable = function(table, settings)
   this._sortIconClassName = typeof settings.sortIconClassName != "undefined" ? settings.sortIconClassName : "sortIcon";
   this._unsortedClassName = typeof settings.unsortedClassName != "undefined" ? settings.unsortedClassName : "unsorted";
   this._unsortedIcon = typeof settings.unsortedIcon != "undefined" ? settings.unsortedIcon : " \u2195"; // up down arrow
-  this._unsortedText = typeof settings.unsortedText != "undefined" ? settings.unsortedText : "";
+  this._unsortedText = typeof settings.unsortedText != "undefined" ? settings.unsortedText : "(default sorting)";
   this._ascendingClassName = typeof settings.ascendingClassName != "undefined" ? settings.ascendingClassName : "ascending";
-  this._ascendingIcon = typeof settings.ascendingIcon != "undefined" ? settings.ascendingIcon : " \u2193"; // downwards arrow
+  this._ascendingIcon = typeof settings.ascendingIcon != "undefined" ? settings.ascendingIcon : " \u2B07"; // downwards arrow
   this._ascendingText = typeof settings.ascendingText != "undefined" ? settings.ascendingText : "(sorted ascending)";
   this._descendingClassName = typeof settings.descendingClassName != "undefined" ? settings.descendingClassName : "descending";
-  this._descendingIcon = typeof settings.descendingIcon != "undefined" ? settings.descendingIcon : " \u2191"; // upwards arrow
+  this._descendingIcon = typeof settings.descendingIcon != "undefined" ? settings.descendingIcon : " \u2B06"; // upwards arrow
   this._descendingText = typeof settings.descendingText != "undefined" ? settings.descendingText : "(sorted descending)";
   this._sortTypePrefix = typeof settings.sortTypePrefix != "undefined" ? settings.sortTypePrefix : "sort";
   this._sortTypeDate = typeof settings.sortTypeDate != "undefined" ? settings.sortTypeDate : "date";
