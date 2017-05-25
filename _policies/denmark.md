@@ -4,7 +4,7 @@ country:
   da: Danmark
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-05-08
-updatemsg: Added Denmark's policies.
+updatemsg: Added Denmark's latest policies.
 relatedpages:
 policies:
   - title:

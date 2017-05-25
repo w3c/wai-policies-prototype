@@ -3,7 +3,7 @@ country:
   en: Ireland
   ga: Éireann
 updated: 2017-03-29
-updatemsg: Moved Ireland info into the policy prototype and updated with current info and links.
+updatemsg: Updated with Ireland's current info and links.
 relatedpages:
 policies:
   - title:

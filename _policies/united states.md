@@ -2,7 +2,7 @@
 country:
   en: United States
 updated: 2017-02-16
-updatemsg: Adding United States to prototype from proposal document.
+updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
 relatedpages:
   - title: State Policies Relating to Web Accessibility
     url: https://www.w3.org/WAI/Policy/USA-States.html

@@ -2,7 +2,7 @@
 country:
   en: European Union
 updated: 2017-02-09
-updatemsg: Adding EU to prototype from proposal document.
+updatemsg: Added the latest European Union information.
 relatedpages:
 policies:
   - title:  
