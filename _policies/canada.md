@@ -2,7 +2,7 @@
 country:  
   en: Canada
 updated: 2017-02-09
-updatemsg: Adding Canada to prototype from proposal document.
+updatemsg: Updated to reflect the latest information.
 relatedpages:
   - title: Provincial Policies Relating to Web Accessibility
     url: https://w3c.github.io/WAI/Policy/CA-Provinces.html
@@ -17,7 +17,7 @@ policies:
     type: Non-discrimination law # other values: law/policy/procurement
     ministries:
       - title:
-          en: Ministry of Justice
+          en: Ministry of the Attorney General
         url:
           en: http://www.attorneygeneral.jus.gov.on.ca/
       - title:

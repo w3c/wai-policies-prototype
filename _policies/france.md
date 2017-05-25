@@ -3,7 +3,7 @@ country:
   en: France
   fr: La France
 updated: 2016-2-17
-updatemsg: Add France to prototype.
+updatemsg: Updated French accessibility laws and policies.
 relatedpages:
 policies:
   - title:  

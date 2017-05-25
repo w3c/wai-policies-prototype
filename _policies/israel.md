@@ -4,7 +4,7 @@ country:
   he: יִשְׂרָאֵל
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2017-04-04
-updatemsg: Added Israel.
+updatemsg: Added Israel laws and policies.
 relatedpages:
 policies:
   - title:
