@@ -5,7 +5,7 @@ updated: 2017-02-09
 updatemsg: Updated to reflect the latest information.
 relatedpages:
   - title: Provincial Policies Relating to Web Accessibility
-    url: https://w3c.github.io/WAI/Policy/CA-Provinces.html
+    url: http://w3c.github.io/WAI/Policy/CA-Provinces.html
 policies:
   - title:  
       en: Canadian Human Rights Act
@@ -31,7 +31,7 @@ policies:
   - title:  
       en: Policy on Communications and Federal Identity
     url:
-      en: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
+      en: http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
     updated: 2016-10-01
     wcagver: WCAG 2.0
     enactdate: 2016
@@ -40,7 +40,7 @@ policies:
       - title:
           en: Treasury Board
         url:
-          en: https://www.canada.ca/en/treasury-board-secretariat.html
+          en: http://www.canada.ca/en/treasury-board-secretariat.html
     scope: Government
     webonly: no # other values: yes
     standard: CanadaWeb
@@ -48,5 +48,5 @@ policies:
       - title:
           en: Guidance on implementing the standard on web accessibility
         url:
-          en: https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/ws-nw/wa-aw-guid-eng.asp
+          en: http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/ws-nw/wa-aw-guid-eng.asp
 ---

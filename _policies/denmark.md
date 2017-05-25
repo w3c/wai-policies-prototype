@@ -11,7 +11,7 @@ policies:
       en: Agreement on the use of open standards for software in the public sector
       da: Aftale om anvendelse af åbne standarder for software i det offentlige, oktober 2007
     url:
-      da: https://www.digst.dk/~/media/Files/Arkitektur-og-data/Aabne-standarder-vejledning/Aftale-om-anvendelse-af-abne-standarder-for-software-i-det-offentlige.pdf
+      da: http://www.digst.dk/~/media/Files/Arkitektur-og-data/Aabne-standarder-vejledning/Aftale-om-anvendelse-af-abne-standarder-for-software-i-det-offentlige.pdf
     updated: 2017-05-08
     wcagver: WCAG 2.0
     enactdate: 2007
@@ -21,7 +21,7 @@ policies:
           en: Ministry of Finance - Digitalization Agency
           da: Digitaliseringsstyrelsen
         url:
-          da: https://www.digst.dk/Servicemenu/Om-os
+          da: http://www.digst.dk/Servicemenu/Om-os
     webonly: yes # other values: yes
     scope: Public sector # keys that allows us to use any combination
     standard: WCAG20AA
@@ -30,7 +30,7 @@ policies:
           en: The seven sets of mandatory open standards
           da: De syv sæt af obligatoriske åbne standarder
         url:
-          da: https://www.digst.dk/Arkitektur-og-data/Standardisering/Aabne-standarder--vejledning/De-syv-saet-af-obligatoriske-aabne-standarder
+          da: http://www.digst.dk/Arkitektur-og-data/Standardisering/Aabne-standarder--vejledning/De-syv-saet-af-obligatoriske-aabne-standarder
         desc: These standards are used for purchasing, development and operation of the websites of public authorities.
       - title:
           en: Official Danish translation of WCAG 2.0

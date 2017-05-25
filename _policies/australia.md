@@ -6,12 +6,12 @@ updated: 2016-08-30
 updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
 relatedpages:
   - title: Policies in Australian States
-    url: https://www.w3.org/WAI/Policy/AU-States.html
+    url: http://www.w3.org/WAI/Policy/AU-States.html
 policies:
   - title:
       en: Disability Discrimination Act 1992 (DDA)
     url:
-      en: https://www.legislation.gov.au/Details/C2016C00763
+      en: http://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-08-30
     wcagver: WCAG 2.0
     enactdate: 1992
@@ -20,7 +20,7 @@ policies:
       - title:
           en: Attorney General’s Department
         url:
-          en: https://www.ag.gov.au/Pages/default.aspx
+          en: http://www.ag.gov.au/Pages/default.aspx
       - title:
           en: Australian Human Rights Commission
         url:
@@ -42,12 +42,12 @@ policies:
       - title:
           en: Digital Service Standard accessibility requirement
         url:
-          en: https://www.dto.gov.au/standard/9-make-it-accessible/
+          en: http://www.dto.gov.au/standard/9-make-it-accessible/
         desc: Guide to the standard used by Australian Government agencies for digital services.
   - title:  
       en: Procurement Standard Guidance
     url:
-      en: https://www.legislation.gov.au/Details/C2016C00763
+      en: http://www.legislation.gov.au/Details/C2016C00763
     updated: 2016-10-01
     wcagver: WCAG 2.0
     enactdate: 2016
@@ -62,5 +62,5 @@ policies:
       - title:
           en: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
         url:
-          en: http://example.com
+          en: http://www.finance.gov.au/blog/2016/09/09/Accessibility-ICT-Procurement-Standard/
 ---
