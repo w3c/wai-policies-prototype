@@ -10,23 +10,13 @@ layout: default
 
 <div id="main" class="content">
     <h1 class="page-title">WAI Web Accessibility Laws and Policies: Add or update a policy</h1>
-    <p><a href="index.html">Back to the Web Accessibility Laws and Policies</a></p>
+    <p><a href="index.html">Back to Web Accessibility Laws and Policies</a></p>
 
     <h2>Submit a new or updated Web accessibility policy</h2>
     <p>This form allows you to provide information about new or updated web accessibility policies enacted by governments worldwide. We welcome any additions or corrections to the policies list and detail pages.</p>
     <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published.</p>
 
     <p>Contact <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) if you have questions or comments.</p>
-
-    <!-- commenting out this aside for editing using existing data for now
-    <aside class="editbox">
-    	<h3>Edit an entry</h3>
-			<p>You can load the information of an existing entry, if you want to edit it. Use the following button to load the data file that was sent to you in the notification email from your previous form submission:</p>
-			<button class="btn" id="uploadbutton">Load tool information</button>
-    	<input type="file" id="file" name="file">
-    	<output id="list" aria-live="assertive"></output>
-    </aside>
-    -->
 
 
   <div id="hForm">
@@ -39,14 +29,6 @@ layout: default
       <div class="form-row required"><label for="name">* Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
       <div class="form-row required"><label for="email">* Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
     </div>
-    <!-- commenting out for policies prototype
-    <fieldset class="border-less"><legend><span>Your Role</span></legend>
-      <div class="form-block-mini">
-        <div class="form-row radio"><span><input name="role" id="vendor" value="vendor" type="radio"></span> <label for="vendor">Tool vendor (includes tool developer, owner, etc.)</label></div>
-        <div class="form-row radio"><span><input name="role" id="user" value="user" type="radio"></span> <label for="user"> Tool user (or if you happen to know if a tool, etc.)</label></div>
-      </div>
-    </fieldset>
-    -->
   </fieldset>
 
     <fieldset>
@@ -174,10 +156,21 @@ layout: default
 		<div class="form-block-mini">
 			<div class="form-row"><label for="cmnt">Notes or comments:</label><br><span><textarea name="cmnt" id="cmnt" cols="60" rows="10" maxlength="300" aria-describedby="cmntdesc"></textarea><br><span id="cmntdesc">These notes and comments will be included in email but not published on the policies page.</span></span></div>
 		</div>
-    <p>Information submitted using this form will be reviewed before making any updates.</p>
-    <p><button class="btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
-
+    <p><strong>Note:</strong> Information sent using this form is reviewed before publishing. It can take <em>up to 10 business days</em> until the information is published.</p>
+    <p><button class="btn btn-primary" style="float:none;" name="send" id="send" type="submit">Send Information</button></p>
     </form>
+
+    <aside class="side-box contribute" role="complementary">
+      <h2 class="heading">Help improve this page</h2>
+      <p>Please share your ideas, suggestions, or comments via email to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5bTips%20for%20Getting%20Started%20Input%20%3a%20Tips%20for%20Getting%20Started%20with%20Web%20Accessibility%5d">wai-eo-editors@w3.org</a> or via GitHub.</p>
+
+      <div class="buttons">
+        <a class="btn" title="Publicly archived list" href="mailto:wai-eo-editors@w3.org?subject=%5bPolicy%20Submission%20Form%203a%20WAI%20Web%20Accessibility%20Laws%20and%20Policies%5d">E-mail</a>
+        <a class="btn" href="https://github.com/w3c/wai-policies-prototype/blob/gh-pages/submission.html">Fork &amp; edit on GitHub</a>
+        <a class="btn" href="https://github.com/w3c/wai-policies-prototype/issues/new?title=[Policy%20Submission%20Form%20%3a%20WAI%20Web%20Accessibility%20Laws%20and%20Policies]&amp;body=This%20is%20a%20comment%20related%20to%20the%20page%20[Policy%20Submission%20Form%20%3a%20WAI%20Web%20Accessibility%20Laws%20and%20Policies](//w3c.github.io/wai-policies-prototype/submission.html)">New GitHub Issue</a>
+      </div>
+    </aside>
+
     <script>
       //helper function to iterate through elements – it’s just shorter :-D
       function each(elem, func) {
