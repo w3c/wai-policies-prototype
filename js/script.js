@@ -265,7 +265,7 @@ $(function(){
 			facetSortOption  : {'wcagver': ["WCAG 2.0", "WCAG 2.0 derivative", "WCAG 1.0 derivative", "None"]},
 			facetListContainer : '<ul class=facetlist></ul>',
 			listItemTemplate   : '<li><span><input type="checkbox" class="facetitem" aria-pressed="false" id="<%= id %>" data-name="<%= _(_(name).strip_html()).to_slug() %>"></span> <span><label for="<%= id %>"><%= name %> <span class="facetitemcount">(<%= count %>&nbsp;<% if (count==1) { %>policy<% } else {%>policies<% } %>)</span></label></span></li>',
-			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<% if (count=="+") { %>(0&nbsp;items)<% } else { if (count==1) { %><%= count %>&nbsp;item<% } else {%><%= count %>&nbsp;items<% }} %>)</span></span>',
+			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<% if (count=="+") { %>0&nbsp;items<% } else { if (count==1) { %><%= count %>&nbsp;item<% } else {%><%= count %>&nbsp;items<% }} %>)</span></span>',
 			orderByTemplate    : '',
 			countTemplate      : '<div class="facettotalcount"><strong><span aria-live="true">Showing <%= count %> <% if (count==1) { %>result<% } else {%>results<% } %></span><% if (filters) { %>, matching the filters:</strong> <span class="filter"><%= filters.join("</span>, <span class=\'filter\'>") %></span><% } else { %></strong><% } %></div>',
 			facetTitleTemplate : '<% if (!obj.plain) { %><legend><h4 class="facettitle"><%= title %></h4></legend><% } %>',
