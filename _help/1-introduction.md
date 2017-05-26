@@ -6,6 +6,8 @@ This page lists governmental policies related to web accessibility, although it 
 
 The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
 
+You can now add or update information via our new submission form.
+
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility](https://www.w3.org/WAI/impl/pol).
 
 <details open>
@@ -17,6 +19,9 @@ For guidance on developing an accessibility policy for an organization, see [Dev
            <li><strong>Public sector</strong> – Includes government and government-run or owned entities, and entities that receive government funding.</li>
            <li><strong>Private sector</strong> – Businesses and organizations that are not part of the public sector, including non-profit organizations.</li>
            <li><strong>WCAG derivative</strong> - Used when a standard is based on a version of WCAG, but some requirements were excluded or modified or additional non-WCAG requirements were added.</li>
+           <li><strong>Procurement law</strong> - A law that requires government purchase of accessible goods and services.</li>
+           <li><strong>Procurement recommendation</strong> - An optional, but encouraged goal to purchase accessible goods and services.</li>
+           <li><strong>Mandatory policy</strong> - Required accessibility goals or implementation that is not regulated by law.</li>
          </ul>
      </div>
  </details>
