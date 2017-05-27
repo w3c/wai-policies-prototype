@@ -218,3 +218,115 @@ abbr.sortIcon {
     }
   }
 }
+
+/* Submission form styling */
+
+.form-block-mini:not(.radio) .form-row {
+    display: flex;
+    margin-bottom: .5em;
+  }
+  .form-block-mini:not(.radio) .form-row span {
+    font-style: italic;
+    flex: 1;
+  }
+  .form-block-mini:not(.radio) .form-row label,
+  .form-block-mini:not(.radio) .form-row span.l {
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-style: normal;
+    margin-right: 1em;
+  }
+
+  .form-block-mini:not(.radio) .form-row span input,
+  .form-block-mini:not(.radio) .form-row span textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-style: normal;
+  }
+
+.form-block-mini.radio .form-row {
+    display: flex;
+    margin-bottom: 3px
+}
+
+.form-block-mini.radio .form-row>:first-child {
+    margin-right: 5px;
+}
+
+.form-block-mini .desc {
+  line-height: 1.2;
+}
+
+
+@media (screen and min-width:768px) {
+  .form-block-mini:not(.radio) .form-row label,
+  .form-block-mini:not(.radio) .form-row span.l {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .form-block-mini.half {
+    width: 70%;
+  }
+  /*.form-block-mini.half .form-row span input {
+    max-width: 7em;
+  }*/
+
+  .form-block-mini:not(.radio) .form-row span input#enactdate {
+    width: initial;
+  }
+}
+
+.multiple  {
+  margin:0;
+  padding: 0;
+}
+.multiple li {
+  padding: 3px;
+  border-radius: 2px;
+  list-style: none;
+  margin: 0 0 1em;
+  display: flex;
+}
+.multiple li:nth-child(even) {
+  background-color: rgba(0,0,0,.1);
+}
+
+.multiple li .form-block-mini {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.multiple li .rem {
+  flex-shrink: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.multiple .remove {
+  margin-bottom: .5em;
+}
+
+.multiple .template .rem {
+  display: none;
+}
+
+.btn-small {
+  background: linear-gradient(to bottom, #e6e6e6, #ccc);
+  color: #333;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: .166666667em .25em;
+  text-decoration: none;
+  white-space: nowrap;
+  border-color: #ccc;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .25em;
+}
+.btn-small:hover, .btn-small:focus {
+  color: #333;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ccc, #b3b3b3);
+}
