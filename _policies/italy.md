@@ -24,7 +24,7 @@ policies:
       - title: Document 1
         url: www.italiantourism.com/
         desc: Guidance for law 1
-  - title:  
+  - title:
       en: Second Italy a11y law
     url: www.italiantourism.com/
     updated: 2017-04-04
@@ -36,7 +36,7 @@ policies:
         url: www.italiantourism.com/
     scope: Government
     webonly: yes # other values: yes
-    standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: None
     documents:
       - title: Paperclip document
         url: www.italiantourism.com/

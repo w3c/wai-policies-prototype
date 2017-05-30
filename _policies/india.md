@@ -37,6 +37,11 @@ policies:
           en: http://darpg.nic.in/
     webonly: no # other values: yes
     scope: Government # keys that allows us to use any combination
-    standard: WCAG20A
+    standard:
+      - title:
+          en: "WCAG 2.0 Level A"
+        desc: "W3C Web Content Accessibility Guidelines 2.0 Level A"
+        url:
+          en: http://www.w3.org/TR/WCAG20/
     documents:
 ---

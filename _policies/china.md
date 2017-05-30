@@ -46,5 +46,10 @@ policies:
           zh: http://www.miit.gov.cn/index.html
     webonly: yes # other values: no
     scope: Government # keys that allows us to use any combination
-    standard: ChinaWeb
+    standard:
+      - title:
+          en: "Technical Requirements for Web Accessibility YD/T 1761-2012"
+        desc: "Web standard based on early (non-Recommendation) version of WCAG 2.0 published in 2008."
+        url:
+          en: "http://www.chinesestandard.net/default.aspx?PDF-English-ID=YD/T%201761-2012"
 ---

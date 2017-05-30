@@ -1,5 +1,5 @@
 ---
-country:  
+country:
   en: Canada
 updated: 2017-02-09
 updatemsg: Updated to reflect the latest information.
@@ -7,7 +7,7 @@ relatedpages:
   - title: Provincial Policies Relating to Web Accessibility
     url: http://w3c.github.io/WAI/Policy/CA-Provinces.html
 policies:
-  - title:  
+  - title:
       en: Canadian Human Rights Act
     url:
       en: http://laws-lois.justice.gc.ca/eng/acts/h-6/FullText.html
@@ -28,7 +28,7 @@ policies:
     scope: Public sector, Private sector # keys that allows us to use any combination
     standard: false
     documents:
-  - title:  
+  - title:
       en: Policy on Communications and Federal Identity
     url:
       en: http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30683
@@ -43,7 +43,12 @@ policies:
           en: http://www.canada.ca/en/treasury-board-secretariat.html
     scope: Government
     webonly: no # other values: yes
-    standard: CanadaWeb
+    standard:
+      - title:
+          en: "Standard on Web Accessibility"
+        desc: "Requires WCAG 2.0 Level AA and all conformance criteria. Exceptions: Text alternatives for complex maps under 1.1.1 Non-text content, 1.2.4 Captions (Live), and 1.2.5 Audio Description for pre-recorded video unrelated to health and safety."
+        url:
+          en: http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=23601
     documents:
       - title:
           en: Guidance on implementing the standard on web accessibility

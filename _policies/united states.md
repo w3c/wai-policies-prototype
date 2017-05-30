@@ -30,7 +30,12 @@ policies:
           en: https://www.justice.gov/
     webonly: no # other values: yes
     scope: Government # keys that allows us to use any combination
-    standard: Original508
+    standard:
+      - title:
+          en: "Section 508 Standards for Electronic and Information Technology"
+        desc: "Published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Updated standard now available but not enforced yet, see Revised section 508 standards below."
+        url:
+          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
     documents:
       - title:
           en: Information and Communication Technology (ICT) Standards and Guidelines
@@ -39,8 +44,9 @@ policies:
         desc: Revised Section 508 Standards, 18 Jan. 2017. Enforced on U.S. Agencies as of 18 Jan. 2018.
       - title:
           en: About the Update of the Section 508 Standards and Section 255 Guidelines for Information and Communication Technology
+        url:
           en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/overview-of-the-final-rule
-          desc: 
+        desc:
       - title:
           en: GSA Section 508 website
         url:
@@ -50,7 +56,7 @@ policies:
           en: GSA Quick Reference Guide to Section 508 Requirements and Standards
         url:
           en: https://section508.gov/content/quick-reference-guide
-        desc:  
+        desc:
       - title:
           en: Guide to the Section 508 Standards
         url:
@@ -116,7 +122,12 @@ policies:
           en: http://www.usdoj.gov/
     webonly: no # other values: yes
     scope: Public sector # keys that allows us to use any combination
-    standard: DeptofEd504
+    standard:
+      - title:
+          en: "Requirements for Accessible Electronic and Information Technology Design"
+        desc: "Department of Education's standards used for section 504 and 508 which are the same technical requirements as Section 508 for Web, software, and telecommunications products."
+        url:
+          en: http://www2.ed.gov/fund/contract/apply/clibrary/software.html
   - title:
       en: Section 255 of the Telecommunications Act of 1996
     url:
@@ -136,7 +147,12 @@ policies:
           en: https://www.access-board.gov/
     webonly: no # other values: yes
     scope: Public sector, Private sector # keys that allows us to use any combination
-    standard: Section255
+    standard:
+      - title:
+          en: "Telecommunications Act Section 255 Guidelines"
+        desc: "FCC requirements for accessible telecommunications products."
+        url:
+          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/section-255-guidelines
     documents:
       - title:
           en: Telecommunications Access for People with Disabilities
@@ -166,7 +182,12 @@ policies:
           en: http://www.dot.gov/
     webonly: no # other values: yes
     scope: Private sector # keys that allows us to use any combination
-    standard: WCAG20AA
+    standard:
+      - title:
+          en: "WCAG 2.0 Level AA"
+        desc: "W3C Web Content Accessibility Guidelines 2.0 Level AA"
+        url:
+          en: http://www.w3.org/TR/WCAG20/
     documents:
       - title:
           en: Nondiscrimination on the Basis of Disability in Air Travel - Accessibility of Web Sites and Automated Kiosks at U.S. Airports
@@ -192,7 +213,17 @@ policies:
           en: https://www.fcc.gov/
     webonly: no # other values: yes
     scope: Private sector # keys that allows us to use any combination
-    standard: WCAG20AA;Revised508
+    standard:
+      - title:
+          en: "WCAG 2.0 Level AA"
+        desc: "W3C Web Content Accessibility Guidelines 2.0 Level AA"
+        url:
+          en: http://www.w3.org/TR/WCAG20/
+      - title:
+          en: "Information and Communication Technology (ICT) Standards and Guidelines"
+        desc: "Revised Section 508 standards published in the U.S. Federal Register 21 Jan. 2017. Incorporates WCAG 2.0 Level AA by reference without modifications for Web content as well as WCAG 2.0 Level AA for non-Web documentation and software with the exception of 2.4.1 Bypass Blocks, 2.4.5 Multiple Ways, 3.2.3 Consistent Navigation, and 3.2.4 Consistent Identification."
+        url:
+          en: http://www.federalregister.gov/documents/2017/01/18/2017-00395/information-and-communication-technology-ict-standards-and-guidelines
     documents:
       - title:
           en: FCC page on the 21st Century Communications and Video Accesibility Act

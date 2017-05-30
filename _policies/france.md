@@ -6,7 +6,7 @@ updated: 2016-2-17
 updatemsg: Updated French accessibility laws and policies.
 relatedpages:
 policies:
-  - title:  
+  - title:
       en: Law N° 2005-102 Article 47
       fr: Loi n° 2005-102 du 11 février 2005 pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées
     url:
@@ -25,7 +25,7 @@ policies:
     scope: Public sector # keys that allows us to use any combination
     standard: false
     documents:
-  - title:  
+  - title:
       en: Order of 29 April 2015 on the general accessibility framework for public administrations
       fr: Arrêté du 29 avril 2015 relatif au référentiel général d'accessibilité pour les administrations
     url:
@@ -42,6 +42,11 @@ policies:
           fr: http://social-sante.gouv.fr/
     scope: Public sector
     webonly: yes # other values: yes
-    standard: FranceWeb
+    standard:
+      - title:
+          fr: Référentiel Général d’Accessibilité des Administrations (RGAA) Version 3 2016
+        desc: French Web accessibility guidelines.
+        url:
+          fr: http://references.modernisation.gouv.fr/referentiel/
     documents:
 ---

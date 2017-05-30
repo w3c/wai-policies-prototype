@@ -47,7 +47,12 @@ policies:
           en: https://www.dia.govt.nz/
     scope: Government
     webonly: yes # other values: yes
-    standard: NewZealandWeb10 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard:
+      - title:
+          en: Web Accessibility Standard 1.0
+        desc: Requires WCAG 2.0 Level AA and all 5 conformance criteria with exceptions documented in the standard.
+        url:
+          en: http://webtoolkit.govt.nz/standards/web-accessibility-standard-1-0/
     documents:
       - title:
           en: New Zealand Government Web Toolkit

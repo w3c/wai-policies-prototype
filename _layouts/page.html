@@ -40,17 +40,16 @@ layout: default
           <li>WCAG Version Used: {{p.wcagver}}</li>
           {% if p.standard %}
           {% unless p.standard == "None" or p.standard == "none" or p.standard == false %}
-          {% assign standards = p.standard | split: ";" %}
-          <li>{%if standards.size > 1 %}Standards:{%else%}Standard:{%endif%}
-            <ul>
-            {% for s in standards %}
-              <li>{% assign stndrd = site.data.standards[s]%} <a href="{{stndrd.url}}">{{stndrd.title}}</a> {%if stndrd.desc %}<br>{{stndrd.desc}}{%endif%}</li>
-            {%endfor%}
-            </ul>
-          </li>
+          {% if p.standard %}
+            <li>Relevant Standard{%if p.standard.size > 1 %}s{%endif%}:
+              <ul>
+                {% for d in p.standard %}<li>{% include multilang-list.html title=d.title url=d.url external="true" wrap="strong" %}{%if d.desc %}<br>{{d.desc}}{%endif%}</li>{%endfor%}
+              </ul>
+            </li>
+          {% endif %}
           {%endunless%}
           {% endif %}
-          {% if p.documents %}
+          {% if p.standard %}
             <li>Relevant Documents:
               <ul>
                 {% for d in p.documents %}<li>{% include multilang-list.html title=d.title url=d.url external="true" wrap="strong" %}{%if d.desc %}<br>{{d.desc}}{%endif%}</li>{%endfor%}

@@ -24,7 +24,12 @@ policies:
           da: http://www.digst.dk/Servicemenu/Om-os
     webonly: yes # other values: yes
     scope: Public sector # keys that allows us to use any combination
-    standard: WCAG20AA
+    standard:
+      - title:
+          en: "WCAG 2.0 Level AA"
+        desc: "W3C Web Content Accessibility Guidelines 2.0 Level AA"
+        url:
+          en: http://www.w3.org/TR/WCAG20/
     documents:
       - title:
           en: The seven sets of mandatory open standards

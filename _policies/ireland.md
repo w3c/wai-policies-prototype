@@ -42,7 +42,7 @@ policies:
           en: http://www.ihrec.ie
     scope: Public sector, Private sector
     webonly: no # other values: yes
-    standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: None
     documents:
       - title:
           en: Equality Act 2004
@@ -64,7 +64,7 @@ policies:
           en: www.ihrec.ie
     scope: Public sector, Private sector
     webonly: no # other values: yes
-    standard: None # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard: None
     documents:
       - title:
           en: Equality Act 2004

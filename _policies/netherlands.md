@@ -24,7 +24,12 @@ policies:
           en: https://www.government.nl/ministries/ministry-of-social-affairs-and-employment
     webonly: no # other values: yes
     scope: Government # keys that allows us to use any combination
-    standard: EN301549
+    standard:
+      - title:
+          en: "EN 301 549"
+        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
+        url:
+          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
     documents:
       - title:
           en: Accessibility Policy in the Netherlands - Laws and regulations
@@ -32,7 +37,7 @@ policies:
         url:
           nl: https://www.digitoegankelijk.nl/beleid/inhoud/wet-en-regelgeving
         desc: Provides information on regulatory actions being taken in the Netherlands on accessibility, including work to transpose the EU 2016/2102 Web and Mobile Accessibility Directive into law.
-  - title:  
+  - title:
       en: Policy in the Netherlands
       nl: Beleid in Nederland
     url:
@@ -48,6 +53,11 @@ policies:
           en: https://www.government.nl/ministries/ministry-of-general-affairs
     scope: Government, Public sector
     webonly: yes # other values: yes
-    standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard:
+      - title:
+          en: "EN 301 549"
+        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
+        url:
+          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
     documents:
 ---

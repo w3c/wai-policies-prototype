@@ -26,7 +26,12 @@ policies:
           en: http://www.justice.gov.il/En/UNITS/COMMISSIONEQUALRIGHTSPERSONSDISABILITIES/Pages/About-the-Commission-for-Equal-Rights-of-Persons-With-Disablities.aspx
     webonly: no # other values: yes
     scope: Public sector, Private sector # keys that allows us to use any combination
-    standard: WCAG20
+    standard:
+      - title:
+          en: "WCAG 2.0"
+        desc: "W3C Web Content Accessibility Guidelines 2.0"
+        url:
+          en: http://www.w3.org/TR/WCAG20/
     documents:
       - title:
           en: Accessibility Legislation

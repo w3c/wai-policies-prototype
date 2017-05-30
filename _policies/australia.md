@@ -44,7 +44,7 @@ policies:
         url:
           en: http://www.dto.gov.au/standard/9-make-it-accessible/
         desc: Guide to the standard used by Australian Government agencies for digital services.
-  - title:  
+  - title:
       en: Procurement Standard Guidance
     url:
       en: http://www.legislation.gov.au/Details/C2016C00763
@@ -57,7 +57,12 @@ policies:
          en: Minister of Finance
     scope: Government
     webonly: no # other values: yes
-    standard: EN301549 # URL, additional text, like “, which includes WCAG 2.0 verbatim without modifications for Web content, and WCAG 2.0 as interpreted by WCAG2ICT for non-Web documentation and software.” is taken programatically from the standards.yaml document in _data to avoid different text for the same content.
+    standard:
+      - title:
+          en: "EN 301 549"
+        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
+        url:
+          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
     documents:
       - title:
           en: Announcement from Minister of Finance to use EN 301 549 standard as ICT procurement standard
