@@ -18,7 +18,7 @@
   {% endif %}
   {{t[1]}}
   {% unless lng == "en" %}
-    [<span lang="en">{{site.data.languages[lng].en}}</span>/<span lang="{{lng}}">{{site.data.languages[lng].nat}}</span>]
+    [<span lang="en">{{site.data.lang[lng].name}}</span>/<span lang="{{lng}}">{{site.data.lang[lng].nativeName}}</span>]
   {% endunless %}
   {% if thislangurl %}
     {% if include.external %} <img src='//www.w3.org/Icons/tr.png' lang="en" alt='External'>{% endif %} </a>
