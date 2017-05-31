@@ -24,7 +24,7 @@ policies:
           it: http://www.agid.gov.it/
     webonly: no # other values: yes
     scope: Public sector, Government # keys that allows us to use any combination
-    standard: IT
+    standard: None
     documents:
       - title: 
           en: Accessibility of Web sites - the coordination and activities for Digital Italy in relation to current regulations
@@ -39,7 +39,7 @@ policies:
           it: http://www.agid.gov.it/dm-8-luglio-2005-allegato-A
         desc: The technical requirements for web accessibility copy the WCAG 2.0 Level AA success criteria and conformance criteria. It expands on use of Web standards for technologies compatible with accessibility by referencing ISO/IEC 15545:2000 (HTML), ISO/IEC 16262:2002 (ECMA-script), and additional W3C standards for HTML 4.01, XHTML 1.0, CSS 1.0, XML, SVG, and SMIL.  More current versions of these standards are also allowable.
       - title: 
-          en: Italian accessibility legislation since 2004
+          en: Italian accessibility regulations since 2004
           it: La normativa italiana fin dal 2004
         url: 
           it: http://www.agid.gov.it/agenda-digitale/pubblica-amministrazione/accessibilita/normativa
