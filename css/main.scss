@@ -28,6 +28,13 @@ ul.terms {
   margin: 0 0 2em 0;
 }
 
+/*  override for totop background image
+    to use protocol-relative url */
+
+  p.totop a {
+    background: url(//www.w3.org/Icons/topofpage.png) left no-repeat;
+  }
+
 .overviewtable {
   &, * {
     border-collapse: collapse;
