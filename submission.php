@@ -49,9 +49,12 @@ $entities = "";
 foreach ($_POST['entity_name'] as $key => $value) {
 $title = htmlspecialchars($_POST['entity_name'][$key]);
 $url = htmlspecialchars($_POST['entity_url'][$key]);
+$lang = htmlspecialchars($_POST['entity_lang'][$key]);
 $entities .= <<<ENTITIES
-\n      - title: "$title"
-        url: "$url"
+\n      - title:
+          $lang: "$title"
+        url:
+          $lang: "$url"
 ENTITIES;
 }
 
@@ -62,10 +65,13 @@ foreach ($_POST['standard_name'] as $key => $value) {
 $title = htmlspecialchars($_POST['standard_name'][$key]);
 $desc = htmlspecialchars($_POST['standard_desc'][$key]);
 $url = htmlspecialchars($_POST['standard_url'][$key]);
+$lang = htmlspecialchars($_POST['standard_lang'][$key]);
 $standards .= <<<STANDARDS
-\n      - title: "$title"
+\n      - title:
+          $lang: "$title"
         desc: "$desc"
-        url: "$url"
+        url:
+          $lang: "$url"
 STANDARDS;
 }
 
@@ -76,10 +82,13 @@ foreach ($_POST['document_name'] as $key => $value) {
 $title = htmlspecialchars($_POST['document_name'][$key]);
 $desc = htmlspecialchars($_POST['document_desc'][$key]);
 $url = htmlspecialchars($_POST['document_url'][$key]);
+$lang = htmlspecialchars($_POST['document_lang'][$key]);
 $documents .= <<<DOCUMENTS
-\n      - title: "$title"
+\n      - title:
+          $lang: "$title"
         desc: "$desc"
-        url: "$url"
+        url:
+          $lang: "$url"
 DOCUMENTS;
 }
 
