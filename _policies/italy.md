@@ -8,8 +8,8 @@ updatemsg: Updated Italian Web accessibility laws and policies.
 relatedpages:
 policies:
   - title:
-      en: Law 9 January 2004, n. 4 'Provisions to support the access of disabled people to IT tools' (Stanca Law)
-      it: Legge 9 gennaio 2004, n. 4 'Disposizioni per favorire l'accesso dei soggetti disabili agli strumenti informatici' (Legge Stanca)
+      en: Law 9 January 2004, n. 4 "Provisions to support the access of disabled people to IT tools" (Stanca Law)
+      it: Legge 9 gennaio 2004, n. 4 "Disposizioni per favorire l'accesso dei soggetti disabili agli strumenti informatici" (Legge Stanca)
     url: 
       it: http://www.agid.gov.it/legge-9-gennaio-2004-n-4
     updated: 2017-05-30

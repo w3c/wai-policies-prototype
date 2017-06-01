@@ -5,7 +5,7 @@ layout: null
 {
     "title": "{{policy.country.en}}",
     "countryhref": "{{ policy.url |  prepend: site.baseurl }}",
-    "policyname": "{{p.title.en}}",
+    "policyname": "{{p.title.en | escape}}",
     "policyhref": "{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}",
     "title": "{{policy.country.en}}",
     "url": "{{p.url.en}}",
