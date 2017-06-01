@@ -238,7 +238,8 @@ abbr.sortIcon {
   }
 
   .form-block-mini:not(.radio) .form-row span input,
-  .form-block-mini:not(.radio) .form-row span textarea {
+  .form-block-mini:not(.radio) .form-row span textarea,
+  .form-block-mini:not(.radio) .form-row span select {
     width: 100%;
     box-sizing: border-box;
     font-style: normal;

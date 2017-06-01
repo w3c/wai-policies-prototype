@@ -66,6 +66,7 @@ layout: default
           <div class="form-block-mini">
             <label class="form-row"><span class="l">Name:</span><span><input type="text" name="entity_name[]"></span></label>
             <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="entity_url[]"></span></label>
+            <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="l[0]"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
           </div>
           <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
         </li>
@@ -131,7 +132,8 @@ layout: default
           <div class="form-block-mini">
             <label class="form-row"><span class="l">Name:</span> <span><input type="text" name="standard_name[]"></span></label>
             <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="standard_url[]"></span></label>
-            <label class="form-row"><span class="l">Description:</span> <span><input type="text" name="standard_desc[]"></span></label>
+            <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="standard_desc[]"></span></label>
+            <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="l[0]"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
           </div>
           <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
         </li>
@@ -147,7 +149,8 @@ layout: default
           <div class="form-block-mini">
             <label class="form-row"><span class="l">Name:</span> <span><input type="text" name="document_name[]"></span></label>
             <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="document_url[]"></span></label>
-            <label class="form-row"><span class="l">Description:</span> <span><input type="text" name="document_desc[]"></span></label>
+            <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="document_desc[]"></span></label>
+            <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="l[0]"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
           </div>
           <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
         </li>
