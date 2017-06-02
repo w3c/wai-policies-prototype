@@ -16,7 +16,7 @@ policies:
     updated: 2017-05-08
     wcagver: None
     enactdate: 2003
-    type: Law # other values: law/policy/procurement
+    type: Accessibility law # other values: law/policy/procurement
     ministries:
       - title:
           en: Ministry of the Interior
