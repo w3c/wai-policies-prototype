@@ -38,6 +38,7 @@ ul.terms {
 .overviewtable {
   &, * {
     border-collapse: collapse;
+    clear: both;
   }
   td, th {
     padding: 5px;
