@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via our <a href="submission.html">submission form</a>.
+This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the <a href="submission.html">submission form</a>.
 
 The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
 
