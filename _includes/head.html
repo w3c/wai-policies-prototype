@@ -1,3 +1,22 @@
+{% if jekyll.environment == "server" %}
+<?php
+  include '/afs/w3.org/pub/WWW/WAI/lib/functions.php';
+
+  $customcss = <<<EOF
+@import url({{ "/css/main.css" | prepend: site.baseurl }});
+EOF;
+
+  $config = [
+    "title" => "{% if page.title %}{% if page.country.en %}{{ page.country.en }} - {% else %}{{ page.title }} - {% endif %}Web Accessibility Laws and Policies{% else %}{{ site.title | escape }}{% endif %}",
+    "hmenu" => false,
+    "excol" => false,
+    "customcss" => $customcss
+  ];
+  wai_html_head($config);
+?>
+<?php wai_header($config); ?>
+<?php wai_menu(); ?>
+{% else %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,3 +31,4 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
+{% endif %}

@@ -27,7 +27,7 @@ title: Add or Update a Web Accessibility Law or Policy
 
 
   <div id="hForm">
-  <form name="submission" id="submission" method="post" action="https://www.w3.org/2017/04/policies_submission/submission.php">
+  <form name="submission" id="submission" method="post" action="{% if jekyll.environment != "server" %}https://www.w3.org/2017/04/policies_submission/{% endif %}submission.php">
   <p>* Indicates required field</p>
   <fieldset>
     <legend><h3>Information about you</h3></legend>
