@@ -10,7 +10,14 @@ EOF;
     "title" => "{% if page.title %}{% if page.country.en %}{{ page.country.en }} - {% else %}{{ page.title }} - {% endif %}Web Accessibility Laws and Policies{% else %}{{ site.title | escape }}{% endif %}",
     "hmenu" => false,
     "excol" => false,
-    "customcss" => $customcss
+    "customcss" => $customcss,
+    "mobile_ready" => true,
+    "meta" => [
+      "description" => "{{ site.metadata.description }}",
+      "url" => "https://www.w3.org{{ site.baseurl }}/",
+      "subjects" => [{% assign tags = site.metadata.tags | split: " ,"%}{% for t in tags %}"{{t}}"{%unless forloop.last %}, {% endunless %}{% endfor %}],
+      "image" => "Policy/{{site.metadata.shareimage}}"
+    ]
   ];
   wai_html_head($config);
 ?>
