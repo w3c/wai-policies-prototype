@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Web Accessibility Laws and Policies 
+title: Web Accessibility Laws and Policies
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -16,6 +16,11 @@ baseurl: "/wai-policies-prototype" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: w3c_wai
 github_username:  yatil
+
+metadata:
+  description: "Lists governmental policies relating to web accessibility in countries and regions around the world."
+  tags: "Law, Policy, Public sector, Private sector, WCAG derivative, Web Content Accessibility Guidelines, Procurement law, Procurement recommendation, Mandatory policy, Countries, Country"
+  shareimage: "policies-share.png"
 
 # Build settings
 markdown: kramdown
