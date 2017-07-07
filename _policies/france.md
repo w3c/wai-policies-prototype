@@ -49,4 +49,23 @@ policies:
         url:
           fr: http://references.modernisation.gouv.fr/referentiel/
     documents:
+  - title:
+      en: Law N° 2016-1321 Article 106
+      fr:  LOI n° 2016-1321 du 7 octobre 2016 pour une République numérique - Article 106 
+    url:
+      fr: https://www.legifrance.gouv.fr/eli/loi/2016/10/7/ECFI1524250L/jo/article_106
+    updated: 2017-06-20
+    wcagver: None
+    enactdate: 2016
+    type: Digital Governance law # other values: law/policy/procurement
+    ministries:
+      - title:
+          en: Secretary of State for Digital and Innovation (lead), Ministries of Education, of Economy, of Social affairs, of Justice, of Work, of the Interior, of Housing, of Culture
+          fr: Secrétaire d'Etat chargée du numérique et de l'innovation (porteur), Ministère de l'éducation nationale, de l'enseignement supérieur et de la recherche, Ministère de l'économie et des finances, Ministère des affaires sociales et de la santé, Ministère de la justice, Ministère du travail, de l'emploi, de la formation professionnelle et du dialogue social, Ministère de l'intérieur, Ministère du logement et de l'habitat durable, Ministère de la culture et de la communication
+        url:
+          fr: http://www.gouvernement.fr/
+    webonly: no # other values: yes
+    scope: Public sector, Private sector # keys that allows us to use any combination
+    standard: false
+    documents:
 ---
