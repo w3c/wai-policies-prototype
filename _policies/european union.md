@@ -8,7 +8,7 @@ policies:
   - title:
       en: Web and Mobile Accessibility Directive
     url:
-      en: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.327.01.0001.01.ENG&toc=OJ:L:2016:327:TOC
+      en: http://eur-lex.europa.eu/eli/dir/2016/2102/oj
     updated: 2016-10-26
     wcagver: WCAG 2.0
     enactdate: 2016
@@ -19,7 +19,7 @@ policies:
         url:
           en: http://ec.europa.eu/index_en.htm
     webonly: no # other values: no
-    scope: Public sector, Private sector # keys that allows us to use any combination
+    scope: Public sector
     standard:
       - title:
           en: "EN 301 549"
