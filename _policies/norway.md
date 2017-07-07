@@ -26,6 +26,6 @@ policies:
           "no": "https://uu.difi.no"
     webonly: false
     scope: Public sector, Private sector
-    standard: WCAG 2.0 levels A and AA, with the exception of success criteria 1.2.3, 1.2.4 and 1.2.5. for web solutions.
+    standard: none
     documents: false
 ---
