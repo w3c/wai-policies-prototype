@@ -16,14 +16,16 @@ policies:
     updated: 2008
     wcagver:
     enactdate: 2008
-    type: law,
+    type: Non-discrimination law
     ministries:
       - title:
           en: "Ministry of Health and Welfare"
+          ko: 보건복지부
         url:
           en: "http://www.mohw.go.kr/eng/index.jsp"
+          ko: "http://www.mohw.go.kr/"
     webonly: false
-    scope:
+    scope: Public sector, Private sector
     standard: false
     documents:
       - title:
@@ -31,4 +33,5 @@ policies:
         desc: "Korean Web Content Accessibility Guidelines 2.1 contains technical specification to make a website so that people with disabilities can use internet appropriately. This standard has been developed considering domestic condition in addition to 12 guidelines and its success criteria level A of WCAG 2.0. "
         url:
           en: "http://www.tta.or.kr/English/new/standardization/eng_ttastddesc.jsp?stdno=TTAK.OT-10.0003/R2"
+          ko: "http://www.tta.or.kr/data/ttas_view.jsp?pk_num=TTAK.OT-10.0003%2FR2&rn=1"
 ---
