@@ -25,7 +25,7 @@ policies:
           en: "https://uu.difi.no/om-oss/english"
           "no": "https://uu.difi.no"
     webonly: false
-    scope:
-    standard: false
+    scope: Public sector, Private sector
+    standard: WCAG 2.0 levels A and AA, with the exception of success criteria 1.2.3, 1.2.4 and 1.2.5. for web solutions.
     documents: false
 ---
