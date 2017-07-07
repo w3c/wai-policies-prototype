@@ -49,7 +49,7 @@ layout: default
           {% endif %}
           {%endunless%}
           {% endif %}
-          {% if p.standard %}
+          {% if p.documents %}
             <li>Relevant Documents:
               <ul>
                 {% for d in p.documents %}<li>{% include multilang-list.html title=d.title url=d.url external="true" wrap="strong" %}{%if d.desc %}<br>{{d.desc}}{%endif%}</li>{%endfor%}
