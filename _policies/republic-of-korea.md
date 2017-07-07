@@ -30,6 +30,7 @@ policies:
     documents:
       - title:
           en: "Korean Web Content Accessibility Guidelines 2.1"
+          ko: "한국형 웹 콘텐츠 접근성 지침 2.1"
         desc: "Korean Web Content Accessibility Guidelines 2.1 contains technical specification to make a website so that people with disabilities can use internet appropriately. This standard has been developed considering domestic condition in addition to 12 guidelines and its success criteria level A of WCAG 2.0. "
         url:
           en: "http://www.tta.or.kr/English/new/standardization/eng_ttastddesc.jsp?stdno=TTAK.OT-10.0003/R2"
