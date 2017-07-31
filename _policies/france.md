@@ -33,7 +33,7 @@ policies:
     updated: 2017-02-16
     wcagver: WCAG 2.0 derivative
     enactdate: 2015
-    type: Policy
+    type: Accessibility law
     ministries:
       - title:
           en: Ministry of Social Affairs
