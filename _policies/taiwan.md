@@ -10,6 +10,7 @@ province:
 policies:
   - title:
       en: Web Accessibility Guidelines 2.0
+      zh: 網站無障礙規範2.0 版 
     url:
       zh: https://www.handicap-free.nat.gov.tw/
     updated: 2017
@@ -22,7 +23,7 @@ policies:
         url:
           en: "http://www.ncc.gov.tw/english/"
     webonly: true
-    scope:
+    scope: Public sector
     standard: false
     documents:
       - title:
