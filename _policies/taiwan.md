@@ -12,7 +12,7 @@ policies:
       en: Web Accessibility Guidelines 2.0
       zh: "網站無障礙規範2.0 版"
     url:
-      zh: https://www.handicap-free.nat.gov.tw/
+      zh: "https://www.handicap-free.nat.gov.tw/"
     updated: 2017
     wcagver: WCAG 2.0 derivate
     enactdate: 2017
