@@ -21,7 +21,7 @@ policies:
         url:
           en: "http://www.ncc.gov.tw/english/"
     webonly: true
-    scope: Public sector
+    scope:
     standard: false
     documents:
       - title:
