@@ -8,8 +8,8 @@ province:
 policies:
   - title:
       en: "Web Accessibility Guidelines 2.0"
+      zh: "&#x7DB2;&#x7AD9;&#x7121;&#x969C;&#x7919;&#x898F;&#x7BC4;2.0 &#x7248;"
     url:
-      en: "https://www.handicap-free.nat.gov.tw/Download/Detail/1418?Category=28"
       zh: "https://www.handicap-free.nat.gov.tw/Download/Detail/1418?Category=28"
     updated: 2017
     wcagver: WCAG 2.0 derivate
