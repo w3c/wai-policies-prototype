@@ -1,4 +1,6 @@
 ---
+order: 7
+title: France
 country:
   en: France
   fr: La France
@@ -51,7 +53,7 @@ policies:
     documents:
   - title:
       en: Law N° 2016-1321 Article 106
-      fr:  LOI n° 2016-1321 du 7 octobre 2016 pour une République numérique - Article 106 
+      fr:  LOI n° 2016-1321 du 7 octobre 2016 pour une République numérique - Article 106
     url:
       fr: https://www.legifrance.gouv.fr/eli/loi/2016/10/7/ECFI1524250L/jo/article_106
     updated: 2017-06-20

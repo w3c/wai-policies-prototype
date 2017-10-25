@@ -1,4 +1,6 @@
 ---
+order: 4
+title: Denmark
 country:
   en: Denmark
   da: Danmark

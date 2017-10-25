@@ -1,4 +1,6 @@
 ---
+order: 14
+title: Japan
 country:
   en: Japan
   ja: 日本国
