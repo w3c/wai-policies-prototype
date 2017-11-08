@@ -1,6 +1,4 @@
 ---
-order: 21
-title: Taiwan
 country:
   en: Taiwan
   zh: "中華民國"

@@ -1,6 +1,4 @@
 ---
-order: 6
-title: Finland
 country:
   en: Finland
   fi: Suomi

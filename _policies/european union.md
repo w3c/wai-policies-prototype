@@ -1,6 +1,4 @@
 ---
-order: 5
-title: European Union
 country:
   en: European Union
 updated: 2017-02-09

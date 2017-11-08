@@ -1,6 +1,4 @@
 ---
-order: 23
-title: United States
 country:
   en: United States
 updated: 2017-02-16
