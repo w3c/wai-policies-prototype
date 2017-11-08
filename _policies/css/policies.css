@@ -64,3 +64,14 @@ ul.facetlist li :first-child {
 .countries .label {
   position: relative;
 }
+
+.box-h h2.policy-heading {
+  font-weight: bold !important;
+}
+.box-h .sublang {
+  font-size: 1rem;
+}
+
+.box-h .sublang li {
+  margin-bottom: 0;
+}
