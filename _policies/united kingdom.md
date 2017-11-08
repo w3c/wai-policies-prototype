@@ -1,6 +1,4 @@
 ---
-order: 22
-title: United Kingdom
 country:
   en: United Kingdom
 # title_native: # Country name in the country’s language(s), comma separated. For United Kingdom: Schweiz, Suisse, Svizzera, Svizra

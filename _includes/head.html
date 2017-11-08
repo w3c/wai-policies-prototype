@@ -1,0 +1,40 @@
+{% if jekyll.environment == "server" %}
+<?php
+  include '/afs/w3.org/pub/WWW/WAI/lib/functions.php';
+
+  $customcss = <<<EOF
+@import url({{ "/css/main.css" | prepend: site.baseurl }});
+EOF;
+
+  $config = [
+    "title" => "{% if page.title %}{% if page.country.en %}{{ page.country.en }} - {% else %}{{ page.title }} - {% endif %}Web Accessibility Laws and Policies{% else %}{{ site.title | escape }}{% endif %}",
+    "hmenu" => false,
+    "excol" => false,
+    "customcss" => $customcss,
+    "mobile_ready" => true,
+    "meta" => [
+      "description" => "{{ site.metadata.description }}",
+      "url" => "https://www.w3.org{{ site.baseurl }}/",
+      "subjects" => [{% assign tags = site.metadata.tags | split: " ,"%}{% for t in tags %}"{{t}}"{%unless forloop.last %}, {% endunless %}{% endfor %}],
+      "image" => "Policy/{{site.metadata.shareimage}}"
+    ]
+  ];
+  wai_html_head($config);
+?>
+<?php wai_header($config); ?>
+{% else %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{% if page.country.en %}{{ page.country.en }} - {% else %}{{ page.title }} - {% endif %}Web Accessibility Laws and Policies{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="//www.w3.org/WAI/wai-main.css" type="text/css" />
+  <!--[if IE 7]><link rel="stylesheet" href="//www.w3.org/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+{% endif %}

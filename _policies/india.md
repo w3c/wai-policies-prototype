@@ -1,6 +1,4 @@
 ---
-order: 10
-title: India
 country:
   en: India
 updated: 2017-3-24

@@ -1,6 +1,4 @@
 ---
-order: 3
-title: China
 country:
   en: "China"
   zh: 中国

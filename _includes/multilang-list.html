@@ -1,0 +1,32 @@
+{%assign tsize = include.title | size%}
+{% for t in include.title %}
+  {% if forloop.index == 2 %}
+    <ul class="sublang {% if include.class %} {{include.class}}{% endif %}">
+  {% endif %}
+  {% assign thislangurl = false %}
+  {% for u in include.url %}
+    {% if u[0] == t[0] %}
+      {% assign thislangurl = u[1] %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign lng = t[0]%}
+  {% unless forloop.first %}<li lang="{{lng}}">{% endunless %}
+  {% if forloop.first %}{% if include.wrap %}<{{include.wrap}}{% if include.id %} id="{{include.id}}"{% endif %}{% if include.class %} class="{{include.class}}"{% endif %}>{% endif %}{% endif %}
+  {% if thislangurl %}
+    <a href="{{thislangurl}}" hreflang="{{lng}}">
+  {% endif %}
+  {{t[1]}}
+  {% unless lng == "en" %}
+    [<span lang="en">{{site.data.lang[lng].name}}</span>/<span lang="{{lng}}">{{site.data.lang[lng].nativeName}}</span>]
+  {% endunless %}
+  {% if thislangurl %}
+    {% if include.external %} <img src='//www.w3.org/Icons/tr.png' lang="en" alt='External'>{% endif %} </a>
+  {% endif %}
+  {% unless forloop.first %}</li>{% endunless %}
+  {% if forloop.first %}{% if include.wrap %}</{{include.wrap}}>{% endif %}{% endif %}
+
+  {% unless forloop.first %}
+    {% if forloop.last %}</ul>{% endif %}
+  {% endunless %}
+{% endfor %}
