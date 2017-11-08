@@ -1,4 +1,6 @@
 ---
+order: 8
+title: Germany
 country:
   en: Germany
   de: Deutschland

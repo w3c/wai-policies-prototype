@@ -6,36 +6,55 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Web Accessibility Laws and Policies
+title: "Web Accessibility Initiative (WAI)"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/wai-policies-prototype" # the subpath of your site, e.g. /blog
-# baseurl: "/WAI/Policy" # Uncommand when publishing to w3.org, then type export JEKYLL_ENV=server and jekyll build to get php-ready HTML files
+  The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: w3c_wai
-github_username:  yatil
-
-metadata:
-  description: "Lists governmental policies relating to web accessibility in countries and regions around the world."
-  tags: "Law, Policy, Public sector, Private sector, WCAG derivative, Web Content Accessibility Guidelines, Procurement law, Procurement recommendation, Mandatory policy, Countries, Country"
-  shareimage: "policies-share.png"
-
+twitter:
+  username: w3c_wai
+author: w3c_wai
+exclude:
+  - "_external"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "w3c.json"
 # Build settings
 markdown: kramdown
+kramwdown:
+  toc_levels: 2..3
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+repository: w3c/wai-policies-prototype
+
+ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
+
+includes_dir: _external/wai-website-jekyll-templates/_includes
+layouts_dir: _external/wai-website-jekyll-templates/_layouts
 
 collections:
   policies:
+    area: "Plan & Manage"
+    name: "Web Accessibility Laws & Policies"
+    shortname: "International<br>Laws & Policies"
+    icon: "book" # TODO
+    repostitory: w3c/wai-policies-prototype
     output: true
-    permalink: /policy/:slug/
-  help:
-    output: false
+    acknowledgements: false
+    permalink: /:collection/:path/
 
 defaults:
-  - scope:
-      path: ""
-      type: policies
+  -
+    scope:
+      path: "_policies"
     values:
-      layout: page
+      layout: "policy"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-include-cache

@@ -1,4 +1,6 @@
 ---
+order: 12
+title: Israel
 country:
   en: Israel
   he: יִשְׂרָאֵל

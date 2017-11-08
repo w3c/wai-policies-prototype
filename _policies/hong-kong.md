@@ -1,4 +1,6 @@
 ---
+order: 9
+title: Hong Kong
 country:
   en: Hong Kong
   zh: 香港

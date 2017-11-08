@@ -1,4 +1,6 @@
 ---
+order: 16
+title: New Zealand
 country:
   en: New Zealand
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra

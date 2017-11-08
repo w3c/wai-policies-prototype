@@ -1,4 +1,6 @@
 ---
+order: 2
+title: Canada
 country:
   en: Canada
 updated: 2017-02-09

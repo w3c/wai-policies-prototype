@@ -1,4 +1,6 @@
 ---
+order: 11
+title: Ireland
 country:
   en: Ireland
   ga: Éireann

@@ -1,4 +1,6 @@
 ---
+order: 18
+title: Republic of Korea
 country:
   en: Republic of Korea
   ko: 대한민국
