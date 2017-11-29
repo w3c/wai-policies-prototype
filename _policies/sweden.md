@@ -15,7 +15,7 @@ policies:
     url:
       en: http://www.government.se/information-material/2015/09/discrimination-act-2008567/
     updated: 2008
-    wcagver: none
+    wcagver: None
     enactdate: 2008
     type: Non-discrimination law
     ministries: false
