@@ -17,10 +17,10 @@ policies:
     updated: 2008
     wcagver: none
     enactdate: 2008
-    type: law
+    type: Non-discrimination law
     ministries: false
     webonly: false
-    scope:
+    scope: Public sector, Private sector
     standard: false
     documents: false
 ---
