@@ -29,7 +29,7 @@ policies:
           en: http://www.cdpf.org.cn/english/
           zh: http://www.cdpf.org.cn/
     webonly: no # other values: no
-    scope: Public, Private # keys that allows us to use any combination
+    scope: Public sector, Private sector
     standard: False
   - title:
       en: Voluntary Web Accessibility Standard
