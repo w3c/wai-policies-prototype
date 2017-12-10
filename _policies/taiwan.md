@@ -12,7 +12,7 @@ policies:
     url:
       zh: "https://www.handicap-free.nat.gov.tw/Download/Detail/1418?Category=28"
     updated: 2017
-    wcagver: WCAG 2.0 derivate
+    wcagver: WCAG 2.0 derivative
     enactdate: 2017
     type: Mandatory policy
     ministries:
