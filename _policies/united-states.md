@@ -5,9 +5,9 @@ country:
   en: United States
 updated: 2017-02-16
 updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
-relatedpages:
-  - title: State Policies Relating to Web Accessibility
-    url: https://www.w3.org/WAI/Policy/USA-States.html
+#relatedpages:
+#  - title: State Policies Relating to Web Accessibility
+#    url: https://www.w3.org/WAI/Policy/USA-States.html
 policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended

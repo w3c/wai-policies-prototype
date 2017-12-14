@@ -5,9 +5,9 @@ country:
   en: Canada
 updated: 2017-02-09
 updatemsg: Updated to reflect the latest information.
-relatedpages:
-  - title: Provincial Policies Relating to Web Accessibility
-    url: https://www.w3.org/WAI/Policy/CA-Provinces.html
+#relatedpages:
+#  - title: Provincial Policies Relating to Web Accessibility
+#    url: https://www.w3.org/WAI/Policy/CA-Provinces.html
 policies:
   - title:
       en: Canadian Human Rights Act
