@@ -13,15 +13,18 @@
   {% assign lng = t[0]%}
   {% unless forloop.first %}<li lang="{{lng}}">{% endunless %}
   {% if forloop.first %}{% if include.wrap %}<{{include.wrap}}{% if include.id %} id="{{include.id}}"{% endif %}{% if include.class %} class="{{include.class}}"{% endif %}>{% endif %}{% endif %}
+  {% unless lng == "en" %}
+    <span lang="en">{{site.data.lang[lng].name}}: </span>
+  {% endunless %}
   {% if thislangurl %}
     <a href="{{thislangurl}}" hreflang="{{lng}}">
   {% endif %}
   {{t[1]}}
   {% unless lng == "en" %}
-    [<span lang="en">{{site.data.lang[lng].name}}</span>/<span lang="{{lng}}">{{site.data.lang[lng].nativeName}}</span>]
+    (<span lang="{{lng}}">{{site.data.lang[lng].nativeName}}</span>)
   {% endunless %}
   {% if thislangurl %}
-    {% if include.external %} <img src='//www.w3.org/Icons/tr.png' lang="en" alt='External'>{% endif %} </a>
+    {% if include.external %} <img src='//www.w3.org/Icons/tr.png' lang="en" alt='External'>{% endif %}</a>
   {% endif %}
   {% unless forloop.first %}</li>{% endunless %}
   {% if forloop.first %}{% if include.wrap %}</{{include.wrap}}>{% endif %}{% endif %}

@@ -23,10 +23,16 @@ layout: default
   <div class="post-content">
     <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
     {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
+
     {% for p in page.policies %}
       {% assign theslug = p.title.en | slugify %}
-      {% include multilang-list.html title=p.title url=p.url external="true" wrap="h2" id=theslug class="policy-heading" %}
-      <div>
+      <h2 class="policy-heading" id="{{theslug}}">
+        {% include multilang-policy-title.html title=p.title %}
+      </h2>
+      <div class="policy-body">
+        <h3 style="margin-top:0;">Official law/policy page{% if urlsize > 1 %}s{% endif %}</h3>
+        {% include multilang-list-policy-links.html title=p.title url=p.url external="true" wrap="h2" id=theslug class="policy-heading" %}
+        <h3>Details</h3>
         <ul>
           <li>Date enacted: {{p.enactdate}}</li>
           <li>Responsible {%if p.ministries.size == 1%}Entity (Agency, Ministry, etc.){%else%}Entities (Agencies, Ministries, etc.){%endif%}:

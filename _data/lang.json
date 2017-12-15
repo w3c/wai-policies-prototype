@@ -153,7 +153,7 @@
     },
     "nl":{
         "name":"Dutch",
-        "nativeName":"Nederlands, Vlaams"
+        "nativeName":"Nederlands"
     },
     "en":{
         "name":"English",
@@ -165,7 +165,7 @@
     },
     "et":{
         "name":"Estonian",
-        "nativeName":"eesti, eesti keel"
+        "nativeName":"eesti"
     },
     "ee":{
         "name":"Ewe",
@@ -181,11 +181,11 @@
     },
     "fi":{
         "name":"Finnish",
-        "nativeName":"suomi, suomen kieli"
+        "nativeName":"suomi"
     },
     "fr":{
         "name":"French",
-        "nativeName":"français, langue française"
+        "nativeName":"français"
     },
     "ff":{
         "name":"Fula; Fulah; Pulaar; Pular",
@@ -628,7 +628,7 @@
         "nativeName":"ትግርኛ"
     },
     "bo":{
-        "name":"Tibetan Standard, Tibetan, Central",
+        "name":"Tibetan",
         "nativeName":"བོད་ཡིག"
     },
     "tk":{
