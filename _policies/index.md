@@ -13,7 +13,9 @@ The information on this page is _not_ legal advice. If you have questions about 
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility](/wai-website/plan/org-policies/).
 
 {% include excol.html type="start" id="xterms" %}
+
 <h3>Terms used on this page</h3>
+
 {% include excol.html type="middle" %}
 
 -   **Law** – A law has completed the legislation process, and is put
