@@ -101,11 +101,11 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 </script>
 
 
-<script src="{{site.github.url}}/policies/js/jquery.js"></script>
-<script src="{{site.github.url}}/policies/js/underscore.js"></script>
-<script src="{{site.github.url}}/policies/js/uri.js"></script>
-<script src="{{site.github.url}}/policies/js/facetedsearch.js"></script>
-<script src="{{site.github.url}}/policies/js/sorttable.js"></script>
-<script>var path = "{{site.github.url}}";</script>
-<script src="{{site.github.url}}/policies/js/script.js"></script>
-<style>@import url('{{site.github.url}}/policies/css/policies.css');</style>
+<script src="{{ "/policies/js/jquery.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/underscore.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/uri.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/facetedsearch.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/sorttable.js" | relative_url }}"></script>
+<script>var path = "{{ "/" | relative_url }}";</script>
+<script src="{{ "/policies/js/script.js" | relative_url }}"></script>
+<style>@import url('{{ "/policies/css/policies.css" | relative_url }}');</style>

@@ -1,11 +1,10 @@
-
-  .overviewtable, .overviewtable * {
-    border-collapse: collapse;
-    clear: both;
-  }
-  .overviewtable caption {
-    text-align: left;
-  }
+.overviewtable, .overviewtable * {
+  border-collapse: collapse;
+  clear: both;
+}
+.overviewtable caption {
+  text-align: left;
+}
 
 #infos {text-align: left;}
 .facettotalcount {display:inline;}
