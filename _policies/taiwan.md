@@ -4,7 +4,7 @@ title: Taiwan
 country:
   en: Taiwan
   zh: "中華民國"
-updated: 2017-06-09
+updated: 2018-03-20
 updatemsg:
 province:
 policies:
@@ -20,8 +20,10 @@ policies:
     ministries:
       - title:
           en: "National Communications Commission"
+          zh: "國家通訊傳播委員會"
         url:
           en: "http://www.ncc.gov.tw/english/"
+          zh: "https://www.ncc.gov.tw/"
     webonly: true
     scope: Public sector
     standard: false
