@@ -12,13 +12,13 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-# baseurl: "/wai-policies-prototype" # the subpath of your site, e.g. /blog
-# url: "https://w3c.github.io" # the base hostname & protocol for your site
-baseurl: "/WAI/Policy" # Uncommand when publishing to w3.org, then type export JEKYLL_ENV=server and jekyll build to get php-ready HTML files
-url: "https://www.w3.org" # the base hostname & protocol for your site
+baseurl: "/wai-policies-prototype" # the subpath of your site, e.g. /blog
+url: "https://w3c.github.io" # the base hostname & protocol for your site
+# baseurl: "/WAI/Policy" # Uncommand when publishing to w3.org, then type export JEKYLL_ENV=server and jekyll build to get php-ready HTML files
+# url: "https://www.w3.org" # the base hostname & protocol for your site
 twitter_username: w3c_wai
 github_username:  yatil
-environment: server
+# environment: server
 
 metadata:
   description: "Lists governmental policies relating to web accessibility in countries and regions around the world."
