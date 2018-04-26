@@ -41,50 +41,50 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 {% include excol.html type="end" %}
 
 
- <h2 id="xtable">Law and Policy Overview Table</h2>
-  <div>
+<h2 id="xtable">Law and Policy Overview Table</h2>
+<div>
   <details open>
     <summary>
     <h3 style="display:inline-block;">Filter policies to show:</h3>
     </summary>
     <div id="facets"></div>
   </details>
-    <table class="sortable overviewtable">
-      <caption>
-        <h3>Overview Table:</h3>
-        <div id="infos"></div>
-      </caption>
-      <thead>
-      <tr>
-        <th>Country</th>
-        <th>Name</th>
-        <th>Date enacted</th>
-        <th>Type (Policy, law, legislation, etc.)</th>
-        <th>Scope</th>
-        <th>Web Only</th>
-        <th>WCAG Version Used</th>
+  <table class="sortable overviewtable">
+    <caption>
+      <h3>Overview Table:</h3>
+      <div id="infos"></div>
+    </caption>
+    <thead>
+    <tr>
+      <th>Country</th>
+      <th>Name</th>
+      <th>Date enacted</th>
+      <th>Type (Policy, law, legislation, etc.)</th>
+      <th>Scope</th>
+      <th>Web Only</th>
+      <th>WCAG Version Used</th>
+    </tr>
+    </thead>
+    <tbody id="results">
+      {% for policy in site.policies %}
+      {% for p in policy.policies %}
+      <tr data-updated="{{policy.updated}}">
+        <td>{% assign curl = policy.country.en | slugify | prepend: '#x' %}
+          {% include multilang-title.html title=policy.country url=curl %}</td>
+        <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}">{{p.title.en}}</a></td>
+        <td>{{p.enactdate}}</td>
+        <td>{{p.type}}</td>
+        <td>{{p.scope}}</td>
+        <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
+        <td>{{p.wcagver}}</td>
       </tr>
-      </thead>
-      <tbody id="results">
-        {% for policy in site.policies %}
-        {% for p in policy.policies %}
-        <tr data-updated="{{policy.updated}}">
-          <td>{% assign curl = policy.country.en | slugify | prepend: '#x' %}
-            {% include multilang-title.html title=policy.country url=curl %}</td>
-          <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}">{{p.title.en}}</a></td>
-          <td>{{p.enactdate}}</td>
-          <td>{{p.type}}</td>
-          <td>{{p.scope}}</td>
-          <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
-          <td>{{p.wcagver}}</td>
-        </tr>
-        {% endfor %}
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+      {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-  <script type="text/template" id="results-template">
+<script type="text/template" id="results-template">
   <tr>
     <td><a href="<%= obj.countryhref %>"><%= obj.title %></a></td>
     <td><a href="<%= obj.policyhref %>"><%= obj.policyname %></a></td>
