@@ -19,7 +19,7 @@ policies:
     wcagver: WCAG 2.0 derivative
     wcagver_comment: "WCAG 2.0, WCAG 2.0 levels A and AA, with the exception of success criteria 1.2.3, 1.2.4 and 1.2.5."
     enactdate: 2013
-    type: law, Non-discrimination law,
+    type: Non-discrimination law
     ministries:
       - title:
           en: "Norwegian Authority for Universal Design of ICT, a part of the Agency for Public Management and eGovermnent (Difi)"

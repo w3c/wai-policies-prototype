@@ -5,18 +5,18 @@ country:
   en: United States
 updated: 2017-02-16
 updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
-relatedpages:
-  - title: State Policies Relating to Web Accessibility
-    url: https://www.w3.org/WAI/Policy/USA-States.html
+#relatedpages:
+#  - title: State Policies Relating to Web Accessibility
+#    url: https://www.w3.org/WAI/Policy/USA-States.html
 policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended
     url:
       en: https://www.section508.gov/section-508-of-the-rehabilitation-act
-    updated: 2017-02-16
-    wcagver: WCAG 1.0 derivative
+    updated: 2018-03-20
+    wcagver: WCAG 2.0
     enactdate: 1998
-    type: Procurement law # other values: recommendation/law/policy
+    type: Procurement law, Accessibility law # other values: recommendation/law/policy
     ministries:
       - title:
           en: General Services Administration (GSA)
@@ -34,16 +34,11 @@ policies:
     scope: Government # keys that allows us to use any combination
     standard:
       - title:
-          en: "Section 508 Standards for Electronic and Information Technology"
-        desc: "Published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Updated standard now available but not enforced yet, see Revised section 508 standards below."
-        url:
-          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
-    documents:
-      - title:
           en: Information and Communication Technology (ICT) Standards and Guidelines
         url:
           en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule
-        desc: Revised Section 508 Standards, 18 Jan. 2017. Enforced on U.S. Agencies as of 18 Jan. 2018.
+        desc: Revised Section 508 Standards, 18 Jan. 2017. Enforced on U.S. Agencies as of 18 Jan. 2018. Procurement regulations have not been completed yet by the Federal Acquisition Regulatory (FAR) Council. Given the impending updates to the FAR by the FAR Council and the current applicability of the Revised 508 Standards to all other 508-covered applications (i.e., development, maintenance, and use of ICT by Federal agencies), Federal agencies are encouraged to start proactively incorporating the Revised 508 Standards now into their procurement planning and execution.
+    documents:
       - title:
           en: About the Update of the Section 508 Standards and Section 255 Guidelines for Information and Communication Technology
         url:
@@ -55,14 +50,20 @@ policies:
           en: https://www.section508.gov/
         desc: General Services Administration's website on Section 508
       - title:
+          en: "Section 508 Standards for Electronic and Information Technology"
+        desc: "Original section 508 standards, published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Government agencies encouraged to use the Revised 508 Standards published January 2017 in procurement of accessible technology, though the Federal Acquisition Regulatory (FAR) Council has not yet updated the procurement language to incorporate the Revised 508 Standards."
+        url:
+          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+      - title:
           en: GSA Quick Reference Guide to Section 508 Requirements and Standards
         url:
           en: https://section508.gov/content/quick-reference-guide
-        desc:
+        desc: "This quick reference provides further information on the original Section 508 Standards, published 21 Dec. 2000."
       - title:
           en: Guide to the Section 508 Standards
         url:
           en:  https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/guide-to-the-section-508-standards
+        desc: "This provides guidance for the original Section 508 standards published 21 December, 2000."
   - title:
       en: Americans with Disabilities Act of 1990 (ADA), as amended
     url:

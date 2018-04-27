@@ -13,7 +13,9 @@ The information on this page is _not_ legal advice. If you have questions about 
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility](/wai-website/plan/org-policies/).
 
 {% include excol.html type="start" id="xterms" %}
+
 <h3>Terms used on this page</h3>
+
 {% include excol.html type="middle" %}
 
 -   **Law** – A law has completed the legislation process, and is put
@@ -39,50 +41,50 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 {% include excol.html type="end" %}
 
 
- <h2 id="xtable">Law and Policy Overview Table</h2>
-  <div>
+<h2 id="xtable">Law and Policy Overview Table</h2>
+<div>
   <details open>
     <summary>
     <h3 style="display:inline-block;">Filter policies to show:</h3>
     </summary>
     <div id="facets"></div>
   </details>
-    <table class="sortable overviewtable">
-      <caption>
-        <h3>Overview Table:</h3>
-        <div id="infos"></div>
-      </caption>
-      <thead>
-      <tr>
-        <th>Country</th>
-        <th>Name</th>
-        <th>Date enacted</th>
-        <th>Type (Policy, law, legislation, etc.)</th>
-        <th>Scope</th>
-        <th>Web Only</th>
-        <th>WCAG Version Used</th>
+  <table class="sortable overviewtable">
+    <caption>
+      <h3>Overview Table:</h3>
+      <div id="infos"></div>
+    </caption>
+    <thead>
+    <tr>
+      <th>Country</th>
+      <th>Name</th>
+      <th>Date enacted</th>
+      <th>Type (Policy, law, legislation, etc.)</th>
+      <th>Scope</th>
+      <th>Web Only</th>
+      <th>WCAG Version Used</th>
+    </tr>
+    </thead>
+    <tbody id="results">
+      {% for policy in site.policies %}
+      {% for p in policy.policies %}
+      <tr data-updated="{{policy.updated}}">
+        <td>{% assign curl = policy.country.en | slugify | prepend: '#x' %}
+          {% include multilang-title.html title=policy.country url=curl %}</td>
+        <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}">{{p.title.en}}</a></td>
+        <td>{{p.enactdate}}</td>
+        <td>{{p.type}}</td>
+        <td>{{p.scope}}</td>
+        <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
+        <td>{{p.wcagver}}</td>
       </tr>
-      </thead>
-      <tbody id="results">
-        {% for policy in site.policies %}
-        {% for p in policy.policies %}
-        <tr data-updated="{{policy.updated}}">
-          <td>{% assign curl = policy.country.en | slugify | prepend: '#x' %}
-            {% include multilang-title.html title=policy.country url=curl %}</td>
-          <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}">{{p.title.en}}</a></td>
-          <td>{{p.enactdate}}</td>
-          <td>{{p.type}}</td>
-          <td>{{p.scope}}</td>
-          <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
-          <td>{{p.wcagver}}</td>
-        </tr>
-        {% endfor %}
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+      {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-  <script type="text/template" id="results-template">
+<script type="text/template" id="results-template">
   <tr>
     <td><a href="<%= obj.countryhref %>"><%= obj.title %></a></td>
     <td><a href="<%= obj.policyhref %>"><%= obj.policyname %></a></td>
@@ -99,11 +101,11 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 </script>
 
 
-<script src="{{site.github.url}}/policies/js/jquery.js"></script>
-<script src="{{site.github.url}}/policies/js/underscore.js"></script>
-<script src="{{site.github.url}}/policies/js/uri.js"></script>
-<script src="{{site.github.url}}/policies/js/facetedsearch.js"></script>
-<script src="{{site.github.url}}/policies/js/sorttable.js"></script>
-<script>var path = "{{site.github.url}}";</script>
-<script src="{{site.github.url}}/policies/js/script.js"></script>
-<style>@import url('{{site.github.url}}/policies/css/policies.css');</style>
+<script src="{{ "/policies/js/jquery.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/underscore.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/uri.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/facetedsearch.js" | relative_url }}"></script>
+<script src="{{ "/policies/js/sorttable.js" | relative_url }}"></script>
+<script>var path = "{{ "/" | relative_url }}";</script>
+<script src="{{ "/policies/js/script.js" | relative_url }}"></script>
+<style>@import url('{{ "/policies/css/policies.css" | relative_url }}');</style>

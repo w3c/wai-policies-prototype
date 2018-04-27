@@ -4,7 +4,7 @@ title: Taiwan
 country:
   en: Taiwan
   zh: "中華民國"
-updated: 2017-06-09
+updated: 2018-03-20
 updatemsg:
 province:
 policies:
@@ -14,14 +14,16 @@ policies:
     url:
       zh: "https://www.handicap-free.nat.gov.tw/Download/Detail/1418?Category=28"
     updated: 2017
-    wcagver: WCAG 2.0 derivate
+    wcagver: WCAG 2.0 derivative
     enactdate: 2017
     type: Mandatory policy
     ministries:
       - title:
           en: "National Communications Commission"
+          zh: "國家通訊傳播委員會"
         url:
           en: "http://www.ncc.gov.tw/english/"
+          zh: "https://www.ncc.gov.tw/"
     webonly: true
     scope: Public sector
     standard: false

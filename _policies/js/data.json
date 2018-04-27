@@ -6,9 +6,9 @@ permalink: /policies/js/data.json
 [{% for policy in site.policies %}{% if forloop.last == true %}{% assign outerlast = true %}{% endif %}{% for p in policy.policies %}
 {
     "title": "{{policy.country.en | escape_once}}",
-    "countryhref": "{{ policy.url |  prepend: site.baseurl | escape_once}}",
+    "countryhref": "{{ policy.url |  relative_url | escape_once}}",
     "policyname": "{{p.title.en | escape_once}}",
-    "policyhref": "{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify | escape_once}}",
+    "policyhref": "{{ policy.url | relative_url }}#{{ p.title.en | slugify | escape_once}}",
     "url": "{{p.url.en | escape_once}}",
     "enactdate": "{{p.enactdate | escape_once}}",
     "type": "{{p.type | escape_once}}",
