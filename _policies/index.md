@@ -6,11 +6,11 @@ order: 0
 layout: sidenav
 ---
 
-This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({% link _policies/submission.md %}).
+This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
 The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
 
-For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility](/wai-website/plan/org-policies/).
+For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility]({{ "/plan/org-policies/" | relative_url }}).
 
 {% include excol.html type="start" id="xterms" %}
 
