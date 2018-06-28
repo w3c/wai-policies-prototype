@@ -49,7 +49,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     </summary>
     <div id="facets"></div>
   </details>
-  <table class="sortable overviewtable">
+  <table class="sortable dense overviewtable">
     <caption>
       <h3>Overview Table:</h3>
       <div id="infos"></div>
@@ -73,8 +73,8 @@ For guidance on developing an accessibility policy for an organization, see [Dev
           {% include multilang-title.html title=policy.country url=curl %}</td>
         <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ p.title.en | slugify }}">{{p.title.en}}</a></td>
         <td>{{p.enactdate}}</td>
-        <td>{{p.type}}</td>
-        <td>{{p.scope}}</td>
+        <td class="hyphenated">{{p.type}}</td>
+        <td class="hyphenated">{{p.scope}}</td>
         <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
         <td>{{p.wcagver}}</td>
       </tr>
@@ -89,8 +89,8 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     <td><a href="<%= obj.countryhref %>"><%= obj.title %></a></td>
     <td><a href="<%= obj.policyhref %>"><%= obj.policyname %></a></td>
     <td><%= obj.enactdate %></td>
-    <td><%= obj.type %></td>
-    <td><% if (obj.scope instanceof Array && obj.scope.length > 1) { %>
+    <td class="hyphenated"><%= obj.type %></td>
+    <td class="hyphenated"><% if (obj.scope instanceof Array && obj.scope.length > 1) { %>
       <%= obj.scope.join(', ') %>
     <% } else { %>
       <%= obj.scope %>
