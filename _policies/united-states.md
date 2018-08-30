@@ -5,9 +5,6 @@ country:
   en: United States
 updated: 2017-02-16
 updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
-#relatedpages:
-#  - title: State Policies Relating to Web Accessibility
-#    url: https://www.w3.org/WAI/Policy/USA-States.html
 policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended
@@ -233,4 +230,61 @@ policies:
         url:
           en: https://www.fcc.gov/general/twenty-first-century-communications-and-video-accessibility-act-0
         desc: Provides an overall view of the Act with links to pages that contain the technical requirements for the various technologies covered by the Act.
+statesdesc:
+  en: "States"
+states:
+  - title:
+      en: "Texas"
+    policies:
+    - title:
+        en: TAC Section 206.50 Accessibility
+      url:
+        en: http://txrules.elaws.us/rule/title1_chapter206_sec.206.50
+      updated: 2005
+      wcagver: WCAG 2.0 derivate
+      enactdate: 2005
+      type: law, Recommended policy
+      ministries:
+        - title:
+            en: "Texas Department of Information Resources oversees for all state agencies"
+          url:
+            en: "http://dir.texas.gov/View-Resources/Pages/Content.aspx?id=36"
+      webonly: true
+      scope:
+      standard:
+        - title:
+            en: "GSA Section 508"
+          desc: "Standards described in Section 508 Subpart B §1194.22, paragraphs (a) through (p), excluding paragraphs (b) and (k)"
+          url:
+            en: "https://www.section508.gov/"
+      documents:
+        - title:
+            en: "Texas Adminstrative Code Title 1 Chapter 206 Section 206.50"
+          desc: "Details for the requirement that each state website should be designed with consideration for current and emerging Internet connection technologies available to the general public. "
+          url:
+            en: "http://txrules.elaws.us/rule/title1_chapter206_sec.206.50"
+  - title:
+      en: "Washington"
+    policies:
+    - title:
+        en: "Policy #188 – Accessibility"
+      url:
+        en: https://ocio.wa.gov/policy/accessibility
+      updated: 2016
+      wcagver: WCAG 2.0
+      enactdate: 2016
+      type: Mandatory policy
+      ministries:
+        - title:
+            en: "Washington State Office of the Chief Information Officer"
+          url:
+            en: "https://ocio.wa.gov"
+      webonly: false
+      scope:
+      standard:
+        - title:
+            en: "Minimum Accessibility Standard"
+          desc: "Define the minimum level of compliance for accessibility with Web Content Accessibility Guidelines (WCAG) 2.0"
+          url:
+            en: "https://ocio.wa.gov/policy/minimum-accessibility-standard"
 ---
