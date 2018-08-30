@@ -56,4 +56,80 @@ policies:
           en: Guidance on implementing the standard on web accessibility
         url:
           en: http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/ws-nw/wa-aw-guid-eng.asp
+statesdesc:
+  en: "Provinces and Territories"
+states:
+  - title:
+      en: "Manitoba"
+    policies:
+    - title:
+        en: Accessibility for Manitobans Act
+      url:
+        en: http://www.accessibilitymb.ca/law.html
+      updated: 2018
+      wcagver: none
+      enactdate: 2017
+      type: law, Recommended policy
+      ministries:
+        - title:
+            en: "Accessibility Directorate"
+          url:
+            en: "https://novascotia.ca/accessibility/"
+      webonly: false
+      standard:
+        - title:
+            en: "Customer Service Standard Regulation"
+            fr: "Règlement sur les normes de service à la clientèle"
+          # desc: ""
+          url:
+            en: "http://web2.gov.mb.ca/laws/regs/current/_pdf-regs.php?reg=171/2015"
+            fr: "http://web2.gov.mb.ca/laws/regs/current/_pdf-regs.php?reg=171/2015"
+  - title:
+      en: "Nova Scotia"
+    policies:
+    - title:
+        en: An Act Respecting Accessibility in Nova Scotia
+      url:
+        en: https://nslegislature.ca/legc/bills/62nd_3rd/3rd_read/b059.htm
+      updated: 2014
+      wcagver: none
+      enactdate: 2003
+      type: law, Recommended policy
+      ministries:
+        - title:
+            en: "Accessibility Directorate"
+          url:
+            en: "https://novascotia.ca/accessibility/"
+      webonly: false
+  - title:
+      en: "Ontario"
+    policies:
+    - title:
+        en: Accessibility for Ontarians with Disabilities Act, 2005, S.O. 2005, c. 11
+      url: 
+        en: https://www.ontario.ca/laws/statute/05a11
+      updated: 2005
+      wcagver: WCAG 2.0, 
+      enactdate: 2005
+      type: law, 
+      ministries:
+        - title:
+            en: "Accessibility Directorate of Ontario"
+          url:
+            en: "https://www.ontario.ca/page/accessibility-laws"
+      webonly: true
+      scope: 
+      standard:
+        - title:
+            en: "O. Reg. 191/11: INTEGRATED ACCESSIBILITY STANDARDS"
+          desc: "Integrated accessibility standards -- includes online and real-world accessibility requirements"
+          url:
+            en: "https://www.ontario.ca/laws/regulation/110191"
+      documents:
+        - title:
+            en: "How to make websites accessible"
+          desc: "Guidance document"
+          url:
+            en: "https://www.ontario.ca/page/how-make-websites-accessible"
 ---
+
