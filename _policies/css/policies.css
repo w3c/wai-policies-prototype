@@ -142,21 +142,27 @@ ul.facetlist li :first-child {
   flex-wrap: wrap;
   margin: 0 -.25em;
   padding: 0 !important;
+  align-items: stretch;
 }
 
 .statenav li {
   box-sizing: border-box;
   list-style: none;
-  flex: 1 1 calc(20% - .5em);
-  white-space: nowrap;
+  flex: 0 1 calc(20% - .5em);
+  /*white-space: nowrap;*/
   margin: .25em;
+  display: flex;
+  align-items: stretch;
 }
 
 .statenav li a, .statenav li span {
+  flex: 1;
   box-sizing: border-box;
   display: block;
   width: 100%;
+  height: 100%;
   background: #eee;
   text-align: center;
+  justify-content: center;
   padding: .1em .2em;
 }

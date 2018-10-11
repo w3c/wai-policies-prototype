@@ -31,22 +31,42 @@
       {% for p in page.policies %}
         {% include individual-policy.html policy=p headinglevel=2%}
       {% endfor %}
+      {%- comment -%}If states exist…{%- endcomment -%}
       {% if page.states %}
         <h2 id="states">{% include multilang-title.html title=page.statesdesc %}</h2>
-        <ul class="statenav">{% for state in page.states %}<li>{% if state.policies %}<a href="#{{ state.title.en | slugify }}">{% else %}<span>{% endif %}{{ state.title.en }}{% if state.policies %}</a>{% else %}</span>{% endif %}</li>{% endfor %}</ul>
-        {% include_cached excol.html type="all" %}
+        {%- comment -%}Test if there are states with and without policies…{%- endcomment -%}
+        {% assign stateshavepolicies    = false %}
+        {% assign stateswithoutpolicies = false %}
         {% for state in page.states %}
-          {% if state.policies %}
-            {% assign stateslug = state.title.en | slugify %}
-            {% include_cached excol.html type="start" id=stateslug %}
-              <h3>{% include multilang-title.html title=state.title %}</h3>
-            {% include_cached excol.html type="middle" %}
-              {% for sp in state.policies %}
-                {% include individual-policy.html policy=sp headinglevel=4%}
-              {% endfor %}
-            {% include_cached excol.html type="end" %}
+          {% if state.policies %}       {% assign stateshavepolicies    = true %}{% endif %}
+          {% if state.policies == nil %}{% assign stateswithoutpolicies = true %}{% endif %}
+          {% if stateshavepolicies and stateswithoutpolicies %}
+            {% break %}
           {% endif %}
         {% endfor %}
+        {%- comment -%}Output states with policies{%- endcomment -%}
+        {% if stateshavepolicies %}
+          {% for state in page.states %}{% if forloop.first %}<ul class="statenav">{% endif %}{% if state.policies %}<li><a href="#{{ state.title.en | slugify }}">{{ state.title.en }}</a></li>{% endif %}{% if forloop.last %}</ul>{% endif %}{% endfor %}
+          {% include_cached excol.html type="all" %}
+          {% for state in page.states %}
+            {% if state.policies %}
+              {% assign stateslug = state.title.en | slugify %}
+              {% include_cached excol.html type="start" id=stateslug %}
+                <h3>{% include multilang-title.html title=state.title %}</h3>
+              {% include_cached excol.html type="middle" %}
+                {% for sp in state.policies %}
+                  {% include individual-policy.html policy=sp headinglevel=4%}
+                {% endfor %}
+              {% include_cached excol.html type="end" %}
+            {% endif %}
+          {% endfor %}
+        {% endif%}
+
+        {%- comment -%}Output states without policies{%- endcomment -%}
+        {% if stateswithoutpolicies %}
+        <h3>{{page.statesdesc.en}} without data:</h2>
+        {% for state in page.states %}{% if forloop.first %}<ul class="statenav">{% endif %}{% unless state.policies %}<li><span>{{ state.title.en }}</span></li>{% endunless %}{% if forloop.last %}</ul>{% endif %}{% endfor %}
+        {% endif %}
       {% endif %}
     </div>
     {% include prevnext.html %}
