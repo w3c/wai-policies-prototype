@@ -147,7 +147,7 @@ ul.facetlist li :first-child {
 .statenav li {
   box-sizing: border-box;
   list-style: none;
-  flex: 1 1 25%;
+  flex: 1 1 calc(20% - .5em);
   white-space: nowrap;
   margin: .25em;
 }
@@ -158,5 +158,5 @@ ul.facetlist li :first-child {
   width: 100%;
   background: #eee;
   text-align: center;
-  padding: .1em .15em;
+  padding: .1em .2em;
 }
