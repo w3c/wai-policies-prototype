@@ -231,60 +231,168 @@ policies:
           en: https://www.fcc.gov/general/twenty-first-century-communications-and-video-accessibility-act-0
         desc: Provides an overall view of the Act with links to pages that contain the technical requirements for the various technologies covered by the Act.
 statesdesc:
-  en: "States"
+  en: "States and Territories"
 states:
+- title:
+    en: "Alabama"
+- title:
+    en: "Alaska"
+- title:
+    en: "American Samoa"
+- title:
+    en: "Arizona"
+- title:
+    en: "Arkansas"
+- title:
+    en: "California"
+- title:
+    en: "Colorado"
+- title:
+    en: "Connecticut"
+- title:
+    en: "Delaware"
+- title:
+    en: "District of Columbia"
+- title:
+    en: "Florida"
+- title:
+    en: "Georgia"
+- title:
+    en: "Guam"
+- title:
+    en: "Hawaii"
+- title:
+    en: "Idaho"
+- title:
+    en: "Illinois"
+- title:
+    en: "Indiana"
+- title:
+    en: "Iowa"
+- title:
+    en: "Kansas"
+- title:
+    en: "Kentucky"
+- title:
+    en: "Louisiana"
+- title:
+    en: "Maine"
+- title:
+    en: "Maryland"
+- title:
+    en: "Massachusetts"
+- title:
+    en: "Michigan"
+- title:
+    en: "Minnesota"
+- title:
+    en: "Mississippi"
+- title:
+    en: "Missouri"
+- title:
+    en: "Montana"
+- title:
+    en: "Nebraska"
+- title:
+    en: "Nevada"
+- title:
+    en: "New Hampshire"
+- title:
+    en: "New Jersey"
+- title:
+    en: "New Mexico"
+- title:
+    en: "New York"
+- title:
+    en: "North Carolina"
+- title:
+    en: "North Dakota"
+- title:
+    en: "Northern Mariana Islands"
+- title:
+    en: "Ohio"
+- title:
+    en: "Oklahoma"
+- title:
+    en: "Oregon"
+- title:
+    en: "Pennsylvania"
+- title:
+    en: "Puerto Rico"
+- title:
+    en: "Rhode Island"
+- title:
+    en: "South Carolina"
+- title:
+    en: "South Dakota"
+- title:
+    en: "Tennessee"
+- title:
+    en: "Texas"
+  policies:
   - title:
-      en: "Texas"
-    policies:
-    - title:
-        en: TAC Section 206.50 Accessibility
-      url:
-        en: http://txrules.elaws.us/rule/title1_chapter206_sec.206.50
-      updated: 2005
-      wcagver: WCAG 2.0 derivate
-      enactdate: 2005
-      type: law, Recommended policy
-      ministries:
-        - title:
-            en: "Texas Department of Information Resources oversees for all state agencies"
-          url:
-            en: "http://dir.texas.gov/View-Resources/Pages/Content.aspx?id=36"
-      webonly: true
-      scope:
-      standard:
-        - title:
-            en: "GSA Section 508"
-          desc: "Standards described in Section 508 Subpart B §1194.22, paragraphs (a) through (p), excluding paragraphs (b) and (k)"
-          url:
-            en: "https://www.section508.gov/"
-      documents:
-        - title:
-            en: "Texas Adminstrative Code Title 1 Chapter 206 Section 206.50"
-          desc: "Details for the requirement that each state website should be designed with consideration for current and emerging Internet connection technologies available to the general public. "
-          url:
-            en: "http://txrules.elaws.us/rule/title1_chapter206_sec.206.50"
+      en: TAC Section 206.50 Accessibility
+    url:
+      en: http://txrules.elaws.us/rule/title1_chapter206_sec.206.50
+    updated: 2005
+    wcagver: WCAG 2.0 derivate
+    enactdate: 2005
+    type: law, Recommended policy
+    ministries:
+      - title:
+          en: "Texas Department of Information Resources oversees for all state agencies"
+        url:
+          en: "http://dir.texas.gov/View-Resources/Pages/Content.aspx?id=36"
+    webonly: true
+    scope:
+    standard:
+      - title:
+          en: "GSA Section 508"
+        desc: "Standards described in Section 508 Subpart B §1194.22, paragraphs (a) through (p), excluding paragraphs (b) and (k)"
+        url:
+          en: "https://www.section508.gov/"
+    documents:
+      - title:
+          en: "Texas Adminstrative Code Title 1 Chapter 206 Section 206.50"
+        desc: "Details for the requirement that each state website should be designed with consideration for current and emerging Internet connection technologies available to the general public. "
+        url:
+          en: "http://txrules.elaws.us/rule/title1_chapter206_sec.206.50"
+- title:
+    en: "Utah"
+- title:
+    en: "Vermont"
+- title:
+    en: "Virgin Islands"
+- title:
+    en: "Virginia"
+- title:
+    en: "Washington"
+  policies:
   - title:
-      en: "Washington"
-    policies:
-    - title:
-        en: "Policy #188 – Accessibility"
-      url:
-        en: https://ocio.wa.gov/policy/accessibility
-      updated: 2016
-      wcagver: WCAG 2.0
-      enactdate: 2016
-      type: Mandatory policy
-      ministries:
-        - title:
-            en: "Washington State Office of the Chief Information Officer"
-          url:
-            en: "https://ocio.wa.gov"
-      webonly: false
-      scope:
-      standard:
-        - title:
-            en: "Minimum Accessibility Standard"
-          desc: "Define the minimum level of compliance for accessibility with Web Content Accessibility Guidelines (WCAG) 2.0"
-          url:
-            en: "https://ocio.wa.gov/policy/minimum-accessibility-standard"
+      en: "Policy #188 – Accessibility"
+    url:
+      en: https://ocio.wa.gov/policy/accessibility
+    updated: 2016
+    wcagver: WCAG 2.0
+    enactdate: 2016
+    type: Mandatory policy
+    ministries:
+      - title:
+          en: "Washington State Office of the Chief Information Officer"
+        url:
+          en: "https://ocio.wa.gov"
+    webonly: false
+    scope:
+    standard:
+      - title:
+          en: "Minimum Accessibility Standard"
+        desc: "Define the minimum level of compliance for accessibility with Web Content Accessibility Guidelines (WCAG) 2.0"
+        url:
+          en: "https://ocio.wa.gov/policy/minimum-accessibility-standard"
+- title:
+    en: "West Virginia"
+- title:
+    en: "Wisconsin"
+- title:
+    en: "Wyoming"
 ---
