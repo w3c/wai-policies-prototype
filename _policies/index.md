@@ -62,7 +62,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
       <th>Type (Policy, law, legislation, etc.)</th>
       <th>Scope</th>
       <th>Web Only</th>
-      <th>WCAG Version Used</th>
+      <th>WCAG Version Based On</th>
     </tr>
     </thead>
     <tbody id="results">
