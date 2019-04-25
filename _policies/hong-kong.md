@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 9
 title: Hong Kong
 country:

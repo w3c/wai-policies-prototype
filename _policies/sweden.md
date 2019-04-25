@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 19
 title: Sweden
 country:

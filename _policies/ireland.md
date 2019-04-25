@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 11
 title: Ireland
 country:

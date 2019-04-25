@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 16
 title: New Zealand
 country:

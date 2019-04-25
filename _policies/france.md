@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 7
 title: France
 country:

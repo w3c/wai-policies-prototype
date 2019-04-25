@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 17
 title: Norway
 country:

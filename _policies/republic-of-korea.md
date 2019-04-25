@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 18
 title: Republic of Korea
 country:

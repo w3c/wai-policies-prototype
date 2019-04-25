@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 3
 title: China
 country:

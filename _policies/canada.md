@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 2
 title: Canada
 country:

@@ -1,4 +1,5 @@
 ---
+lang: en
 order: 14
 title: Japan
 country:
