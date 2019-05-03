@@ -139,7 +139,7 @@ policies:
     type: Accessibility law # other values: law/policy/procurement/recommendation
     ministries:
       - title:
-          en: Federal Comunications Commission (FCC)
+          en: Federal Communications Commission (FCC)
         url:
           en: https://www.fcc.gov/
       - title:
@@ -160,7 +160,7 @@ policies:
         url:
           en: https://www.fcc.gov/consumers/guides/telecommunications-access-people-disabilities
       - title:
-          en: Guidance on the Telecommunications Act Section 255 Guidlines
+          en: Guidance on the Telecommunications Act Section 255 Guidelines
         url:
           en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/guidance-on-the-telecommunications-act-%C2%A7255-guidelines
       - title:
@@ -227,7 +227,7 @@ policies:
           en: http://www.federalregister.gov/documents/2017/01/18/2017-00395/information-and-communication-technology-ict-standards-and-guidelines
     documents:
       - title:
-          en: FCC page on the 21st Century Communications and Video Accesibility Act
+          en: FCC page on the 21st Century Communications and Video Accessibility Act
         url:
           en: https://www.fcc.gov/general/twenty-first-century-communications-and-video-accessibility-act-0
         desc: Provides an overall view of the Act with links to pages that contain the technical requirements for the various technologies covered by the Act.
