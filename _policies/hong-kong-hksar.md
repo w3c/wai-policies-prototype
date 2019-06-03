@@ -2,6 +2,7 @@
 lang: en
 order: 9
 title: "Hong Kong Special Administrative Region of the People's Republic of China"
+nav_title: Hong Kong (HKSAR)
 country:
   en: "Hong Kong Special Administrative Region of the People's Republic of China"
   zh: 香港
