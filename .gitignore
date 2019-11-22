@@ -4,3 +4,6 @@ _site
 .DS_Store
 .ruby-version
 .bundle
+
+# Local Netlify folder
+.netlify
