@@ -11,7 +11,7 @@ relatedpages:
 policies:
   - title:
       ru: "Требования доступности для инвалидов по зрению"
-      en: "Requirements on Accessibility for Visually Impaired Persons"
+      en: "GOST R 52872-2012 Internet resources. Accessibility requirements for the visually impaired"
     url: 
       ru: http://protect.gost.ru/v.aspx?control=8&id=176157
     updated: 2014
