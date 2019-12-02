@@ -10,7 +10,7 @@ updatemsg:
 relatedpages:
 policies:
   - title:
-      ru: "Требования доступности для инвалидов по зрению"
+      ru: "ГОСТ Р 52872-2012 Интернет-ресурсы. Требования доступности для инвалидов по зрению"
       en: "GOST R 52872-2012 Internet resources. Accessibility requirements for the visually impaired"
     url: 
       ru: http://protect.gost.ru/v.aspx?control=8&id=176157
@@ -27,7 +27,7 @@ policies:
     scope: 
     documents:
       - title:
-          en: "PDF Version of the law above, as a more accessible format"
+          en: "PDF version of ГОСТ Р 52872-2012"
         url:
           en: http://ifap.ru/library/gost/528722012.pdf
 ---
