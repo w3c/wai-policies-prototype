@@ -40,3 +40,4 @@ policies:
           en: http://www.japaneselawtranslation.go.jp/law/detail/?id=3052&vm=04&re=02
         desc: Also there is a law "Act for Eliminating Discrimination against Persons with Disabilities" enforced on April 1st 2016. However it doesn't refer to both "Everyone’s Public Website Operational Guidelines (2016)" and "JIS X 8341-3:2016" specifically.
 ---
+
