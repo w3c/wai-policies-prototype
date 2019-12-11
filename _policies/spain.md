@@ -51,10 +51,6 @@ policies:
     scope: Public Sector, Private Sector # keys that allows us to use any combination
     webonly: yes # other values: no
     documents:
-      - title:
-          es: BITV 2.0 in Kraft
-        url:
-          es: http://webkrauts.de/artikel/2011/bitv-20-kraft
 statesdesc:
   en: States
   es: Comunidades Autónomas
