@@ -1,10 +1,31 @@
+{%- assign pagelang = 'en' -%}
+{%- if page.lang -%}
+  {%- assign pagelang = page.lang -%}
+{%- endif -%}
+{%- if pagelang == 'en' -%}
+  {%- assign enpage = page -%}
+{%- else -%}
+  {%- assign enpage=site.documents | where:"ref", page.ref | where: "lang", "en" | first -%}
+  {%- unless enpage.ref -%}
+    {%- assign enpage=site.pages | where:"ref", page.ref | where: "lang", "en" | first -%}
+  {%- endunless -%}
+{%- endif -%}
+{%- assign englishpageurl = enpage.url %}
+{% assign translations=site.documents | where:"ref", page.ref | where_exp:"item", "item.lang != 'en'" | sort: 'lang' %}
+{%- unless translations[0].ref -%}
+  {% assign translations=site.pages | where:"ref", page.ref | where_exp:"item", "item.lang != 'en'" | sort: 'lang' %}
+{%- endunless -%}
 <!DOCTYPE html>
-<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<html class="no-js" lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}" dir="{% if site.lang[page.lang].rtl == true %}rtl{% else %}ltr{% endif %}" prefix="og: http://ogp.me/ns#">
   {%- assign timestamp = site.time | date: '%s%N' -%}
   {%- assign timestamp = '?' | append: timestamp -%}
-  {% include_cached head.html type="start" timestamp=timestamp %}
-  <title>{%if page.doc-note-type == "archived" %}[Archived]{% endif%}{%if page.doc-note-type == "draft" %}[Draft]{% endif%} {{ page.title | escape }} | {{ site.title | escape }} | W3C</title>
-  {% if page.ext_css %}<link rel="stylesheet" href="{{ page.ext_css | prepend: '/css/' | prepend: page.collection | prepend: '/' | relative_url | append: include.timestamp }}">{% endif %}
+  {%- include_cached head.html type="start" timestamp=timestamp -%}
+  {%- if site.data.lang[pagelang].rtl -%}
+  <title> W3C | {{ site.title | escape }} | {{ page.title | escape }} {%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%}</title>
+  {%- else -%}
+  <title>{%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%} {{ page.title | escape }} | {{ site.title | escape }} | W3C</title>
+  {%- endif -%}
+  {% if page.ext_css %}<link rel="stylesheet" href="{{ page.ext_css | prepend: '/css/' | prepend: page.collection | prepend: '/' | relative_url | append: timestamp }}">{% endif %}
   {%- if page.inline_css %}<style>{{ page.inline_css }}</style>{% endif -%}
   {%- capture seo -%}
     {%- seo title=false -%}
@@ -14,12 +35,13 @@
   <meta name="twitter:image" property="og:image" content="{{ twimage | relative_url | prepend: site.url }}">
   {%- endunless -%}
   {% include_cached head.html type="end" %}
-  <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type %}">
-    {% include header.html %}
+  <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type %}"{%if page.footnotestitle %} data-footnotestitle="{{page.footnotestitle}}"{% endif %}>
+    {% include header.html translations=translations %}
 
 <div class="default-grid with-gap leftcol contentarea">
 
   {% include sidenav.html %}
+
 
   <main id="main"{% if page.lang %} lang="{{page.lang}}"{% endif %}>
     <h1 class="post-title">{% include multilang-title.html title=page.country %}</h1>
@@ -71,14 +93,22 @@
         {% endif %}
       {% endif %}
     </div>
-    {%- comment -%}{% include prevnext.html %}{%- endcomment -%}
+{%- if page.navigation -%}
+  {%- include prevnext-navigation.html -%}
+{%- else -%}
+  {%- if page.order -%}
+    {%- include prevnext-order.html -%}
+  {%- endif -%}
+{%- endif -%}
 
-    {% include_cached backtotop.html %}
+    {% include_cached backtotop.html lang=page.lang %}
   </main>
 
 </div>
 
-{% include footer.html %}
+{% include footer.html lang=pagelang %}
 <style>@import url('{{"/policies/css/policies.css" | relative_url }}');</style>
+  </body>
+</html> url('{{"/policies/css/policies.css" | relative_url }}');</style>
   </body>
 </html>
