@@ -6,13 +6,13 @@ country:
   en: Russia
   de: Росси́я
 updated: 2019-11-22
-updatemsg: 
+updatemsg:
 relatedpages:
 policies:
   - title:
       ru: "ГОСТ Р 52872-2012 Интернет-ресурсы. Требования доступности для инвалидов по зрению"
       en: "GOST R 52872-2012 Internet resources. Accessibility requirements for the visually impaired"
-    url: 
+    url:
       ru: http://protect.gost.ru/v.aspx?control=8&id=176157
     updated: 2014
     wcagver: WCAG 2.0 derivate
@@ -24,7 +24,7 @@ policies:
         url:
           ru: "http://www.gost.ru"
     webonly: true
-    scope: 
+    scope:
     documents:
       - title:
           en: "PDF version of ГОСТ Р 52872-2012"
