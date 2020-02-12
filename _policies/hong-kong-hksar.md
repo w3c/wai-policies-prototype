@@ -1,6 +1,6 @@
 ---
 lang: en
-order: 9
+order: 10
 title: "Hong Kong Special Administrative Region of the People's Republic of China"
 nav_title: Hong Kong (HKSAR)
 country:

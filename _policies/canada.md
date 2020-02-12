@@ -1,6 +1,6 @@
 ---
 lang: en
-order: 2
+order: 3
 title: Canada
 country:
   en: Canada
@@ -107,19 +107,19 @@ states:
     policies:
     - title:
         en: Accessibility for Ontarians with Disabilities Act, 2005, S.O. 2005, c. 11
-      url: 
+      url:
         en: https://www.ontario.ca/laws/statute/05a11
       updated: 2005
-      wcagver: WCAG 2.0, 
+      wcagver: WCAG 2.0,
       enactdate: 2005
-      type: law, 
+      type: law,
       ministries:
         - title:
             en: "Accessibility Directorate of Ontario"
           url:
             en: "https://www.ontario.ca/page/accessibility-laws"
       webonly: true
-      scope: 
+      scope:
       standard:
         - title:
             en: "O. Reg. 191/11: INTEGRATED ACCESSIBILITY STANDARDS"
