@@ -38,6 +38,7 @@ policies:
           es: http://servicios.infoleg.gob.ar/infolegInternet/anexos/230000-234999/233667/norma.htm
       - title:
           en: "Web Accessibility Repository"
+          es: "Repositorio del Equipo de Accesibilidad Web"
         desc: "The Web Accessibility Repository on GithHub contains many resources as guides, posters, technical recommendations, etc."
         url:
           es: "https://github.com/argob/accesibilidad-web"
