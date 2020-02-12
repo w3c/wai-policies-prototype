@@ -47,8 +47,7 @@
     <h1 class="post-title">{% include multilang-title.html title=page.country %}</h1>
 
     <div class="post-content">
-      {% assign policynum = page.policies | size %}
-      <p>The following polic{%if policynum == 1 %}y{%else%}ies{% endif %} {%if policynum == 1 %}has{%else%}have{% endif %} been submitted by the community. W3C/WAI welcomes more accessible versions of the laws/policies listed and laws/policies from other countries via our <a href="https://www.w3.org/WAI/policies/submission/">submission form</a>.</p>
+      <p>The laws and/or policies linked below have been submitted by the community, and have not been reviewed for accessibility. In the event that a law or policy may have accessibility problems, W3C/WAI welcomes information on more accessible versions of the linked laws/policies listed via our <a href="https://www.w3.org/WAI/policies/submission/">submission form</a>. We will also retain a link to the official version for each country.</p>
       {% if page.states %}<p>See below for information about particular <a href="#states">{{page.statesdesc.en}}</a>.</p>{% endif %}
       <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
       {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
@@ -108,7 +107,5 @@
 
 {% include footer.html lang=pagelang %}
 <style>@import url('{{"/policies/css/policies.css" | relative_url }}');</style>
-  </body>
-</html> url('{{"/policies/css/policies.css" | relative_url }}');</style>
   </body>
 </html>
