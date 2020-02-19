@@ -10,7 +10,7 @@ updatemsg:
 province:
 policies:
   - title:
-      en: Accessibility of the Information in the Web Pages
+      en: Accessibility of Information in Web Pages
       es: Accesibilidad de la Información en las Páginas Web
     url:
       es: http://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175694/norma.htm
