@@ -36,18 +36,18 @@ remote_theme: w3c/wai-website-theme
 
 collections:
   policies:
-    area: "Plan & Manage"
+    area: "Plan &amp; Manage"
     name: "Web Accessibility Laws & Policies"
-    shortname: "International<br>Laws & Policies"
-    icon: "book" # TODO
-    repostitory: w3c/wai-policies-prototype
+    shortname: "Laws & Policies"
+    parent: '/planning/'
+    repository: w3c/wai-policies-prototype
     output: true
     acknowledgements: false
     permalink: /:collection/:path/
     footer: |
       <p><strong>Date:</strong> Updated 21 March 2018.</p>
-      <p><strong>Editors and Developers:</strong> Mary Jo Mueller, Robert Jolly, <a href="https://www.w3.org/People/yatil/">Eric Eggert</a>. Contributors: <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and <a href="https://www.w3.org/WAI/EO/participants">EOWG Participants</a>. Previous editors: <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a> and <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>; previous contributor: Jennifer Sutton.</p>
-      <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
+      <p><strong>Editors and Developers:</strong> Mary Jo Mueller, Robert Jolly, <a href="https://www.w3.org/People/yatil/">Eric Eggert</a>. Contributors: <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a>. Previous editors: <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a> and <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>; previous contributor: Jennifer Sutton.</p>
+      <p>Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>).</p>
 
 defaults:
   -
