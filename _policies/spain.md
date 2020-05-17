@@ -6,7 +6,7 @@ country:
   en: Spain
   es: España
 updated: 2020-05-17
-updatemsg: Corrected en (Royal Decree 1112/2018) & en (Relations with the Cortes and Equality)
+updatemsg: Corrected en (Royal Decree 1112/2018) & en (Relations with the Cortes and Equality)- added updated date to individual entries
 relatedpages:
 policies:
   - title:
@@ -33,7 +33,7 @@ policies:
     url:
       es: https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma/?Tipo=N&c=N0043547
     urllang: es, en
-    updated: 2019-05-27
+    updated: 2020-05-17
     wcagver: None
     enactdate: 2009
     type: Accessibility policy law, Non-discrimination law, Accessibility law, Accessibility policy # other values: law/policy/procurement
@@ -44,7 +44,7 @@ policies:
       es: Requisitos de accesibilidad para contenidos en la Web.
     url:
       es: http://administracionelectronica.gob.es/PAe/accesibilidad/normativa
-    updated: 2019-05-27
+    updated: 2020-05-17
     wcagver: WCAG 2.0 derivative
     enactdate: 2012
     type: Accessibility policy #Procurement policy, Non-discrimination law, Accessibility law, Recommendation, Accessibility policy
