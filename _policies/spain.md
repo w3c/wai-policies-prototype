@@ -5,23 +5,23 @@ title: Spain
 country:
   en: Spain
   es: España
-updated: 2019-05-27
-updatemsg: Added Spain, Spanish autonomous communities and started Spanish national policy
+updated: 2020-05-17
+updatemsg: Corrected en (Royal Decree 1112/2018) & en (Relations with the Cortes and Equality)
 relatedpages:
 policies:
   - title:
-      en: Royal Decree 1112/2018, september 7th, about accessibility of web sites and applications for mobile devices in public sector
+      en: Royal Decree 1112/2018, of September 7, on accessibility of websites and applications for mobile devices in the public sector.
       es: Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
     url:
       es: https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699
     urllang: es
     updated: 2019-05-27
     wcagver: None
-    enactdate: 2009
+    enactdate: 2008
     type: Accessibility policy law, Non-discrimination law, Accessibility law, Accessibility policy # other values: law/policy/procurement
     ministries:
       - title:
-          en: Ministry of the presidency, Parliament Relations and equal opportunity
+          en: Ministry of the Presidency, Relations with the Cortes and Equality
           es: Ministerio de la Presidencia, Relaciones con las Cortes e Igualdad
         url:
           es: https://www.mpr.gob.es/Paginas/index.aspx
