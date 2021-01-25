@@ -30,7 +30,7 @@ questions or comments.
     <div class="form-row required"><label for="name">* Your Name: </label><br><span><input name="name" id="name" type="text" value="" required  aria-required="true"></span></div>
     <div class="form-row required"><label for="email">* Your E-Mail: </label><br><span><input name="email" id="email" type="email" value="" required aria-required="true"></span></div>
   </div>
-</fieldset>
+</fieldset>https://kemdanangdongybavandactricacbenhveda.blogspot.com/?m=1
 
   <fieldset>
     <legend><h3>Add new or update existing Web accessibility policy</h3></legend>
