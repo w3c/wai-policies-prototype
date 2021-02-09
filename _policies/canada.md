@@ -74,10 +74,6 @@ policies:
           en: "Accessible Standards Canada"
         url:
           en: "https://www.canada.ca/en/accessibility-standards-canada.html"
-      - title:
-          en: "Council of Federal Accessibility Agencies (CFAA)"
-        url:
-          en: "https://www.chrc-ccdp.gc.ca/eng/content/news-release-path-towards-more-accessible-canada-creation-council-federal-accessibility"
     webonly: true
     scope: Government and all federally regulated agencies
     standard:
