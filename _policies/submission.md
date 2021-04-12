@@ -7,17 +7,11 @@ nosidenav: true
 <style>fieldset {margin-bottom: 1.5em}</style>
 
 
-This form allows you to provide information about new or updated web
-accessibility policies enacted by governments worldwide. We welcome any
-additions or corrections to the policies list and detail pages.
+This form allows you to provide information about new or updated web accessibility policies enacted by governments worldwide. We welcome any additions or corrections to the policies list and detail pages.
 
-**Note:** Information sent using this form is publicly available in
-GitHub and/or e-mail archive, and will be reviewed before publishing in
-the Laws and Policies page. It can take *up to 10 business days* until
-the information is published.
+**Note:** Information sent using this form is publicly available in GitHub and/or e-mail archive. We will review it before publishing in the Laws and Policies page. <!-- It can take *up to 10 business days* until the information is published. -->
 
-Contact <wai-eo-editors@w3.org> (a publicly archived list) if you have
-questions or comments.
+Updates are delayed. We hope to have resources to make updates in 2021. Contact <wai-eo-editors@w3.org> (a publicly archived list) if you have questions or comments.
 
 
 <div id="hForm">
@@ -110,10 +104,9 @@ questions or comments.
   <fieldset id="fs-guideline">
     <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
     <div class="form-block-mini radio">
-      <div class="form-row"><span><input data-id="guideline_wcag21" id="guideline_wcag21" name="guideline[]" value="WCAG 2.1" type="checkbox"> </span> <label for="guideline_wcag21"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.1</label></div>
-      <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span> <label for="guideline_wcag20"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.0</label></div>
-      <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span> <label for="guideline_wcag20derivative"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 derivative — <abbr title="World Wide Web Consortium">W3C</abbr>Based on Web Content Accessibility Guidelines 2.0, but has additional or modifed requirements</label></div>
-      <div class="form-row"><span><input data-id="guideline_wcag10" id="guideline_wcag10" name="guideline[]" value="WCAG 1.0" type="checkbox"> </span> <label for="guideline_wcag10"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 1.0 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 1.0</label></div>
+      <div class="form-row"><span><input data-id="guideline_wcag21" id="guideline_wcag21" name="guideline[]" value="WCAG 2.1" type="checkbox"> </span> <label for="guideline_wcag21">WCAG 2.1 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.1</label></div>
+      <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span> <label for="guideline_wcag20">WCAG 2.0 — W3C Web Content Accessibility Guidelines 2.0</label></div>
+      <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span> <label for="guideline_wcag20derivative">WCAG 2 derivative — Based on W3C Web Content Accessibility Guidelines 2, with additional or modified requirements</label></div>
       <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span> <label for="guideline_none">None</label></div>
     </div>
     <div class="form-block-mini half">
@@ -134,7 +127,7 @@ questions or comments.
         <div class="form-block-mini">
           <label class="form-row"><span class="l">Name:</span> <span><input type="text" name="standard_name[]"></span></label>
           <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="standard_url[]"></span></label>
-          <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="standard_desc[]"></span></label>
+          <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="standard_desc[]"></span></label>
           <label class="form-row"><span class="l">Language:</span> <span><select name="standard_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
         </div>
         <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
@@ -151,7 +144,7 @@ questions or comments.
         <div class="form-block-mini">
           <label class="form-row"><span class="l">Name:</span> <span><input type="text" name="document_name[]"></span></label>
           <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="document_url[]"></span></label>
-          <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="document_desc[]"></span></label>
+          <label class="form-row"><span class="l">Description (in English):</span> <span><input type="text" name="document_desc[]"></span></label>
           <label class="form-row"><span class="l">Language:</span> <span><select name="document_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
         </div>
         <div class="rem"><button type="button" class="remove btn-small">Remove</button></div>
