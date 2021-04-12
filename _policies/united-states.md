@@ -105,6 +105,31 @@ policies:
           en: https://www.dol.gov/general/topic/disability/laws
         desc: Overview of the Americans with Disabilities Act of 1990
   - title:
+      en: Section 504 of the U.S. Rehabilitation Act of 1973, as amended
+    url:
+      en: https://www.dol.gov/oasam/regs/statutes/sec504.htm
+    updated: 2017-02-16
+    wcagver: WCAG 1.0 derivative
+    enactdate: 1990
+    type: Non-discrimination law # other values: law/policy/procurement/recommendation
+    ministries:
+      - title:
+          en: Department of Education
+        url:
+          en: https://www.ed.gov/
+      - title:
+          en: Department of Justice (DoJ)
+        url:
+          en: http://www.usdoj.gov/
+    webonly: no # other values: yes
+    scope: Public sector # keys that allows us to use any combination
+    standard:
+      - title:
+          en: "Requirements for Accessible Electronic and Information Technology Design"
+        desc: "Department of Education's standards used for section 504 and 508 which are the same technical requirements as Section 508 for Web, software, and telecommunications products."
+        url:
+          en: http://www2.ed.gov/fund/contract/apply/clibrary/software.html
+  - title:
       en: Section 255 of the Telecommunications Act of 1996
     url:
       en: https://www.access-board.gov/the-board/laws/telecommunications-act
