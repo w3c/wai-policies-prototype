@@ -6,6 +6,16 @@ order: 0
 layout: sidenav
 ---
 
+{::nomarkdown}
+{% include box.html type="start" title="Dated" icon="warning" %}
+{:/}
+
+Most of this information is from 2018. We plan to update it by the end of 2021.
+
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
 This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
 The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
