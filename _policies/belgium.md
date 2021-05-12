@@ -9,22 +9,21 @@ country:
   de: Belgien
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
 updated: 2021-05-21
-updatemsg: Added Belgian accessibility laws and policies.
+updatemsg: Added Belgium Federal accessibility laws and policies.
 relatedpages:
 policies:
   - title:
-      en: Overview of applicable laws, decrees and ordonnances for Belgium and its regions and communities
-      nl: Overzicht van toepasselijke wetten, decreten en ordonnanties voor België en haar regio's en gemeenschappen
-      fr: Liste des lois, decrets et ordonnances applicapbles pour la Belgique, ses régions et communautés
+      en: Law regarding the accessibility of websites and mobile applications for public bodies
+      nl: 19 JULI 2018. - Wet inzake toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties
+      fr: 19 JUILLET 2018. - Loi relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public
     url:
-      nl: https://accessibility.belgium.be/nl/missies-en-klachten
-      fr: https://accessibility.belgium.be/fr/missions-et-plaintes
-      de: https://accessibility.belgium.be/de/missionen-und-beschwerden
-    desc: Federal, regional and community governments each have implemented legislation
+      nl: http://www.ejustice.just.fgov.be/eli/wet/2018/07/19/2018040577/staatsblad
+      fr: http://www.ejustice.just.fgov.be/eli/loi/2018/07/19/2018040577/moniteur      
+    desc: 
     updated: 2021-05-11
     wcagver: WCAG 2.1
     enactdate: 2018
-    type: Mandatory law # other values: law/policy/procurement
+    type: Accessibility law # other values: law/policy/procurement
     ministries:
       - title:
           en: Federal Public Service BOSA
@@ -36,42 +35,23 @@ policies:
           nl: https://bosa.belgium.be/nl
           fr: https://bosa.belgium.be/fr
           de: https://bosa.belgium.be/de
-    webonly: no # other values: yes
-    scope: Government # keys that allows us to use any combination
+    webonly: yes # other values: no
+    scope: Public sector # keys that allows us to use any combination
     standard:
       - title:
           en: "EN 301 549"
-        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
+        desc: "Includes WCAG 2.1 Level AA verbatim without modifications for Web content, and WCAG 2.1 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
         url:
-          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
+          en: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf
     documents:
       - title:
-          en: Accessibility Policy in the Netherlands - Laws and regulations
-          nl: Beleid in Nederland - Wet- en regelgeving
+          en: Mission
+          nl: Missies
+          fr: Missions
+          de: Missionen
         url:
-          nl: https://www.digitoegankelijk.nl/beleid/inhoud/wet-en-regelgeving
-        desc: Provides information on regulatory actions being taken in the Netherlands on accessibility, including work to transpose the EU 2016/2102 Web and Mobile Accessibility Directive into law.
-  - title:
-      en: Policy in the Netherlands
-      nl: Beleid in Nederland
-    url:
-      nl: https://www.digitoegankelijk.nl/beleid/inhoud/wat-is-verplicht
-    updated: 2017-05-02
-    wcagver: WCAG 2.0
-    enactdate: 2016
-    type: Mandatory policy
-    ministries:
-      - title:
-          en: Ministry of General Affairs
-        url:
-          en: https://www.government.nl/ministries/ministry-of-general-affairs
-    scope: Government, Public sector
-    webonly: yes # other values: yes
-    standard:
-      - title:
-          en: "EN 301 549"
-        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
-        url:
-          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
-    documents:
+          nl: https://accessibility.belgium.be/nl/missies-en-klachten
+          fr: https://accessibility.belgium.be/fr/missions-et-plaintes
+          de: https://accessibility.belgium.be/de/missionen-und-beschwerden
+        desc: Provides information regarding the mission of the Belgian control bodies and procedures and laws regarding the transposition of EU 2016/2102 into Belgian law. Full transposition also required regional decrees and ordonnances listed here.
 ---
