@@ -1,6 +1,6 @@
 ---
 lang: en
-order: 18
+order: 19
 title: Republic of Korea
 country:
   en: Republic of Korea
