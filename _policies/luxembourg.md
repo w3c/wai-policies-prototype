@@ -37,7 +37,7 @@ policies:
           fr: Référentiel Général d'Amélioration de l'accessibilité (RGAA) Version 4
         desc: Luxembourgish Web accessibility guidelines, based on french ones.
         url:
-          fr: https://accessibilite.public.lu/fr/rgaa4
+          fr: https://accessibilite.public.lu/fr/rgaa4.1/
       - title:
           fr: Référentiel d'évaluation de l'accessibilité des applications mobiles (RAAM) Version 1
         desc: Luxembourgish accessibility guidelines for mobile apps.
