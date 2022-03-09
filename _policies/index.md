@@ -68,8 +68,8 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     <tr>
       <th>Country / Region</th>
       <th>Name</th>
-      <th>Date enacted</th>
-      <th>Type (Policy, law, legislation, etc.)</th>
+      <th>Date Enacted</th>
+      <th>Type (policy, law, legislation, etc.)</th>
       <th>Scope</th>
       <th>Web Only</th>
       <th>WCAG Version Based On</th>
