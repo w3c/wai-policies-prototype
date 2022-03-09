@@ -1,6 +1,6 @@
 ---
 title: "Web Accessibility Laws & Policies"
-nav_title: "International Laws & Policies"
+nav_title: "Countries / Regions"
 permalink: /policies/
 order: 0
 layout: sidenav
