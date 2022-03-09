@@ -66,7 +66,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     </caption>
     <thead>
     <tr>
-      <th>Country</th>
+      <th>Country/Region</th>
       <th>Name</th>
       <th>Date enacted</th>
       <th>Type (Policy, law, legislation, etc.)</th>
