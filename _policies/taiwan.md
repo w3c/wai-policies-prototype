@@ -1,9 +1,9 @@
 ---
 lang: en
 order: 21
-title: Taiwan (Province of China)
+title: Taiwan
 country:
-  en: Taiwan (Province of China)
+  en: Taiwan
   zh: "中華民國"
 updated: 2018-03-20
 updatemsg:
