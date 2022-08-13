@@ -13,7 +13,7 @@ province:
 policies:
   - title:
       en: Regulations on universal design of ICT
-      "no": "Forskrift om universell utforming av informasjons- og kommunikasjonsteknologiske (IKT)-løsninger"
+      "no": "Forskrift om universell utforming av informasjons- og kommunikasjonsteknologiske (IKT)-løsninger "
     url:
       "no": https://lovdata.no/dokument/SF/forskrift/2013-06-21-732
     updated: 2013
