@@ -30,8 +30,8 @@ $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 
 $country = htmlspecialchars($_POST['country']);
-$native_country = htmlspecialchars($_POST['native_country']);
-$state_province = htmlspecialchars($_POST['state_province']);
+$native_country = htmlspecialchars($_POST['native-country']);
+$state_province = htmlspecialchars($_POST['state-province']);
 $date = date("Y-m-d");
 
 $policy_name = htmlspecialchars($_POST['policyname']);
@@ -41,7 +41,7 @@ $type = htmlspecialchars(implode(', ', $_POST['policytype']));
 $guideline = htmlspecialchars(implode(', ', $_POST['guideline']));
 
 $webonly = htmlspecialchars($_POST['web-only']);
-$scope = implode(', ', htmlspecialchars($_POST['scope']));
+$scope = implode(', ', htmlspecialchars($_POST['scope[]']));
 
 // entities
 
