@@ -10,7 +10,7 @@ layout: sidenav
 {% include box.html type="start" title="Dated" icon="warning" %}
 {:/}
 
-Most of this information is from 2018. We are in the process of updating it. We plan to start publishing the updates in September 2022.
+Most of this information is from 2018. We are in the process of updating it. We plan to start publishing the updates in November 2022.
 
 {::nomarkdown}
 {% include box.html type="end" %}
