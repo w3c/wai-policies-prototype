@@ -24,8 +24,7 @@ if (!$_POST)  { echo ('<h1>Go to submission form</h1><p>To submit a policy, <a h
 if (trim($_POST['comment'])) { die("This may be spam."); } // If someone enters text into the honeypot, stop form submission
 
 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-var_dump($_POST);
-die();
+// var_dump($_POST);
 
 $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
