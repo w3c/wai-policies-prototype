@@ -39,7 +39,7 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
     <div class="form-block-mini half">
       <div class="form-row required"><label for="country">* Country/Region of policy (in English): </label><br><span><input id="country" name="country" type="text" value="" required aria-required="true" ></span></div>
       <div class="form-row"><label for="native-country">Country/Region of policy (in native language): </label><br><span><input name="native-country" id="native-country" type="text" value="" aria-describedby="native-countrydesc"><br><span id="native-countrydesc">If known by multiple names, separate with a semicolon, e.g. Schweiz;Suisse</span></span></div>
-      <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-provinceblah"></span></div>
+      <div class="form-row required"><label for="state-province">State or province (in English): </label><br><span><input id="state-province" name="state-province"></span></div>
     </div>
   </fieldset>
 
