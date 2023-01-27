@@ -4,6 +4,7 @@ title: Add or Update a Web Accessibility Law or Policy
 nosidenav: true
 ---
 
+<link rel="stylesheet" href="/wai-policies-prototype/policies/css/policies.css">
 <style>fieldset {margin-bottom: 1.5em}</style>
 
 
@@ -16,7 +17,7 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
 
 <div id="hForm">
 <form name="submission" id="submission" method="post" action="{% if jekyll.environment != "server" %}https://www.w3.org/2017/04/policies_submission/{% endif %}submission.php">
-<p>* Indicates required field</p>
+	<p>* Indicates required field</p>
 <fieldset>
   <legend><h3>Information about you</h3></legend>
   <div class="form-block-mini half">
@@ -59,7 +60,7 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
     <ul class="multiple" id="entities-multiple">
       <li class="template">
         <div class="form-block-mini">
-          <label class="form-row"><span class="l">Name:</span><span><input type="text" name="entity_name[]"></span></label>
+          <label class="form-row"><span class="l">Name:</span> <span><input type="text" name="entity_name[]"></span></label>
           <label class="form-row"><span class="l">URL:</span> <span><input type="url" name="entity_url[]"></span></label>
           <label class="form-row"><span class="l">Language:</span> <span><select name="entity_lang[]">{% for l in site.data.lang%}<option value="{{l[0]}}"{% if l[0] == "en" %} selected{% endif %}>{{l[1].name}} ({{l[1].nativeName}})</option>{% endfor %}</select></span></label>
         </div>
@@ -69,15 +70,35 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
     <button type="button" class="multiple btn-small" data-for="entities-multiple">➕ Add Entity</button>
   </fieldset>
 
-  <fieldset><legend><span>Type of policy</span></legend>
+  <fieldset><legend>Type of policy</legend>
     <div class="form-block-mini radio">
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-a11ylaw" aria-describedby="policy-a11ylaw-desc" value="law"></span> <div><label for="policy-a11ylaw">Accessibility law</label><div id="policy-a11ylaw-desc" class="desc"><small>A general accessibility law that has a broad scope of non-descrimination, accessible technology, employment and/or other topics.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-ndlaw" aria-describedby="policy-ndlaw-desc" value="Non-discrimination law"></span> <div><label for="policy-ndlaw">Non-discrimination law</label><div id="policy-ndlaw-desc" class="desc"><small>A law intended to prevent unfair treatment of persons with disabilities.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-proclaw" value="Procurement law"></span> <div><label for="policy-proclaw">Procurement law</label><div id="policy-proclaw-desc" class="desc"><small>A law that requires government purchase of accessible goods and services.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-procrecomm" value="Procurement recommendation"></span> <div><label for="policy-procrecomm">Procurement recommendation</label><div id="policy-procrecomm-desc" class="desc"><small>An optional, but encouraged goal to purchase accessible goods and services.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-mandpolicy" value="Mandatory policy"></span> <div><label for="policy-mandpolicy">Mandatory policy</label><div id="policy-mandpolicy-desc" class="desc"><small>Required accessibility goals or implementation that is not regulated by law.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-recommendation" value="Recommended policy"></span> <div><label for="policy-recommendation">Recommended policy</label><div id="policy-recommendation-desc" class="desc"><small>Optional, but encouraged accessibility goals or implementation that is not regulated by law.</small></div></div></div>
-      <div class="form-row"><span><input type="checkbox" name="policytype[]" id="policy-dontknow" value="Unsure"></span> <label for="policy-dontknow">Unsure</label></div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-a11ylaw" aria-describedby="policy-a11ylaw-desc" value="law"> <label for="policy-a11ylaw">Accessibility law</label>
+		  <div id="policy-a11ylaw-desc" class="desc"><small>A general accessibility law that has a broad scope of non-descrimination, accessible technology, employment and/or other topics.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-ndlaw" aria-describedby="policy-ndlaw-desc" value="Non-discrimination law"> <label for="policy-ndlaw">Non-discrimination law</label>
+		  <div id="policy-ndlaw-desc" class="desc"><small>A law intended to prevent unfair treatment of persons with disabilities.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-proclaw" value="Procurement law"> <label for="policy-proclaw">Procurement law</label>
+		  <div id="policy-proclaw-desc" class="desc"><small>A law that requires government purchase of accessible goods and services.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-procrecomm" value="Procurement recommendation"> <label for="policy-procrecomm">Procurement recommendation</label>
+		  <div id="policy-procrecomm-desc" class="desc"><small>An optional, but encouraged goal to purchase accessible goods and services.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-mandpolicy" value="Mandatory policy"> <label for="policy-mandpolicy">Mandatory policy</label>
+		  <div id="policy-mandpolicy-desc" class="desc"><small>Required accessibility goals or implementation that is not regulated by law.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-recommendation" value="Recommended policy"> <label for="policy-recommendation">Recommended policy</label>
+		  <div id="policy-recommendation-desc" class="desc"><small>Optional, but encouraged accessibility goals or implementation that is not regulated by law.</small></div>
+	  </div>
+      <div class="form-row">
+		  <input type="checkbox" name="policytype[]" id="policy-dontknow" value="Unsure"> <label for="policy-dontknow">Unsure</label>
+	  </div>
     </div>
     <div class="form-block-mini half">
       <label for="policytype_other" class="form-row"><span class="l">Other:</span> <span><input id="policytype_other" name="policytype[other]" type="text"></span></label>
@@ -87,7 +108,7 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
   <fieldset>
     <legend>Scope of policy (select all that apply)</legend>
       <div class="form-block-mini radio">
-        <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-gov" value="Government"></span> <label for="scope-public">Government</label></div>
+        <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-gov" value="Government"></span> <label for="scope-gov">Government</label></div>
         <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-public" value="Public sector"></span> <label for="scope-public">Public sector</label></div>
         <div class="form-row"><span><input type="checkbox" name="scope[]" id="scope-private" value="Private sector"></span> <label for="scope-private">Private sector</label></div>
       </div>
@@ -104,7 +125,7 @@ Updates are delayed. We hope to have resources to make updates in early 2022. Co
   <fieldset id="fs-guideline">
     <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
     <div class="form-block-mini radio">
-      <div class="form-row"><span><input data-id="guideline_wcag21" id="guideline_wcag21" name="guideline[]" value="WCAG 2.1" type="checkbox"> </span> <label for="guideline_wcag21">WCAG 2.1 — <abbr title="World Wide Web Consortium">W3C</abbr> Web Content Accessibility Guidelines 2.1</label></div>
+      <div class="form-row"><span><input data-id="guideline_wcag21" id="guideline_wcag21" name="guideline[]" value="WCAG 2.1" type="checkbox"> </span> <label for="guideline_wcag21">WCAG 2.1 — W3C Web Content Accessibility Guidelines 2.1</label></div>
       <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span> <label for="guideline_wcag20">WCAG 2.0 — W3C Web Content Accessibility Guidelines 2.0</label></div>
       <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span> <label for="guideline_wcag20derivative">WCAG 2 derivative — Based on W3C Web Content Accessibility Guidelines 2, with additional or modified requirements</label></div>
       <div class="form-row"><span><input data-id="guideline_none" id="guideline_none" name="guideline[]" value="none" type="checkbox"> </span> <label for="guideline_none">None</label></div>
