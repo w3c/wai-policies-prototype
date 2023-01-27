@@ -92,8 +92,12 @@ $documents .= <<<DOCUMENTS
 DOCUMENTS;
 }
 
+// Determine the order of the entry in the side navigation
+$order = hexdec(bin2hex(strtolower(substr(iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE',$country), 0, 3))));
+
 $template = <<<EOF
 ---
+order: $order
 country:
   en: $country
   # Manual enter other country names: $native_country
