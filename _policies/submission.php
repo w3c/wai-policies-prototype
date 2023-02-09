@@ -127,6 +127,7 @@ $template = <<<EOF
 ---
 lang: en
 order: $order
+title: "$country"
 country:
   en: "$country"
   $native_country
