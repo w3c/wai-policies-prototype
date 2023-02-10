@@ -4,23 +4,23 @@ order: 6386279
 title: Argentina
 country:
   en: Argentina
-updated: 2022-09-05
+updated: 2023-02-09
 updatemsg:
 policies:
   - title:
       en: 'Ley N° 26.653 de “Accesibilidad Web”'
     url: https://www.argentina.gob.ar/normativa/nacional/175694/texto
     updated: 26/11/2010
-    wcagver: WCAG 2.0, 
+    wcagver: WCAG 2.0
     enactdate: 26/11/2010
-    type: law, Non-discrimination law, 
+    type: Non-discrimination law
     ministries:
       - title:
           es: "ONTI"
         url:
           es: "https://www.argentina.gob.ar/jefatura/innovacion-publica/onti"
       - title:
-          es: "Repositorio digital "
+          es: "Repositorio digital"
         url:
           es: "https://github.com/argob/accesibilidad-web"
       - title:
