@@ -34,7 +34,7 @@ $date = date("Y-m-d");
 
 $native_country = "";
 if($_POST['native-country']) {
-	$native_country = "# Additional country names will need to be added manually. Use the format: <code>: <name>\n  # " . htmlspecialchars($_POST['native-country']);
+  $native_country = "# Additional country names will need to be added manually. Use the format: <code>: <name>\n  # " . htmlspecialchars($_POST['native-country']);
 }
 
 
@@ -51,73 +51,73 @@ $scope = rtrim(implode(', ', htmlspecialchars($_POST['scope[]'])), ', ');
 $entities     = "";
 $has_entities = false;
 if(!empty($_POST['entity_name'])) {
-	foreach ($_POST['entity_name'] as $key => $value) {
-		if($_POST['entity_name'][$key]) {
-			$has_entities = true;
-			$title = htmlspecialchars($_POST['entity_name'][$key]);
-			$url = htmlspecialchars($_POST['entity_url'][$key]);
-			$lang = htmlspecialchars($_POST['entity_lang'][$key]);
-			$entities .= <<<ENTITIES
-			\n      - title:
-			          $lang: "$title"
-			        url:
-			          $lang: "$url"
-			ENTITIES;
-		}
-	}
-	if($has_entities) {
-		$entities = "ministries:" . $entities;
-	}
+  foreach ($_POST['entity_name'] as $key => $value) {
+    if($_POST['entity_name'][$key]) {
+      $has_entities = true;
+      $title = htmlspecialchars($_POST['entity_name'][$key]);
+      $url = htmlspecialchars($_POST['entity_url'][$key]);
+      $lang = htmlspecialchars($_POST['entity_lang'][$key]);
+      $entities .= <<<ENTITIES
+      \n      - title:
+                $lang: "$title"
+              url:
+                $lang: "$url"
+      ENTITIES;
+    }
+  }
+  if($has_entities) {
+    $entities = "ministries:" . $entities;
+  }
 }
 
 // standards
 $standards     = "";
 $has_standards = false;
 if(!empty($_POST['standard_name'])) {
-	foreach ($_POST['standard_name'] as $key => $value) {
-		if($_POST['standard_name'][$key]) {
-			$has_standards = true;
-			$title = htmlspecialchars($_POST['standard_name'][$key]);
-			$desc = htmlspecialchars($_POST['standard_desc'][$key]);
-			$url = htmlspecialchars($_POST['standard_url'][$key]);
-			$lang = htmlspecialchars($_POST['standard_lang'][$key]);
-			$standards .= <<<STANDARDS
-			\n      - title:
-			          $lang: "$title"
-			        desc: "$desc"
-			        url:
-			          $lang: "$url"
-			STANDARDS;
-		}
-	}
-	if($has_standards) {
-		$standards = "standard:" . $standards;
-	}
+  foreach ($_POST['standard_name'] as $key => $value) {
+    if($_POST['standard_name'][$key]) {
+      $has_standards = true;
+      $title = htmlspecialchars($_POST['standard_name'][$key]);
+      $desc = htmlspecialchars($_POST['standard_desc'][$key]);
+      $url = htmlspecialchars($_POST['standard_url'][$key]);
+      $lang = htmlspecialchars($_POST['standard_lang'][$key]);
+      $standards .= <<<STANDARDS
+      \n      - title:
+                $lang: "$title"
+              desc: "$desc"
+              url:
+                $lang: "$url"
+      STANDARDS;
+    }
+  }
+  if($has_standards) {
+    $standards = "standard:" . $standards;
+  }
 }
 
 // documents
 $documents     = "";
 $has_documents = false;
 if(!empty($_POST['document_name'])) {
-	foreach ($_POST['document_name'] as $key => $value) {
-		if($_POST['document_name'][$key]) {
-			$has_documents = true;
-			$title = htmlspecialchars($_POST['document_name'][$key]);
-			$desc = htmlspecialchars($_POST['document_desc'][$key]);
-			$url = htmlspecialchars($_POST['document_url'][$key]);
-			$lang = htmlspecialchars($_POST['document_lang'][$key]);
-			$documents .= <<<DOCUMENTS
-			\n      - title:
-			          $lang: "$title"
-			        desc: "$desc"
-			        url:
-			          $lang: "$url"
-			DOCUMENTS;
-		}
-	}
-	if($has_documents) {
-		$documents = "documents:" . $documents;
-	}
+  foreach ($_POST['document_name'] as $key => $value) {
+    if($_POST['document_name'][$key]) {
+      $has_documents = true;
+      $title = htmlspecialchars($_POST['document_name'][$key]);
+      $desc = htmlspecialchars($_POST['document_desc'][$key]);
+      $url = htmlspecialchars($_POST['document_url'][$key]);
+      $lang = htmlspecialchars($_POST['document_lang'][$key]);
+      $documents .= <<<DOCUMENTS
+      \n      - title:
+                $lang: "$title"
+              desc: "$desc"
+              url:
+                $lang: "$url"
+      DOCUMENTS;
+    }
+  }
+  if($has_documents) {
+    $documents = "documents:" . $documents;
+  }
 }
 
 // Determine the order of the entry in the side navigation
@@ -137,7 +137,8 @@ province: $state_province
 policies:
   - title:
       en: "$policy_name"
-    url: $policy_url
+    url:
+      en: $policy_url
     updated: $policy_enactdate
     wcagver: $guideline
     enactdate: $policy_enactdate
@@ -152,15 +153,15 @@ EOF;
 $template = preg_replace('/^\h*\v+/m', '', $template);
 
 if ($_POST['submission'] == 'new policy') {
-	$issue_title = 'New Entry for '.$country;
+  $issue_title = 'New Entry for '.$country;
 } else {
-	$issue_title = 'Update for '.$country;
+  $issue_title = 'Update for '.$country;
 }
 
 if ($_POST['cmnt'] == '') {
-	$comment = '';
+  $comment = '';
 } else {
-	$comment = preg_replace('/^/m', "> ", htmlspecialchars($_POST['cmnt']));
+  $comment = preg_replace('/^/m', "> ", htmlspecialchars($_POST['cmnt']));
 }
 
 $issue_body = <<<BODY
