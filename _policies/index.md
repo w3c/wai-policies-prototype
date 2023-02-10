@@ -7,10 +7,10 @@ layout: sidenav
 ---
 
 {::nomarkdown}
-{% include box.html type="start" title="Dated" icon="warning" %}
+{% include box.html type="start" title="Updates in progress" icon="default" %}
 {:/}
 
-Most of this information is from 2018. We are in the process of updating it. We plan to start publishing the updates in early 2023.
+We are updating this information in February and March 2023. Near the top of each country listing is a "last updated" date.
 
 {::nomarkdown}
 {% include box.html type="end" %}
