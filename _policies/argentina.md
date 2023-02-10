@@ -13,7 +13,7 @@ policies:
     updated: 26/11/2010
     wcagver: WCAG 2.0
     enactdate: 26/11/2010
-    type: Non-discrimination law,
+    type: Non-discrimination law
     ministries:
       - title:
           es: "ONTI"
