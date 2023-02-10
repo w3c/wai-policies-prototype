@@ -8,9 +8,9 @@ updated: 2023-02-09
 updatemsg:
 policies:
   - title:
-      en: 'Ley N° 26.653 de “Accesibilidad Web”'
-    url: 
-	  en: https://www.argentina.gob.ar/normativa/nacional/175694/texto
+      es: 'Ley N° 26.653 de “Accesibilidad Web”'
+    url:
+      es: https://www.argentina.gob.ar/normativa/nacional/175694/texto
     updated: 26/11/2010
     wcagver: WCAG 2.0
     enactdate: 26/11/2010
