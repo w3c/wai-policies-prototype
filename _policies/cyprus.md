@@ -1,30 +1,32 @@
 ---
 lang: en
 order: 6519152
-title: ""
+title: "Cyprus"
 country:
-  en: ""
-updated: 2023-03-28
+  en: "Cyprus"
+  el: "Κυπριακή Δημοκρατία"
+  tr: "Kıbrıs Cumhuriyeti"
+updated: 2023-04-06
 updatemsg:
 policies:
   - title:
-      en: ""
+      en: "The Accessibility of Public Sector Organizations Websites and Mobile Applications Act 2019."
+      el: "Ο περί Προσβασιμότητας των Ιστότοπων και των Εφαρμογών για Φορητές Συσκευές των Οργανισμών του Δημόσιου Τομέα Νόμος του 2019."
     url:
-      en: 
+      el: https://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=NIM:271379
     updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+    wcagver: WCAG 2.0
+    enactdate: 2019
+    type: Accessibility law
     ministries:
       - title:
-          en: ""
+          en: "House of Representatives"
+          el: "Βουλή των Αντιπροσώπων"
         url:
-          en:
-    webonly: true|false
-    scope: $scope
-    standard:
-      - title:
-          en: ""
-        url:
-          en:
+          el: https://www.parliament.cy/
+          tr: https://www.parliament.cy/tr/house-of-representatives
+          en: https://www.parliament.cy/en/house-of-representatives
+    webonly: true
+    scope: Government, Public sector
+    standard: none
 ---
