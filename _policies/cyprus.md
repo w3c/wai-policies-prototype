@@ -7,6 +7,7 @@ country:
   el: "Κυπριακή Δημοκρατία"
   tr: "Kıbrıs Cumhuriyeti"
 updated: 2023-04-06
+updatemsg:
 policies:
   - title:
       en: "The Accessibility of Public Sector Organizations Websites and Mobile Applications Act 2019."
