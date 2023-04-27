@@ -1,30 +1,31 @@
 ---
 lang: en
 order: 6845806
-title: ""
+title: "Hungary"
 country:
-  en: ""
+  en: "Hungary"
+  hu: "Magyarország"
 updated: 2023-03-28
 updatemsg:
 policies:
   - title:
-      en: ""
+      en: "Act on the accessibility of websites and mobile applications of public sector organizations"
+      hu: "Törvény a közszférabeli szervezetek honlapjainak és mobilalkalmazásainak akadálymentesítéséről"
     url:
-      en: 
-    updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+      hu: https://njt.hu/jogszabaly/2018-75-00-00.1
+    updated: 2018
+    wcagver: None
+    enactdate: 2018
+    type: Accessibility law
     ministries:
       - title:
-          en: ""
+          en: "Ministry of Innovation and Technology"
+          hu: "Innovációs és Technológiai Minisztérium"
         url:
-          en:
-    webonly: true|false
-    scope: $scope
+          hu: https://2015-2019.kormany.hu/hu/innovacios-es-technologiai-miniszterium
+    webonly: false
+    scope: Public sector
     standard:
       - title:
-          en: ""
-        url:
-          en:
+          en: "EN 301 549"
 ---
