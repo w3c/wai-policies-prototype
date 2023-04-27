@@ -1,11 +1,12 @@
 ---
+lang: en
+order: 7368562
 country:
   en: Portugal
   # Manual enter other country names: 
 updated: 2022-04-20
 updatemsg:
 # Related page:
-province: 
 policies:
   - title:
       en: Decreto-Lei n.º 83/2018 de 19 de outubro - Define os requisitos de acessibilidade dos sítios web e das aplicações móveis de organismos públicos, transpondo a Diretiva (UE) 2016/2102
@@ -27,10 +28,4 @@ policies:
         desc: "The standard is referenced in the law in article 7."
         url:
           pt: "https://dre.pt/home/-/dre/116734769/details/maximized"
-    documents:
-      - title:
-          en: ""
-        desc: ""
-        url:
-          en: ""
 ---
