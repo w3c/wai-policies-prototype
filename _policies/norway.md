@@ -6,8 +6,8 @@ country:
   en: Norway
   nb: Norge
   nn: Noreg
-updated: 2017-06-19
-updatemsg:
+updated: 2023-03-14
+updatemsg: Added WAD addition to regulations on universal design of information and communication technology (ICT) solutions.
 # Related page:
 province:
 policies:
