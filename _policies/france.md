@@ -5,7 +5,7 @@ title: France
 country:
   en: France
   fr: La France
-updated: 2016-2-17
+updated: 2023-04-06
 updatemsg: Updated French accessibility laws and policies.
 relatedpages:
 policies:
