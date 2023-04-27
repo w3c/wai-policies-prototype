@@ -47,7 +47,8 @@ policies:
     webonly: false
     scope: Government, Public sector
     standard: 
-      - title: EN 301 549
+      - title:
+          sv: EN 301 549
         desc: "Official guidance on following EN 301 549 and WCAG provided by DIGG (Agency for Digital Government)"
         url:
           sv: https://webbriktlinjer.se/lagkrav/folj-standarder-tillganglighet/
