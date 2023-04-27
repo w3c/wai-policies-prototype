@@ -1,4 +1,6 @@
 ---
+lang: en
+order: 6516588
 country:
   en: Colombia
   # Manual enter other country names: 
@@ -9,11 +11,13 @@ province:
 policies:
   - title:
       en: Web accessibility guidelines
-    url: https://gobiernodigital.mintic.gov.co/692/articles-160770_Directrices_Accesibilidad_web.pdf
+      es: Resolución MinTIC 1519 del 2020 Directrices de accesibilidad web
+    url:
+      es: https://gobiernodigital.mintic.gov.co/692/articles-160770_Directrices_Accesibilidad_web.pdf
     updated: 2020
-    wcagver: WCAG 2.1, 
+    wcagver: WCAG 2.1 
     enactdate: 2020
-    type: law, 
+    type: law
     ministries:
       - title:
           es: "Ministerio de Tecnologías de la Información y las Comunicaciones"
@@ -21,12 +25,6 @@ policies:
           es: "https://www.mintic.gov.co"
     webonly: true
     scope: 
-    standard:
-      - title:
-          en: ""
-        desc: ""
-        url:
-          en: ""
     documents:
       - title:
           es: "Resolución 1519 del 2020"
