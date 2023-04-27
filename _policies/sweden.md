@@ -6,8 +6,8 @@ country:
   en: Sweden
   sv: Sverige
   # Manual enter other country names:
-updated: 2017-06-10
-updatemsg:
+updated: 2023-03-15
+updatemsg: Added Act (2018:1937) on accessibility to digital public services.
 # Related page:
 province:
 policies:
