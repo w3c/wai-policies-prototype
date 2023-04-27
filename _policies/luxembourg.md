@@ -1,6 +1,6 @@
 ---
 lang: en
-order: 15
+order: 7107960
 title: Luxembourg
 country:
   en: Luxembourg
@@ -16,7 +16,7 @@ policies:
     url:
       fr: http://legilux.public.lu/eli/etat/leg/loi/2019/05/28/a373/jo
     updated: 2019-05-28
-    wcagver: 
+    wcagver: WCAG 2.0 derivate
     enactdate: 2019
     type: Accessibility law # other values: law/policy/procurement
     ministries:
