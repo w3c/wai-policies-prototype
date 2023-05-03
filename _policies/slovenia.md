@@ -28,7 +28,7 @@ policies:
           sl: https://www.gov.si/drzavni-organi/organi-v-sestavi/uprava-za-informacijsko-varnost/o-upravi-za-informacijsko-varnost/
     webonly: no # other values: yes
     scope: Public sector # keys that allows us to use any combination
-	standard:
+    standard:
       - title:
           en: "EN 301 549"
         desc: "Includes WCAG 2.1 Level AA verbatim without modifications for Web content, and WCAG 2.1 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
