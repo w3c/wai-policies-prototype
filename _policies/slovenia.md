@@ -1,6 +1,6 @@
 ---
 lang: en
-order: 18
+order: 7564399
 title: Slovenia
 country:
   en: Slovenia
@@ -14,7 +14,6 @@ policies:
       en: Accessibility of Websites and Mobile Applications Act
       sl: Zakon o dostopnosti spletišč in mobilnih aplikacij (ZDSMA)
     url:
-      en: http://www.pisrs.si/Pis.web/pregledPredpisa?sop=2018-01-1351
       sl: http://www.pisrs.si/Pis.web/pregledPredpisa?sop=2018-01-1351
     updated: 2018-05-11
     wcagver: WCAG 2.1
