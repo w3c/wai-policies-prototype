@@ -73,6 +73,20 @@ ul.facetlist li :first-child {
   margin-bottom: 0;
 }
 
+.form-row {
+	display: block;
+	padding-bottom: 0.75em;
+}
+
+ul.multiple li {
+	list-style-type: none;
+	margin-bottom: 1.5em;
+}
+
+ul.multiple li label span {
+	margin-right: 1em;
+}
+
 @supports (display: grid) {
   @media screen and (max-width:767px) {
     .overviewtable th, .overviewtable td {

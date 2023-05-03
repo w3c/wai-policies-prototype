@@ -1,16 +1,16 @@
 ---
 title: "Web Accessibility Laws & Policies"
-nav_title: "International Laws & Policies"
+nav_title: "Countries / Regions"
 permalink: /policies/
 order: 0
 layout: sidenav
 ---
 
 {::nomarkdown}
-{% include box.html type="start" title="Dated" icon="warning" %}
+{% include box.html type="start" title="Updates in progress" icon="default" %}
 {:/}
 
-Most of this information is from 2018. We plan to update it by the end of 2021.
+We are updating this information in February and March 2023. Near the top of each country listing is a "last updated" date.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -66,10 +66,10 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     </caption>
     <thead>
     <tr>
-      <th>Country</th>
+      <th>Country / Region</th>
       <th>Name</th>
-      <th>Date enacted</th>
-      <th>Type (Policy, law, legislation, etc.)</th>
+      <th>Date Enacted</th>
+      <th>Type (policy, law, legislation, etc.)</th>
       <th>Scope</th>
       <th>Web Only</th>
       <th>WCAG Version Based On</th>

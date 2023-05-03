@@ -2,3 +2,4 @@
 
 Lacking documentation, some notes:
 * To delete a listing that used a filter, I also had to edit wcagver in  ```_policies/js/script.js```. Here's the [pull request 403](https://github.com/w3c/wai-policies-prototype/pull/403/files). I suspect when we add WCAG 2.1, we might also need to add to this file?
+* Some policy code elsewhere: https://github.com/w3c/wai-website-theme/blob/master/_includes/multilang-list-policy-links.html & https://github.com/w3c/wai-website-theme/blob/master/_includes/multilang-policy-title.html
