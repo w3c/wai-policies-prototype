@@ -1,30 +1,31 @@
 ---
 lang: en
 order: 7368562
-title: ""
 country:
-  en: ""
-updated: 2023-03-28
+  en: Portugal
+  # Manual enter other country names: 
+updated: 2022-04-20
 updatemsg:
+# Related page:
 policies:
   - title:
-      en: ""
-    url:
-      en: 
-    updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+      en: Decreto-Lei n.º 83/2018 de 19 de outubro - Define os requisitos de acessibilidade dos sítios web e das aplicações móveis de organismos públicos, transpondo a Diretiva (UE) 2016/2102
+    url: https://dre.pt/home/-/dre/116734769/details/maximized
+    updated: 2018
+    wcagver: none, 
+    enactdate: 2018
+    type: law, 
     ministries:
       - title:
-          en: ""
+          pt: "Ministry of Science, Technology and Higher Education (Portuguese: Ministério da Ciência, Tecnologia e Ensino Superior or MCTES)"
         url:
-          en:
-    webonly: true|false
-    scope: $scope
+          pt: "https://www.portugal.gov.pt/pt/gc21/area-de-governo/ciencia-tecnologia-e-ensino-superior"
+    webonly: true
+    scope: 
     standard:
       - title:
-          en: ""
+          pt: "EN 301 549"
+        desc: "The standard is referenced in the law in article 7."
         url:
-          en:
+          pt: "https://dre.pt/home/-/dre/116734769/details/maximized"
 ---
