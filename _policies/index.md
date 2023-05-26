@@ -18,7 +18,7 @@ We are updating this information in April 2023. Near the top of each country lis
 
 This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
-The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
+The information on this page is _not_ legal advice. Please consult legal authorities for the appropriate jurisdiction. W3C cannot guarantee the accessibility of these external resources.
 
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility]({{ "/planning/org-policies/" | relative_url }}).
 
