@@ -56,6 +56,8 @@ defaults:
       path: "_policies"
     values:
       layout: "policy"
+      disclaimer: |
+        <p>The law or policy links above go to official versions that may not be very accessible. If you know of more accessible versions, please let us know through the <a href="https://www.w3.org/WAI/policies/submission/">submission form</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a>.</p>
 
 plugins:
   - jekyll-seo-tag
