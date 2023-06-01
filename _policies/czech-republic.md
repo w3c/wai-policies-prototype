@@ -1,30 +1,34 @@
 ---
 lang: en
 order: 6519397
-title: ""
+title: "Czech Republic"
 country:
-  en: ""
-updated: 2023-03-28
+  en: "Czech Republic"
+  cz: "Česká republika"
+updated: 2023-06-01
 updatemsg:
 policies:
   - title:
-      en: ""
+      en: "Act No. 99/2019 Coll., on the accessibility of websites and mobile applications and on the amendment of Act No. 365/2000 Coll., on public administration information systems and on the amendment of certain other laws"
+      cz: "Zákon č. 99/2019 Sb., o přístupnosti internetových stránek a mobilních aplikací a o změně zákona č. 365/2000 Sb., o informačních systémech veřejné správy a o změně některých dalších zákonů, ve znění pozdějších předpisů"
     url:
-      en: 
+      cz: https://eur-lex.europa.eu/legal-content/CS/TXT/PDF/?uri=CELEX:72016L2102CZE_271811&from=EN
     updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+    wcagver: WCAG 2.0 derivate
+    enactdate: 2019
+    type: Accessibility law
     ministries:
       - title:
-          en: ""
+          en: "Ministry of the Interior"
+          cz: "Ministerstvo vnitra České republiky"
         url:
-          en:
-    webonly: true|false
-    scope: $scope
+          en: https://www.mvcr.cz/mvcren/
+          cz: https://www.mvcr.cz/
+    webonly: false
+    scope: Government, Public sector
     standard:
       - title:
-          en: ""
+          en: "EN 301 549"
         url:
-          en:
+          cz: https://www.mvcr.cz/clanek/pristupnost-internetovych-stranek-a-mobilnich-aplikaci.aspx
 ---
