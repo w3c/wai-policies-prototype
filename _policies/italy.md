@@ -46,4 +46,28 @@ policies:
           it: La normativa italiana fin dal 2004
         url:
           it: http://www.agid.gov.it/agenda-digitale/pubblica-amministrazione/accessibilita/normativa
+  - title:
+      en: Law 10 August 2018, n. 106 "Reform of the implementation of Directive (EU) 2016/2102 on the accessibility of websites and mobile applications of public bodies"
+      it: Decreto legislativo 10 agosto 2018, n. 106 "Riforma dell'attuazione della direttiva (UE) 2016/2102 relativa all'accessibilita' dei siti web e delle applicazioni mobili degli enti pubblici."
+    url:
+      it: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2018-08-10;106!vig=
+    updated: 2023-03-14
+    wcagver: WCAG 2 derivative
+    enactdate: 2004
+    type: Accessibility law # other values: law/policy/procurement
+    ministries:
+      - title:
+          en: Digital Agency Italy (AGID)
+          it: Agenzia per l'Italia Digitale (AgID)
+        url:
+          it: http://www.agid.gov.it/
+    webonly: no # other values: yes
+    scope: Public sector, Government # keys that allows us to use any combination
+    standard: EN 301 549
+    documents:
+      - title:
+          en: Standards translation to Italian
+        url:
+          it: http://www.agid.gov.it/agenda-digitale/pubblica-amministrazione/accessibilita
+        desc: The guidelines for accessibility for public sector body websites and mobile applications based on EN 301 549
 ---

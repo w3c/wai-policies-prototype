@@ -63,4 +63,76 @@ policies:
         url:
           en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
     documents:
+  - title:
+      en: Article 429q of the Penal Code
+      nl: Arikel 429q Wetboek van Strafrecht
+    url:
+      nl: https://wetten.overheid.nl/BWBR0001854/2015-08-01#BoekDerde_TiteldeelII_Artikel429quater
+    updated: 2023-03-14
+    wcagver: None
+    enactdate: 2016
+    type: Non-discrimination law
+    ministries:
+      - title:
+          en: Ministry of Justice and Security
+          nl: Ministerie van Justitie en Veiligheid
+        url:
+          nl: https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid
+    scope: Government, Public sector, Private sector
+    webonly: no # other values: yes
+    standard:
+      - title:
+          en: EN 301 549
+        desc: Latest version of the ETSI EN 301 549 standard that includes WCAG. For Dutch public sector bodies, the Forum voor Standaardisatie points to the latest version of the WCAG and EN 301 549 standards.
+        url:
+          nl: https://www.forumstandaardisatie.nl/open-standaarden/digitoegankelijk-en-301-549-met-wcag-21
+    documents:
+  - title:
+      en: Equal Treatment Act Based on Disability or Chronic Illness
+      nl: Wet gelijke behandeling op grond van handicap of chronische ziekte
+    url:
+      nl: https://wetten.overheid.nl/BWBR0014915/2020-01-01
+    updated: 2023-03-14
+    wcagver: None
+    enactdate: 2003, altered in 2016
+    type: Non-discrimination law
+    ministries:
+      - title:
+          en: Ministry of Justice and Security
+          nl: Ministerie van Justitie en Veiligheid
+        url:
+          nl: https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid
+    scope: Government, Public sector, Private sector
+    webonly: no # other values: yes
+    standard:
+    documents:
+      - title: 
+          en: Explanatory memorandum
+        url:
+          nl: https://zoek.officielebekendmakingen.nl/kst-33990-3.html
+        desc: "Explanatory Memorandum of the amendment to the Equal Treatment Act on the basis of a disability or chronic illness and the Electoral Act. With this, the UN Disability Convention has been ratified."
+  - title:
+      en: Temporary decree on digital accessibility of the government
+      nl: Tijdelijk besluit digitale toegankelijkheid overheid
+    url:
+      nl: https://wetten.overheid.nl/BWBR0040936/2018-07-01
+    updated: 2023-03-14
+    wcagver: WCAG 2.1
+    enactdate: 2018
+    type: Accessibility law
+    ministries:
+      - title:
+          en: Ministry of the Interior and Kingdom Relations
+          nl: Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
+        url:
+          en: https://www.government.nl/ministries/ministry-of-the-interior-and-kingdom-relations
+    scope: Government, Public sector
+    webonly: no # other values: yes
+    standard:
+      - title:
+          en: EN 301 549
+        desc: Latest version of the ETSI EN 301 549 standard that includes WCAG. For Dutch public sector bodies, the Forum voor Standaardisatie points to the latest version of the WCAG and EN 301 549 standards.
+        url:
+          nl: https://www.forumstandaardisatie.nl/open-standaarden/digitoegankelijk-en-301-549-met-wcag-21
+    documents:    
 ---
