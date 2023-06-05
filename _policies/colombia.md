@@ -17,7 +17,7 @@ policies:
     updated: 2020
     wcagver: WCAG 2.1 
     enactdate: 2020
-    type: law
+    type: Accessibility law
     ministries:
       - title:
           es: "Ministerio de Tecnologías de la Información y las Comunicaciones"

@@ -58,7 +58,7 @@ policies:
     url:
       lt: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/324bbc61ff9e11e89b04a534c5aaf5ce
     updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
+    wcagver: WCAG 2.0 derivate
     enactdate: 2018
     type: Accessibility law
     ministries:

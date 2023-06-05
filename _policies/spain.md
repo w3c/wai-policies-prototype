@@ -48,7 +48,7 @@ policies:
     wcagver: WCAG 2.0 derivative
     enactdate: 2012
     type: Accessibility policy #Procurement policy, Non-discrimination law, Accessibility law, Recommendation, Accessibility policy
-    scope: Public Sector, Private Sector
+    scope: Public sector, Private sector
     webonly: yes
 
 ---

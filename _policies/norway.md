@@ -29,7 +29,7 @@ policies:
           "no": "https://uu.difi.no"
     webonly: false
     scope: Public sector, Private sector
-    standard: none
+    standard: None
     documents: false
   - title:
       en: "WAD addition to regulations on universal design of information and communication technology (ICT) solutions"
