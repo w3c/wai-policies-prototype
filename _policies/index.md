@@ -85,7 +85,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
         <td>{{p.enactdate}}</td>
         <td class="hyphenated">{{p.type}}</td>
         <td class="hyphenated">{{p.scope}}</td>
-        <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
+        <td>{%if p.webonly == true %}Yes{% else %}No{%endif%}</td>
         <td>{{p.wcagver}}</td>
       </tr>
       {% endfor %}
