@@ -53,7 +53,7 @@ policies:
         url:
           lt: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.94745/fnAbxGEluQ
   - title:
-      en: "Due to the Government of the Republic of Lithuania in 2003 April 18 resolution no. 480 of the amendment "On the approval of the description of the general requirements for the websites of state and municipal institutions and bodies"
+      en: "Due to the Government of the Republic of Lithuania in 2003 April 18 resolution no. 480 of the amendment \"On the approval of the description of the general requirements for the websites of state and municipal institutions and bodies\""
       lt: "Dėl Lietuvos Respublikos Vyriausybės 2003 m. balandžio 18 d. nutarimo Nr. 480 „Dėl Bendrųjų reikalavimų valstybės ir savivaldybių institucijų ir įstaigų interneto svetainėms aprašo patvirtinimo“ pakeitimo"
     url:
       lt: https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/324bbc61ff9e11e89b04a534c5aaf5ce
