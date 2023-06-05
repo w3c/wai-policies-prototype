@@ -1,30 +1,35 @@
 ---
 lang: en
 order: 7102836
-title: ""
+title: "Latvia"
 country:
-  en: ""
-updated: 2023-03-28
+  en: "Latvia"
+  lv: "Latvija"
+updated: 2023-06-01
 updatemsg:
 policies:
   - title:
-      en: ""
+      en: "Procedure in which institutions post information on the Internet"
+      lv: "Kārtība, kādā iestādes ievieto informāciju internetā"
     url:
-      en: 
+      lv: https://likumi.lv/ta/id/316109-kartiba-kada-iestades-ievieto-informaciju-interneta
     updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+    wcagver: WCAG 2.0 derivate
+    enactdate: 2020
+    type: Accessibility law
     ministries:
       - title:
-          en: ""
+          en: "Ministry of Environmental Protection and Regional Development"
+          lv: "Vides aizsardzības un reģionālās attīstības ministrija"
         url:
-          en:
-    webonly: true|false
-    scope: $scope
+          en: https://www.varam.gov.lv/en
+          lv: https://www.varam.gov.lv/lv
+    webonly: true
+    scope: Government, Public sector
     standard:
       - title:
-          en: ""
+          en: "EN 301 549"
         url:
-          en:
+          lv: https://likumi.lv/ta/id/292261-valsts-parvaldes-e-pakalpojumu-noteikumi
+        desc: "Rules of e-services of the state administration. Issued in accordance with the second part of Article 99 of the Law on State Administration"
 ---
