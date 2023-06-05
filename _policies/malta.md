@@ -41,5 +41,5 @@ policies:
           en: "Web Accessibility Essentials"
         url:
           en: https://www.mca.org.mt/webaccessibility
-        desc: "To assist website owners, designers and developers to better understand what is normally required to meet the W3 WCAG criteria, a number of “Essential Guides” have been compiled that aim to simplify further the WCAG criteria requirements and as much as possible, ensure that even non-technical personnel may comprehend what is needed to create an accessible website."
+        desc: "To assist website owners, designers and developers to better understand what is normally required to meet the W3 WCAG criteria, a number of \"Essential Guides\" have been compiled that aim to simplify further the WCAG criteria requirements and as much as possible, ensure that even non-technical personnel may comprehend what is needed to create an accessible website."
 ---
