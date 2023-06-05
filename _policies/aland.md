@@ -22,7 +22,6 @@ policies:
         url:
           sv: "https://www.regeringen.ax/"
     webonly: true
-    scope: 
     standard:
       - title:
           sv: "EN 301 549"
