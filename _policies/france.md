@@ -5,7 +5,7 @@ title: France
 country:
   en: France
   fr: La France
-updated: 2016-2-17
+updated: 2023-04-06
 updatemsg: Updated French accessibility laws and policies.
 relatedpages:
 policies:
@@ -71,4 +71,30 @@ policies:
     scope: Public sector, Private sector # keys that allows us to use any combination
     standard: false
     documents:
+  - title:
+      en: Decree No 2019-768
+      fr: Décret n° 2019-768
+    url:
+      fr: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038811937/
+    updated: 2017-06-20
+    wcagver: WCAG 2 derivative
+    enactdate: 2019
+    type: Accessibility law # other values: law/policy/procurement
+    ministries:
+      - title:
+          fr: Direction interministérielle du numérique (DINUM)
+        url:
+          fr: https://www.numerique.gouv.fr/dinum/
+    webonly: yes # other values: no
+    scope: Public sector, Government # keys that allows us to use any combination
+    standard: 
+      - title: RGAA
+        desc: The Référentiel général d'amélioration de l'accessibilité (RGAA) was made using EN 301 549 and WCAG2.1 (both referenced).
+        url: 
+          fr: https://www.numerique.gouv.fr/publications/rgaa-accessibilite/
+    documents:
+      - title: DesignGouv legal overview
+        desc: Overview of legal obligations and sanctions regarding web accessibility in France.
+        url:
+          fr: https://design.numerique.gouv.fr/accessibilite-numerique/cadre-legal/
 ---
