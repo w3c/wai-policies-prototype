@@ -34,6 +34,6 @@ policies:
     standard:
       - title:
           en: "EN 301 549"
-        desc: "European standard EN 301 549 V1.1.2 (2015-04), respectively v2.1.2 "Accessibility requirements for public procurement of ICT products and services in Europe" (2015-04)" or later versions"     
+        desc: "European standard EN 301 549 V1.1.2 (2015-04), respectively v2.1.2 \"Accessibility requirements for public procurement of ICT products and services in Europe (2015-04)\" or later versions"     
           
 ---
