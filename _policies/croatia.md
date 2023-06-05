@@ -29,5 +29,5 @@ policies:
     standard:
       - title:
           en: "EN 301 549 V1.1.2 (2015-04)"
-        desc: "References in Aricle 5.1.g of the Law as : "Accessibility requirements that are suitable for the public procurement of products and services of information and communication technologies in Europe""
+        desc: "References in Aricle 5.1.g of the Law as : \"Accessibility requirements that are suitable for the public procurement of products and services of information and communication technologies in Europe\""
 ---
