@@ -10,7 +10,7 @@ policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended
     url:
-      en: https://www.section508.gov/section-508-of-the-rehabilitation-act
+      en: https://www.access-board.gov/ict/
     updated: 2018-03-20
     wcagver: WCAG 2.0
     enactdate: 1998
@@ -51,17 +51,12 @@ policies:
           en: "Section 508 Standards for Electronic and Information Technology"
         desc: "Original section 508 standards, published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Government agencies encouraged to use the Revised 508 Standards published January 2017 in procurement of accessible technology, though the Federal Acquisition Regulatory (FAR) Council has not yet updated the procurement language to incorporate the Revised 508 Standards."
         url:
-          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+          en: https://www.access-board.gov/ict/#about-the-ict-accessibility-standards
       - title:
           en: GSA Quick Reference Guide to Section 508 Requirements and Standards
         url:
-          en: https://section508.gov/content/quick-reference-guide
+          en: https://www.section508.gov/manage/laws-and-policies/quick-reference-guide/
         desc: "This quick reference provides further information on the original Section 508 Standards, published 21 Dec. 2000."
-      - title:
-          en: Guide to the Section 508 Standards
-        url:
-          en:  https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/guide-to-the-section-508-standards
-        desc: "This provides guidance for the original Section 508 standards published 21 December, 2000."
   - title:
       en: Americans with Disabilities Act of 1990 (ADA), as amended
     url:
@@ -107,7 +102,7 @@ policies:
   - title:
       en: Section 255 of the Telecommunications Act of 1996
     url:
-      en: https://www.access-board.gov/the-board/laws/telecommunications-act
+      en: https://www.access-board.gov/law/ta.html
     updated: 2017-02-16
     wcagver: None
     enactdate: 1996
@@ -128,7 +123,7 @@ policies:
           en: "Telecommunications Act Section 255 Guidelines"
         desc: "FCC requirements for accessible telecommunications products."
         url:
-          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/section-255-guidelines
+          en: https://www.federalregister.gov/documents/2000/12/21/00-32017/electronic-and-information-technology-accessibility-standards
     documents:
       - title:
           en: Telecommunications Access for People with Disabilities
@@ -137,7 +132,7 @@ policies:
       - title:
           en: Guidance on the Telecommunications Act Section 255 Guidelines
         url:
-          en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/guidance-on-the-telecommunications-act-%C2%A7255-guidelines
+          en: https://www.access-board.gov/ict/guide/2555_guide.md.html
       - title:
           en: Information and Communication Technology (ICT) Standards and Guidelines
         url:
