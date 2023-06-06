@@ -43,7 +43,15 @@ policies:
           en: "Commission Implementing Decision (EU) 2018/1524 establishing a monitoring methodology and the arrangements for reporting by Member States"
         desc: "Commission Implementing Decision (EU) 2018/1524 of 11 October 2018 establishing a monitoring methodology and the arrangements for reporting by Member States in accordance with Directive (EU) 2016/2102 of the European Parliament and of the Council on the accessibility of the websites and mobile applications of public sector bodies (Text with EEA relevance)"
         url:
-          en: "https://eur-lex.europa.eu/eli/dec_impl/2018/1524/oj"          
+          en: "https://eur-lex.europa.eu/eli/dec_impl/2018/1524/oj"
+      - title:
+          en: "Member States' bodies in charge of monitoring the Web Accessibility Directive"
+        url:
+          en: https://digital-strategy.ec.europa.eu/en/policies/web-accessibility-monitoring
+      - title:
+          en: "Member States' transposition measures for the Web Accessibility Directive"
+        url:
+          en: https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32016L2102
   - title:
       en: European Accessibility Act
     url:
