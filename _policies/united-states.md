@@ -208,6 +208,53 @@ states:
     en: "Alabama"
 - title:
     en: "Alaska"
+  policies:
+    - title:
+        en: State of Alaska Web Accessibility Statement
+      url: http://doa.alaska.gov/ada/resources/web.html
+      updated: 2018
+      wcagver: WCAG 2.1, Level AA
+      enactdate: 2018
+      type: Mandatory policy, 
+      ministries:
+        - title:
+            en: "State of Alaska Department of Administration"
+          url:
+            en: "http://doa.alaska.gov/ada/"
+      webonly: true
+      scope: 
+      standard:
+        - title:
+            en: "WCAG 2.1"
+          desc: "Content Accessibility Guidelines"
+          url:
+            en: "http://www.w3.org/TR/WCAG21/"
+        - title:
+            en: "GSA Section 508 website"
+          desc: "General Services Administration guidance on Section 508 "
+          url:
+            en: "https://www.section508.gov/"
+      documents:
+        - title:
+            en: "State of Alaska Policy Statement"
+          desc: "The State of Alaska's policy on serving Alaskans with disabilities"
+          url:
+            en: "http://doa.alaska.gov/ada/policy.html"
+        - title:
+            en: "Administrative Order No. 129"
+          desc: "Reinforcement of the Americans with Disabilities Act of 1990 to protect Alaskans with disabilities"
+          url:
+            en: "https://gov.alaska.gov/admin-orders/administrative-order-no-129/"
+        - title:
+            en: "Administrative Order No. 262"
+          desc: "Ammending Administrative Order No. 129 to assign an ADA Coordinator to the State of Alaska"
+          url:
+            en: "https://gov.alaska.gov/admin-orders/administrative-order-no-262/"
+        - title:
+            en: "Alaska State Libraries, Archives, &amp; Museums Accessibility Notice webpage"
+          desc: "The Alaska State Libraries, Archives, &amp; Museums accessibility statement for it's electronic services."
+          url:
+            en: "https://lam.alaska.gov/accessibility/#s-lg-box-12337349"
 - title:
     en: "American Samoa"
 - title:
