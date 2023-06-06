@@ -46,4 +46,31 @@ policies:
         desc: ""
         url:
           es: "https://www.argentina.gob.ar/normativa/nacional/329284/texto"
+  - title:
+      es: Accesibilidad de la Información en las Páginas Web
+    url:
+      es: http://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175694/norma.htm
+    updated: 2023-06-06
+    wcagver: WCAG 2.0
+    enactdate: 2010
+    type: Procurement law
+    ministries:
+      - title:
+          es: "Oficina Nacional de Tecnologías de Información"
+        url:
+          es: "https://www.argentina.gob.ar/onti"
+    webonly: true
+    scope: 
+    standard:
+      - title:
+          en: "WCAG 2.0"
+        desc: "Conformance level A"
+        url:
+          en: "https://www.w3.org/TR/WCAG20/"
+    documents:
+      - title:
+          es: "Web Accessibility Repository "
+        desc: "The Web Accessibility Repository on GithHub contains many resources as guides, posters, technical recommendations, etc."
+        url:
+          es: "https://github.com/argob/accesibilidad-web"
 ---
