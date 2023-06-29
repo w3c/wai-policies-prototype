@@ -28,5 +28,5 @@ policies:
           en: https://www.parliament.cy/en/house-of-representatives
     webonly: true
     scope: Government, Public sector
-    standard: none
+    standard: None
 ---

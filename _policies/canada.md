@@ -68,9 +68,9 @@ states:
       url:
         en: http://www.accessibilitymb.ca/law.html
       updated: 2018
-      wcagver: none
+      wcagver: None
       enactdate: 2017
-      type: law, Recommended policy
+      type: Recommended policy
       ministries:
         - title:
             en: "Accessibility Directorate"
@@ -93,9 +93,9 @@ states:
       url:
         en: https://nslegislature.ca/legc/bills/62nd_3rd/3rd_read/b059.htm
       updated: 2014
-      wcagver: none
+      wcagver: None
       enactdate: 2003
-      type: law, Recommended policy
+      type: Recommended policy
       ministries:
         - title:
             en: "Accessibility Directorate"
@@ -112,7 +112,7 @@ states:
       updated: 2005
       wcagver: WCAG 2.0, 
       enactdate: 2005
-      type: law, 
+      type: Accessibility law 
       ministries:
         - title:
             en: "Accessibility Directorate of Ontario"

@@ -1,30 +1,40 @@
 ---
 lang: en
 order: 7368556
-title: ""
+title: "Poland"
 country:
-  en: ""
-updated: 2023-03-28
+  en: "Poland"
+  pl: "Rzeczpospolita Polska"
+updated: 2023-06-01
 updatemsg:
 policies:
   - title:
-      en: ""
+      en: "Act of 4 April 2019 on the digital accessibility of websites and mobile applications of public entities"
+      pl: "Ustawa z dnia 4 kwietnia 2019 r. o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych"
     url:
-      en: 
+      pl: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20190000848
     updated: 
-    wcagver: WCAG 2.1|WCAG 2.0|WCAG 2.0 derivate|None
-    enactdate: 
-    type: Accessibility law|Non-discrimination law|Procurement law|Procurement recommendation|Mandatory policy|Recommended policy|Unsure
+    wcagver: WCAG 2.0 derivate
+    enactdate: 2019
+    type: Accessibility law
     ministries:
       - title:
-          en: ""
+          en: "Sejm of the Republic of Poland"
+          pl: "Sejm Rzeczypospolitej Polskiej"
         url:
-          en:
+          pl: https://www.sejm.gov.pl/
     webonly: true|false
-    scope: $scope
+    scope: Government, Public sector
     standard:
       - title:
-          en: ""
+          en: "WCAG 2.1"
         url:
-          en:
+          pl: https://www.gov.pl/web/dostepnosc-cyfrowa/prawo-dotyczace-dostepnosci-cyfrowej
+        desc: "There is a table attached to the act requiring public sector body accessibility. This table is equivalent  to the WCAG  AA level (with some restrictions)"
+    documents:
+      - title:
+          en: "Digital availability pages"
+        url: 
+          pl: https://www.gov.pl/web/dostepnosc-cyfrowa
+        desc: "News, articles, training and monitoring information about digital availability and accessibility"
 ---

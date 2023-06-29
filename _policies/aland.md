@@ -13,16 +13,15 @@ policies:
     url:
       sv: https://www.regeringen.ax/alandsk-lagstiftning/alex/20197
     updated: 2019
-    wcagver: none
+    wcagver: None
     enactdate: 2019
-    type: law 
+    type: Accessibility law 
     ministries:
       - title:
           sv: "Ålands landskapsregering"
         url:
           sv: "https://www.regeringen.ax/"
     webonly: true
-    scope: 
     standard:
       - title:
           sv: "EN 301 549"
