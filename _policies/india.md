@@ -28,8 +28,8 @@ policies:
   - title:
       en: Guidelines for Indian Government Websites
     url:
-      en: http://web.guidelines.gov.in
-    updated: 2017-03-25
+      en: https://guidelines.india.gov.in/
+    updated: 2023-06-29
     wcagver: WCAG 2.0
     enactdate: 2009
     type: Mandatory policy # other values: law/policy/procurement
