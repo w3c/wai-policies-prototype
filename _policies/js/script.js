@@ -245,7 +245,7 @@ $(function(){
   //console.log(selected.q);
 
 	var item_template = $('#results-template').text();
-	var a11y_policies = $.getJSON( path + "/policies/js/data.json", function() {
+	var a11y_policies = $.getJSON( "./js/data.json", function() {
 
 	}).done(function(jsn) {
 
