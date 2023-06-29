@@ -52,15 +52,15 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 
 <h2 id="xtable">Law and Policy Overview Table</h2>
 <div>
-  <details open>
+  <details>
     <summary>
-    <h3 style="display:inline-block;">Filter policies to show:</h3>
+    <h3 style="display:inline-block;">Filter policies to show</h3>
     </summary>
     <div id="facets"></div>
   </details>
   <table class="sortable dense overviewtable">
     <caption>
-      <h3>Overview Table:</h3>
+      <h3>Overview Table</h3>
       <div id="infos"></div>
     </caption>
     <thead>
