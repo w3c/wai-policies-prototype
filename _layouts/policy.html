@@ -69,6 +69,13 @@
         {% endif %}
       {% endif %}
     </div>
+    
+    {% if page.disclaimer %}
+    <div>
+      {{ page.disclaimer }}
+    </div>
+    {% endif %}
+    
     {%- comment -%}{% include prevnext.html %}{%- endcomment -%}
 
     {% include_cached backtotop.html %}
