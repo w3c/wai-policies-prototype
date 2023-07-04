@@ -27,7 +27,7 @@ policies:
     scope:
     documents:
       - title:
-          en: "PDF version of ГОСТ Р 52872-2012"
+          ru: "ГОСТ Р 52872-2012"
         url:
-          en: http://ifap.ru/library/gost/528722012.pdf
+          ru: http://ifap.ru/library/gost/528722012.pdf
 ---
