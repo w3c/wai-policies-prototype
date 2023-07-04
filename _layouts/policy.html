@@ -24,9 +24,28 @@
   <main id="main"{% if page.lang %} lang="{{page.lang}}"{% endif %}>
     <h1 class="post-title">{% include multilang-title.html title=page.country %}</h1>
 
+{% include box.html type="start" title="Page Contents" %}
+<ul>
+    {% for p in page.policies %}
+      <li><a href="#{{ p.title.en | slugify }}">{% include multilang-policy-title.html title=p.title %}</a></li>
+    {% endfor %}
+    {% if page.states %}
+    <li><a href="#states">{{page.statesdesc.en}}</a>
+        <ul>
+        {% for state in page.states %}
+          {% if state.policies %}
+            <li><a href="#{{ state.title.en | slugify }}">{% include multilang-title.html title=state.title %}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+    </li>
+    {% endif %}
+</ul>
+{% include box.html type="end" %}
+
     <div class="post-content">
-      {% if page.states %}<p>See below for information about <a href="#states">{{page.statesdesc.en}}</a>.</p>{% endif %}
       <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
+        
       {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
       {% for p in page.policies %}
         {% include individual-policy.html policy=p headinglevel=2%}

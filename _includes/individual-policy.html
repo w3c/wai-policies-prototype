@@ -1,12 +1,11 @@
 {% assign p=include.policy %}
 {% assign theslug = p.title.en | slugify %}
-{% capture boxtitle %}
-<h{{include.headinglevel}} class="policy-heading">
-  {% include multilang-policy-title.html title=p.title %}
-</h{{include.headinglevel}}>
-{% endcapture %}
-{% include box.html type="start" title=boxtitle class="large" id=theslug %}
+
 <div>{% assign urlsize = p.url | size %}
+  <h{{include.headinglevel}} id="{{ theslug }}" class="policy-heading">
+    {% include multilang-policy-title.html title=p.title %}
+  </h{{include.headinglevel}}>
+
   <h{{include.headinglevel | plus: 1}} style="margin-top:10px;">Official law/policy page{% if urlsize > 1 %}s{% endif %}</h{{include.headinglevel | plus: 1}}>
   {% include multilang-list-policy-links.html title=p.title url=p.url external="true" wrap="h2" id=theslug class="policy-heading" %}
   <h{{include.headinglevel | plus: 2}}>Details</h{{include.headinglevel | plus: 2}}>
@@ -41,4 +40,3 @@
     {% endif %}
   </ul>
 </div>
-{% include box.html type="end" %}
