@@ -1,3 +1,7 @@
+summary > h3 {
+    margin: 0 0 1em 0;
+}
+
 .overviewtable {
   table-layout:fixed;
   width:100%;

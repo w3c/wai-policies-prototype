@@ -2,7 +2,6 @@
 title: "Web Accessibility Laws & Policies"
 nav_title: "Countries / Regions"
 permalink: /policies/
-order: 0
 layout: sidenav
 ---
 
@@ -10,7 +9,7 @@ layout: sidenav
 {% include box.html type="start" title="Updates in progress" icon="default" %}
 {:/}
 
-We are updating this information in April 2023. Near the top of each country listing is a "last updated" date.
+We are updating this information in June 2023. Near the top of each country listing is a "last updated" date.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -18,7 +17,7 @@ We are updating this information in April 2023. Near the top of each country lis
 
 This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
-The information on this page is _not_ legal advice. If you have questions about the applicability of the policies to specific situations, please consult legal authorities for the appropriate jurisdiction.
+The information on this page is _not_ legal advice. Please consult legal authorities for the appropriate jurisdiction. W3C cannot guarantee the accessibility of these external resources.
 
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility]({{ "/planning/org-policies/" | relative_url }}).
 
@@ -53,15 +52,15 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 
 <h2 id="xtable">Law and Policy Overview Table</h2>
 <div>
-  <details open>
+  <details>
     <summary>
-    <h3 style="display:inline-block;">Filter policies to show:</h3>
+    <h3 style="display:inline-block;">Filter policies to show</h3>
     </summary>
     <div id="facets"></div>
   </details>
   <table class="sortable dense overviewtable">
     <caption>
-      <h3>Overview Table:</h3>
+      <h3>Overview Table</h3>
       <div id="infos"></div>
     </caption>
     <thead>
@@ -85,7 +84,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
         <td>{{p.enactdate}}</td>
         <td class="hyphenated">{{p.type}}</td>
         <td class="hyphenated">{{p.scope}}</td>
-        <td>{%if p.webonly == true %}yes{% else %}no{%endif%}</td>
+        <td>{%if p.webonly == true %}Yes{% else %}No{%endif%}</td>
         <td>{{p.wcagver}}</td>
       </tr>
       {% endfor %}

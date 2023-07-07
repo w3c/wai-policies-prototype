@@ -5,36 +5,37 @@ title: Taiwan
 country:
   en: Taiwan
   zh: "中華民國"
-updated: 2018-03-20
+updated: 2023-07-07
 updatemsg:
 province:
 policies:
   - title:
-      en: "Web Accessibility Guidelines 2.0"
-      zh: "網站無障礙規範2.0 版"
+      en: "Web Accessibility Guidelines (110.07)"
+      zh: "網站無障礙規範 (110.07)"
     url:
-      zh: "https://www.handicap-free.nat.gov.tw/Download/Detail/1418?Category=28"
-    updated: 2017
-    wcagver: WCAG 2.0 derivative
-    enactdate: 2017
+      zh: "https://accessibility.moda.gov.tw/Accessible/Guide/68"
+    updated: 2021
+    wcagver: WCAG 2.1 derivative
+    enactdate: 2021
     type: Mandatory policy
     ministries:
       - title:
-          en: "National Communications Commission"
-          zh: "國家通訊傳播委員會"
+          en: "Ministry of Digital Affairs"
+          zh: "數位發展部"
         url:
-          en: "http://www.ncc.gov.tw/english/"
-          zh: "https://www.ncc.gov.tw/"
+          en: "https://moda.gov.tw/en/"
+          zh: "https://moda.gov.tw/"
     webonly: true
     scope: Public sector
     standard: false
     documents:
       - title:
-          en: "Regulations of Issuing Web Accessibility Accreditation badge for Website of  Governmental Agencies and Schools"
+          en: "Regulations of Issuing Web Accessibility Accreditation badge for Website of Governmental Agencies and Schools"
         url:
-          en: "https://www.handicap-free.nat.gov.tw/News/Detail/2217?Category=43"
+          en: "https://law.moda.gov.tw/EngLawList.aspx?id=FL071221"
+          zh: "https://law.moda.gov.tw/LawContent.aspx?id=FL071221"
       - title:
           en: "Freego Web Accessibility Checker"
         url:
-          en: "https://www.handicap-free.nat.gov.tw/Download/Category/52/1"
+          zh: "https://accessibility.moda.gov.tw/Download/Detail/1749?Category=70"
 ---
