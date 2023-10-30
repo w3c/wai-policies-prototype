@@ -9,7 +9,7 @@ layout: sidenav
 {% include box.html type="start" title="Updates in progress" icon="default" %}
 {:/}
 
-We are updating this information in June 2023. Near the top of each country listing is a "last updated" date.
+We are updating this information in November and December 2023. Near the top of each country listing is a "last updated" date.
 
 {::nomarkdown}
 {% include box.html type="end" %}
