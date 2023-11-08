@@ -52,17 +52,7 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 
 <h2 id="xtable">Law and Policy Overview Table</h2>
 <div>
-  <details>
-    <summary>
-    <h3 style="display:inline-block;">Filter policies to show</h3>
-    </summary>
-    <div id="facets"></div>
-  </details>
   <table class="sortable dense overviewtable">
-    <caption>
-      <h3>Overview Table</h3>
-      <div id="infos"></div>
-    </caption>
     <thead>
     <tr>
       <th>Country / Region</th>
@@ -113,7 +103,6 @@ For guidance on developing an accessibility policy for an organization, see [Dev
 <script src="{{ "/policies/js/jquery.js" | relative_url }}"></script>
 <script src="{{ "/policies/js/underscore.js" | relative_url }}"></script>
 <script src="{{ "/policies/js/uri.js" | relative_url }}"></script>
-<script src="{{ "/policies/js/facetedsearch.js" | relative_url }}"></script>
 <script src="{{ "/policies/js/sorttable.js" | relative_url }}"></script>
 <script>var path = "{{ "/" | relative_url }}";</script>
 <script src="{{ "/policies/js/script.js" | relative_url }}"></script>
