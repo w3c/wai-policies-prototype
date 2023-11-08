@@ -1,5 +1,7 @@
 {% assign p=include.policy %}
-{% assign theslug = p.title.en | slugify %}
+{% for title in p.title %}
+  {% assign theslug = title[1] | slugify %}
+{% endfor %}
 {% capture boxtitle %}
 <h{{include.headinglevel}} class="policy-heading">
   {% include multilang-policy-title.html title=p.title %}
