@@ -13,7 +13,7 @@ policies:
   - title:
       en: Equal Rights of Persons with Disabilities Act, as amended
     url:
-      en: http://www.justice.gov.il/En/Units/CommissionEqualRightsPersonsDisabilities/Equal-Rights-For-Persons-With-Disabilities-Law/Pages/Equal-Rights-For-Persons-With-Disabilities-Law.aspx
+      en: https://www.gov.il/en/departments/legalInfo/equal_rights_persons_disabilities_law
     updated: 2017-05-04
     wcagver: WCAG 2.0
     enactdate: 1998
