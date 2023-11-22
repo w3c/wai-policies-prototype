@@ -35,13 +35,13 @@ policies:
         url:
           en: https://ec.europa.eu/digital-single-market/en/news/adoption-directive-accessibility-sector-bodies-websites-and-mobile-apps
   - title:
-      en: European Accessibility Act (proposed)
+      en: European Accessibility Act
     url:
       en: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM:2015:0615:FIN
     updated: 2015-12-02
     wcagver: WCAG 2.0 derivative
-    enactdate: draft
-    type: Proposed law
+    enactdate: 2019-06-27
+    type: Law
     ministries:
       - title:
           en: European Commission
