@@ -248,41 +248,6 @@ $(function(){
 	var a11y_policies = $.getJSON( "./js/data.json", function() {
 
 	}).done(function(jsn) {
-
-		var settings = {
-			items            : jsn,
-			facets           : {
-				'wcagver' : {'title': 'WCAG Version Used', 'collapsed': true},
-				'scope': {'title': 'Scope', 'collapsed': true},
-        'type'  : {'title': 'Type', 'collapsed': true}
-			},
-			resultSelector   : '#results',
-			facetSelector    : '#facets',
-			resultTemplate   : item_template,
-			enablePagination : false,
-			paginationCount  : 10,
-			orderByOptions   : {'title': 'Title'},
-			facetSortOption  : {'wcagver': ["WCAG 2.0", "WCAG 2.0 derivative", "None"]},
-			facetListContainer : '<ul class=facetlist></ul>',
-			listItemTemplate   : '<li><span><input type="checkbox" class="facetitem" aria-pressed="false" id="<%= id %>" data-name="<%= _(_(name).strip_html()).to_slug() %>"></span> <span><label for="<%= id %>"><%= name %> <span class="facetitemcount">(<%= count %>&nbsp;<% if (count==1) { %>policy<% } else {%>policies<% } %>)</span></label></span></li>',
-			listItemInnerTemplate   : '<span><%= name %> <span class=facetitemcount>(<% if (count=="+") { %>0&nbsp;items<% } else { if (count==1) { %><%= count %>&nbsp;item<% } else {%><%= count %>&nbsp;items<% }} %>)</span></span>',
-			orderByTemplate    : '',
-			countTemplate      : '<div class="facettotalcount"><strong><span aria-live="true">Showing <%= count %> <% if (count==1) { %>result<% } else {%>results<% } %></span><% if (filters) { %>, matching the filters:</strong> <span class="filter"><%= filters.join("</span>, <span class=\'filter\'>") %></span><% } else { %></strong><% } %></div>',
-			facetTitleTemplate : '<% if (!obj.plain) { %><legend><h4 class="facettitle"><%= title %></h4></legend><% } %>',
-			facetContainer     : '<% if (!obj.plain) { %><fieldset class="facetsearch" id="<%= id %>"></fieldset><% } else { %><div class="plainitem"></div><% } %>',
-			showMoreTemplate   : '<button type="button" id="showmorebutton">Show more</button>',
-      deselectTemplate   : '<button type="button" id="deselect" class="btn"><!-- svg aria-hidden="true" class="i-refresh"><use xlink:href="#i-refresh"></use></svg --> Clear filters</button>',
-      shareviewTemplate  : '<!-- <div class="permalink_wrapper" id="sharethisview"><a href="#" class="btn"><svg aria-hidden="true" class="i-share"><use xlink:href="#i-share"></use></svg> Share this view</a><div class="sharebox"><p><label>Link to this view:<input type="url" value="" readonly=""> Shortcut to copy the link: <kbd>ctrl</kbd>+<kbd>C</kbd> <em>or</em> <kbd>⌘</kbd><kbd>C</kbd></label></p><p><a href="">E-mail a link to this section</a><button>Close</button></p></div></div> -->',
-      selected           : selected,
-      state              : {
-                         orderBy : false,
-                         filters : {}
-                       },
-		};
-
-	// use them!
-	//
-	$.facetelize(settings);
 	// Emulate <details> where necessary and enable open/close event handlers
 	// alert($.fn.details.support);
 	$('html').addClass($.fn.details.support ? 'details' : 'no-details');
