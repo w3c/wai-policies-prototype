@@ -14,7 +14,7 @@ policies:
   - title:
       en: "Discrimination Act (2008:567)"
     url:
-      en: http://www.government.se/information-material/2015/09/discrimination-act-2008567/
+      en: http://www.government.se/information-material/2015/09/discrimination-act-2008567
     updated: 2008
     wcagver: None
     enactdate: 2008
