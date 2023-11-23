@@ -10,7 +10,8 @@ updatemsg:
 policies:
   - title:
       en: Decreto-Lei n.º 83/2018 de 19 de outubro - Define os requisitos de acessibilidade dos sítios web e das aplicações móveis de organismos públicos, transpondo a Diretiva (UE) 2016/2102
-    url: https://dre.pt/home/-/dre/116734769/details/maximized
+    url:
+      en: https://diariodarepublica.pt/dr/en/detail/decree-law/83-2018-116734769?_ts=1700554617645
     updated: 2018
     wcagver: None
     enactdate: 2018
