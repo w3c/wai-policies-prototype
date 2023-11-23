@@ -14,7 +14,7 @@ policies:
       en: Law 9 January 2004, n. 4 "Provisions to support the access of disabled people to IT tools" (Stanca Law)
       it: Legge 9 gennaio 2004, n. 4 "Disposizioni per favorire l'accesso dei soggetti disabili agli strumenti informatici" (Legge Stanca)
     url:
-      it: http://www.agid.gov.it/legge-9-gennaio-2004-n-4
+      it: https://www.gazzettaufficiale.it/eli/id/2004/01/17/004G0015/sg
     updated: 2017-05-30
     wcagver: WCAG 2.0
     enactdate: 2004
