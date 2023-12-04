@@ -390,9 +390,9 @@ states:
       en: "Policy #188 – Accessibility"
     url:
       en: https://ocio.wa.gov/policy/accessibility
-    updated: 2016
+    updated: 2016-12-16
     wcagver: WCAG 2.0
-    enactdate: 2016
+    enactdate: 2016-12-16
     type: Mandatory policy
     ministries:
       - title:

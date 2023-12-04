@@ -9,7 +9,6 @@ country:
 updated: 2023-03-14
 updatemsg: Added WAD addition to regulations on universal design of information and communication technology (ICT) solutions.
 # Related page:
-province:
 policies:
   - title:
       en: Regulations on universal design of ICT
@@ -30,15 +29,15 @@ policies:
           "no": "https://uu.difi.no"
     webonly: false
     scope: Public sector, Private sector
-    standard: none
+    standard: None
     documents: false
   - title:
       en: "WAD addition to regulations on universal design of information and communication technology (ICT) solutions"
       "no": "Forskrift om endring i forskrift om universell utforming av informasjons- og kommunikasjonsteknologiske (IKT)-løsninger"
     url:
       "no": https://lovdata.no/dokument/LTI/forskrift/2021-12-21-3939
-    updated: 2023-03-14
-    wcagver: WCAG 2.0, WCAG 2 derivative
+    updated: 2022
+    wcagver: WCAG 2 derivative
     wcagver_comment: "(WCAG 2.0)/NS/ISO/IEC 40500:2012, at levels A and AA with exceptions for success criteria 1.2.3, 1.2.4 and 1.2.5, or equivalent to this standard."
     enactdate: 2022
     type: Non-discrimination law
@@ -58,15 +57,15 @@ policies:
     scope: Government, Public sector, Private sector
     standard: 
       - title:
-          "no": EN 301 549
-        url:
-          "no": https://www.uutilsynet.no/webdirektivet-wad/eus-webdirektiv-wad-og-wcag-21/827
+          en: EN 301 549
         desc: "For WAD, the Norwegian government follows EN 301 549  for public sector body websites and mobile applications"
     documents:
-      - title: 
+      - title:
+          en: "About the Authority for Universal Design"
           "no": "Tilsynet for universell utforming"
         url: 
           en: https://www.uutilsynet.no/english/about-us/903
+          "no": https://www.uutilsynet.no/om-oss/om-oss/251
         desc: "The Norwegian Digitalisation Agency (digdir.no) is responsible for monitoring whether the regulations will be met. The Digitalisation Agency, represented by the Authority for Universal Design of ICT, supervise the regulations. Information and guidance work is one of the main tasks for the authority."
       - title:
           "no": "Tilgjengelegheitserklæring"
