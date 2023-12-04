@@ -6,8 +6,8 @@ country:
   en: Finland
   fi: Suomi
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-05-08
-updatemsg: Update Finland's policies.
+updated: 2023-06-06
+updatemsg: Add in Digital Services Act.
 relatedpages:
 policies:
   - title:
@@ -47,4 +47,25 @@ policies:
         url:
           fi: http://docs.jhs-suositukset.fi/jhs-suositukset/JHS190/JHS190.html
         desc: Guidance on public administration website design. Recommends WCAG 2.0 Level AA.
+  - title:
+      en: Digital Services Act
+      fi: Laki digitaalisten palvelujen tarjoamisesta (306/2019)
+      sv: Lag om tillhandahållande av digitala tjänster (306/2019)
+    url: 
+      fi: https://www.finlex.fi/fi/laki/alkup/2019/20190306
+      sv: https://www.finlex.fi/sv/laki/ajantasa/2019/20190306
+    updated: 2019
+    wcagver: WCAG 2.1
+    enactdate: 2019
+    type: Accessibility law 
+    ministries:
+      - title:
+          fi: "Aluehallintovirasto"
+        url:
+          fi: "https://www.saavutettavuusvaatimukset.fi/"
+      - title:
+          fi: "Minister of Local Government and Public Reforms (Ministry of Finance)"
+        url:
+          fi: "https://vm.fi/etusivu"
+    webonly: true
 ---
