@@ -45,7 +45,7 @@ collections:
     acknowledgements: false
     permalink: /:collection/:path/
     footer: |
-      <p><strong>Date:</strong> Listings are updated regularly. Near the top of each country listing is a 'last updated' date. This user interface was updated 21 March 2018.</p>      <p><strong>Editors:</strong> <a href="https://www.w3.org/People/kevin/">Kevin White</a>, Vera Lange, Eric Velleman. <strong>Previous Editors:</strong> Mary Jo Mueller, Robert Jolly, Eric Eggert, Judy Brewer, <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Previous contributors: Jennifer Sutton and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
+      <p><strong>Date: 4 December 2023</strong>. Listings are updated regularly. Near the top of each country listing is a 'last updated' date. This user interface was updated 21 March 2018.</p>      <p><strong>Editors:</strong> <a href="https://www.w3.org/People/kevin/">Kevin White</a>, Britt Classen, Michel Hansma, Vera Lange, Eric Velleman. <strong>Previous Editors:</strong> Mary Jo Mueller, Robert Jolly, Eric Eggert, Judy Brewer, <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Previous contributors: Jennifer Sutton and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
       <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Updated as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 
 defaults:
