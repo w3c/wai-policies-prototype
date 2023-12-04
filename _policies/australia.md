@@ -4,11 +4,8 @@ order: 6387059.1
 country:
   en: Australia
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2016-08-30
-updatemsg: Fixed broken links under the DDA, added new procurement policy announced by the Minister of Finance.
-#relatedpages:
-#  - title: Policies in Australian States
-#    url: http://www.w3.org/WAI/Policy/AU-States.html
+updated: 2023-06-06
+updatemsg: Added in additional documentation.
 policies:
   - title:
       en: Disability Discrimination Act 1992 (DDA)
@@ -32,20 +29,30 @@ policies:
     standard: false
     documents:
       - title:
-          en: About Disability Rights
+          en: "About Disability Rights"
+        desc: "Overview and guide for the Disability Discrimination Act"
         url:
-          en: http://www.humanrights.gov.au/our-work/disability-rights/about-disability-rights
-        desc: Overview and guide for the Disability Discrimination Act
+          en: "http://www.humanrights.gov.au/our-work/disability-rights/about-disability-rights"
       - title:
-          en: Web Accessibility National Transition Strategy
+          en: "World Wide Web Access: Disability Discrimination Act Advisory Notes ver 4.1 (2014)"
+        desc: "The Advisory Notes are intended to assist individuals and organisations involved in the ownership or development of web resources, by clarifying the requirements of the DDA in this area, and explaining how compliance with them can be best achieved. "
         url:
-          en: http://www.finance.gov.au/publications/wcag-2-implementation/
-        desc: The Australian Government’s adoption and implementation of Web content Accessibility Guidelines version 2.0 (WCAG 2.0) Level AA
+          en: "https://www.humanrights.gov.au/our-work/disability-rights/world-wide-web-access-disability-discrimination-act-advisory-notes-ver"
       - title:
-          en: Digital Service Standard accessibility requirement
+          en: "Web Accessibility National Transition Strategy"
+        desc: "Strategy for the Australian Government's adoption and implementation of Web Content Accessibility Guidelines version 2.0 (WCAG 2.0)"
         url:
-          en: http://www.dto.gov.au/standard/9-make-it-accessible/
-        desc: Guide to the standard used by Australian Government agencies for digital services.
+          en: "https://webarchive.nla.gov.au/awa/20140114211742/http://www.finance.gov.au/publications/wcag-2-implementation/index.html"
+      - title:
+          en: "Digital Service Standard - Criteria 9 Accessibility"
+        desc: "Guide to the standard used by Australian Government agencies for digital services."
+        url:
+          en: "http://www.dto.gov.au/standard/9-make-it-accessible/"
+      - title:
+          en: "Commonwealth Procurement Rules"
+        desc: "The CPRs are the basic rule set for all Commonwealth procurements and govern the way in which entities undertake their own processes. Clause 10.11 requires procurement to meet applicable Australian Standards, eg AU EN 301 549."
+        url:
+          en: "https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules"
   - title:
       en: Procurement Standard Guidance
     url:

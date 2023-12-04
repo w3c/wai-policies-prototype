@@ -6,15 +6,15 @@ country:
   en: Sweden
   sv: Sverige
   # Manual enter other country names:
-updated: 2017-06-10
-updatemsg:
+updated: 2023-03-15
+updatemsg: Added Act (2018:1937) on accessibility to digital public services.
 # Related page:
 province:
 policies:
   - title:
       en: "Discrimination Act (2008:567)"
     url:
-      en: http://www.government.se/information-material/2015/09/discrimination-act-2008567/
+      en: https://www.do.se/choose-language/english/discrimination-act-2008567
     updated: 2008
     wcagver: None
     enactdate: 2008
@@ -47,7 +47,8 @@ policies:
     webonly: false
     scope: Government, Public sector
     standard: 
-      - title: EN 301 549
+      - title:
+          sv: EN 301 549
         desc: "Official guidance on following EN 301 549 and WCAG provided by DIGG (Agency for Digital Government)"
         url:
           sv: https://webbriktlinjer.se/lagkrav/folj-standarder-tillganglighet/

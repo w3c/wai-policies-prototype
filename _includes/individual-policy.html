@@ -1,5 +1,7 @@
 {% assign p=include.policy %}
-{% assign theslug = p.title.en | slugify %}
+{% for title in p.title %}
+  {% assign theslug = title[1] | slugify %}
+{% endfor %}
 {% capture boxtitle %}
 <h{{include.headinglevel}} class="policy-heading">
   {% include multilang-policy-title.html title=p.title %}
@@ -19,7 +21,7 @@
     </li>
     <li>Type: {{p.type}}</li>
     <li>Scope: {{p.scope}}</li>
-    <li>Web only: {%if p.webonly == true %}yes{% else %}no{%endif%}</li>
+    <li>Web only: {%if p.webonly == true %}Yes{% else %}No{%endif%}</li>
     <li>WCAG Version Used: {{p.wcagver}}</li>
     {% if p.standard %}
     {% unless p.standard == "None" or p.standard == "none" or p.standard == false %}

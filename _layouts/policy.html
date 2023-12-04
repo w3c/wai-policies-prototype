@@ -64,11 +64,19 @@
 
         {%- comment -%}Output states without policies{%- endcomment -%}
         {% if stateswithoutpolicies %}
-        <h3>{{page.statesdesc.en}} without data:</h2>
+        <h3>{{page.statesdesc.en}} without data</h2>
+            <p>We welcome any additions to the {{page.statesdesc.en}} policy information.</p>
         {% for state in page.states %}{% if forloop.first %}<ul class="statenav">{% endif %}{% unless state.policies %}<li><span>{{ state.title.en }}</span></li>{% endunless %}{% if forloop.last %}</ul>{% endif %}{% endfor %}
         {% endif %}
       {% endif %}
     </div>
+    
+    {% if page.disclaimer %}
+    <div>
+      {{ page.disclaimer }}
+    </div>
+    {% endif %}
+    
     {%- comment -%}{% include prevnext.html %}{%- endcomment -%}
 
     {% include_cached backtotop.html %}

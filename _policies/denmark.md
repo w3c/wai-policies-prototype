@@ -6,8 +6,8 @@ country:
   en: Denmark
   da: Danmark
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-05-08
-updatemsg: Added Denmark's latest policies.
+updated: 2023-03-15
+updatemsg: Added Web Accessibility Act.
 relatedpages:
 policies:
   - title:

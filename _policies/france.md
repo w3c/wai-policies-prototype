@@ -88,12 +88,14 @@ policies:
     webonly: yes # other values: no
     scope: Public sector, Government # keys that allows us to use any combination
     standard: 
-      - title: RGAA
+      - title:
+          fr: RGAA
         desc: The Référentiel général d'amélioration de l'accessibilité (RGAA) was made using EN 301 549 and WCAG2.1 (both referenced).
         url: 
           fr: https://www.numerique.gouv.fr/publications/rgaa-accessibilite/
     documents:
-      - title: DesignGouv legal overview
+      - title:
+          fr: DesignGouv legal overview
         desc: Overview of legal obligations and sanctions regarding web accessibility in France.
         url:
           fr: https://design.numerique.gouv.fr/accessibilite-numerique/cadre-legal/
