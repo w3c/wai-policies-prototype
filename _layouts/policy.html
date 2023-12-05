@@ -27,14 +27,22 @@
 {% include box.html type="start" title="Page Contents" %}
 <ul>
     {% for p in page.policies %}
-      <li><a href="#{{ p.title.en | slugify }}">{% include multilang-policy-title.html title=p.title %}</a></li>
+      {% for title in p.title %}
+        {% assign theslug = title[1] | slugify %}
+        {% break %}
+      {% endfor %}
+      <li><a href="#{{ theslug }}">{% include multilang-policy-title.html title=p.title %}</a></li>
     {% endfor %}
     {% if page.states %}
     <li><a href="#states">{{page.statesdesc.en}}</a>
         <ul>
         {% for state in page.states %}
           {% if state.policies %}
-            <li><a href="#{{ state.title.en | slugify }}">{% include multilang-title.html title=state.title %}</a></li>
+            {% for title in state.title %}
+              {% assign theslug = title[1] | slugify %}
+              {% break %}
+            {% endfor %}
+            <li><a href="#{{ theslug }}">{% include multilang-title.html title=state.title %}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
