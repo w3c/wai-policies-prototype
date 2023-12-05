@@ -12,8 +12,7 @@ This form allows you to provide information about new or updated web accessibili
 
 **Note:** Information sent using this form is publicly available in GitHub and/or e-mail archive. We will review it before publishing in the Laws and Policies page. <!-- It can take *up to 10 business days* until the information is published. -->
 
-Updates are delayed. We hope to have resources to make updates in early 2022. Contact <wai-eo-editors@w3.org> (a publicly archived list) if you have questions or comments.
-
+If you have questions or comments, you can e-mail them to <wai@w3.org>
 
 <div id="hForm">
 <form name="submission" id="submission" method="post" action="{% if jekyll.environment != "server" %}https://www.w3.org/2017/04/policies_submission/{% endif %}submission.php">

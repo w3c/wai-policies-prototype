@@ -57,6 +57,31 @@ policies:
           en: Guidance on implementing the standard on web accessibility
         url:
           en: http://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/ws-nw/wa-aw-guid-eng.asp
+policies:
+  - title:
+      en: The Accessible Canada Act (The Act to Ensure a Barrier Free Canada)
+    url: https://laws-lois.justice.gc.ca/eng/acts/A-0.6/page-1.html
+    updated: 2019
+    wcagver: WCAG 2.0 AA
+    enactdate: 2019
+    type: law, Non-discrimination law, Procurement law, 
+    ministries:
+      - title:
+          en: "Employment and Social Development Canada"
+        url:
+          en: "https://www.canada.ca/en/employment-social-development.html"
+      - title:
+          en: "Accessible Standards Canada"
+        url:
+          en: "https://www.canada.ca/en/accessibility-standards-canada.html"
+    webonly: true
+    scope: Government and all federally regulated agencies
+    standard:
+      - title:
+          en: "Directive on Service and Digital"
+        desc: ""
+        url:
+          en: "https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32601"
 statesdesc:
   en: "Provinces and Territories"
 states:
@@ -68,9 +93,9 @@ states:
       url:
         en: http://www.accessibilitymb.ca/law.html
       updated: 2018
-      wcagver: none
+      wcagver: None
       enactdate: 2017
-      type: law, Recommended policy
+      type: Recommended policy
       ministries:
         - title:
             en: "Accessibility Directorate"
@@ -93,9 +118,9 @@ states:
       url:
         en: https://nslegislature.ca/legc/bills/62nd_3rd/3rd_read/b059.htm
       updated: 2014
-      wcagver: none
+      wcagver: None
       enactdate: 2003
-      type: law, Recommended policy
+      type: Recommended policy
       ministries:
         - title:
             en: "Accessibility Directorate"
@@ -112,14 +137,14 @@ states:
       updated: 2005
       wcagver: WCAG 2.0, 
       enactdate: 2005
-      type: law, 
+      type: Accessibility law 
       ministries:
         - title:
             en: "Accessibility Directorate of Ontario"
           url:
             en: "https://www.ontario.ca/page/accessibility-laws"
       webonly: true
-      scope: 
+      scope: Most organizations in province
       standard:
         - title:
             en: "O. Reg. 191/11: INTEGRATED ACCESSIBILITY STANDARDS"

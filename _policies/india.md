@@ -11,7 +11,7 @@ policies:
   - title:
       en: Rights of Persons with Disabilities Act, 2016 (RPD)
     url:
-      en: http://www.disabilityaffairs.gov.in/upload/uploadfiles/files/RPWD%20ACT%202016.pdf
+      en: https://www.indiacode.nic.in/bitstream/123456789/15939/1/the_rights_of_persons_with_disabilities_act%2C_2016.pdf
     updated: 2017-03-24
     wcagver: None
     enactdate: 2016
@@ -28,7 +28,7 @@ policies:
   - title:
       en: Guidelines for Indian Government Websites
     url:
-      en: http://web.guidelines.gov.in
+      en: https://guidelines.india.gov.in
     updated: 2017-03-25
     wcagver: WCAG 2.0
     enactdate: 2009

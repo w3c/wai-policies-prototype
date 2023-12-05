@@ -10,7 +10,7 @@ policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended
     url:
-      en: https://www.section508.gov/section-508-of-the-rehabilitation-act
+      en: https://www.access-board.gov/ict/
     updated: 2018-03-20
     wcagver: WCAG 2.0
     enactdate: 1998
@@ -51,17 +51,12 @@ policies:
           en: "Section 508 Standards for Electronic and Information Technology"
         desc: "Original section 508 standards, published in the U.S. Federal Register 21 Dec. 2000. Web requirements are a derivative of WCAG 1.0. Standards add other requirements for software, hardware, communications, multimedia and documentation. Government agencies encouraged to use the Revised 508 Standards published January 2017 in procurement of accessible technology, though the Federal Acquisition Regulatory (FAR) Council has not yet updated the procurement language to incorporate the Revised 508 Standards."
         url:
-          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards
+          en: https://www.access-board.gov/ict/#about-the-ict-accessibility-standards
       - title:
           en: GSA Quick Reference Guide to Section 508 Requirements and Standards
         url:
-          en: https://section508.gov/content/quick-reference-guide
+          en: https://www.section508.gov/manage/laws-and-policies/quick-reference-guide/
         desc: "This quick reference provides further information on the original Section 508 Standards, published 21 Dec. 2000."
-      - title:
-          en: Guide to the Section 508 Standards
-        url:
-          en:  https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/guide-to-the-section-508-standards
-        desc: "This provides guidance for the original Section 508 standards published 21 December, 2000."
   - title:
       en: Americans with Disabilities Act of 1990 (ADA), as amended
     url:
@@ -107,7 +102,7 @@ policies:
   - title:
       en: Section 255 of the Telecommunications Act of 1996
     url:
-      en: https://www.access-board.gov/the-board/laws/telecommunications-act
+      en: https://www.access-board.gov/law/ta.html
     updated: 2017-02-16
     wcagver: None
     enactdate: 1996
@@ -128,7 +123,7 @@ policies:
           en: "Telecommunications Act Section 255 Guidelines"
         desc: "FCC requirements for accessible telecommunications products."
         url:
-          en: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/section-255-guidelines
+          en: https://www.federalregister.gov/documents/2000/12/21/00-32017/electronic-and-information-technology-accessibility-standards
     documents:
       - title:
           en: Telecommunications Access for People with Disabilities
@@ -137,7 +132,7 @@ policies:
       - title:
           en: Guidance on the Telecommunications Act Section 255 Guidelines
         url:
-          en: https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-telecommunications-act-guidelines/guidance-on-the-telecommunications-act-%C2%A7255-guidelines
+          en: https://www.access-board.gov/ict/guide/2555_guide.md.html
       - title:
           en: Information and Communication Technology (ICT) Standards and Guidelines
         url:
@@ -213,6 +208,53 @@ states:
     en: "Alabama"
 - title:
     en: "Alaska"
+  policies:
+    - title:
+        en: State of Alaska Web Accessibility Statement
+      url: http://doa.alaska.gov/ada/resources/web.html
+      updated: 2018
+      wcagver: WCAG 2.1, Level AA
+      enactdate: 2018
+      type: Mandatory policy, 
+      ministries:
+        - title:
+            en: "State of Alaska Department of Administration"
+          url:
+            en: "http://doa.alaska.gov/ada/"
+      webonly: true
+      scope: 
+      standard:
+        - title:
+            en: "WCAG 2.1"
+          desc: "Content Accessibility Guidelines"
+          url:
+            en: "http://www.w3.org/TR/WCAG21/"
+        - title:
+            en: "GSA Section 508 website"
+          desc: "General Services Administration guidance on Section 508 "
+          url:
+            en: "https://www.section508.gov/"
+      documents:
+        - title:
+            en: "State of Alaska Policy Statement"
+          desc: "The State of Alaska's policy on serving Alaskans with disabilities"
+          url:
+            en: "http://doa.alaska.gov/ada/policy.html"
+        - title:
+            en: "Administrative Order No. 129"
+          desc: "Reinforcement of the Americans with Disabilities Act of 1990 to protect Alaskans with disabilities"
+          url:
+            en: "https://gov.alaska.gov/admin-orders/administrative-order-no-129/"
+        - title:
+            en: "Administrative Order No. 262"
+          desc: "Ammending Administrative Order No. 129 to assign an ADA Coordinator to the State of Alaska"
+          url:
+            en: "https://gov.alaska.gov/admin-orders/administrative-order-no-262/"
+        - title:
+            en: "Alaska State Libraries, Archives, &amp; Museums Accessibility Notice webpage"
+          desc: "The Alaska State Libraries, Archives, &amp; Museums accessibility statement for it's electronic services."
+          url:
+            en: "https://lam.alaska.gov/accessibility/#s-lg-box-12337349"
 - title:
     en: "American Samoa"
 - title:
@@ -348,9 +390,9 @@ states:
       en: "Policy #188 – Accessibility"
     url:
       en: https://ocio.wa.gov/policy/accessibility
-    updated: 2016
+    updated: 2016-12-16
     wcagver: WCAG 2.0
-    enactdate: 2016
+    enactdate: 2016-12-16
     type: Mandatory policy
     ministries:
       - title:
