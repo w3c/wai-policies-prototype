@@ -6,16 +6,18 @@ layout: sidenav
 ---
 
 {::nomarkdown}
-{% include box.html type="start" title="Updates in progress" icon="default" %}
+{% include box.html type="start" title="Updates" icon="default" %}
 {:/}
 
-We are updating this information in November and December 2023. Near the top of each country listing is a "last updated" date.
+Many listings were updated in December 2023. Near the top of each country listing is a "last updated" date.
+
+We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
-This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing. We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
+This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing.<!-- We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}). -->
 
 The information on this page is _not_ legal advice. Please consult legal authorities for the appropriate jurisdiction. W3C cannot guarantee the accessibility of these external resources.
 
