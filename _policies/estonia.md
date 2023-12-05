@@ -9,8 +9,8 @@ updated: 2023-05-23
 updatemsg:
 policies:
   - title:
-      en: "Veebilehe ja mobiilirakenduse ligipääsetavuse nõuded ning ligipääsetavust kirjeldava teabe avaldamise kord"
-      et: "Requirements for the accessibility of websites and mobile applications, and the rules for publishing information describing accessibility"
+      en: "Requirements for the accessibility of websites and mobile applications, and the rules for publishing information describing accessibility"
+      et: "Veebilehe ja mobiilirakenduse ligipääsetavuse nõuded ning ligipääsetavust kirjeldava teabe avaldamise kord"
     url:
       en: https://www.riigiteataja.ee/en/eli/512042019003/consolide
       et: https://www.riigiteataja.ee/akt/105032019027
