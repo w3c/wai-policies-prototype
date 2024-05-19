@@ -12,7 +12,7 @@ policies:
       en: "Emergency ordinance no. 112/2018 regarding the accessibility of websites and mobile applications of public sector bodies"
       ro: "Ordonanţa de urgenţă nr. 112/2018 privind accesibilitatea site-urilor web şi a aplicaţiilor mobile ale organismelor din sectorul public"
     url:
-      ro: https://lege5.ro/Gratuit/gmytimrugeyq/ordonanta-de-urgenta-nr-112-2018-privind-accesibilitatea-site-urilor-web-si-a-aplicatiilor-mobile-ale-organismelor-din-sectorul-public
+      ro: https://legislatie.just.ro/Public/DetaliiDocument/209421
     updated: 
     wcagver: WCAG 2.0 derivate
     enactdate: 2018
