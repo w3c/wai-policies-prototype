@@ -50,12 +50,12 @@ policies:
           fr: https://accessibilite.public.lu/fr/rapdf1/
     documents:
       - title:
-          fr: Norme Européenne EN 301 549 (PDF - Anglais)
           en: European Standards EN 301 549 (PDF)
+          fr: Norme Européenne EN 301 549 (PDF - Anglais)
         desc: The European standards for accessibility covering different usages.
         url:
-          fr: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
           en: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
+          fr: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
   - title:
       fr: Loi du 28 mai 2019 relative à l’accessibilité des sites internet et des applications mobiles des organismes du secteur public.
     url:
