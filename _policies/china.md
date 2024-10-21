@@ -6,7 +6,7 @@ country:
   en: "China"
   zh: 中国
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-02-09
+last_updated: 2017-02-09
 updatemsg: Added China accessibility law and web standard used for government websites.
 relatedpages:
 policies:

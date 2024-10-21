@@ -5,7 +5,7 @@ title: "Croatia"
 country:
   en: "Croatia"
   hr: "Hrvatska"
-updated: 2023-03-28
+last_updated: 2023-03-28
 updatemsg:
 policies:
   - title:

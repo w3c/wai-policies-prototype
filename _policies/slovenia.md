@@ -6,7 +6,7 @@ country:
   en: Slovenia
   sl: Slovenija
 title_native: Slovenija
-updated: 2021-05-27
+last_updated: 2021-05-27
 updatemsg: Added the latest information for Republic of Slovenia.
 relatedpages:
 policies:
