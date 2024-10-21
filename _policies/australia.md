@@ -4,7 +4,7 @@ order: 6387059.1
 country:
   en: Australia
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2023-06-06
+last_updated: 2023-06-06
 updatemsg: Added in additional documentation.
 policies:
   - title:

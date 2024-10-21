@@ -5,7 +5,7 @@ title: "Hungary"
 country:
   en: "Hungary"
   hu: "Magyarország"
-updated: 2023-03-28
+last_updated: 2023-03-28
 updatemsg:
 policies:
   - title:

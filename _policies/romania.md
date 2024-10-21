@@ -5,7 +5,7 @@ title: "Romania"
 country:
   en: "Romania"
   ro: "România"
-updated: 2023-06-01
+last_updated: 2023-06-01
 updatemsg:
 policies:
   - title:

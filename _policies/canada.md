@@ -4,7 +4,7 @@ order: 6513006
 title: Canada
 country:
   en: Canada
-updated: 2017-02-09
+last_updated: 2017-02-09
 updatemsg: Updated to reflect the latest information.
 #relatedpages:
 #  - title: Provincial Policies Relating to Web Accessibility

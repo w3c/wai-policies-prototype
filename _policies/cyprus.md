@@ -6,7 +6,7 @@ country:
   en: "Cyprus"
   el: "Κυπριακή Δημοκρατία"
   tr: "Kıbrıs Cumhuriyeti"
-updated: 2023-04-06
+last_updated: 2023-04-06
 updatemsg:
 policies:
   - title:

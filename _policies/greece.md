@@ -5,7 +5,7 @@ title: "Greece"
 country:
   en: "Greece"
   el: "Ελλάδα"
-updated: 2023-04-06
+last_updated: 2023-04-06
 updatemsg:
 policies:
   - title:

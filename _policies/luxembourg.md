@@ -7,7 +7,7 @@ country:
   fr: Luxembourg
   de: Luxemburg
   lb: Lëtzebuerg
-updated: 2021-06-29
+last_updated: 2021-06-29
 updatemsg: Added Luxembourgish law and policies.
 relatedpages:
 policies:

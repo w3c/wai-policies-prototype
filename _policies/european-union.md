@@ -4,7 +4,7 @@ order: 6649202
 title: European Union
 country:
   en: European Union
-updated: 2023-06-06
+last_updated: 2023-06-06
 updatemsg: Added the latest European Union information.
 relatedpages:
 policies:

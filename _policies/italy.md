@@ -6,7 +6,7 @@ country:
   en: Italy
   it: Italia
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-05-30
+last_updated: 2017-05-30
 updatemsg: Updated Italian Web accessibility laws and policies.
 relatedpages:
 policies:

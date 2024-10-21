@@ -7,7 +7,7 @@ country:
   en: "Hong Kong Special Administrative Region of the People's Republic of China"
 #  zh: 香港
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-05-04
+last_updated: 2017-05-04
 updatemsg: Add latest Hong Kong accessibility laws and policies.
 relatedpages:
 policies:

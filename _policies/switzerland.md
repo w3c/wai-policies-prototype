@@ -8,7 +8,7 @@ country:
   de: Schweiz
   it: Svizzera
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2017-05-14
+last_updated: 2017-05-14
 updatemsg: Add latest information on Switzerland's web policies.
 relatedpages:
 policies:

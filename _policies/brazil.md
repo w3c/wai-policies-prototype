@@ -4,7 +4,7 @@ order: 6451809
 title: Brazil
 country:
   en: Brazil
-updated: 2020-12-13
+last_updated: 2020-12-13
 updatemsg:
 policies:
   - title:

@@ -4,7 +4,7 @@ order: 6386279
 title: Argentina
 country:
   en: Argentina
-updated: 2023-02-09
+last_updated: 2023-02-09
 updatemsg:
 policies:
   - title:

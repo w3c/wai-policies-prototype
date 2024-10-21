@@ -5,7 +5,7 @@ title: Russia
 country:
   en: Russia
   de: Росси́я
-updated: 2019-11-22
+last_updated: 2019-11-22
 updatemsg:
 relatedpages:
 policies:

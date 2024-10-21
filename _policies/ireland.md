@@ -5,7 +5,7 @@ title: Ireland
 country:
   en: Ireland
   ga: Éireann
-updated: 2023-03-14
+last_updated: 2023-03-14
 updatemsg: Added S.I. No. 358/2020 European Union (Accessibility of Websites and Mobile Applications of Public Sector Bodies) Regulations 2020
 relatedpages:
 policies:

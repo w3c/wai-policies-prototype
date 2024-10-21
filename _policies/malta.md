@@ -5,7 +5,7 @@ title: "Malta"
 country:
   en: "Malta"
   mt: "Repubblika ta' Malta"
-updated: 2023-06-01
+last_updated: 2023-06-01
 updatemsg:
 policies:
   - title:

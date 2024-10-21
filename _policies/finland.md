@@ -6,7 +6,7 @@ country:
   en: Finland
   fi: Suomi
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2023-06-06
+last_updated: 2023-06-06
 updatemsg: Add in Digital Services Act.
 relatedpages:
 policies:

@@ -8,7 +8,7 @@ country:
   fr: Belgique
   de: Belgien
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2021-05-21
+last_updated: 2021-05-21
 updatemsg: Added Belgium Federal accessibility laws and policies.
 relatedpages:
 policies:

@@ -4,7 +4,7 @@ order: 7368562
 country:
   en: Portugal
   # Manual enter other country names: 
-updated: 2022-04-20
+last_updated: 2022-04-20
 updatemsg:
 # Related page:
 policies:

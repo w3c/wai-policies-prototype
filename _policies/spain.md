@@ -5,7 +5,7 @@ title: Spain
 country:
   en: Spain
   es: España
-updated: 2020-05-17
+last_updated: 2020-05-17
 updatemsg: Corrected en (Royal Decree 1112/2018) & en (Relations with the Cortes and Equality)
 relatedpages:
 policies:

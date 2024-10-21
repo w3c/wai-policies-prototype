@@ -26,7 +26,7 @@
 
     <div class="post-content">
       {% if page.states %}<p>See below for information about <a href="#states">{{page.statesdesc.en}}</a>.</p>{% endif %}
-      <p>Last Updated: {{page.updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
+      <p>Last Updated: {{page.last_updated | date: "%-d %B %Y" }}{%if page.updatemsg%} – {{page.updatemsg}}{%endif%}</p>
       {% if page.relatedpages %}{% for r in page.relatedpages %}<p>Related page: <a href="{{r.url}}">{{r.title}}</a></p>{% endfor %}{% endif %}
       {% for p in page.policies %}
         {% include individual-policy.html policy=p headinglevel=2%}

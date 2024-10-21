@@ -4,7 +4,7 @@ order: 6384737
 country:
   en: Åland
   # Manual enter other country names: 
-updated: 2022-06-13
+last_updated: 2022-06-13
 updatemsg:
 # Related page:
 policies:
