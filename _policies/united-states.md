@@ -4,7 +4,7 @@ order: 7695977.2
 title: United States
 country:
   en: United States
-updated: 2017-02-16
+last_updated: 2017-02-16
 updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
 policies:
   - title:

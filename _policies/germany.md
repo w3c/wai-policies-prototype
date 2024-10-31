@@ -5,7 +5,7 @@ title: Germany
 country:
   en: Germany
   de: Deutschland
-updated: 2017-03-17
+last_updated: 2017-03-17
 updatemsg: Updated to latest information on German policy and fixed broken links
 relatedpages:
 policies:

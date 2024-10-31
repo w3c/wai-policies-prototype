@@ -4,7 +4,7 @@ order: 6516588
 country:
   en: Colombia
   # Manual enter other country names: 
-updated: 2021-08-23
+last_updated: 2021-08-23
 updatemsg:
 # Related page:
 province: 

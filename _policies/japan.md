@@ -6,7 +6,7 @@ country:
   en: Japan
   ja: 日本
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2019-09-27
+last_updated: 2019-09-27
 updatemsg: Add latest Japan accessibility laws and policies.
 relatedpages:
 policies:
