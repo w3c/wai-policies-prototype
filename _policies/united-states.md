@@ -100,27 +100,6 @@ policies:
           en: https://www.dol.gov/general/topic/disability/laws
         desc: Overview of the Americans with Disabilities Act of 1990
   - title:
-      en: Nondiscrimination on the Basis of Disability; Accessibility of Web Information and Services of State and Local Government Entities
-    url:
-      en: https://www.federalregister.gov/documents/2024/04/24/2024-07758/nondiscrimination-on-the-basis-of-disability-accessibility-of-web-information-and-services-of-state
-    updated: 2025-01-10
-    wcagver: WCAG 2.1
-    enactdate: 2024
-    type: Accessibility law # other values: law/policy/procurement
-    ministries:
-      - title:
-          en: Justice Department
-        url:
-          en: http://www.justice.gov/
-    webonly: no # other values: yes
-    scope: Public sector
-    standard:
-      - title:
-          en: "WCAG 2.1"
-        desc: "Conformance level AA"
-        url:
-          en: "https://www.w3.org/TR/2018/REC-WCAG21-20180605/"
-  - title:
       en: Section 255 of the Telecommunications Act of 1996
     url:
       en: https://www.access-board.gov/law/ta.html
