@@ -4,8 +4,8 @@ order: 7695977.2
 title: United States
 country:
   en: United States
-last_updated: 2017-02-16
-updatemsg: Updated U.S. laws and policies. Added reference to the Revised 508 Standards.
+last_updated: 2025-01-13
+updatemsg: Added reference to Rule revising ADA Title II.
 policies:
   - title:
       en: Section 508 of the US Rehabilitation Act of 1973, as amended

@@ -9,7 +9,7 @@ layout: sidenav
 {% include box.html type="start" title="Updates" icon="default" %}
 {:/}
 
-Many listings were updated in December 2023. Near the top of each country listing is a "last updated" date.
+Near the top of each country listing is a "last updated" date.
 
 We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}).
 
