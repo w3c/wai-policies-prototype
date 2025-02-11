@@ -7,7 +7,7 @@ country:
   fr: Luxembourg
   de: Luxemburg
   lb: Lëtzebuerg
-updated: 2024-08-13
+last_updated: 2024-08-13
 updatemsg: Updated Luxembourgish law and policies - "Loi du 28 mai 2019" complemented by the "Loi du 8 mars 2023". RGAA v4 replaced by RAWeb 1.
 relatedpages: https://accessibilite.public.lu/fr/raweb1/
 policies:

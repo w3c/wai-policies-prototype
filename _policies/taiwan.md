@@ -5,7 +5,7 @@ title: Taiwan
 country:
   en: Taiwan
   zh: "中華民國"
-updated: 2023-07-07
+last_updated: 2023-07-07
 updatemsg:
 province:
 policies:

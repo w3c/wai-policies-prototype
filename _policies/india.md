@@ -4,7 +4,7 @@ order: 6909540
 title: India
 country:
   en: India
-updated: 2017-3-24
+last_updated: 2017-3-24
 updatemsg: Updated information to include the new Rights of Persons with Disabilities Act passed in December 2016.
 relatedpages:
 policies:

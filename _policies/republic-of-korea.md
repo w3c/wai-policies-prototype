@@ -6,7 +6,7 @@ country:
   en: Republic of Korea
   ko: 대한민국
   # Manual enter other country names:
-updated: 2017-06-30
+last_updated: 2017-06-30
 updatemsg:
 # Related page:
 province:
