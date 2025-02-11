@@ -5,7 +5,7 @@ title: "Czech Republic"
 country:
   en: "Czech Republic"
   cs: "Česká republika"
-updated: 2023-06-01
+last_updated: 2023-06-01
 updatemsg:
 policies:
   - title:

@@ -5,7 +5,7 @@ title: "Poland"
 country:
   en: "Poland"
   pl: "Rzeczpospolita Polska"
-updated: 2023-06-01
+last_updated: 2023-06-01
 updatemsg:
 policies:
   - title:

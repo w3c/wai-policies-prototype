@@ -5,7 +5,7 @@ title: "Lithuania"
 country:
   en: "Lithuania"
   lt: "Lietuva"
-updated: 2023-06-01
+last_updated: 2023-06-01
 updatemsg:
 policies:
   - title:

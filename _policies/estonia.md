@@ -5,7 +5,7 @@ title: "Estonia"
 country:
   en: "Estonia"
   et: "Eesti Vabariik"
-updated: 2023-05-23
+last_updated: 2023-05-23
 updatemsg:
 policies:
   - title:

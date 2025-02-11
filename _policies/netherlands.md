@@ -6,7 +6,7 @@ country:
   en: Netherlands
   nl: Nederland
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-updated: 2023-03-14
+last_updated: 2023-03-14
 updatemsg: Added Article 429q of the Penal Code and Equal Treatment Act Based on Disability or Chronic Illness.
 relatedpages:
 policies:
