@@ -72,35 +72,35 @@ policies:
         desc: The guidelines for accessibility for public sector body websites and mobile applications based on EN 301 549
   - title:
       en: "DECRETO-LEGGE 16 luglio 2020, n. 76"
-      url:
-        en: https://www.gazzettaufficiale.it/eli/id/2020/07/16/20G00096/sg
-      updated: 2020
-      wcagver: WCAG 2.1
-      enactdate: 2020
-      type: law, Mandatory policy
-      ministries:
-        - title:
-            it: "Presidenza del Consiglio dei Ministri"
-          url:
-            it: "https://www.governo.it/it"
-        - title:
-            it: "Ministero dell&#039;Economia e delle Finanze"
-          url:
-            it: "https://www.mef.gov.it/"
-        - title:
-            it: "Ministero per la Pubblica Amministrazione"
-          url:
-            it: "https://www.funzionepubblica.gov.it/"
-        - title:
-            it: "Agenzia per l&#039;Italia Digitale (AgID)"
-          url:
-            it: "https://www.agid.gov.it/it"
-      webonly: false
-      scope: Government, Public sector, Private sector
-      documents:
-        - title:
-            it: "Legge 9 gennaio 2004, n. 4 &quot;Disposizioni per favorire l&#039;accesso dei soggetti disabili agli strumenti informatici&quot; (Legge Stanca)"
-          desc: "The DECREE-LAW of July 16, 2020, No. 76 introduced a significant modification to the Stanca Law (Law of January 9, 2004, No. 4) by extending its application to private entities. This extension includes private entities that offer services to the public through websites or mobile applications and have an average turnover of more than 500 million euros over the last three years of activity.  This modification broadens the scope of the accessibility law to not only public administrations and public bodies but also large private companies that provide services to the public through digital platforms."
-          url:
-            it: "https://www.gazzettaufficiale.it/eli/id/2004/01/17/004G0015/sg"
+    url:
+      it: https://www.gazzettaufficiale.it/eli/id/2020/07/16/20G00096/sg
+    updated: 2020
+    wcagver: WCAG 2.1
+    enactdate: 2020
+    type: law, Mandatory policy
+    ministries:
+      - title:
+          it: "Presidenza del Consiglio dei Ministri"
+        url:
+          it: "https://www.governo.it/it"
+      - title:
+          it: "Ministero dell&#039;Economia e delle Finanze"
+        url:
+          it: "https://www.mef.gov.it/"
+      - title:
+          it: "Ministero per la Pubblica Amministrazione"
+        url:
+          it: "https://www.funzionepubblica.gov.it/"
+      - title:
+          it: "Agenzia per l&#039;Italia Digitale (AgID)"
+        url:
+          it: "https://www.agid.gov.it/it"
+    webonly: false
+    scope: Government, Public sector, Private sector
+    documents:
+      - title:
+          it: "Legge 9 gennaio 2004, n. 4 &quot;Disposizioni per favorire l&#039;accesso dei soggetti disabili agli strumenti informatici&quot; (Legge Stanca)"
+        desc: "The DECREE-LAW of July 16, 2020, No. 76 introduced a significant modification to the Stanca Law (Law of January 9, 2004, No. 4) by extending its application to private entities. This extension includes private entities that offer services to the public through websites or mobile applications and have an average turnover of more than 500 million euros over the last three years of activity.  This modification broadens the scope of the accessibility law to not only public administrations and public bodies but also large private companies that provide services to the public through digital platforms."
+        url:
+          it: "https://www.gazzettaufficiale.it/eli/id/2004/01/17/004G0015/sg"
 ---
