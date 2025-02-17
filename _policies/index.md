@@ -3,6 +3,7 @@ title: "Web Accessibility Laws & Policies"
 nav_title: "Countries / Regions"
 permalink: /policies/
 layout: sidenav
+last_updated: 2025-01-13
 ---
 
 {::nomarkdown}
