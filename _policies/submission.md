@@ -124,6 +124,7 @@ If you have questions or comments, you can e-mail them to <wai@w3.org>
   <fieldset id="fs-guideline">
     <legend>Select the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> version referenced or required by this policy</legend>
     <div class="form-block-mini radio">
+      <div class="form-row"><span><input data-id="guideline_wcag22" id="guideline_wcag22" name="guideline[]" value="WCAG 2.2" type="checkbox"> </span> <label for="guideline_wcag22">WCAG 2.2 — W3C Web Content Accessibility Guidelines 2.2</label></div>
       <div class="form-row"><span><input data-id="guideline_wcag21" id="guideline_wcag21" name="guideline[]" value="WCAG 2.1" type="checkbox"> </span> <label for="guideline_wcag21">WCAG 2.1 — W3C Web Content Accessibility Guidelines 2.1</label></div>
       <div class="form-row"><span><input data-id="guideline_wcag20" id="guideline_wcag20" name="guideline[]" value="WCAG 2.0" type="checkbox"> </span> <label for="guideline_wcag20">WCAG 2.0 — W3C Web Content Accessibility Guidelines 2.0</label></div>
       <div class="form-row"><span><input data-id="guideline_wcag20derivative" id="guideline_wcag20derivative" name="guideline[]" value="WCAG 2.0 derivate" type="checkbox"> </span> <label for="guideline_wcag20derivative">WCAG 2 derivative — Based on W3C Web Content Accessibility Guidelines 2, with additional or modified requirements</label></div>
