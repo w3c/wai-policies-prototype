@@ -1,6 +1,4 @@
 {
-  "group":     35532
-, "contacts":  [ "nitedog", "yatil", "slhenry" ]
-, "policy":    "open"
-, "repo-type": "article"
+  "contacts":   ["shawna-slh", "remibetin"]
+,   "repo-type": "others"
 }
