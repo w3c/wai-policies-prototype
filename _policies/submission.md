@@ -15,7 +15,7 @@ This form allows you to provide information about new or updated web accessibili
 If you have questions or comments, you can e-mail them to <wai@w3.org>
 
 <div id="hForm">
-<form name="submission" id="submission" method="post" action="{% if jekyll.environment != "server" %}https://www.w3.org/2017/04/policies_submission/{% endif %}submission.php">
+<form name="submission" id="submission" method="post" action="https://www.w3.org/2017/04/policies_submission/submission.php">
 	<p>* Indicates required field</p>
 <fieldset>
   <legend><h3>Information about you</h3></legend>
