@@ -30,7 +30,7 @@ kramwdown:
 highlighter: rouge
 repository: w3c/wai-policies-prototype
 
-remote_theme: w3c/wai-website-theme
+remote_theme: w3c/wai-website-theme@policies-toc
 
 collections:
   policies:
