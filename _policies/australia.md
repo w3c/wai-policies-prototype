@@ -101,16 +101,6 @@ policies:
         desc: "Assisting government to design and deliver quality digital services using the Digital Experience Toolkit."
         url:
           en: "https://www.digital.gov.au/policy/digital-experience/toolkit"
-      - title:
-          en: "Australia’s Digital Service Standard gets an upgrade (Blog post)"
-        desc: "Overview of the DSS v2.0"
-        url:
-          en: "https://intopia.digital/articles/australias-digital-service-standard-gets-an-upgrade/"
-      - title:
-          en: "Australia releases Digital Experience Policy (Blog post)"
-        desc: "Overview of the DIS"
-        url:
-          en: "https://intopia.digital/articles/australia-releases-digital-experience-policy/"
   - title:
       en: "Accessibility and Inclusion Principles for Banking Services"
     url:
