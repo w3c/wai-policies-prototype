@@ -66,7 +66,7 @@ policies:
           en: "https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/additional-rules"
       - title:
           en: "Digital Sourcing Consider First Policy"
-        desc: "This policy aims to guide agencies through early consideration of important factors that help investments meet their intended outcomes, inlcuding a consideration of accessibility."
+        desc: "This policy aims to guide agencies through early consideration of important factors that help investments meet their intended outcomes, including a consideration of accessibility."
         url:
           en: "https://www.buyict.gov.au/sp?id=resources_and_policies&amp;kb=KB0010637"
   - title:
