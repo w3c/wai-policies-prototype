@@ -70,13 +70,13 @@ For guidance on developing an accessibility policy for an organization, see [Dev
     <tbody id="results">
       {% for policy in site.policies %}
       {% for p in policy.policies %}
-      {% for title in p.title %}
-        {% assign policySlug = title[1] | slugify %}
+      {% for title in p.title limit: 1 %}
+        {% assign policy-slug = title[1] | slugify %}
       {% endfor %}
       <tr data-updated="{{policy.updated}}">
         <td>{% assign curl = policy.country.en | slugify | prepend: '#x' %}
           {% include multilang-title.html title=policy.country url=curl %}</td>
-        <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ policySlug }}">{% include multilang-policy-title.html title=p.title %}</a></td>
+        <td><a href="{{ policy.url | prepend: site.baseurl }}#{{ policy-slug }}">{% include multilang-policy-title.html title=p.title %}</a></td>
         <td>{{p.enactdate}}</td>
         <td class="hyphenated">{{p.type}}</td>
         <td class="hyphenated">{{p.scope}}</td>
