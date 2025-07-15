@@ -12,7 +12,7 @@ policies:
     url:
       en: https://www.legislation.gov.au/C2004A04426/
     updated: 1992
-    wcagver: none, The DDA is pre WCAG and, as broad anti-discrimination policy, does not specify standards. However the 2025 issued Guidelines do specify WCAG 2.2
+    wcagver: None
     enactdate: 1992
     type: Non-discrimination law
     ministries:
