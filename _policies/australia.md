@@ -102,32 +102,6 @@ policies:
         url:
           en: "https://www.digital.gov.au/policy/digital-experience/toolkit"
   - title:
-      en: "Accessibility and Inclusion Principles for Banking Services"
-    url:
-      en: https://www.ausbanking.org.au/priorities/accessibility/
-    updated: 2023
-    wcagver: WCAG 2.2, WCAG 2.1
-    enactdate: 2023
-    type: Recommended policy
-    webonly: false
-    scope: Private sector
-    standard:
-      - title:
-          en: "AS EN 301 549"
-        desc: "Accessibility requirements for ICT products and services"
-        url:
-          en: "https://store.standards.org.au/product/as-en-301-549-2024"
-      - title:
-          en: "AS ISO 14289"
-        desc: "Document management applications — Electronic document file format enhancement for accessibility, Part 1: Use of ISO 32000-1 (PDF/UA-1)"
-        url:
-          en: "https://store.standards.org.au/product/as-iso-14289-1-2017"
-      - title:
-          en: "ISO 9241-154:2013"
-        desc: "Ergonomics of human-system interaction - Part 154: Interactive voice response (IVR) applications"
-        url:
-          en: "https://store.standards.org.au/product/iso-9241-154-2013"
-  - title:
       en: "Telecommunications Consumer Protections (TCP) Code C628:2019"
     url:
       en: https://www.acma.gov.au/telecommunications-consumer-protections-code
