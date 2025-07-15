@@ -38,7 +38,7 @@ policies:
         url:
           en: "https://humanrights.gov.au/our-work/disability-rights/publications/guidelines-equal-access-digital-goods-and-services"
   - title:
-      en: "Commonwealth Procurement Rules"
+      en: "Commonwealth Procurement Rules (CPR)"
     url:
       en: https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules
     updated: 2024
@@ -86,12 +86,12 @@ policies:
     scope: Government, Public sector
     standard:
       - title:
-          en: "Digital Service Standard 2.0"
+          en: "Digital Service Standard (DSS) 2.0"
         desc: "The DSS establishes the requirements for designing and delivering digital government services. It guides government digital teams to create and maintain digital services that are: user-friendly,  inclusive, adaptable &amp; measurable."
         url:
           en: "https://www.digital.gov.au/policy/digital-experience/digital-service-standard"
       - title:
-          en: "Digital Inclusion Standard"
+          en: "Digital Inclusion Standard (DIS)"
         desc: "The DIS sets the requirements for inclusive and accessible digital government experiences. "
         url:
           en: "https://www.digital.gov.au/policy/digital-experience/digital-inclusion-standard"
