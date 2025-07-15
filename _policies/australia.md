@@ -8,7 +8,7 @@ last_updated: 2023-06-06
 updatemsg: Added in additional documentation.
 policies:
   - title:
-      en: "Disability Discrimination Act"
+      en: "Disability Discrimination Act 1992 (DDA)"
     url:
       en: https://www.legislation.gov.au/C2004A04426/
     updated: 1992
