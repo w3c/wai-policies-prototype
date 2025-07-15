@@ -42,7 +42,7 @@ policies:
     url:
       en: https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules
     updated: 2024
-    wcagver: WCAG 2.2
+    wcagver: WCAG 2.1 derivate
     enactdate: 2024
     type: Procurement recommendation, Mandatory policy
     ministries:
