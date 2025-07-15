@@ -116,15 +116,4 @@ policies:
           en: "https://www.acma.gov.au/"
     webonly: false
     scope: Private sector
-    documents:
-      - title:
-          en: " Telecommunications Consumer Protections Code – information for consumers (PDF)"
-        desc: "The Telecommunications Consumer Protections Code – information for consumers brochure provides an overview of the TCP Code and the protections it provides."
-        url:
-          en: "https://commsalliance.com.au/__data/assets/pdf_file/0007/84382/TCP-Code-information-for-consumers.pdf"
-      - title:
-          en: "elecommunications Consumer Protections (TCP) Code Review 2024-2025"
-        desc: "Review of A review of the 2019 Code is underway. WCAG 2.2 AA conformance requirement is a likely outcome."
-        url:
-          en: "https://commsalliance.com.au/hot-topics/TCP-Code-Review-2024"
 ---
