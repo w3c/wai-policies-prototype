@@ -10,7 +10,7 @@ policies:
   - title:
       en: "Disability Discrimination Act"
     url:
-      en: https://www.austlii.edu.au/cgi-bin/viewdoc/au/legis/cth/consol_act/dda1992264/s11.html
+      en: https://www.legislation.gov.au/C2004A04426/
     updated: 1992
     wcagver: none, The DDA is pre WCAG and, as broad anti-discrimination policy, does not specify standards. However the 2025 issued Guidelines do specify WCAG 2.2
     enactdate: 1992
