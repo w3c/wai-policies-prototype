@@ -130,7 +130,7 @@ policies:
   - title:
       en: "Telecommunications Consumer Protections (TCP) Code C628:2019"
     url:
-      en: https://www.commsalliance.com.au/Documents/all/codes/c628
+      en: https://www.acma.gov.au/telecommunications-consumer-protections-code
     updated: 2019
     wcagver: WCAG 2.1
     enactdate: 2019
