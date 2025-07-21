@@ -49,7 +49,7 @@ policies:
         url: 
           en: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018D2048-20220212&qid=1753095108435
       - title: 
-          en: "Commission Implementing Decision (EU) 2021/1339 of 11 August 2021 amending Implementing Decision (EU) 2018/2048 as regards the harmonised standard for websites and mobile applications
+          en: "Commission Implementing Decision (EU) 2021/1339 of 11 August 2021 amending Implementing Decision (EU) 2018/2048 as regards the harmonised standard for websites and mobile applications"
         url: 
           en: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32021D1339
       - title:
