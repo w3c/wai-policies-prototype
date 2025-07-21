@@ -4,7 +4,7 @@ order: 6649202
 title: European Union
 country:
   en: European Union
-last_updated: 2023-06-06
+last_updated: 2025-07-21
 updatemsg: Added the latest European Union information.
 relatedpages:
 policies:
@@ -13,7 +13,7 @@ policies:
     url:
       en: http://eur-lex.europa.eu/eli/dir/2016/2102/oj
     updated: 2016-10-26
-    wcagver: WCAG 2.0
+    wcagver: WCAG 2.1
     enactdate: 2016
     type: Accessibility law # other values: law/policy/procurement
     ministries:
@@ -26,9 +26,9 @@ policies:
     standard:
       - title:
           en: "EN 301 549"
-        desc: "Includes WCAG 2.0 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
+        desc: "Includes WCAG 2.1 Level AA verbatim without modifications for Web content, and WCAG 2.0 Level AA as interpreted by WCAG2ICT for non-Web documentation and software."
         url:
-          en: http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf
+          en: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
     documents:
       - title:
           en: The adoption of a directive on the accessibility of the sector bodies’ websites and mobile apps
@@ -52,6 +52,20 @@ policies:
           en: "Member States' transposition measures for the Web Accessibility Directive"
         url:
           en: https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32016L2102
+      - title: 
+          en: "COMMISSION IMPLEMENTING DECISION (EU) 2021/1339
+
+of 11 August 2021
+
+amending Implementing Decision (EU) 2018/2048 as regards the harmonised standard for websites and mobile applications
+
+(Text with EEA relevance)"
+        url: 
+          en: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32021D1339
+      - title: 
+          en: "Commission Implementing Decision (EU) 2018/2048 of 20 December 2018 on the harmonised standard for websites and mobile applications drafted in support of Directive (EU) 2016/2102 of the European Parliament and of the Council"
+        url: 
+          en: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018D2048-20220212&qid=1753095108435
   - title:
       en: European Accessibility Act
     url:
