@@ -71,7 +71,7 @@ amending Implementing Decision (EU) 2018/2048 as regards the harmonised standard
     url:
       en: https://eur-lex.europa.eu/eli/dir/2019/882/oj
     updated: 2023-06-06
-    wcagver: WCAG 2.0 derivative
+    wcagver: WCAG 2.2 derivative
     enactdate: 2019-06-27
     type: Law
     ministries:
