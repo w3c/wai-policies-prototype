@@ -4,7 +4,6 @@ order: 6713953
 title: France
 country:
   en: France
-  fr: La France
 last_updated: 2023-04-06
 updatemsg: Updated French accessibility laws and policies.
 relatedpages:
