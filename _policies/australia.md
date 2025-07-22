@@ -4,8 +4,7 @@ order: 6387059.1
 country:
   en: Australia
 # title_native: # Country name in the country’s language(s), comma separated. For Switzerland: Schweiz, Suisse, Svizzera, Svizra
-last_updated: 2023-06-06
-updatemsg: Added in additional documentation.
+last_updated: 2025-07-22
 policies:
   - title:
       en: "Disability Discrimination Act 1992 (DDA)"
@@ -58,17 +57,6 @@ policies:
         desc: "&quot;Accessibility Requirements for ICT Products and Services&quot; was originally adopted to support the CPRs"
         url:
           en: "https://store.standards.org.au/product/AS-EN-301-549-2024"
-    documents:
-      - title:
-          en: "CPR - Additional Rules"
-        desc: "Clause 10.11 Where an Australian standard is applicable for goods or services being procured, tender responses must demonstrate the capability to meet the Australian standard, and contracts must contain evidence of the applicable standards (e.g. AS EN 301 549)"
-        url:
-          en: "https://www.finance.gov.au/government/procurement/commonwealth-procurement-rules/additional-rules"
-      - title:
-          en: "Digital Sourcing Consider First Policy"
-        desc: "This policy aims to guide agencies through early consideration of important factors that help investments meet their intended outcomes, including a consideration of accessibility."
-        url:
-          en: "https://www.buyict.gov.au/sp?id=resources_and_policies&amp;kb=KB0010637"
   - title:
       en: "Digital Experience Policy"
     url:
@@ -95,12 +83,6 @@ policies:
         desc: "The DIS sets the requirements for inclusive and accessible digital government experiences. "
         url:
           en: "https://www.digital.gov.au/policy/digital-experience/digital-inclusion-standard"
-    documents:
-      - title:
-          en: "Digital Experience Toolkit"
-        desc: "Assisting government to design and deliver quality digital services using the Digital Experience Toolkit."
-        url:
-          en: "https://www.digital.gov.au/policy/digital-experience/toolkit"
   - title:
       en: "Telecommunications Consumer Protections (TCP) Code C628:2019"
     url:
