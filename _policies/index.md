@@ -20,7 +20,7 @@ We welcome additions or corrections to these listings via the [submission form](
 
 This page lists governmental policies related to web accessibility, although it is not a comprehensive or definitive listing.<!-- We welcome additions or corrections to these listings via the [submission form]({{ "/policies/submission/" | relative_url }}). -->
 
-W3C does not make regulations and the information on this page is _not_ legal advice. Please consult legal authorities for the appropriate jurisdiction. W3C cannot guarantee the accessibility of these external resources.
+W3C does not make regulations. The information on this page is _not_ legal advice. Please consult legal authorities for the appropriate jurisdiction. W3C cannot guarantee the accessibility of these external resources.
 
 For guidance on developing an accessibility policy for an organization, see [Developing Organizational Policies on Web Accessibility]({{ "/planning/org-policies/" | relative_url }}).
 
