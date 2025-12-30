@@ -1,5 +1,5 @@
 ---
-layout: sidenav
+layout: default
 title: Add or Update a Web Accessibility Law or Policy
 nosidenav: true
 ---
