@@ -7,13 +7,10 @@
 
 # Site settings
 title: "Web Accessibility Initiative (WAI)"
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/wai-policies-prototype" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-twitter:
-  username: w3c_wai
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://w3c.github.io" # the base hostname & protocol for your site
 author: w3c_wai
 exclude:
   - "_external"
@@ -21,14 +18,17 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "w3c.json"
+  - "node_modules"
+repository: w3c/wai-policies-prototype
+branch: master
+
 # Build settings
 markdown: kramdown
-kramwdown:
+kramdown:
   toc_levels: 2..3
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-repository: w3c/wai-policies-prototype
 
 remote_theme: w3c/wai-website-theme
 
@@ -47,18 +47,13 @@ defaults:
     scope:
       path: "_policies"
     values:
-      layout: "policy"
+      layout: policy
+      github:
+        repository: w3c/wai-policies-prototype
+        branch: master
       footer: |
         <p>Listings are updated regularly. Near the top of each country listing is a 'last updated' date. This user interface was updated 21 March 2018.</p>
         <p><strong>Editors:</strong> <a href="https://www.w3.org/People/kevin/">Kevin White</a>, Britt Classen, Michel Hansma, Vera Lange, Eric Velleman. <strong>Previous Editors:</strong> Mary Jo Mueller, Robert Jolly, Eric Eggert, Judy Brewer, <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Previous contributors: Jennifer Sutton and <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
         <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Updated as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
       disclaimer: |
         <p>The law or policy links above go to official versions that may not be very accessible. If you know of more accessible versions, please let us know through the <a href="https://www.w3.org/WAI/policies/submission/">submission form</a> or e-mail to <a href="mailto:group-wai-list-policies@w3.org">group-wai-list-policies@w3.org</a>.</p>
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-include-cache
-  - jekyll-remote-theme
-  - wai-website-plugin
